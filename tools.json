@@ -106,6 +106,15 @@
     "uriage-kanri-hyo-handmade",
     "plantilla-contabilidad-excel-etsy"
    ]
+  },
+  {
+   "id": "200ef5bb95",
+   "name": {
+    "es": "tarifas freelance"
+   },
+   "tools": [
+    "tarifas-freelance"
+   ]
   }
  ],
  "tools": {
@@ -178,6 +187,11 @@
    "lang": "es",
    "name": "plantilla contabilidad Excel",
    "hub": "https://getreadystack.com/es/apps/plantilla-contabilidad-excel-etsy/"
+  },
+  "tarifas-freelance": {
+   "lang": "es",
+   "name": "tarifas freelance",
+   "hub": "https://getreadystack.com/es/apps/tarifas-freelance/"
   }
  }
 }

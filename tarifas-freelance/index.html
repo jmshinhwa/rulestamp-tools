@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>tarifas freelance 2026 | calculadora de tarifa diaria mínima de autónomo con festivos de tu comunidad, cuota RETA e IRPF</title>
+<meta content="tarifas freelance: calcula tu tarifa diaria y por hora mínima como autónomo en España con los festivos 2026 de tu comunidad (BOE), la cuota de autónomos por tramos 2026 que sube con tu propia tarifa, el IRPF y tus días facturables reales. Y mira cuánto pierdes al año con la tarifa que cobras hoy." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/es/apps/tarifas-freelance/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main class="wrap">
+<h1>tarifas freelance 2026 | calculadora de tarifa diaria mínima de autónomo con festivos de tu comunidad, cuota RETA e IRPF</h1>
+<p class="lede"><b>Ejemplo (inventado):</b> diseñadora autónoma en Madrid que quiere 2.000 € netos al mes, con 200 € de gastos al mes. En 2026 Madrid tiene 10 festivos en día laborable; con 2 locales, 22 días de vacaciones, 8 días de baja o trámites y un 25 % de tiempo sin facturar le quedan <b>164,25 días facturables</b>. Su tarifa diaria mínima: <b>230 €</b> (29 € la hora). Cobrando 150 € al día deja <b id="lede-loss">8.493,38 € netos perdidos al año</b>.</p>
+<p class="fix"><b>¿Calculadora de tarifa diaria freelance que te pide «festivos: suelen ser 14» y una cuota fija?</b> Aquí no. Calcular tarifa diaria de autónomo con los festivos 2026 de tu comunidad (anexo del BOE), la cuota de autónomos 2026 por tramos que sube con tu propia tarifa, el IRPF de 2026 y el aviso del día en que se acaba tu tarifa plana. Todo se calcula en tu navegador, sin cuenta y sin subir nada.</p>
+<div class="grid">
+<form autocomplete="off" id="f" onsubmit="return false">
+<fieldset>
+<legend>1. Lo que quieres ganar y lo que cobras hoy</legend>
+<div class="row3">
+<label>Neto que quieres al mes (€, 12 meses) <input data-k="" data-yj-mine="" id="neto" min="0" step="50" type="number" value="2000"/></label>
+<label>Tu tarifa diaria actual (€, sin IVA) <input data-k="" data-yj-mine="" id="actual" min="0" step="5" type="number" value="150"/></label>
+<label>Gastos del negocio al mes (€, sin la cuota) <input data-k="" data-yj-mine="" id="gastos" min="0" step="10" type="number" value="200"/></label>
+</div>
+</fieldset>
+<fieldset>
+<legend>2. Tus días facturables reales en 2026</legend>
+<div class="row3">
+<label>Comunidad autónoma <select data-k="" data-yj-mine="" id="ccaa">
+<option value="AN">Andalucía</option><option value="AR">Aragón</option><option value="AS">Asturias</option><option value="IB">Illes Balears</option><option value="CN">Canarias</option><option value="CB">Cantabria</option><option value="CM">Castilla-La Mancha</option><option value="CL">Castilla y León</option><option value="CT">Cataluña</option><option value="EX">Extremadura</option><option value="GA">Galicia</option><option selected="" value="MD">Comunidad de Madrid</option><option value="MC">Región de Murcia</option><option value="NC">Navarra</option><option value="PV">País Vasco</option><option value="RI">La Rioja</option><option value="VC">Comunitat Valenciana</option><option value="CE">Ceuta</option><option value="ML">Melilla</option></select></label>
+<label>Festivos locales en día laborable (0 a 2) <input data-k="" data-yj-mine="" id="locales" max="2" min="0" type="number" value="2"/></label>
+<label>Días de vacaciones (laborables) <input data-k="" data-yj-mine="" id="vacaciones" max="120" min="0" type="number" value="22"/></label>
+</div>
+<div class="row3">
+<label>Otros días sin trabajar: baja, trámites, formación <input data-k="" data-yj-mine="" id="otros" max="120" min="0" type="number" value="8"/></label>
+<label>Tiempo que no puedes facturar: clientes, presupuestos, facturas (%) <input data-k="" data-yj-mine="" id="nofact" max="90" min="0" type="number" value="25"/></label>
+<label>Horas por día de trabajo <input data-k="" data-yj-mine="" id="horas" max="16" min="1" step="0.5" type="number" value="8"/></label>
+</div>
+</fieldset>
+<fieldset>
+<legend>3. Cuota de autónomos e IRPF</legend>
+<div class="row3">
+<label>Meses de tarifa plana que te quedan (0 = ya pagas por tramos) <input data-k="" data-yj-mine="" id="plana" max="12" min="0" type="number" value="0"/></label>
+<label>Tu recibo con tarifa plana (€ al mes) <input data-k="" data-yj-mine="" id="plana_eur" min="0" step="0.01" type="number" value="80"/></label>
+<label>Retención de IRPF en tus facturas <select data-k="" data-yj-mine="" id="retencion"><option selected="" value="15">15 %</option><option value="7">7 % (tus 3 primeros años)</option><option value="0">0 % (clientes particulares)</option></select></label>
+</div>
+<div class="row3">
+<label>Tu tipo de IRPF si tu gestoría te lo ha dado (%, 0 = calcular con la escala) <input data-k="" data-yj-mine="" id="irpf_pct" max="50" min="0" step="0.5" type="number" value="0"/></label>
+</div>
+</fieldset>
+<p class="small"><button class="btn go" id="check" type="button">Calcular mi tarifa</button> <button class="link" id="reset" type="button">Volver al ejemplo</button></p>
+</form>
+<div class="col">
+<section aria-live="polite" data-yj="result" id="out">
+<div class="kpi" id="kpi"></div>
+<p class="verdict" id="verdict"></p>
+<p class="verdict alt" hidden="" id="plana-out"></p>
+<table id="bd"><thead><tr><th>En un año</th><th class="n">€</th></tr></thead><tbody></tbody></table>
+<table id="dt"><thead><tr><th>Días en 2026</th><th class="n">días</th></tr></thead><tbody></tbody></table>
+<details><summary id="hol-sum">Festivos</summary><ul class="small" id="hol"></ul></details>
+<p class="small" id="cli"></p>
+<p class="small" id="ren"></p>
+</section>
+<p class="paywall" data-fe-hidden="" hidden="" id="pw"><a data-fe-hidden="" hidden=""></a></p>
+</div>
+</div>
+<p class="small how">Cómo se calcula: días facturables = lunes a viernes de 2026 (261) − festivos de tu comunidad en día laborable (anexo del BOE) − festivos locales − vacaciones − otros días, y de ahí el porcentaje que sí facturas. La calculadora busca la facturación anual (sin IVA) que, tras tus gastos, la cuota de autónomos y el IRPF, te deja el neto que pides. La cuota sale del tramo de tu rendimiento: (facturación − gastos) menos un 7 % de gastos genéricos, entre 12 meses, con la base mínima del tramo y el 31,50 %. El IRPF usa la escala general (estatal + autonómica tipo, 19 % a 47 %), el mínimo personal de 5.550 € y el 5 % de gastos de difícil justificación (máximo 2.000 €) de la estimación directa simplificada; tu comunidad puede tener su propia escala. Tarifa diaria = facturación ÷ días facturables, redondeada hacia arriba a 5 €. Sin otras rentas ni deducciones familiares. Una calculadora, no asesoramiento fiscal.</p>
+<section data-fe-hidden="" hidden="" id="pro"><h2></h2><p class="small" data-fe-hidden="" hidden="" id="pro-msg"></p><div class="tools"><button class="btn" data-pro="save" type="button"></button><button class="btn" data-pro="print" type="button"></button><button class="btn" data-pro="quote" type="button"></button><button class="btn" data-pro="ics" type="button"></button><button class="btn" data-pro="csv" type="button"></button><button class="btn" data-pro="backup" type="button"></button><label class="btn file"><input accept=".json,application/json" id="imp" type="file"/></label></div><fieldset><legend></legend><div class="row3"><label><input id="q-cli"/></label><label><input id="q-trab"/></label><label><input id="q-dias" min="0.5" step="0.5" type="number"/></label></div><div class="row3"><label><input id="q-tar" min="0" step="5" type="number"/></label><label><select id="q-iva"><option></option><option></option></select></label><label><select id="q-ret"><option></option><option></option><option></option></select></label></div></fieldset><div class="offer" hidden="" id="presupuesto"></div><h3><span class="small"></span></h3><p class="small"></p><table id="tr"><thead><tr><th></th><th></th><th></th></tr></thead><tbody></tbody></table><p class="verdict" id="tr-out"></p><h3></h3><table id="sc"><thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody></tbody></table><h3></h3><p><input data-fe-hidden="" hidden="" id="key"/><button class="btn" data-fe-hidden="" hidden="" id="key-go" type="button"></button><span class="small" data-fe-hidden="" hidden="" id="key-msg"></span></p></section>
+<section class="small" id="src">
+<h2>Fuentes (leídas el 15/11/2026)</h2>
+<ul>
+<li>Festivos 2026 por comunidad: Resolución de 17 de octubre de 2025 de la Dirección General de Trabajo, BOE de 28/10/2025 (anexo). Los festivos locales los publica tu comunidad o provincia (hasta 2).</li>
+<li>Cuota de autónomos 2026: Orden PJC/297/2026 (BOE de 31/03/2026), 15 tramos por rendimiento neto mensual, base mínima del tramo 10 = 1.356,21 €, tipo 31,50 % (incluye MEI 0,90 %).</li>
+<li>Rendimiento que decide el tramo: art. 308 de la Ley General de la Seguridad Social (rendimientos más cuotas, menos el 7 % de gastos genéricos).</li>
+<li>IRPF: escala del art. 63 de la Ley 35/2006 (manual práctico de la AEAT), mínimo personal 5.550 €; estimación directa simplificada: 5 % de provisiones y gastos de difícil justificación con límite de 2.000 € (sede.agenciatributaria.gob.es; el 10 % de 2026 es solo para Ceuta, RDL 22/2026).</li>
+<li>Tarifa plana: cuota reducida de 80 € al mes los primeros 12 meses (art. 38 ter de la Ley 20/2007); hay fuentes que dan un recibo algo mayor por el MEI, por eso el importe es un dato que tú pones.</li>
+<li>Plazos de los modelos 130 y 303: 20 de abril, 20 de julio, 20 de octubre y 30 de enero.</li>
+</ul>
+</section>
+<p class="small foot">tarifas freelance · calcula en tu navegador · no se sube nada</p>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Guardar y continuar: <a href="https://getreadystack.com/es/apps/tarifas-freelance/">https://getreadystack.com/es/apps/tarifas-freelance/</a></p><script src="./logic.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

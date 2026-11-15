@@ -24,6 +24,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | presupuesto quincenal | [presupuesto quincenal](presupuesto-quincenal-cuanto-apartar/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/presupuesto-quincenal-cuanto-apartar/) |
 | 売上管理 表 | [売上管理 表](uriage-kanri-hyo-handmade/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/uriage-kanri-hyo-handmade/) |
 | 〃 | [plantilla contabilidad Excel](plantilla-contabilidad-excel-etsy/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/plantilla-contabilidad-excel-etsy/) |
+| tarifas freelance | [tarifas freelance](tarifas-freelance/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/tarifas-freelance/) |
 
 <a id="de"></a>
 
@@ -45,6 +46,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | presupuesto quincenal | [presupuesto quincenal](presupuesto-quincenal-cuanto-apartar/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/presupuesto-quincenal-cuanto-apartar/) |
 | 売上管理 表 | [売上管理 表](uriage-kanri-hyo-handmade/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/uriage-kanri-hyo-handmade/) |
 | 〃 | [plantilla contabilidad Excel](plantilla-contabilidad-excel-etsy/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/plantilla-contabilidad-excel-etsy/) |
+| tarifas freelance | [tarifas freelance](tarifas-freelance/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/tarifas-freelance/) |
 
 <a id="es"></a>
 
@@ -66,6 +68,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | presupuesto quincenal | [presupuesto quincenal](presupuesto-quincenal-cuanto-apartar/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/presupuesto-quincenal-cuanto-apartar/) |
 | plantilla contabilidad Excel | [plantilla contabilidad Excel](plantilla-contabilidad-excel-etsy/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/plantilla-contabilidad-excel-etsy/) |
 | 〃 | [売上管理 表](uriage-kanri-hyo-handmade/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/uriage-kanri-hyo-handmade/) |
+| tarifas freelance | [tarifas freelance](tarifas-freelance/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/tarifas-freelance/) |
 
 <a id="pt"></a>
 
@@ -87,6 +90,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | presupuesto quincenal | [presupuesto quincenal](presupuesto-quincenal-cuanto-apartar/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/presupuesto-quincenal-cuanto-apartar/) |
 | 売上管理 表 | [売上管理 表](uriage-kanri-hyo-handmade/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/uriage-kanri-hyo-handmade/) |
 | 〃 | [plantilla contabilidad Excel](plantilla-contabilidad-excel-etsy/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/plantilla-contabilidad-excel-etsy/) |
+| tarifas freelance | [tarifas freelance](tarifas-freelance/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/tarifas-freelance/) |
 
 <a id="ja"></a>
 
@@ -108,6 +112,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | presupuesto quincenal | [presupuesto quincenal](presupuesto-quincenal-cuanto-apartar/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/presupuesto-quincenal-cuanto-apartar/) |
 | 売上管理 表 | [売上管理 表](uriage-kanri-hyo-handmade/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/uriage-kanri-hyo-handmade/) |
 | 〃 | [plantilla contabilidad Excel](plantilla-contabilidad-excel-etsy/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/plantilla-contabilidad-excel-etsy/) |
+| tarifas freelance | [tarifas freelance](tarifas-freelance/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/tarifas-freelance/) |
 
 ---
 Rulestamp · https://getreadystack.com
