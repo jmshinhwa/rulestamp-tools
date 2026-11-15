@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>organic dropshipping tracker | product tests, video log, real profit per order, kill or scale</title>
+<meta content="Organic dropshipping tracker for sellers who test products with TikTok, Reels and Shorts videos instead of ads: real profit per order after supplier, shipping, import duty, card fees and returns, profit per 1,000 views and per hour of filming, and a kill, keep testing, fix or scale call on your own test rule. Free in your browser, no account." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/apps/organic-dropshipping-tracker/" rel="canonical"/></head>
+<body>
+<header class="top">
+<h1>organic dropshipping tracker | product tests, video log, real profit per order, kill or scale</h1>
+<p class="lead"><b>Example (made-up):</b> a <b>$24.99</b> sunset lamp tested with 21 TikTok videos got 248,000 views and <b>47 orders</b>. The supplier margin looks like <b>$16.59</b> an order, but <b>$10.82</b> of it is lost to shipping, import duty, the card fee and returns: <b>$508.73</b> gone across the 47 orders. Real profit is <b>$5.77</b> an order, <b>$239.50</b> for the test, <b>$13.69</b> per hour of filming against a $17 rule, so the call is <b>fix</b>: price it at <b>$26.34</b> or cut a cost.</p>
+<p class="lead2">Type your own product test: what you sell it for, what the supplier, shipping and duty cost, your card fee and return rate, then the videos, views, link clicks and orders. You get real profit per order, profit per 1,000 views and per hour of filming, and a kill, keep testing, fix or scale call against your own rule. No account: your numbers stay in this browser.</p>
+</header>
+<main>
+<section class="card" id="check">
+<h2>Your product test <span class="tag">free</span></h2>
+<div aria-live="polite" class="res" data-yj="result" id="out"></div>
+<div class="grid3" style="margin-top:14px">
+<label>Product<input autocomplete="off" data-k="name" data-yj-mine="" id="f_name" value="Sunset lamp"/></label>
+<label>Your selling price ($)<input data-k="price" data-yj-mine="" id="f_price" inputmode="decimal" value="24.99"/></label>
+<label>Supplier cost per order ($)<input data-k="cogs" data-yj-mine="" id="f_cogs" inputmode="decimal" value="8.40"/></label>
+<label>Shipping per order ($)<input data-k="ship" data-yj-mine="" id="f_ship" inputmode="decimal" value="6.20"/></label>
+<label>Import duty and clearance fee per order ($)<input data-k="duty" data-yj-mine="" id="f_duty" inputmode="decimal" value="2.10"/></label>
+<label>Card fee (%)<input data-k="feePct" data-yj-mine="" id="f_feePct" inputmode="decimal" value="2.9"/></label>
+<label>Card fee per order ($)<input data-k="feeFix" data-yj-mine="" id="f_feeFix" inputmode="decimal" value="0.30"/></label>
+<label>Other % fees: platform, 3rd-party gateway, international card (%)<input data-k="extraPct" data-yj-mine="" id="f_extra" inputmode="decimal" value="0"/></label>
+<label>Orders returned or charged back (%)<input data-k="returnPct" data-yj-mine="" id="f_return" inputmode="decimal" value="6"/></label>
+<label>Videos posted for this product<input data-k="videos" data-yj-mine="" id="f_videos" inputmode="numeric" value="21"/></label>
+<label>Total views<input data-k="views" data-yj-mine="" id="f_views" inputmode="numeric" value="248000"/></label>
+<label>Link clicks or store sessions<input data-k="clicks" data-yj-mine="" id="f_clicks" inputmode="numeric" value="2140"/></label>
+<label>Orders<input data-k="orders" data-yj-mine="" id="f_orders" inputmode="numeric" value="47"/></label>
+<label>Minutes per video: find, film, edit, post<input data-k="minPerVideo" data-yj-mine="" id="f_min" inputmode="decimal" value="50"/></label>
+<label>Samples and test orders bought ($)<input data-k="sampleCost" data-yj-mine="" id="f_sample" inputmode="decimal" value="31.50"/></label>
+<label>Your rule: videos before you decide<input data-k="ruleVideos" data-yj-mine="" id="f_rule" inputmode="numeric" value="15"/></label>
+<label>Your rule: lowest pay per hour of filming ($)<input data-k="targetHour" data-yj-mine="" id="f_target" inputmode="decimal" value="17"/></label>
+</div>
+<p><button class="btn" id="go">Check my product test</button> <button class="btn ghost" id="add">Save to my product board</button></p>
+<p class="upsell" hidden="" id="upsell"><a hidden="" id="buyM"></a><a hidden="" id="buyY"></a></p>
+</section>
+<section class="card pro" hidden="" id="pro"><h2></h2><ul class="feat"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><div class="keybox" hidden=""><label><input autocomplete="off" id="key"/></label><button class="btn ghost" id="keyOk"></button><span id="keyMsg"></span></div><div hidden="" id="proArea"><div class="grid3"><label><input id="g_days" inputmode="numeric"/></label><label><select id="g_prod"></select></label><label><input autocomplete="off" id="l_date"/></label><label><input autocomplete="off" id="l_video"/></label><label><input id="l_views" inputmode="numeric"/></label><label><input id="l_clicks" inputmode="numeric"/></label><label><input id="l_orders" inputmode="numeric"/></label><label><input accept=".csv,text/csv" id="g_csv" type="file"/></label><label><input accept=".json,application/json" id="g_json" type="file"/></label></div><p><button class="btn" id="lAdd"></button><button class="btn ghost" id="xIcs"></button><button class="btn ghost" id="xCsv"></button><button class="btn ghost" id="xJson"></button><button class="btn ghost" id="xRep"></button><button class="btn ghost" id="xSample"></button></p><p class="hint" id="gMsg"></p><div class="scroll"><table class="rows" id="gTbl"><thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody></tbody></table></div><div id="gTop"></div><h3></h3><div class="scroll"><table class="rows" id="lTbl"><thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody></tbody></table></div></div></section>
+<section class="card faq" id="faq"></section>
+<p class="legal">A calculation and record tool for your own product tests, not tax, legal or business advice; the kill, keep testing, fix and scale calls apply only the rule you type. Card fee example: Shopify Basic lists online card rates of 2.9% + 30¢, +1% for international cards, and a 2% third-party transaction fee when you do not use Shopify Payments (<a href="https://www.shopify.com/pricing" rel="nofollow">shopify.com/pricing</a>, read 2026-11-15); use the rates on your own plan. Import duty: Executive Order 14324 of July 30, 2025 suspended duty-free de minimis treatment for imports from all countries from August 29, 2025 (<a href="https://www.whitehouse.gov/presidential-actions/2025/07/suspending-duty-free-de-minimis-treatment-for-all-countries/" rel="nofollow">whitehouse.gov</a>, read 2026-11-15); put the duty and clearance fee your supplier or carrier passes on per order. Returned orders count as price given back with product, shipping, duty and card fee already spent.</p>
+</main>
+<div class="report" hidden="" id="report"></div>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Save and continue: <a href="https://getreadystack.com/apps/organic-dropshipping-tracker/">https://getreadystack.com/apps/organic-dropshipping-tracker/</a></p><script src="./odt.js"></script>
+<script src="./faq.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

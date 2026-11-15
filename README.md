@@ -15,6 +15,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | LinkedIn outreach: your list spread day by day under your invite limit | [automatización LinkedIn — planificador semanal de prospección](automatizacion-linkedin/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automatizacion-linkedin/) |
 | CS2 practice routine: minutes go where you lack the most | [CS2 Training Routine](cs2-training-routine/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cs2-training-routine/) |
 | 〃 | [entrenamiento CS2 — rutina diaria desde tus partidas](entrenamiento-cs2/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/entrenamiento-cs2/) |
+| Organic dropshipping product test: real profit per order and per video | [organic dropshipping tracker](organic-dropshipping-tracker/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/organic-dropshipping-tracker/) |
 
 <a id="de"></a>
 
@@ -27,6 +28,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | LinkedIn-Akquise: deine Liste Tag für Tag unter deinem Einladungslimit | [automatización LinkedIn — planificador semanal de prospección](automatizacion-linkedin/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automatizacion-linkedin/) |
 | CS2-Trainingsplan: Minuten dorthin, wo dir am meisten fehlt | [CS2 Training Routine](cs2-training-routine/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cs2-training-routine/) |
 | 〃 | [entrenamiento CS2 — rutina diaria desde tus partidas](entrenamiento-cs2/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/entrenamiento-cs2/) |
+| Organischer Dropshipping-Produkttest: echter Gewinn pro Bestellung und pro Video | [organic dropshipping tracker](organic-dropshipping-tracker/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/organic-dropshipping-tracker/) |
 
 <a id="es"></a>
 
@@ -39,6 +41,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Prospección en LinkedIn: tu lista repartida día a día bajo tu tope | [automatización LinkedIn — planificador semanal de prospección](automatizacion-linkedin/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automatizacion-linkedin/) |
 | Rutina de entrenamiento CS2: los minutos van a lo que más te falta | [entrenamiento CS2 — rutina diaria desde tus partidas](entrenamiento-cs2/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/entrenamiento-cs2/) |
 | 〃 | [CS2 Training Routine](cs2-training-routine/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cs2-training-routine/) |
+| Prueba de dropshipping orgánico: margen real por pedido y por vídeo | [organic dropshipping tracker](organic-dropshipping-tracker/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/organic-dropshipping-tracker/) |
 
 <a id="pt"></a>
 
@@ -51,6 +54,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Prospecção no LinkedIn: sua lista dividida dia a dia abaixo do seu limite | [automatización LinkedIn — planificador semanal de prospección](automatizacion-linkedin/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automatizacion-linkedin/) |
 | Rotina de treino de CS2: os minutos vão para onde você mais precisa | [CS2 Training Routine](cs2-training-routine/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cs2-training-routine/) |
 | 〃 | [entrenamiento CS2 — rutina diaria desde tus partidas](entrenamiento-cs2/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/entrenamiento-cs2/) |
+| Teste de dropshipping orgânico: lucro real por pedido e por vídeo | [organic dropshipping tracker](organic-dropshipping-tracker/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/organic-dropshipping-tracker/) |
 
 <a id="ja"></a>
 
@@ -63,6 +67,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | LinkedIn営業：招待上限の範囲でリストを日ごとに割り振る | [automatización LinkedIn — planificador semanal de prospección](automatizacion-linkedin/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automatizacion-linkedin/) |
 | CS2練習メニュー：一番足りない所に時間を配分 | [CS2 Training Routine](cs2-training-routine/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cs2-training-routine/) |
 | 〃 | [entrenamiento CS2 — rutina diaria desde tus partidas](entrenamiento-cs2/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/entrenamiento-cs2/) |
+| オーガニック・ドロップシッピングの商品テスト：注文・動画あたりの実利益 | [organic dropshipping tracker](organic-dropshipping-tracker/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/organic-dropshipping-tracker/) |
 
 ---
 Rulestamp · https://getreadystack.com

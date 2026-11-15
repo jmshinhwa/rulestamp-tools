@@ -40,6 +40,19 @@
     "cs2-training-routine",
     "entrenamiento-cs2"
    ]
+  },
+  {
+   "id": "drop",
+   "name": {
+    "en": "Organic dropshipping product test: real profit per order and per video",
+    "de": "Organischer Dropshipping-Produkttest: echter Gewinn pro Bestellung und pro Video",
+    "es": "Prueba de dropshipping orgánico: margen real por pedido y por vídeo",
+    "pt": "Teste de dropshipping orgânico: lucro real por pedido e por vídeo",
+    "ja": "オーガニック・ドロップシッピングの商品テスト：注文・動画あたりの実利益"
+   },
+   "tools": [
+    "organic-dropshipping-tracker"
+   ]
   }
  ],
  "tools": {
@@ -67,6 +80,11 @@
    "lang": "es",
    "name": "entrenamiento CS2 — rutina diaria desde tus partidas",
    "hub": "https://getreadystack.com/es/apps/entrenamiento-cs2/"
+  },
+  "organic-dropshipping-tracker": {
+   "lang": "en",
+   "name": "organic dropshipping tracker",
+   "hub": "https://getreadystack.com/apps/organic-dropshipping-tracker/"
   }
  }
 }
