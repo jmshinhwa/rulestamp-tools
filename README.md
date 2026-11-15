@@ -18,6 +18,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Organic dropshipping product test: real profit per order and per video | [organic dropshipping tracker](organic-dropshipping-tracker/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/organic-dropshipping-tracker/) |
 | 〃 | [Dropshipping Content Tracker](dropshipping-content-tracker/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/dropshipping-content-tracker/) |
 | 〃 | [dropshipping orgánico — pruebas, vídeos, margen](dropshipping-organico-pruebas-videos-margen/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/dropshipping-organico-pruebas-videos-margen/) |
+| Freelancer income and expenses: who owes you, how late, next months' cash | [planilha de receitas e despesas](planilha-de-receitas-e-despesas/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-de-receitas-e-despesas/) |
 
 <a id="de"></a>
 
@@ -33,6 +34,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Organischer Dropshipping-Produkttest: echter Gewinn pro Bestellung und pro Video | [Dropshipping Content Tracker](dropshipping-content-tracker/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/dropshipping-content-tracker/) |
 | 〃 | [organic dropshipping tracker](organic-dropshipping-tracker/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/organic-dropshipping-tracker/) |
 | 〃 | [dropshipping orgánico — pruebas, vídeos, margen](dropshipping-organico-pruebas-videos-margen/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/dropshipping-organico-pruebas-videos-margen/) |
+| Einnahmen und Ausgaben für Selbstständige: wer schuldet, wie lange, Kasse der nächsten Monate | [planilha de receitas e despesas](planilha-de-receitas-e-despesas/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-de-receitas-e-despesas/) |
 
 <a id="es"></a>
 
@@ -48,6 +50,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Prueba de dropshipping orgánico: margen real por pedido y por vídeo | [dropshipping orgánico — pruebas, vídeos, margen](dropshipping-organico-pruebas-videos-margen/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/dropshipping-organico-pruebas-videos-margen/) |
 | 〃 | [organic dropshipping tracker](organic-dropshipping-tracker/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/organic-dropshipping-tracker/) |
 | 〃 | [Dropshipping Content Tracker](dropshipping-content-tracker/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/dropshipping-content-tracker/) |
+| Ingresos y gastos de autónomo: quién te debe, cuántos días y la caja de los próximos meses | [planilha de receitas e despesas](planilha-de-receitas-e-despesas/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-de-receitas-e-despesas/) |
 
 <a id="pt"></a>
 
@@ -63,6 +66,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Teste de dropshipping orgânico: lucro real por pedido e por vídeo | [organic dropshipping tracker](organic-dropshipping-tracker/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/organic-dropshipping-tracker/) |
 | 〃 | [Dropshipping Content Tracker](dropshipping-content-tracker/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/dropshipping-content-tracker/) |
 | 〃 | [dropshipping orgánico — pruebas, vídeos, margen](dropshipping-organico-pruebas-videos-margen/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/dropshipping-organico-pruebas-videos-margen/) |
+| Receitas e despesas de autônomo: quem deve, há quantos dias e o caixa dos próximos meses | [planilha de receitas e despesas](planilha-de-receitas-e-despesas/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-de-receitas-e-despesas/) |
 
 <a id="ja"></a>
 
@@ -78,6 +82,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | オーガニック・ドロップシッピングの商品テスト：注文・動画あたりの実利益 | [organic dropshipping tracker](organic-dropshipping-tracker/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/organic-dropshipping-tracker/) |
 | 〃 | [Dropshipping Content Tracker](dropshipping-content-tracker/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/dropshipping-content-tracker/) |
 | 〃 | [dropshipping orgánico — pruebas, vídeos, margen](dropshipping-organico-pruebas-videos-margen/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/dropshipping-organico-pruebas-videos-margen/) |
+| フリーランスの収支：未入金・遅延日数・今後数か月の資金繰り | [planilha de receitas e despesas](planilha-de-receitas-e-despesas/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-de-receitas-e-despesas/) |
 
 ---
 Rulestamp · https://getreadystack.com

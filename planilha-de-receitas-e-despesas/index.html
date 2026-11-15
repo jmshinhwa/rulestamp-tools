@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>planilha de receitas e despesas | autônomo: a receber, atrasos, juros e caixa dos próximos meses</title>
+<meta content="planilha de receitas e despesas para autônomos e freelancers: o que cada cliente deve e há quantos dias, multa e juros do seu contrato, despesas do mês e em que mês o caixa fica negativo. Livro caixa autônomo no navegador, sem cadastro." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/pt/apps/planilha-de-receitas-e-despesas/" rel="canonical"/></head>
+<body>
+<header class="top">
+<h1>planilha de receitas e despesas | autônomo: a receber, atrasos, juros e caixa dos próximos meses</h1>
+<p class="lede"><b>Exemplo (fictício, já preenchido abaixo)</b>: uma designer autônoma em 15/11/2026 tem <b>R$ 4.300,00 vencidos com 2 clientes</b> (o mais antigo há 47 dias) e <b>R$ 137,37 de multa e juros do contrato que ninguém cobrou</b>; com o que já está contratado, o caixa fica em <b>R$ −3.530,00 em janeiro de 2027</b>.</p>
+<p class="sub">Uma planilha de freelancer mostra "pagamentos pendentes". Aqui você vê <b>quem deve, há quantos dias, quanto o seu contrato deixa cobrar a mais</b> e <b>em que mês o dinheiro acaba</b>, com e sem os atrasados. Livro caixa autônomo que roda no navegador: sem cadastro, os dados ficam só neste aparelho.</p>
+<p class="btns"><button class="btn" id="mine" type="button">Começar com os meus números</button> <button class="btn ghost" id="demo" type="button">Voltar ao exemplo</button></p>
+</header>
+<main>
+<section aria-live="polite" class="card result" data-yj="result" id="out"></section>
+<p class="proline" hidden="" id="proline"><b></b><a></a></p>
+<section class="card" id="inputs">
+<h2>Seus números</h2>
+<div class="grid">
+<label>Data de referência (hoje)<input data-k="" data-yj-mine="" id="ref" type="date" value="2026-11-15"/></label>
+<label>Saldo em conta hoje (R$)<input data-k="" data-yj-mine="" id="saldo" inputmode="decimal" value="3200"/></label>
+<label>Multa por atraso no seu contrato (%)<input data-k="" data-yj-mine="" id="multa" inputmode="decimal" value="2"/></label>
+<label>Juros por atraso no seu contrato (% ao mês)<input data-k="" data-yj-mine="" id="juros" inputmode="decimal" value="1"/></label>
+</div>
+<p class="hint">Multa e juros: use o que está no seu contrato ou orçamento aceito. Sem cláusula, deixe 0. Juros contados por dia (% ao mês ÷ 30 × dias de atraso).</p>
+<h3>Receitas: trabalhos por cliente</h3>
+<div class="row rec head"><span>Cliente</span><span>Projeto / parcela</span><span>Valor (R$)</span><span>Vencimento</span><span>Situação</span><span></span></div>
+<div id="recs"></div>
+<p class="btns"><button class="btn ghost" id="addrec" type="button">+ receita</button> <span class="hint">Quantas linhas quiser. Parcelas futuras já combinadas entram aqui também.</span></p>
+<h3>Despesas de todo mês (negócio e casa)</h3>
+<div class="row desp head"><span>Despesa</span><span>Valor (R$)</span><span>Dia que vence</span><span>Tipo</span><span></span></div>
+<div id="desps"></div>
+<p class="btns"><button class="btn ghost" id="adddesp" type="button">+ despesa</button></p>
+</section>
+<section class="card pro" hidden="" id="pro"><h2></h2><ul><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b><b></b><b></b></li></ul><div class="buybox" hidden=""><p class="price"></p><p class="btns"><a class="btn" hidden=""></a></p></div><div class="grid2"><label><input id="key"/></label><button class="btn ghost" id="unlock" type="button"></button></div><p class="hint" id="keymsg"></p><p class="btns"><button class="btn" id="close" type="button"></button><button class="btn ghost" id="print1" type="button"></button><button class="btn ghost" id="csv" type="button"></button><button class="btn ghost" id="ics" type="button"></button><button class="btn ghost" id="backup" type="button"></button><label class="btn ghost file"><input accept=".json" hidden="" id="restore" type="file"/></label></p><p class="hint" id="promsg"></p><div class="proarea" hidden=""><div id="cobr"></div><div id="hist"></div></div></section>
+<section class="card" hidden="" id="print"></section>
+<section class="card" id="how">
+<h2>Como a conta é feita</h2>
+<ol>
+<li><b>Vencido</b> = receitas "a receber" com vencimento antes da data de referência. Dias de atraso = data de referência − vencimento.</li>
+<li><b>Multa e juros</b> = valor × multa do contrato + valor × (juros ao mês ÷ 30) × dias. Só o que você combinou com o cliente; sem cláusula, ponha 0.</li>
+<li><b>Caixa dos próximos meses</b>: saldo de hoje + receitas a receber com vencimento em cada mês − despesas do mês (no mês de hoje, só as que vencem depois do dia de hoje). A linha "se os atrasados pagarem" soma o vencido já agora.</li>
+<li><b>Fôlego</b> = saldo de hoje ÷ despesas de um mês. <b>Peso do cliente</b> = soma das receitas dele ÷ soma de todas as receitas da lista.</li>
+</ol>
+<p class="hint">Conta feita só com os números que você digitou; não é orientação contábil nem tributária e não calcula imposto. Para o carnê-leão ou o DAS, use o seu valor como uma despesa do mês.</p>
+</section>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Salvar e continuar: <a href="https://getreadystack.com/pt/apps/planilha-de-receitas-e-despesas/">https://getreadystack.com/pt/apps/planilha-de-receitas-e-despesas/</a></p><script src="./caixa.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

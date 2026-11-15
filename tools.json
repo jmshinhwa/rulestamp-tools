@@ -55,6 +55,19 @@
     "dropshipping-content-tracker",
     "dropshipping-organico-pruebas-videos-margen"
    ]
+  },
+  {
+   "id": "cash",
+   "name": {
+    "en": "Freelancer income and expenses: who owes you, how late, next months' cash",
+    "de": "Einnahmen und Ausgaben für Selbstständige: wer schuldet, wie lange, Kasse der nächsten Monate",
+    "es": "Ingresos y gastos de autónomo: quién te debe, cuántos días y la caja de los próximos meses",
+    "pt": "Receitas e despesas de autônomo: quem deve, há quantos dias e o caixa dos próximos meses",
+    "ja": "フリーランスの収支：未入金・遅延日数・今後数か月の資金繰り"
+   },
+   "tools": [
+    "planilha-de-receitas-e-despesas"
+   ]
   }
  ],
  "tools": {
@@ -97,6 +110,11 @@
    "lang": "es",
    "name": "dropshipping orgánico — pruebas, vídeos, margen",
    "hub": "https://getreadystack.com/es/apps/dropshipping-organico-pruebas-videos-margen/"
+  },
+  "planilha-de-receitas-e-despesas": {
+   "lang": "pt",
+   "name": "planilha de receitas e despesas",
+   "hub": "https://getreadystack.com/pt/apps/planilha-de-receitas-e-despesas/"
   }
  }
 }
