@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Dropshipping Content Tracker | Produkttests &amp; Videoplan</title>
+<meta content="Dropshipping Content planen und auswerten: trag deine organischen TikTok- und Reels-Videos je Produkttest ein und sieh, was nach 19 % USt, Einkauf, Versand, Gebühren und Retouren wirklich übrig bleibt – und welcher Hook verkauft." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/de/apps/dropshipping-content-tracker/" rel="canonical"/></head>
+<body>
+<header class="top">
+<h1>Dropshipping Content Tracker | Produkttests &amp; Videoplan</h1>
+<p class="lede"><b>Beispiel (erfunden, unten schon eingetragen):</b> eine LED-Mondlampe, 12 organische Videos in 4 Tagen, 36.300 Views, 9 Bestellungen à 29,99 € = <b>269,91 € Umsatz</b>. Nach 19 % Umsatzsteuer, Einkauf, Versand, Zahlungsgebühr, 1 Retoure und 24 € Muster bleiben <b>34,79 €</b> – für 12 Videos × 40 Min = 8 Stunden Arbeit sind das <b>4,35 € pro Stunde</b>. Mit 15 € pro Stunde gerechnet hat der Test bisher <b>85,21 € gekostet</b>.</p>
+<p class="sub">Dropshipping Content ist Fleißarbeit: 3 Videos am Tag, pro Produkt, mit wechselnden Hooks. Kurse zeigen, wie man postet – aber nicht, ob der Test nach Steuer Geld bringt. Hier trägst du jedes Video ein (Views, Klicks, Bestellungen) und siehst sofort: Gewinn nach USt, Bestellungen bis null, deinen Stundenlohn, den Hook, der verkauft (nicht den mit den meisten Views), und ob deine eigene Abbruch-Regel greift. Kein Konto: deine Daten bleiben in diesem Browser.</p>
+</header>
+<main>
+<section aria-live="polite" class="card res" data-yj="result" id="out"></section>
+<p class="next buyline" hidden=""><b></b><b></b><a></a></p>
+<section class="card">
+<h2>1. Dein Produkt und deine Zahlen</h2>
+<div class="grid">
+<label>Produkt<input data-k="" data-yj-mine="" id="name" value=""/></label>
+<label>Verkaufspreis (brutto, €)<input data-k="" data-yj-mine="" id="vk" inputmode="decimal" value=""/></label>
+<label>Einkauf je Stück (€)<input data-k="" data-yj-mine="" id="ek" inputmode="decimal" value=""/></label>
+<label>Versand zum Kunden (€)<input data-k="" data-yj-mine="" id="ship" inputmode="decimal" value=""/></label>
+<label>Zahlungsgebühr (%)<input data-k="" data-yj-mine="" id="feePct" inputmode="decimal" value=""/></label>
+<label>Zahlungsgebühr fix (€)<input data-k="" data-yj-mine="" id="feeFix" inputmode="decimal" value=""/></label>
+<label>Umsatzsteuer<select data-k="" data-yj-mine="" id="vat"><option selected="" value="19">19 % (Regelbesteuerung)</option><option value="0">0 % (Kleinunternehmer, § 19 UStG)</option></select></label>
+<label>Retouren bisher (Anzahl)<input data-k="" data-yj-mine="" id="returns" inputmode="numeric" value=""/></label>
+<label>Fixkosten des Tests: Muster, Apps (€)<input data-k="" data-yj-mine="" id="fixed" inputmode="decimal" value=""/></label>
+<label>Minuten pro Video (Dreh + Schnitt)<input data-k="" data-yj-mine="" id="minPerVideo" inputmode="numeric" value=""/></label>
+<label>Dein Stundenwert (€, 0 = ohne)<input data-k="" data-yj-mine="" id="hourly" inputmode="decimal" value=""/></label>
+<label>Videos pro Tag (Plan)<input data-k="" data-yj-mine="" id="perDay" inputmode="numeric" value=""/></label>
+<label>Testtage (Plan)<input data-k="" data-yj-mine="" id="days" inputmode="numeric" value=""/></label>
+<label>Deine Regel: nach so vielen Videos …<input data-k="" data-yj-mine="" id="ruleVideos" inputmode="numeric" value=""/></label>
+<label>… mindestens so viele Bestellungen<input data-k="" data-yj-mine="" id="ruleOrders" inputmode="numeric" value=""/></label>
+</div>
+</section>
+<section class="card">
+<h2>2. Deine Videos</h2>
+<p class="hint">Ein Video pro Zeile. Bestellungen je Video zählst du am einfachsten über einen eigenen Link oder Rabattcode pro Video; ohne Zuordnung trag alle Bestellungen beim ersten Video ein.</p>
+<div class="tbl"><table id="vt"><thead><tr><th>Datum</th><th>Plattform</th><th>Hook (erste Sekunden)</th><th>Views</th><th>Klicks</th><th>Bestellungen</th><th></th></tr></thead><tbody></tbody></table></div>
+<p class="btns"><button class="btn ghost" id="addv" type="button">+ Video</button> <button class="btn ghost" id="reset" type="button">Beispiel neu laden</button> <button class="btn ghost" id="clear" type="button">Leeren (eigener Test)</button></p>
+</section>
+<section class="card pro" hidden="" id="pro"><h2></h2><ul class="feat"><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b><b></b></li><li><b></b></li></ul><p class="btns"><a class="btn" hidden=""></a><a class="btn ghost" hidden=""></a></p><p class="keyrow" hidden=""><label><input autocomplete="off" id="key"/></label><button class="btn ghost" id="keybtn" type="button"></button><span class="hint" id="keymsg"></span></p><div class="proarea" hidden="" id="proarea"><h3></h3><p class="btns"><button class="btn" id="saveTest" type="button"></button><button class="btn ghost" id="newTest" type="button"></button><label class="inl"><input id="start" type="date"/></label></p><div id="board"></div><h3></h3><div id="today"></div><h3></h3><div id="hooksAll"></div><h3></h3><p class="btns"><label class="btn ghost file"><input accept=".csv,text/csv" hidden="" id="csvIn" type="file"/></label><button class="btn ghost" id="csvOut" type="button"></button><button class="btn ghost" id="icsOut" type="button"></button><button class="btn ghost" id="jsonOut" type="button"></button><label class="btn ghost file"><input accept=".json,application/json" hidden="" id="jsonIn" type="file"/></label></p><p class="hint" id="promsg"></p></div></section>
+<section class="card">
+<h2>So wird gerechnet</h2>
+<ul class="how">
+<li>Umsatz ohne USt je Bestellung = Verkaufspreis ÷ 1,19 (bei Kleinunternehmern ÷ 1). Beispiel: 29,99 € ÷ 1,19 = 25,20 €; 4,79 € gehen ans Finanzamt (§ 12 Abs. 1 UStG: 19 %).</li>
+<li>Deckungsbeitrag je Bestellung = 25,20 € − 9,80 € Einkauf − 4,90 € Versand − 1,17 € Gebühr (2,9 % × 29,99 € + 0,30 €) = 9,33 €.</li>
+<li>Retoure: Der Kunde bekommt den Kaufpreis, die Ware wird nicht weiterverkauft, die Gebühr bleibt: 9,80 € + 4,90 € + 1,17 € = 15,87 € Verlust. Verbraucher haben 14 Tage Widerrufsfrist (§ 355 Abs. 2 BGB).</li>
+<li>Gewinn = 8 behaltene × 9,33 € − 1 Retoure × 15,87 € − 24 € Fixkosten = 34,79 €. Zeit = 12 Videos × 40 Min = 8 Stunden → 34,79 € ÷ 8 = 4,35 € pro Stunde.</li>
+<li>Hook-Ranking = Bestellungen ÷ Views × 1.000. Im Beispiel: „Geschenk unter 30 €“ 3 Bestellungen aus 6.050 Views = 0,50; „Mond über dem Bett“ 6 aus 27.400 = 0,22 – der Hook mit den meisten Views verkauft pro Aufruf weniger.</li>
+<li>Kleinunternehmer: steuerfrei, wenn der Gesamtumsatz im Vorjahr 25.000 € nicht überschritten hat und im laufenden Jahr 100.000 € nicht überschreitet (§ 19 Abs. 1 UStG, Stand 15.11.2026).</li>
+</ul>
+<p class="hint">Quellen, gelesen am 15.11.2026: <a href="https://www.gesetze-im-internet.de/ustg_1980/__12.html" rel="nofollow">§ 12 UStG</a> · <a href="https://www.gesetze-im-internet.de/ustg_1980/__19.html" rel="nofollow">§ 19 UStG</a> · <a href="https://www.gesetze-im-internet.de/bgb/__355.html" rel="nofollow">§ 355 BGB</a>. Ein Rechen- und Aufzeichnungswerkzeug, keine Steuerberatung. Nicht verbunden mit TikTok, Instagram oder Shopify; liest keine Konten aus.</p>
+</section>
+</main>
+<footer class="foot"><p>Deine Einträge bleiben in diesem Browser (localStorage). Kein Konto, kein Server.</p></footer>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Speichern und weitermachen: <a href="https://getreadystack.com/de/apps/dropshipping-content-tracker/">https://getreadystack.com/de/apps/dropshipping-content-tracker/</a></p><script src="./engine.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

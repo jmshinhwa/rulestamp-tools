@@ -51,7 +51,8 @@
     "ja": "オーガニック・ドロップシッピングの商品テスト：注文・動画あたりの実利益"
    },
    "tools": [
-    "organic-dropshipping-tracker"
+    "organic-dropshipping-tracker",
+    "dropshipping-content-tracker"
    ]
   }
  ],
@@ -85,6 +86,11 @@
    "lang": "en",
    "name": "organic dropshipping tracker",
    "hub": "https://getreadystack.com/apps/organic-dropshipping-tracker/"
+  },
+  "dropshipping-content-tracker": {
+   "lang": "de",
+   "name": "Dropshipping Content Tracker",
+   "hub": "https://getreadystack.com/de/apps/dropshipping-content-tracker/"
   }
  }
 }
