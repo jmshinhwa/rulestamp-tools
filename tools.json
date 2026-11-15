@@ -13,6 +13,19 @@
     "linkedin-automation-tool-cost-tracker",
     "linkedin-automatisierung-kostenrechner"
    ]
+  },
+  {
+   "id": "li-plan",
+   "name": {
+    "en": "LinkedIn outreach: your list spread day by day under your invite limit",
+    "de": "LinkedIn-Akquise: deine Liste Tag für Tag unter deinem Einladungslimit",
+    "es": "Prospección en LinkedIn: tu lista repartida día a día bajo tu tope",
+    "pt": "Prospecção no LinkedIn: sua lista dividida dia a dia abaixo do seu limite",
+    "ja": "LinkedIn営業：招待上限の範囲でリストを日ごとに割り振る"
+   },
+   "tools": [
+    "automatizacion-linkedin"
+   ]
   }
  ],
  "tools": {
@@ -25,6 +38,11 @@
    "lang": "de",
    "name": "LinkedIn Automatisierung Kostenrechner",
    "hub": "https://getreadystack.com/de/apps/linkedin-automatisierung-kostenrechner/"
+  },
+  "automatizacion-linkedin": {
+   "lang": "es",
+   "name": "automatización LinkedIn — planificador semanal de prospección",
+   "hub": "https://getreadystack.com/es/apps/automatizacion-linkedin/"
   }
  }
 }

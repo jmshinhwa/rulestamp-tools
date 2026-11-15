@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>automatización LinkedIn | planificador semanal de prospección</title>
+<meta content="automatización LinkedIn sin bot: pon cuántos contactos tienes y tu tope semanal de invitaciones y sale el plan día a día (invitaciones, primer mensaje, seguimientos, retiradas a los 21 días) con las reuniones que da." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/es/apps/automatizacion-linkedin/" rel="canonical"/></head>
+<body>
+<header class="top">
+<h1>automatización LinkedIn | planificador semanal de prospección</h1>
+<p class="lede"><b>Ejemplo inventado</b> (ya rellenado abajo): 400 contactos con un tope de 100 invitaciones a la semana se invitan en <b>4 semanas, a 20 al día</b>, y con un 28 % de aceptación, un 15 % de respuesta y un 30 % de reuniones dan <b>5 reuniones</b>. Pasarse del límite tiene precio: <b>una semana con las invitaciones restringidas cuesta 756 € de negocio</b> (1,26 reuniones × 20 % de cierre × 3.000 €).</p>
+<p class="sub">Las herramientas de automatización LinkedIn envían por ti y venden volumen; LinkedIn no publica el límite, prohíbe los bots en su Acuerdo de usuario (8.2) y no vende más invitaciones. Este planificador no envía nada: reparte tu lista por debajo de tu tope, te dice qué toca cada día (invitar, primer mensaje, seguimiento, retirar a los 21 días) y tú lo envías a mano, con tu voz. Sin registro: tus datos se quedan en este navegador.</p>
+</header>
+<main>
+<section aria-live="polite" class="card res" data-yj="result" id="out"></section>
+<p class="next buyline" hidden=""><b></b><b></b><a></a></p>
+<section class="card" id="inputs">
+<h2>Tus números</h2>
+<div class="grid">
+<label>Contactos en tu lista<input data-k="" data-yj-mine="" id="contacts" inputmode="numeric" value="400"/></label>
+<label>Tu tope de invitaciones a la semana<input data-k="" data-yj-mine="" id="cap" inputmode="numeric" value="100"/></label>
+<label>Días que envías a la semana<select data-k="" data-yj-mine="" id="days"><option selected="" value="5">5 (lunes a viernes)</option><option value="6">6 (lunes a sábado)</option><option value="7">7 (todos)</option></select></label>
+<label>Empiezas el<input data-k="" data-yj-mine="" id="start" type="date" value=""/></label>
+<label>Aceptan la invitación (%)<input data-k="" data-yj-mine="" id="acc" inputmode="decimal" value="28"/></label>
+<label>Responden a tus mensajes (% de los que aceptan)<input data-k="" data-yj-mine="" id="rep" inputmode="decimal" value="15"/></label>
+<label>Acaban en reunión (% de los que responden)<input data-k="" data-yj-mine="" id="meet" inputmode="decimal" value="30"/></label>
+<label>Días hasta que aceptan (media)<input data-k="" data-yj-mine="" id="lag" inputmode="numeric" value="3"/></label>
+<label>Primer mensaje: días tras aceptar<input data-k="" data-yj-mine="" id="m1" inputmode="numeric" value="1"/></label>
+<label>Seguimiento 1: días tras aceptar<input data-k="" data-yj-mine="" id="f1" inputmode="numeric" value="4"/></label>
+<label>Seguimiento 2: días tras aceptar<input data-k="" data-yj-mine="" id="f2" inputmode="numeric" value="10"/></label>
+<label>Retirar invitaciones pendientes a los (días)<input data-k="" data-yj-mine="" id="wd" inputmode="numeric" value="21"/></label>
+<label>Valor medio de un cliente<input data-k="" data-yj-mine="" id="deal" inputmode="decimal" value="3000"/></label>
+<label>Cierras (% de las reuniones)<input data-k="" data-yj-mine="" id="close" inputmode="decimal" value="20"/></label>
+<label>Lo que pagas al mes en herramientas<input data-k="" data-yj-mine="" id="stack" inputmode="decimal" value="49"/></label>
+<label>Moneda<select data-k="" data-yj-mine="" id="cur"><option selected="" value="€">€ (euro)</option><option value="US$">US$</option><option value="MXN$">MXN$</option><option value="COP$">COP$</option><option value="CLP$">CLP$</option><option value="ARS$">ARS$</option></select></label>
+</div>
+<p class="btns"><button class="btn" id="run">Calcular mi plan</button> <button class="btn ghost" id="sample">Volver al ejemplo</button></p>
+<p class="hint">Todo se recalcula al escribir. Los ejemplos son inventados: pon tus tasas reales.</p>
+</section>
+<section class="card pro" hidden="" id="pro"><h2></h2><ul><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b><b></b></li></ul><p class="price"></p><p class="btns"><a class="btn" hidden=""></a><a class="btn ghost" hidden=""></a></p><div class="row"><label><input id="key"/></label><button class="btn ghost" id="unlock"></button></div><p class="hint" id="keymsg"></p><div id="proarea"><div class="row"><label><select id="camp"></select></label><label><input id="campname"/></label><button class="btn ghost" id="newcamp"></button><button class="btn ghost" id="delcamp"></button></div><h3></h3><textarea id="paste" rows="5"></textarea><p class="btns"><button class="btn" id="addlist"></button><label class="file btn ghost"><input accept=".csv,.txt" id="csvfile" type="file"/></label><span class="hint" id="listmsg"></span></p><h3></h3><div class="tpls"><label><textarea id="t_inv" rows="3"></textarea><span class="cnt" data-for="t_inv"></span></label><label><textarea id="t_m1" rows="3"></textarea></label><label><textarea id="t_f1" rows="3"></textarea></label><label><textarea id="t_f2" rows="3"></textarea></label></div><h3></h3><div class="row"><label><input id="today" type="date"/></label></div><div id="queue"></div><h3></h3><div id="stats"></div><h3></h3><div id="list"></div><p class="btns"><button class="btn ghost" id="ics"></button><button class="btn ghost" id="csv"></button><button class="btn ghost" id="json"></button><label class="file btn ghost"><input accept=".json" id="jsonfile" type="file"/></label></p></div></section>
+<section class="card" id="how">
+<h2>Cómo sale el plan</h2>
+<ol>
+<li><b>Invitaciones.</b> Tu tope semanal se reparte entre los días que envías (100 en 5 días = 20 al día) y nunca se pasa en una semana de lunes a domingo. Tu lista se invita en orden.</li>
+<li><b>Quién acepta, responde y pide reunión.</b> Tus porcentajes, repartidos contacto a contacto en números enteros: de 400 al 28 % aceptan 112; de esos, al 15 % responden 17; de esos, al 30 % salen 5 reuniones. Un tercio de los que responden lo hace tras el primer mensaje, otro tras el seguimiento 1 y otro tras el 2.</li>
+<li><b>Seguimientos.</b> Solo a quien aceptó y aún no ha respondido, los días que tú eliges tras aceptar.</li>
+<li><b>Retiradas.</b> Una invitación sin aceptar se retira el día 21 (cámbialo arriba). Esa persona no puede volver a recibir tu invitación durante tres semanas.</li>
+<li><b>Lo que cuesta una semana restringida</b> = tope semanal × aceptación × respuesta × reunión × cierre × valor de un cliente: 100 × 28 % × 15 % × 30 % = 1,26 reuniones; × 20 % × 3.000 € = 756 €.</li>
+</ol>
+<h3>Lo que dice LinkedIn (leído el 15 de noviembre de 2026)</h3>
+<ul class="src">
+<li>Ayuda de LinkedIn, «Restricciones de invitaciones» (a551012): no publica un número; «No puedes comprar ni conseguir más invitaciones si te las han restringido o por cualquier otro motivo»; «La mayoría de las restricciones se eliminarán automáticamente a la semana»; tras retirar una invitación «no podrás volver a enviar otra al mismo destinatario durante tres semanas». <a href="https://www.linkedin.com/help/linkedin/answer/a551012?lang=es" rel="nofollow">linkedin.com/help/linkedin/answer/a551012</a></li>
+<li>Ayuda de LinkedIn (a563153): sin Premium puedes añadir una nota personal a 3 invitaciones al mes; cada nota, hasta 200 caracteres. <a href="https://www.linkedin.com/help/linkedin/answer/a563153" rel="nofollow">linkedin.com/help/linkedin/answer/a563153</a></li>
+<li>Acuerdo de usuario, en vigor desde el 3 de noviembre de 2025, 8.2: no está permitido «utilizar bots u otros métodos automatizados no autorizados para acceder a los Servicios, añadir o descargar contactos» ni enviar mensajes así. <a href="https://es.linkedin.com/legal/user-agreement" rel="nofollow">es.linkedin.com/legal/user-agreement</a></li>
+</ul>
+<p class="hint">No estamos afiliados a LinkedIn. Este planificador no se conecta a LinkedIn, no lee perfiles y no envía nada: tú envías cada invitación y cada mensaje.</p>
+</section>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Guardar y continuar: <a href="https://getreadystack.com/es/apps/automatizacion-linkedin/">https://getreadystack.com/es/apps/automatizacion-linkedin/</a></p><script src="./engine.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
