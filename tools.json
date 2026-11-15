@@ -52,7 +52,8 @@
    },
    "tools": [
     "organic-dropshipping-tracker",
-    "dropshipping-content-tracker"
+    "dropshipping-content-tracker",
+    "dropshipping-organico-pruebas-videos-margen"
    ]
   }
  ],
@@ -91,6 +92,11 @@
    "lang": "de",
    "name": "Dropshipping Content Tracker",
    "hub": "https://getreadystack.com/de/apps/dropshipping-content-tracker/"
+  },
+  "dropshipping-organico-pruebas-videos-margen": {
+   "lang": "es",
+   "name": "dropshipping orgánico — pruebas, vídeos, margen",
+   "hub": "https://getreadystack.com/es/apps/dropshipping-organico-pruebas-videos-margen/"
   }
  }
 }
