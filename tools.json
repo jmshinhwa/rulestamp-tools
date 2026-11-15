@@ -1,4 +1,24 @@
 {
- "jobs": [],
- "tools": {}
+ "jobs": [
+  {
+   "id": "li-cost",
+   "name": {
+    "en": "LinkedIn automation: real cost per account and per meeting",
+    "de": "LinkedIn-Automatisierung: echte Kosten pro Konto und pro Termin",
+    "es": "Automatización de LinkedIn: coste real por cuenta y por reunión",
+    "pt": "Automação do LinkedIn: custo real por conta e por reunião",
+    "ja": "LinkedIn自動化ツール：アカウント別・商談1件あたりの実コスト"
+   },
+   "tools": [
+    "linkedin-automation-tool-cost-tracker"
+   ]
+  }
+ ],
+ "tools": {
+  "linkedin-automation-tool-cost-tracker": {
+   "lang": "en",
+   "name": "LinkedIn automation tool cost tracker",
+   "hub": "https://getreadystack.com/apps/linkedin-automation-tool-cost-tracker/"
+  }
+ }
 }
