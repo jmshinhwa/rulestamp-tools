@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>CS2 Training Routine | Tests, Trainingsplan, Tagesprotokoll</title>
+<meta content="CS2 Training Routine aus deinen eigenen Messwerten: Minuten pro Tag, Rolle und 5 Tests (Aim, Spray, Counter-Strafe, Utility, Deathmatch) – der CS2 Trainingsplan gibt die Minuten dorthin, wo dir am meisten fehlt." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/de/apps/cs2-training-routine/" rel="canonical"/></head>
+<body>
+<header class="top">
+<h1>CS2 Training Routine | Tests, Trainingsplan, Tagesprotokoll</h1>
+<p class="lede"><b>Beispiel</b> (unten schon eingetragen): 60 Minuten an 5 Tagen sind <b>21,7 Stunden Training im Monat</b>. Beim Counter-Strafe fehlen 5 von 16 sauberen Stopps, Utility ist mit 9 von 10 Smokes schon über dem Ziel. Eine gleich verteilte Routine steckt trotzdem <b>50 Minuten pro Woche in Utility</b> – dieser CS2 Trainingsplan gibt sie Counter-Strafe, Aim und Spray: <b>15 Minuten Counter-Strafe am Tag</b>, 25 Minuten pro Woche mehr als bei gleicher Verteilung.</p>
+<p class="sub">Kein Server, kein Ping, kein Konto: du trainierst im eigenen CS2 (Übungsspiel mit Bots, Workshop-Aimkarte, offizielles Deathmatch). Du misst 5 kurze Tests, und der Plan steckt deine Minuten dorthin, wo dir zu deinem eigenen Ziel am meisten fehlt – nicht in eine feste YouTube-Routine. Deine Daten bleiben in diesem Browser.</p>
+</header>
+<main>
+<section aria-live="polite" class="card res" data-yj="result" id="out"></section>
+<p class="next buyline" hidden=""><b></b><a></a></p>
+<section class="card" id="inputs">
+<h2>Deine Zahlen</h2>
+<div class="grid">
+<label>Minuten pro Trainingstag<input data-k="" data-yj-mine="" id="min" inputmode="numeric" value="60"/></label>
+<label>Trainingstage pro Woche<select data-k="" data-yj-mine="" id="days"><option value="3">3 (Mo, Mi, Fr)</option><option value="4">4 (Mo, Di, Do, Fr)</option><option selected="" value="5">5 (Mo bis Fr)</option><option value="6">6 (Mo bis Sa)</option><option value="7">7 (jeden Tag)</option></select></label>
+<label>Deine Rolle<select data-k="" data-yj-mine="" id="role"><option selected="" value="entry">Entry-Rifler</option><option value="awp">AWPer</option><option value="support">Support</option><option value="lurker">Lurker</option><option value="igl">IGL</option></select></label>
+</div>
+<h3>5 Tests – heute gemessen und dein Ziel</h3>
+<div class="grid two">
+<label>Aim: Kills in 60 s (Bot-Aimkarte) – heute<input data-k="" data-yj-mine="" id="aim_c" inputmode="decimal" value="38"/></label>
+<label>Aim – Ziel<input data-k="" data-yj-mine="" id="aim_t" inputmode="decimal" value="50"/></label>
+<label>Spray: Treffer mit 30 Schuss AK-47 – heute<input data-k="" data-yj-mine="" id="spray_c" inputmode="decimal" value="18"/></label>
+<label>Spray – Ziel<input data-k="" data-yj-mine="" id="spray_t" inputmode="decimal" value="25"/></label>
+<label>Counter-Strafe: saubere Stopps von 20 – heute<input data-k="" data-yj-mine="" id="strafe_c" inputmode="decimal" value="11"/></label>
+<label>Counter-Strafe – Ziel<input data-k="" data-yj-mine="" id="strafe_t" inputmode="decimal" value="16"/></label>
+<label>Utility: Smokes, die sitzen, von 10 – heute<input data-k="" data-yj-mine="" id="util_c" inputmode="decimal" value="9"/></label>
+<label>Utility – Ziel<input data-k="" data-yj-mine="" id="util_t" inputmode="decimal" value="8"/></label>
+<label>Deathmatch: Kills in 10 Minuten – heute<input data-k="" data-yj-mine="" id="dm_c" inputmode="decimal" value="22"/></label>
+<label>Deathmatch – Ziel<input data-k="" data-yj-mine="" id="dm_t" inputmode="decimal" value="30"/></label>
+</div>
+<p class="btns"><button class="btn" id="run">Meinen Plan rechnen</button> <button class="btn ghost" id="sample">Zurück zum Beispiel</button></p>
+<p class="hint">Alles rechnet beim Tippen neu. Die Startwerte sind ein erfundenes Beispiel – miss deine eigenen 5 Tests (je 1 bis 10 Minuten) und trag sie ein.</p>
+</section>
+<section class="card" id="weekcard">
+<h2>Deine Woche</h2>
+<div id="week"></div>
+</section>
+<section class="card" id="how">
+<h2>So misst du die 5 Tests</h2>
+<div id="tests"></div>
+<h3>Übungsspiel vorbereiten (Konsole)</h3>
+<p class="hint">Übungsspiel mit Bots auf deiner Karte starten, Entwicklerkonsole in den Einstellungen einschalten, dann diese Zeile einfügen:</p>
+<pre id="cfg">sv_cheats 1; bot_kick; mp_warmup_end; mp_freezetime 0; mp_roundtime_defuse 60; mp_buy_anywhere 1; mp_buytime 9999; sv_infinite_ammo 1; ammo_grenade_limit_total 5; sv_showimpacts 1; sv_grenade_trajectory_prac_pipreview 1; mp_restartgame 1</pre>
+<p class="hint"><code>sv_rethrow_last_grenade</code> wirft deine letzte Granate noch einmal – so siehst du, ob ein Smoke sitzt, ohne hinzulaufen. <code>bot_add_ct</code> / <code>bot_add_t</code> holen Bots für Spray- und Strafe-Übungen zurück, <code>bot_stop 1</code> lässt sie stehen.</p>
+<h3>Wie der Plan rechnet</h3>
+<p>Aufwärmen bekommt 10 % deiner Minuten (mindestens 5), Demo-Review ab 40 Minuten 8 % (mindestens 5). Den Rest teilt der Plan in 5-Minuten-Blöcke: jeder Bereich nach seiner Lücke zum Ziel (was fehlt ÷ Ziel), mal der Gewichtung deiner Rolle (Entry: Aim und Counter-Strafe × 1,2 · AWPer: Aim × 1,3, Counter-Strafe × 1,1, Spray × 0,6 · Support: Utility × 1,4 · Lurker: Counter-Strafe × 1,2, Utility × 1,1 · IGL: Utility × 1,4, Deathmatch × 0,8). Ein Bereich am Ziel bekommt 0 Minuten, bis er wieder darunter fällt. Die Gewichtung ist unsere Planungsregel, keine Aussage von Valve.</p>
+</section>
+<section class="card pro" hidden="" id="pro"><h2></h2><ul><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b><b></b><b></b></li></ul><p class="price"></p><p class="btns"><a class="btn" hidden=""></a><a class="btn ghost" hidden=""></a></p><div class="row"><label><input id="key"/></label><button class="btn ghost" id="unlock"></button></div><p class="hint" id="keymsg"></p><div id="prozone"><div class="row"><label><select id="prof"></select></label><button class="btn ghost" id="newprof"></button></div><h3></h3><div class="grid log"><label><input id="l_date" type="date"/></label><label><input id="l_aim" inputmode="decimal"/></label><label><input id="l_spray" inputmode="decimal"/></label><label><input id="l_strafe" inputmode="decimal"/></label><label><input id="l_util" inputmode="decimal"/></label><label><input id="l_dm" inputmode="decimal"/></label><label class="wide"><input id="l_note" maxlength="140"/></label></div><p class="btns"><button class="btn" id="save"></button></p><div id="adapt"></div><div id="chart"></div><div id="hist"></div><p class="btns"><button class="btn ghost" id="raise"></button><label class="inl"><input id="rtime" type="time"/></label><button class="btn ghost" id="ics"></button><button class="btn ghost" id="print"></button><button class="btn ghost" id="csv"></button><button class="btn ghost" id="json"></button><label class="btn ghost file"><input accept=".json,application/json" id="load" type="file"/></label></p></div></section>
+<section class="card" id="faq">
+<h2>Fragen</h2>
+<details><summary>Brauche ich einen eigenen Server oder ein Abo bei einer Trainingsplattform?</summary><p>Nein. Alle Übungen laufen im eigenen CS2: Übungsspiel mit Bots, eine Aimkarte aus dem Steam Workshop und das offizielle Deathmatch. Kein fremder Server, also auch kein Ping.</p></details>
+<details><summary>Woher weiß der Plan, was ich üben soll?</summary><p>Aus deinen 5 Tests. Für jeden Bereich rechnet er die Lücke zu deinem Ziel (was fehlt ÷ Ziel) und gewichtet sie nach deiner Rolle. Mehr Lücke heißt mehr 5-Minuten-Blöcke. Was am Ziel ist, bekommt keine Minuten, bis es wieder darunter fällt.</p></details>
+<details><summary>Warum nicht einfach eine feste Routine von YouTube?</summary><p>Eine feste Routine verteilt die Zeit für alle gleich. Im Beispiel landen so 50 Minuten pro Woche in Utility, obwohl 9 von 10 Smokes schon sitzen, und Counter-Strafe, wo am meisten fehlt, bekommt 25 Minuten pro Woche weniger. Mit deinen Zahlen sieht das anders aus – deshalb misst du zuerst.</p></details>
+
+<details><summary>Sind meine Daten irgendwo hochgeladen?</summary><p>Nein. Eingaben und Protokoll bleiben im Speicher deines Browsers. Mit der JSON-Sicherung nimmst du alles auf ein anderes Gerät mit.</p></details>
+</section>
+<p class="foot">Nicht verbunden mit Valve. Counter-Strike und CS2 sind Marken von Valve Corporation. Testwerte und Ziele sind deine eigenen; der Plan ist eine Rechenregel, kein Coaching.</p>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Speichern und weitermachen: <a href="https://getreadystack.com/de/apps/cs2-training-routine/">https://getreadystack.com/de/apps/cs2-training-routine/</a></p><script src="./engine.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

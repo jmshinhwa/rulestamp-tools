@@ -26,6 +26,19 @@
    "tools": [
     "automatizacion-linkedin"
    ]
+  },
+  {
+   "id": "cs2",
+   "name": {
+    "en": "CS2 practice routine: minutes go where you lack the most",
+    "de": "CS2-Trainingsplan: Minuten dorthin, wo dir am meisten fehlt",
+    "es": "Rutina de entrenamiento CS2: los minutos van a lo que más te falta",
+    "pt": "Rotina de treino de CS2: os minutos vão para onde você mais precisa",
+    "ja": "CS2練習メニュー：一番足りない所に時間を配分"
+   },
+   "tools": [
+    "cs2-training-routine"
+   ]
   }
  ],
  "tools": {
@@ -43,6 +56,11 @@
    "lang": "es",
    "name": "automatización LinkedIn — planificador semanal de prospección",
    "hub": "https://getreadystack.com/es/apps/automatizacion-linkedin/"
+  },
+  "cs2-training-routine": {
+   "lang": "de",
+   "name": "CS2 Training Routine",
+   "hub": "https://getreadystack.com/de/apps/cs2-training-routine/"
   }
  }
 }
