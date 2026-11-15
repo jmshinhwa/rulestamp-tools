@@ -26,6 +26,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [plantilla contabilidad Excel](plantilla-contabilidad-excel-etsy/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/plantilla-contabilidad-excel-etsy/) |
 | tarifas freelance | [tarifas freelance](tarifas-freelance/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/tarifas-freelance/) |
 | planilha fiscal para autónomos | [planilha fiscal para autónomos](planilha-fiscal-autonomos-portugal/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-fiscal-autonomos-portugal/) |
+| Etsy bookkeeping spreadsheet 2027 | [Etsy bookkeeping spreadsheet 2027](etsy-bookkeeping-spreadsheet/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-bookkeeping-spreadsheet/) |
 
 <a id="de"></a>
 
@@ -49,6 +50,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [plantilla contabilidad Excel](plantilla-contabilidad-excel-etsy/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/plantilla-contabilidad-excel-etsy/) |
 | tarifas freelance | [tarifas freelance](tarifas-freelance/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/tarifas-freelance/) |
 | planilha fiscal para autónomos | [planilha fiscal para autónomos](planilha-fiscal-autonomos-portugal/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-fiscal-autonomos-portugal/) |
+| Etsy bookkeeping spreadsheet 2027 | [Etsy bookkeeping spreadsheet 2027](etsy-bookkeeping-spreadsheet/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-bookkeeping-spreadsheet/) |
 
 <a id="es"></a>
 
@@ -72,6 +74,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [売上管理 表](uriage-kanri-hyo-handmade/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/uriage-kanri-hyo-handmade/) |
 | tarifas freelance | [tarifas freelance](tarifas-freelance/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/tarifas-freelance/) |
 | planilha fiscal para autónomos | [planilha fiscal para autónomos](planilha-fiscal-autonomos-portugal/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-fiscal-autonomos-portugal/) |
+| Etsy bookkeeping spreadsheet 2027 | [Etsy bookkeeping spreadsheet 2027](etsy-bookkeeping-spreadsheet/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-bookkeeping-spreadsheet/) |
 
 <a id="pt"></a>
 
@@ -95,6 +98,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [plantilla contabilidad Excel](plantilla-contabilidad-excel-etsy/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/plantilla-contabilidad-excel-etsy/) |
 | tarifas freelance | [tarifas freelance](tarifas-freelance/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/tarifas-freelance/) |
 | planilha fiscal para autónomos | [planilha fiscal para autónomos](planilha-fiscal-autonomos-portugal/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-fiscal-autonomos-portugal/) |
+| Etsy bookkeeping spreadsheet 2027 | [Etsy bookkeeping spreadsheet 2027](etsy-bookkeeping-spreadsheet/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-bookkeeping-spreadsheet/) |
 
 <a id="ja"></a>
 
@@ -118,6 +122,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [plantilla contabilidad Excel](plantilla-contabilidad-excel-etsy/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/plantilla-contabilidad-excel-etsy/) |
 | tarifas freelance | [tarifas freelance](tarifas-freelance/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/tarifas-freelance/) |
 | planilha fiscal para autónomos | [planilha fiscal para autónomos](planilha-fiscal-autonomos-portugal/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-fiscal-autonomos-portugal/) |
+| Etsy bookkeeping spreadsheet 2027 | [Etsy bookkeeping spreadsheet 2027](etsy-bookkeeping-spreadsheet/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-bookkeeping-spreadsheet/) |
 
 ---
 Rulestamp · https://getreadystack.com

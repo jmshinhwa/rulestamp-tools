@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Etsy bookkeeping spreadsheet 2027 | every Etsy fee, true profit, Schedule C lines</title>
+<meta content="Etsy bookkeeping spreadsheet for Etsy sellers: type your year (or month) and see every Etsy fee line by your bank country, the deposits you should have received, true profit and the Schedule C lines. Pro imports your Etsy statement CSVs into a saved year book with an Excel file." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/apps/etsy-bookkeeping-spreadsheet/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<header class="top">
+<h1>Etsy bookkeeping spreadsheet 2027: every Etsy fee, true profit and your Schedule C lines</h1>
+<p class="lede">Example (made-up US shop, 2026): $18,400.00 in sales, Etsy kept $2,678.50 in fees and $1,240.00 in labels; with those $3,918.50 missing from your books you overpay $553.67 in self-employment tax alone. Etsy seller bookkeeping without typing each order: put in your numbers from Shop Manager and see every fee line at your bank country's rates and what you really made.</p>
+</header>
+<main>
+<section class="grid">
+<div class="inputs card">
+<h2>Your shop's numbers <span class="small">(example: made-up US shop, 2026)</span></h2>
+<label>Bank account country (sets the fee rates)
+      <select data-k="country" data-yj-mine="">
+<option selected="" value="US">United States: 3% + $0.25</option>
+<option value="UK">United Kingdom: 4% + £0.20, regulatory 0.48%</option>
+<option value="CA">Canada (domestic/US orders): 3% + C$0.25, regulatory 0.50%</option>
+<option value="AU">Australia (domestic orders): 3% + A$0.25</option>
+<option value="DE">Germany: 4% + €0.30</option>
+<option value="FR">France: 4% + €0.30, regulatory 1.14%</option>
+<option value="ES">Spain: 4% + €0.30, regulatory 0.88%</option>
+<option value="IT">Italy: 4% + €0.30, regulatory 0.80%</option>
+<option value="HU">Hungary: 4% + €0.30, regulatory 1.97%</option>
+<option value="EU">Other EU (NL, IE, AT, BE, PT ...): 4% + €0.30</option>
+</select></label>
+<label>Sales: items + shipping + gift wrap (<span class="cur">$</span>)<input data-k="sales" data-yj-mine="" inputmode="decimal" value="18,400.00"/></label>
+<label>Number of orders<input data-k="orders" data-yj-mine="" inputmode="numeric" value="620"/></label>
+<label>Sales tax / VAT Etsy collected from buyers (<span class="cur">$</span>)<input data-k="taxcol" data-yj-mine="" inputmode="decimal" value="1,150.00"/></label>
+<label>Sales from orders Etsy marked as Offsite Ads (<span class="cur">$</span>)<input data-k="offsite" data-yj-mine="" inputmode="decimal" value="1,900.00"/></label>
+<label>Offsite Ads rate
+      <select data-k="offrate" data-yj-mine="">
+<option selected="" value="15">15% (shop under $10,000 in every 365 days)</option>
+<option value="12">12% (shop made $10,000+ in a 365-day period)</option>
+</select></label>
+<label>Listing + renewal fees paid (<span class="cur">$</span>)<input data-k="listing" data-yj-mine="" inputmode="decimal" value="96.00"/></label>
+<label>Etsy Ads spend (<span class="cur">$</span>)<input data-k="ads" data-yj-mine="" inputmode="decimal" value="360.00"/></label>
+<label>Shipping labels bought on Etsy (<span class="cur">$</span>)<input data-k="labels" data-yj-mine="" inputmode="decimal" value="1,240.00"/></label>
+<label>Money sent back to buyers (<span class="cur">$</span>)<input data-k="returns" data-yj-mine="" inputmode="decimal" value="210.00"/></label>
+<label>Materials / cost of goods (<span class="cur">$</span>)<input data-k="cogs" data-yj-mine="" inputmode="decimal" value="4,300.00"/></label>
+<label>Packaging + other supplies (<span class="cur">$</span>)<input data-k="supplies" data-yj-mine="" inputmode="decimal" value="520.00"/></label>
+</div>
+<div class="outcol">
+<div class="card result" data-yj="result" id="out">
+<div class="big"><span class="lbl">True profit</span><span class="num" id="res-profit">$9,451.50</span></div>
+<div class="trio">
+<div><span class="lbl">Etsy kept in fees</span><b id="res-fees">$2,678.50</b><span class="small" id="res-share">14.6% of sales</span></div>
+<div><span class="lbl">Deposits you should see</span><b id="res-dep">$14,271.50</b><span class="small">before your own costs</span></div>
+<div><span class="lbl">Margin · fees per order</span><b id="res-margin">51.4%</b><span class="small" id="res-perorder">$4.32</span></div>
+</div>
+<p class="loss" id="loss-line"></p>
+<table class="fees" id="fee-table"></table>
+</div>
+<p class="priceline" data-fe-hidden="" hidden=""><b></b><b></b><a class="btn" data-fe-hidden="" hidden=""></a><a class="btn ghost" data-fe-hidden="" hidden=""></a></p>
+<div class="card" id="schc"></div>
+</div>
+</section>
+<section class="card why">
+<h2>Why a dashboard number is not your books</h2>
+<p>Etsy pays you sales minus every fee, label and buyer payback, so your bank deposits never match the sales figure in Shop Manager. Record sales at the full amount and each Etsy fee as an expense, or the fees end up taxed as if they were profit. Your 2026 books close on December 31, 2026; the US return with Schedule C is due April 15, 2027.</p>
+<p class="small">Fee rates read on Etsy Help on 2026-11-15: transaction fee 6.5% of item + shipping + gift wrap; payment processing by bank-account country on the total including sales tax; regulatory operating fee on item + shipping (CA 0.50%, FR 1.14%, HU 1.97%, IT 0.80%, ES 0.88%, UK 0.48%); Offsite Ads 15% or 12% of the order total, capped at $100 per order (this page applies the rate to your Offsite Ads sales total). Schedule C and Schedule SE lines from the IRS 2026 forms. A record-keeping tool, not tax advice.</p>
+</section>
+<section class="card pro" data-fe-hidden="" hidden=""><h2></h2><div data-fe-hidden="" hidden="" id="pro-locked"><ul><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b><b></b></li><li><b></b></li></ul><p><button class="btn ghost" id="sample-go" type="button"></button></p><div id="sample-out"></div><p class="small"><input data-fe-hidden="" hidden="" id="key-in"/><button class="btn ghost" data-fe-hidden="" hidden="" id="key-go" type="button"></button><span data-fe-hidden="" hidden="" id="key-msg"></span></p></div><div data-fe-hidden="" hidden="" id="pro-open" style="display:none"><p><label><select id="book-year"><option></option><option></option></select></label><button class="btn ghost" id="new-year" type="button"></button><span class="small" id="book-count"></span></p><p><label><input accept=".csv,text/csv" id="csv-in" multiple="" type="file"/></label><span class="small" id="csv-msg"></span></p><p class="small"></p><div class="expform"><input id="exp-month" type="month"/><select id="exp-cat"><option></option><option></option></select><input id="exp-desc"/><input id="exp-amt" inputmode="decimal"/><label class="small"><input id="exp-rep" type="checkbox"/></label><button class="btn ghost" id="exp-add" type="button"></button><span class="small" id="exp-msg"></span></div><div id="book-months"></div><div id="book-unsorted"></div><p><button class="btn" id="dl-xlsx" type="button"></button><button class="btn ghost" id="dl-print" type="button"></button><button class="btn ghost" id="dl-ics" type="button"></button></p></div></section>
+<p class="small foot">Your numbers stay in this browser; nothing is uploaded. Not affiliated with Etsy, Inc.</p>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Save and continue: <a href="https://getreadystack.com/apps/etsy-bookkeeping-spreadsheet/">https://getreadystack.com/apps/etsy-bookkeeping-spreadsheet/</a></p><script src="./app.js"></script>
+</body>
+</html>

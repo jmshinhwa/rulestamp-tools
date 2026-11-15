@@ -124,6 +124,15 @@
    "tools": [
     "planilha-fiscal-autonomos-portugal"
    ]
+  },
+  {
+   "id": "efdf6b543a",
+   "name": {
+    "en": "Etsy bookkeeping spreadsheet 2027"
+   },
+   "tools": [
+    "etsy-bookkeeping-spreadsheet"
+   ]
   }
  ],
  "tools": {
@@ -206,6 +215,11 @@
    "lang": "pt",
    "name": "planilha fiscal para autónomos",
    "hub": "https://getreadystack.com/pt/apps/planilha-fiscal-autonomos-portugal/"
+  },
+  "etsy-bookkeeping-spreadsheet": {
+   "lang": "en",
+   "name": "Etsy bookkeeping spreadsheet 2027",
+   "hub": "https://getreadystack.com/apps/etsy-bookkeeping-spreadsheet/"
   }
  }
 }
