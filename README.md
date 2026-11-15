@@ -14,6 +14,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [LinkedIn Automatisierung Kostenrechner](linkedin-automatisierung-kostenrechner/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/linkedin-automatisierung-kostenrechner/) |
 | LinkedIn outreach: your list spread day by day under your invite limit | [automatización LinkedIn — planificador semanal de prospección](automatizacion-linkedin/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automatizacion-linkedin/) |
 | CS2 practice routine: minutes go where you lack the most | [CS2 Training Routine](cs2-training-routine/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cs2-training-routine/) |
+| 〃 | [entrenamiento CS2 — rutina diaria desde tus partidas](entrenamiento-cs2/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/entrenamiento-cs2/) |
 
 <a id="de"></a>
 
@@ -25,6 +26,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [LinkedIn automation tool cost tracker](linkedin-automation-tool-cost-tracker/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/linkedin-automation-tool-cost-tracker/) |
 | LinkedIn-Akquise: deine Liste Tag für Tag unter deinem Einladungslimit | [automatización LinkedIn — planificador semanal de prospección](automatizacion-linkedin/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automatizacion-linkedin/) |
 | CS2-Trainingsplan: Minuten dorthin, wo dir am meisten fehlt | [CS2 Training Routine](cs2-training-routine/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cs2-training-routine/) |
+| 〃 | [entrenamiento CS2 — rutina diaria desde tus partidas](entrenamiento-cs2/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/entrenamiento-cs2/) |
 
 <a id="es"></a>
 
@@ -35,7 +37,8 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Automatización de LinkedIn: coste real por cuenta y por reunión | [LinkedIn automation tool cost tracker](linkedin-automation-tool-cost-tracker/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/linkedin-automation-tool-cost-tracker/) |
 | 〃 | [LinkedIn Automatisierung Kostenrechner](linkedin-automatisierung-kostenrechner/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/linkedin-automatisierung-kostenrechner/) |
 | Prospección en LinkedIn: tu lista repartida día a día bajo tu tope | [automatización LinkedIn — planificador semanal de prospección](automatizacion-linkedin/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automatizacion-linkedin/) |
-| Rutina de entrenamiento CS2: los minutos van a lo que más te falta | [CS2 Training Routine](cs2-training-routine/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cs2-training-routine/) |
+| Rutina de entrenamiento CS2: los minutos van a lo que más te falta | [entrenamiento CS2 — rutina diaria desde tus partidas](entrenamiento-cs2/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/entrenamiento-cs2/) |
+| 〃 | [CS2 Training Routine](cs2-training-routine/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cs2-training-routine/) |
 
 <a id="pt"></a>
 
@@ -47,6 +50,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [LinkedIn Automatisierung Kostenrechner](linkedin-automatisierung-kostenrechner/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/linkedin-automatisierung-kostenrechner/) |
 | Prospecção no LinkedIn: sua lista dividida dia a dia abaixo do seu limite | [automatización LinkedIn — planificador semanal de prospección](automatizacion-linkedin/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automatizacion-linkedin/) |
 | Rotina de treino de CS2: os minutos vão para onde você mais precisa | [CS2 Training Routine](cs2-training-routine/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cs2-training-routine/) |
+| 〃 | [entrenamiento CS2 — rutina diaria desde tus partidas](entrenamiento-cs2/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/entrenamiento-cs2/) |
 
 <a id="ja"></a>
 
@@ -58,6 +62,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [LinkedIn Automatisierung Kostenrechner](linkedin-automatisierung-kostenrechner/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/linkedin-automatisierung-kostenrechner/) |
 | LinkedIn営業：招待上限の範囲でリストを日ごとに割り振る | [automatización LinkedIn — planificador semanal de prospección](automatizacion-linkedin/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automatizacion-linkedin/) |
 | CS2練習メニュー：一番足りない所に時間を配分 | [CS2 Training Routine](cs2-training-routine/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cs2-training-routine/) |
+| 〃 | [entrenamiento CS2 — rutina diaria desde tus partidas](entrenamiento-cs2/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/entrenamiento-cs2/) |
 
 ---
 Rulestamp · https://getreadystack.com

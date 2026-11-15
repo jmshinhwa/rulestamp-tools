@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>entrenamiento CS2 | rutina diaria desde tus partidas: ADR, % HS, aperturas y utilidad</title>
+<meta content="entrenamiento CS2 en español: mete el ADR, el % HS, los duelos de apertura y el daño de utilidad de tus últimas partidas y sale la rutina de hoy con los minutos para tu punto más flojo, comandos de consola incluidos. Sin registro." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/es/apps/entrenamiento-cs2/" rel="canonical"/></head>
+<body>
+<header class="top">
+<h1>entrenamiento CS2 | rutina diaria desde tus partidas: ADR, % HS, aperturas y utilidad</h1>
+<p class="lede"><b>Ejemplo (inventado, ya rellenado abajo)</b>: 60 min al día, 4 días a la semana, daño de utilidad 95 por partida (meta 200) y 44 % HS (meta 40, ya cumplida). <b>Una rutina igual para todo pone 48 min a la semana en el % HS, que ya cumples</b> (12 min × 4 días); esta da 26 min al día a la utilidad.</p>
+<p class="sub">Las rutinas de YouTube son las mismas para todos y no miran tus partidas. Aquí copias cuatro números de tu Faceit, Leetify o el marcador del CS2, y los minutos van a lo que más te falta para tu meta. Cada rutina acaba con un foco para la próxima partida. Sin registro: los datos se quedan en este navegador.</p>
+</header>
+<main>
+<section aria-live="polite" class="card res" data-yj="result" id="out"></section>
+
+<section class="card" id="inputs">
+<h2>Tu entrenamiento de hoy</h2>
+<div class="grid">
+<label>Minutos de entrenamiento hoy<input data-k="" data-yj-mine="" id="min" inputmode="numeric" value="60"/></label>
+<label>Días de entrenamiento por semana<input data-k="" data-yj-mine="" id="dias" inputmode="numeric" value="4"/></label>
+<label>Tu rol<select data-k="" data-yj-mine="" id="rol"><option selected="" value="rifler">Rifler / entry</option><option value="awp">AWPer</option><option value="soporte">Soporte</option><option value="lurker">Lurker</option><option value="igl">IGL</option></select></label>
+<label>Mapa que más juegas<select data-k="" data-yj-mine="" id="mapa"><option selected="" value="Mirage">Mirage</option><option value="Inferno">Inferno</option><option value="Dust2">Dust2</option><option value="Nuke">Nuke</option><option value="Ancient">Ancient</option><option value="Anubis">Anubis</option><option value="Train">Train</option><option value="Overpass">Overpass</option></select></label>
+</div>
+<h3>Media de tus últimas partidas y tu meta</h3>
+<div id="mets">
+<div class="dr"><span class="dn"><b>Daño por ronda (ADR)</b><small>columna ADR de Faceit o Leetify</small></span><label>Ahora<input data-k="" data-yj-mine="" id="adr" inputmode="decimal" value="68"/></label><label>Meta<input data-k="" data-yj-mine="" id="m_adr" inputmode="decimal" value="80"/></label></div>
+<div class="dr"><span class="dn"><b>% de headshot</b><small>% HS de la partida</small></span><label>Ahora<input data-k="" data-yj-mine="" id="hs" inputmode="decimal" value="44"/></label><label>Meta<input data-k="" data-yj-mine="" id="m_hs" inputmode="decimal" value="40"/></label></div>
+<div class="dr"><span class="dn"><b>Duelos de apertura</b><small>primer duelo de la ronda: ganados de jugados, meta en %</small></span><label>Ganados<input data-k="" data-yj-mine="" id="apg" inputmode="numeric" value="9"/></label><label>Jugados<input data-k="" data-yj-mine="" id="apj" inputmode="numeric" value="26"/></label><label>Meta %<input data-k="" data-yj-mine="" id="m_ap" inputmode="decimal" value="50"/></label></div>
+<div class="dr"><span class="dn"><b>Daño de utilidad por partida</b><small>HE + molotov, columna «utility damage»</small></span><label>Ahora<input data-k="" data-yj-mine="" id="ud" inputmode="decimal" value="95"/></label><label>Meta<input data-k="" data-yj-mine="" id="m_ud" inputmode="decimal" value="200"/></label></div>
+</div>
+<p class="hint">Las metas son tuyas: pon la del jugador o nivel al que quieres llegar. Lo que ya cumple la meta se queda en 0 min (lo mantienes en el calentamiento); el resto del tiempo se reparte por lo que te falta: cuanto más lejos, más minutos.</p>
+</section>
+<section class="card pro" hidden="" id="pro"><h2></h2><ul><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b><b></b><b></b><b></b><b></b><b></b><b></b></li></ul><div class="buybox" hidden=""><p class="price"></p><p class="btns"><a class="btn" hidden=""></a><a class="btn ghost" hidden=""></a></p></div><div class="row"><label><input id="key"/></label><button class="btn ghost" id="unlock" type="button"></button></div><p class="hint" id="keymsg"></p><div class="row"><label><input id="p-fecha" type="date"/></label><label><input id="p-mapa"/></label><label><input id="p-adr" inputmode="decimal"/></label><label><input id="p-hs" inputmode="decimal"/></label><label><input id="p-apg" inputmode="numeric"/></label><label><input id="p-apj" inputmode="numeric"/></label><label><input id="p-ud" inputmode="decimal"/></label></div><p class="btns"><button class="btn" id="save" type="button"></button><button class="btn ghost" id="manana" type="button"></button><button class="btn ghost" id="dlcfg" type="button"></button><button class="btn ghost" id="csv" type="button"></button><label class="btn ghost file"><input accept=".csv,.txt" hidden="" id="importcsv" type="file"/></label><label class="inl"><input id="hora" type="time"/></label><button class="btn ghost" id="ics" type="button"></button><button class="btn ghost" id="print" type="button"></button><button class="btn ghost" id="backup" type="button"></button><label class="btn ghost file"><input accept=".json" hidden="" id="restore" type="file"/></label></p><p class="hint" id="promsg"></p><div class="proarea" hidden=""><div id="cmp"></div><div id="chart"></div><div id="weeks"></div><div id="hist"></div></div></section>
+<section class="card" id="how">
+<h2>Cómo se arma la rutina</h2>
+<ol>
+<li><b>Calentamiento</b> = 20 % del tiempo (entre 5 y 12 min) en Aim Botz.</li>
+<li>Lo que falta en cada métrica: 1 − ahora ÷ meta (0 si ya la cumples). Aperturas en % = ganadas ÷ jugadas × 100.</li>
+<li>El resto del tiempo se reparte en proporción a lo que falta, en minutos enteros (los minutos sueltos van al resto más grande).</li>
+<li>La <b>rutina igual</b> es el mismo tiempo en cuatro partes iguales, para comparar. Minutos perdidos a la semana = minutos iguales en métricas ya cumplidas × días.</li>
+
+</ol>
+<p class="hint">Los números los copias tú desde tu perfil de Faceit, Leetify o el marcador del juego. La página no lee ni toca el juego ni tu cuenta de Steam y no instala nada: solo ordena tu entrenamiento.</p>
+</section>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Guardar y continuar: <a href="https://getreadystack.com/es/apps/entrenamiento-cs2/">https://getreadystack.com/es/apps/entrenamiento-cs2/</a></p><script src="./entreno.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

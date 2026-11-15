@@ -37,7 +37,8 @@
     "ja": "CS2練習メニュー：一番足りない所に時間を配分"
    },
    "tools": [
-    "cs2-training-routine"
+    "cs2-training-routine",
+    "entrenamiento-cs2"
    ]
   }
  ],
@@ -61,6 +62,11 @@
    "lang": "de",
    "name": "CS2 Training Routine",
    "hub": "https://getreadystack.com/de/apps/cs2-training-routine/"
+  },
+  "entrenamiento-cs2": {
+   "lang": "es",
+   "name": "entrenamiento CS2 — rutina diaria desde tus partidas",
+   "hub": "https://getreadystack.com/es/apps/entrenamiento-cs2/"
   }
  }
 }
