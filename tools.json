@@ -95,6 +95,15 @@
    "tools": [
     "presupuesto-quincenal-cuanto-apartar"
    ]
+  },
+  {
+   "id": "51d17d9bbf",
+   "name": {
+    "ja": "売上管理 表"
+   },
+   "tools": [
+    "uriage-kanri-hyo-handmade"
+   ]
   }
  ],
  "tools": {
@@ -157,6 +166,11 @@
    "lang": "es",
    "name": "presupuesto quincenal",
    "hub": "https://getreadystack.com/es/apps/presupuesto-quincenal-cuanto-apartar/"
+  },
+  "uriage-kanri-hyo-handmade": {
+   "lang": "ja",
+   "name": "売上管理 表",
+   "hub": "https://getreadystack.com/ja/apps/uriage-kanri-hyo-handmade/"
   }
  }
 }

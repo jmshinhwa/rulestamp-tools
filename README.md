@@ -22,6 +22,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 1099 tracker | [1099 tracker](1099-tracker-w9-backup-withholding/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/1099-tracker-w9-backup-withholding/) |
 | planilha excel para autônomos | [planilha excel para autônomos](planilha-excel-para-autonomos/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-excel-para-autonomos/) |
 | presupuesto quincenal | [presupuesto quincenal](presupuesto-quincenal-cuanto-apartar/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/presupuesto-quincenal-cuanto-apartar/) |
+| 売上管理 表 | [売上管理 表](uriage-kanri-hyo-handmade/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/uriage-kanri-hyo-handmade/) |
 
 <a id="de"></a>
 
@@ -41,6 +42,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 1099 tracker | [1099 tracker](1099-tracker-w9-backup-withholding/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/1099-tracker-w9-backup-withholding/) |
 | planilha excel para autônomos | [planilha excel para autônomos](planilha-excel-para-autonomos/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-excel-para-autonomos/) |
 | presupuesto quincenal | [presupuesto quincenal](presupuesto-quincenal-cuanto-apartar/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/presupuesto-quincenal-cuanto-apartar/) |
+| 売上管理 表 | [売上管理 表](uriage-kanri-hyo-handmade/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/uriage-kanri-hyo-handmade/) |
 
 <a id="es"></a>
 
@@ -60,6 +62,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 1099 tracker | [1099 tracker](1099-tracker-w9-backup-withholding/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/1099-tracker-w9-backup-withholding/) |
 | planilha excel para autônomos | [planilha excel para autônomos](planilha-excel-para-autonomos/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-excel-para-autonomos/) |
 | presupuesto quincenal | [presupuesto quincenal](presupuesto-quincenal-cuanto-apartar/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/presupuesto-quincenal-cuanto-apartar/) |
+| 売上管理 表 | [売上管理 表](uriage-kanri-hyo-handmade/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/uriage-kanri-hyo-handmade/) |
 
 <a id="pt"></a>
 
@@ -79,6 +82,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 1099 tracker | [1099 tracker](1099-tracker-w9-backup-withholding/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/1099-tracker-w9-backup-withholding/) |
 | planilha excel para autônomos | [planilha excel para autônomos](planilha-excel-para-autonomos/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-excel-para-autonomos/) |
 | presupuesto quincenal | [presupuesto quincenal](presupuesto-quincenal-cuanto-apartar/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/presupuesto-quincenal-cuanto-apartar/) |
+| 売上管理 表 | [売上管理 表](uriage-kanri-hyo-handmade/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/uriage-kanri-hyo-handmade/) |
 
 <a id="ja"></a>
 
@@ -98,6 +102,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 1099 tracker | [1099 tracker](1099-tracker-w9-backup-withholding/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/1099-tracker-w9-backup-withholding/) |
 | planilha excel para autônomos | [planilha excel para autônomos](planilha-excel-para-autonomos/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-excel-para-autonomos/) |
 | presupuesto quincenal | [presupuesto quincenal](presupuesto-quincenal-cuanto-apartar/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/presupuesto-quincenal-cuanto-apartar/) |
+| 売上管理 表 | [売上管理 表](uriage-kanri-hyo-handmade/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/uriage-kanri-hyo-handmade/) |
 
 ---
 Rulestamp · https://getreadystack.com
