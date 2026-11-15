@@ -21,6 +21,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Freelancer income and expenses: who owes you, how late, next months' cash | [planilha de receitas e despesas](planilha-de-receitas-e-despesas/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-de-receitas-e-despesas/) |
 | 1099 tracker | [1099 tracker](1099-tracker-w9-backup-withholding/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/1099-tracker-w9-backup-withholding/) |
 | planilha excel para autônomos | [planilha excel para autônomos](planilha-excel-para-autonomos/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-excel-para-autonomos/) |
+| presupuesto quincenal | [presupuesto quincenal](presupuesto-quincenal-cuanto-apartar/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/presupuesto-quincenal-cuanto-apartar/) |
 
 <a id="de"></a>
 
@@ -39,6 +40,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Einnahmen und Ausgaben für Selbstständige: wer schuldet, wie lange, Kasse der nächsten Monate | [planilha de receitas e despesas](planilha-de-receitas-e-despesas/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-de-receitas-e-despesas/) |
 | 1099 tracker | [1099 tracker](1099-tracker-w9-backup-withholding/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/1099-tracker-w9-backup-withholding/) |
 | planilha excel para autônomos | [planilha excel para autônomos](planilha-excel-para-autonomos/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-excel-para-autonomos/) |
+| presupuesto quincenal | [presupuesto quincenal](presupuesto-quincenal-cuanto-apartar/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/presupuesto-quincenal-cuanto-apartar/) |
 
 <a id="es"></a>
 
@@ -57,6 +59,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Ingresos y gastos de autónomo: quién te debe, cuántos días y la caja de los próximos meses | [planilha de receitas e despesas](planilha-de-receitas-e-despesas/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-de-receitas-e-despesas/) |
 | 1099 tracker | [1099 tracker](1099-tracker-w9-backup-withholding/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/1099-tracker-w9-backup-withholding/) |
 | planilha excel para autônomos | [planilha excel para autônomos](planilha-excel-para-autonomos/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-excel-para-autonomos/) |
+| presupuesto quincenal | [presupuesto quincenal](presupuesto-quincenal-cuanto-apartar/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/presupuesto-quincenal-cuanto-apartar/) |
 
 <a id="pt"></a>
 
@@ -75,6 +78,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Receitas e despesas de autônomo: quem deve, há quantos dias e o caixa dos próximos meses | [planilha de receitas e despesas](planilha-de-receitas-e-despesas/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-de-receitas-e-despesas/) |
 | 1099 tracker | [1099 tracker](1099-tracker-w9-backup-withholding/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/1099-tracker-w9-backup-withholding/) |
 | planilha excel para autônomos | [planilha excel para autônomos](planilha-excel-para-autonomos/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-excel-para-autonomos/) |
+| presupuesto quincenal | [presupuesto quincenal](presupuesto-quincenal-cuanto-apartar/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/presupuesto-quincenal-cuanto-apartar/) |
 
 <a id="ja"></a>
 
@@ -93,6 +97,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | フリーランスの収支：未入金・遅延日数・今後数か月の資金繰り | [planilha de receitas e despesas](planilha-de-receitas-e-despesas/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-de-receitas-e-despesas/) |
 | 1099 tracker | [1099 tracker](1099-tracker-w9-backup-withholding/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/1099-tracker-w9-backup-withholding/) |
 | planilha excel para autônomos | [planilha excel para autônomos](planilha-excel-para-autonomos/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-excel-para-autonomos/) |
+| presupuesto quincenal | [presupuesto quincenal](presupuesto-quincenal-cuanto-apartar/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/presupuesto-quincenal-cuanto-apartar/) |
 
 ---
 Rulestamp · https://getreadystack.com

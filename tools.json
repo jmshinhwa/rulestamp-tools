@@ -86,6 +86,15 @@
    "tools": [
     "planilha-excel-para-autonomos"
    ]
+  },
+  {
+   "id": "b8db9f59a6",
+   "name": {
+    "es": "presupuesto quincenal"
+   },
+   "tools": [
+    "presupuesto-quincenal-cuanto-apartar"
+   ]
   }
  ],
  "tools": {
@@ -143,6 +152,11 @@
    "lang": "pt",
    "name": "planilha excel para autônomos",
    "hub": "https://getreadystack.com/pt/apps/planilha-excel-para-autonomos/"
+  },
+  "presupuesto-quincenal-cuanto-apartar": {
+   "lang": "es",
+   "name": "presupuesto quincenal",
+   "hub": "https://getreadystack.com/es/apps/presupuesto-quincenal-cuanto-apartar/"
   }
  }
 }

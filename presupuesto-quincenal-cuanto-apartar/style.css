@@ -1,0 +1,58 @@
+:root{--ink:#17202a;--mute:#5b6672;--line:#dfe3e8;--bg:#fbfaf7;--card:#fff;--acc:#0f6e5c;--hot:#b4421f;--ok:#1d7a3e}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1040px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:clamp(1.45rem,3.1vw,2.1rem);line-height:1.15;margin:.2em 0 .4em}
+h2{font-size:1.2rem;margin:1.6em 0 .5em}h3{font-size:1rem;margin:1.2em 0 .4em}
+.lede{font-size:1.05rem;max-width:62em}
+.fix{background:#eef6f3;border-left:4px solid var(--acc);padding:8px 12px;border-radius:4px;max-width:62em}
+.small{font-size:.85rem;color:var(--mute)}
+#out{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin-top:10px;min-width:0}
+#out h2{margin:.1em 0 .4em;font-size:1.05rem}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:4px 0 10px}
+.tile{border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:#fafbfc;min-width:0}
+.tile span{display:block;font-size:.82rem;color:var(--mute)}
+.tile b{display:block;font-size:1.5rem;line-height:1.2;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.tile i{display:block;font-style:normal;font-size:.8rem;color:var(--mute)}
+.tile.bad{border-color:var(--hot);background:#fff6f1}.tile.bad b{color:var(--hot)}
+.tile.hot{border-color:var(--acc);background:#f1f8f5}.tile.hot b{color:var(--acc)}
+.tile.ok b{color:var(--ok)}
+.scroll{overflow-x:auto;max-width:100%}
+.res{width:100%;border-collapse:collapse}
+.res th,.res td{padding:7px 5px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:.92rem}
+.res thead th{font-size:.78rem;color:var(--mute);font-weight:600}
+.res td small{display:block;font-size:.78rem;color:var(--mute);font-weight:400}
+.res td.sc b{font-size:1rem}.res td.nm{font-variant-numeric:tabular-nums;white-space:nowrap}
+.res tr.neg td.sc b{color:var(--hot)}
+.bl{list-style:none;margin:0;padding:0}.bl li{margin:1px 0}.bl li small{display:inline;color:var(--mute)}.bl li.plus b{color:var(--ok)}
+.bad{color:var(--hot)}
+.summary{background:#f4f5f7;border-radius:6px;padding:8px 10px;font-size:.93rem}
+.buyline{border-top:2px solid var(--ink);margin-top:12px;padding-top:8px}
+.btn{display:inline-block;background:var(--acc);color:#fff;text-decoration:none;font-weight:700;padding:10px 16px;border-radius:6px}
+.btn2{font:inherit;font-size:.9rem;background:#fff;border:1px solid #aab3bc;border-radius:6px;padding:6px 10px;cursor:pointer;color:var(--ink)}
+.link{background:none;border:0;color:var(--acc);text-decoration:underline;cursor:pointer;font:inherit;padding:0}
+fieldset{border:1px solid var(--line);border-radius:8px;background:var(--card);margin:12px 0;padding:10px 12px}
+legend{font-weight:600;padding:0 4px}
+label{display:block;font-size:.88rem;color:var(--mute);margin:6px 0}
+input,select,textarea{display:block;width:100%;margin-top:2px;font:inherit;color:var(--ink);padding:7px 9px;border:1px solid #c9cfd6;border-radius:6px;background:#fff}
+textarea{font:14px/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.row3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.row2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;align-items:end}
+label.inline{display:inline-block;margin:0 6px}label.inline input{display:inline-block;width:auto}
+.promsg{background:#fff4e5;border-left:4px solid var(--hot);padding:8px 12px;border-radius:4px}
+details{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:8px 12px;margin:6px 0}
+details summary{cursor:pointer;font-weight:600}
+code{background:#f1f2f4;padding:0 4px;border-radius:3px}
+#pro:not(.open) .pro-body{display:none}#pro.open .locked-note{display:none}
+.real input{width:7.5em;display:inline-block;padding:3px 6px}
+@media (max-width:700px){
+  .tiles,.row3,.row2{grid-template-columns:1fr}
+  .res,.res tbody{display:block;width:100%}.res thead{display:none}
+  .res tr{display:block;border-bottom:1px solid var(--line);padding:6px 0}
+  .res td{display:block;border:0;padding:3px 2px}.res td.nm{white-space:normal}
+}
+#print-cal{display:none}
+@media print{
+  body>*:not(#print-cal){display:none!important}
+  #print-cal{display:block!important;color:#000;font:11pt/1.4 Georgia,serif;padding:16px}
+  #print-cal .res td,#print-cal .res th{font-size:10pt;color:#000}
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>presupuesto quincenal | pagos fijos, cuánto apartar, libre</title>
+<meta content="Presupuesto quincenal en tu navegador: escribe tu sueldo neto por quincena, catorcena o semana y tus pagos fijos con su día; ves qué pago cubre cada quincena, cuál queda en negativo y cuánto apartar de la anterior." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/es/apps/presupuesto-quincenal-cuanto-apartar/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main class="wrap">
+<h1>presupuesto quincenal | pagos fijos, cuánto apartar, libre</h1>
+<p class="lede"><b>Ejemplo (inventado):</b> con $10,500.00 netos por quincena en México (10,500.00 pesos), la quincena del 29 ene cubre la renta del 1 de febrero, la tarjeta del 5 y el internet del 10; sin apartar te faltan $3,399.00 y un pago queda pendiente. Aquí cada pago fijo cae en la quincena que de verdad lo paga, y ves cuánto apartar de la quincena del 15 (3,399.00 pesos en el ejemplo) y cuánto te queda libre en cada una (802.00 pesos).</p>
+<p class="fix"><b>¿La renta vence a principio de mes y la quincena llega a mitad?</b> Por eso un presupuesto mensual cuadra y aun así te quedas corto: lo que vence del 1 al 14 se paga con la quincena del último día (del viernes antes si cae en fin de semana). Sirve igual si te pagan por catorcena o por semana.</p>
+<p class="spec small">presupuesto quincenal · 11 inputs (moneda, mes, frecuencia, pago en fin de semana, fecha de un pago, sueldo neto por pago, saldo de hoy, gasto variable por pago, ahorro por pago, pagos fijos, ingresos extra) · quincenal (15 y último día), catorcenal o semanal · MXN, COP, USD, EUR · sin cuenta, los datos se quedan en tu navegador · actualizado 2026-11-15</p>
+<section aria-live="polite" data-yj="result" id="out">
+<div class="tiles" id="o-tiles"><div class="tile bad"><span>Sin apartar, la quincena del 29 ene queda en</span><b>−$3,399.00</b><i>cubre Renta 1 feb, Tarjeta de crédito 5 feb, Internet 10 feb</i></div><div class="tile hot"><span>Aparta de la quincena del 15 ene</span><b>$3,399.00</b><i>así ningún pago queda en negativo</i></div><div class="tile"><span>Libre para gastar, sin tocar lo apartado</span><b>$802.00 · $0.00</b><i>15 ene · 29 ene</i></div></div>
+<h2 id="o-title">Presupuesto quincenal de enero 2027</h2>
+<div class="scroll">
+<table class="res">
+<thead><tr><th>Pago</th><th>Pagos fijos que cubre</th><th>Entra y sale</th><th>Apartado y libre</th></tr></thead>
+<tbody id="o-rows"><tr class=""><td class="sc"><b>Quincena del 15 ene</b><small>vie 15 ene 2027<br/>cubre hasta el 28 ene</small></td><td><ul class="bl"><li>Celular <small>18 ene</small> <b>$299.00</b></li><li>Gimnasio <small>20 ene</small> <b>$650.00</b></li><li>Préstamo de nómina <small>25 ene</small> <b>$1,850.00</b></li></ul></td><td class="nm">$10,500.00<small>− fijos $2,799.00<br/>− variable $3,000.00<br/>− ahorro $500.00</small><b class="">= $4,201.00</b></td><td class="nm"><b>aparta $3,399.00</b><br/>libre <b>$802.00</b></td></tr><tr class="neg"><td class="sc"><b>Quincena del 29 ene</b><small>vie 29 ene 2027<br/>cubre hasta el 14 feb</small></td><td><ul class="bl"><li>Renta <small>1 feb</small> <b>$7,500.00</b></li><li>Tarjeta de crédito <small>5 feb</small> <b>$2,400.00</b></li><li>Internet <small>10 feb</small> <b>$499.00</b></li></ul></td><td class="nm">$10,500.00<small>− fijos $10,399.00<br/>− variable $3,000.00<br/>− ahorro $500.00</small><b class="bad">= −$3,399.00</b></td><td class="nm">usa $3,399.00 apartado<br/>libre <b>$0.00</b></td></tr></tbody>
+</table>
+</div>
+<p class="summary" id="o-summary">Presupuesto quincenal de enero 2027 (quincenal): Quincena del 15 ene: entra $10,500.00, fijos $2,799.00, aparta $3,399.00, libre $802.00 · Quincena del 29 ene: entra $10,500.00, fijos $10,399.00, usa $3,399.00 apartado, libre $0.00. Sin apartar, la quincena del 29 ene queda en −$3,399.00.</p>
+<p><button class="btn2" id="copy" type="button">Copiar el resumen</button> <span class="small" id="copy-msg"></span></p>
+</section>
+<div class="buyline" data-fe-hidden="" hidden=""><p><b></b></p><a class="btn" data-fe-hidden="" hidden=""></a><a class="small" data-fe-hidden="" hidden=""></a><p class="promsg" data-fe-hidden="" hidden="" id="pro-msg"></p></div>
+<form autocomplete="off" id="f" onsubmit="return false">
+<fieldset>
+<legend>1. Cuándo y cuánto te pagan</legend>
+<div class="row3">
+<label>Moneda <select data-k="moneda"><option selected="" value="MXN">MXN peso mexicano</option><option value="COP">COP peso colombiano</option><option value="USD">USD dólar</option><option value="EUR">EUR euro</option></select></label>
+<label>Mes del presupuesto <input data-k="mes" data-yj-mine="" type="month" value="2027-01"/></label>
+<label>Frecuencia de pago <select data-k="frecuencia"><option selected="" value="quincenal">quincenal (15 y último día)</option><option value="catorcenal">catorcenal (cada 14 días)</option><option value="semanal">semanal (cada 7 días)</option></select></label>
+</div>
+<div class="row3">
+<label>Si el pago cae en fin de semana <select data-k="finde"><option selected="" value="antes">se adelanta al viernes</option><option value="igual">se queda en esa fecha</option></select></label>
+<label>Fecha de un pago cualquiera (catorcenal o semanal) <input data-k="ancla" data-yj-mine="" type="date" value="2027-01-08"/></label>
+<label>Sueldo neto por pago (lo que te cae) <input data-k="neto" data-yj-mine="" inputmode="decimal" value="10500"/></label>
+</div>
+</fieldset>
+<fieldset>
+<legend>2. Lo que sale en cada pago</legend>
+<div class="row3">
+<label>Saldo de hoy, antes del primer pago del mes <input data-k="saldo" data-yj-mine="" inputmode="decimal" value="0"/></label>
+<label>Gasto variable por pago (súper, transporte, comida) <input data-k="variable" data-yj-mine="" inputmode="decimal" value="3000"/></label>
+<label>Ahorro por pago <input data-k="ahorro" data-yj-mine="" inputmode="decimal" value="500"/></label>
+</div>
+<label>Pagos fijos, uno por línea: <code>nombre; día del mes; monto</code> · opcional <code>; meses</code> (<code>1</code> = solo enero, <code>2,4,6,8,10,12</code> = bimestral)
+      <textarea data-k="pagos" data-yj-mine="" rows="8">Renta; 1; 7500
+Tarjeta de crédito; 5; 2400
+Internet; 10; 499
+Celular; 18; 299
+Gimnasio; 20; 650
+Préstamo de nómina; 25; 1850</textarea></label>
+<label>Ingresos extra, uno por línea: <code>nombre; AAAA-MM-DD; monto</code> (aguinaldo, bono, reparto de utilidades)
+      <textarea data-k="extras" data-yj-mine="" placeholder="Bono; 2027-01-22; 2000" rows="2"></textarea></label>
+<p><button class="btn2" id="reset" type="button">Volver al ejemplo</button> <button class="btn2" id="clear" type="button">Vaciar para poner los míos</button>
+<label class="inline">Importar CSV de pagos fijos <input accept=".csv,text/csv" id="csv" type="file"/></label> <span class="small" id="imp-msg"></span></p>
+</fieldset>
+</form>
+<section data-fe-hidden="" hidden="" id="pro"><h2></h2><p class="small locked-note"></p><p><button class="btn2" id="year" type="button"></button><button class="btn2" id="csv-out" type="button"></button><button class="btn2" id="ics-out" type="button"></button><label class="inline"><input id="ics-days" max="7" min="0" style="width:4em" type="number"/></label><button class="btn2" id="print" type="button"></button></p><div class="pro-body"><div class="row2"><label><select id="prof"></select></label><p><input id="prof-new" style="display:inline-block;width:12em"/><button class="btn2" id="prof-save" type="button"></button><button class="btn2" id="prof-del" type="button"></button></p></div><h3 id="y-title"></h3><div class="scroll"><table class="res"><thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody id="y-rows"></tbody></table></div><h3></h3><p class="small"></p><div class="scroll"><table class="res real"><thead><tr><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody id="r-rows"></tbody></table></div></div></section>
+<section>
+<h2>Cómo reparte cada pago</h2>
+<ol>
+<li>Cada pago de nómina cubre lo que vence desde ese día hasta el día antes del siguiente pago. Con quincena del 15 y del último día: la del 15 paga lo que vence del 15 al fin de mes; la del último día paga lo que vence del 1 al 14 del mes siguiente.</li>
+<li>Si el 15 o el último día caen en sábado o domingo y tu empresa paga el viernes antes, elige «se adelanta al viernes»: cambia qué vencimientos caen en cada quincena.</li>
+<li>Resultado sin apartar = sueldo neto + ingresos extra − pagos fijos − gasto variable − ahorro. Si un pago queda en negativo, la página calcula cuánto apartar del pago anterior para cubrirlo; si no alcanza ni apartando, te dice el colchón que falta.</li>
+<li>Un pago fijo del día 31 en un mes de 30 días se cuenta el último día del mes. Con catorcenas, un año normal tiene 26 pagos: 2 meses traen 3 pagos; con semanas, 52 pagos y 4 meses con 5 (la página marca cuáles en la vista de 12 meses).</li>
+</ol>
+</section>
+<section data-fe-hidden="" hidden="" id="key-box"><h2></h2><p class="small"></p><div class="row2"><input data-fe-hidden="" hidden="" id="key"/><button class="btn2" data-fe-hidden="" hidden="" id="key-go" type="button"></button></div><p class="small" data-fe-hidden="" hidden="" id="key-msg"></p></section>
+<section class="faq">
+<h2>Preguntas</h2>
+<details><summary>¿Por qué me quedo corto si el mes cuadra?</summary><p>Porque los pagos no se reparten parejo entre las dos quincenas. En el ejemplo, la quincena del 15 ene paga $2,799.00 de fijos y la del 29 ene paga $10,399.00 (renta, tarjeta e internet de febrero). El mes deja $802.00 libres, pero la segunda quincena queda en −$3,399.00 si gastaste lo que sobró de la primera.</p></details>
+<details><summary>¿Sirve si me pagan por catorcena o por semana?</summary><p>Sí. Elige catorcenal o semanal y pon la fecha de un pago cualquiera; la página calcula las fechas de pago del mes y reparte los vencimientos igual. Con el ejemplo y 9,200 netos por catorcena, la catorcena del 22 ene queda en −$3,650.00 sin apartar.</p></details>
+<details><summary>¿Se conecta a mi banco?</summary><p>No. No pide cuenta ni contraseña de banco: escribes tu sueldo neto y tus pagos fijos. Todo se calcula y se guarda en tu navegador.</p></details>
+</section>
+<p class="small">Herramienta de registro y cálculo con los números que tú escribes. No es asesoría financiera ni fiscal.</p>
+</main>
+<div id="print-cal"></div>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Guardar y continuar: <a href="https://getreadystack.com/es/apps/presupuesto-quincenal-cuanto-apartar/">https://getreadystack.com/es/apps/presupuesto-quincenal-cuanto-apartar/</a></p><script src="./engine.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
