@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>planilha excel para autônomos | atrasos | juros | imposto</title>
+<meta content="Planilha excel para autônomos e MEI: lance as cobranças por cliente e veja na hora o que está em atraso, a multa e os juros do seu contrato, o imposto a separar e a sobra do mês. Baixe o .xlsx com fórmulas." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/pt/apps/planilha-excel-para-autonomos/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main class="wrap">
+<h1>planilha excel para autônomos | atrasos | juros | imposto</h1>
+<p class="lede"><b>Exemplo (fictício):</b> uma designer MEI tem R$ 4.700,00 em atraso em 15/11/2026: a Clínica Exemplo deve R$ 1.200,00 há 36 dias e a Agência Exemplo R$ 3.500,00 há 16 dias. <b>Sem cobrar a multa de 2 % e os juros de 1 % ao mês do contrato, são R$ 127,07 perdidos, e só R$ 2.880,00 entraram no mês.</b></p>
+<p class="fix"><b>Planilha de contas a receber marca “vencido” e para aí.</b> Aqui cada atraso vira o valor que você pode cobrar hoje (multa + juros pro rata do seu contrato), com a mensagem de cobrança pronta, e o mês fecha com o imposto do seu regime: DAS-MEI 2026, Simples ou carnê-leão com a tabela 2026.</p>
+<section aria-live="polite" data-yj="result" id="out">
+<h2 id="o-title">Seu mês</h2>
+<div class="tiles" id="o-tiles"></div>
+<ul class="flags" id="o-flags"></ul>
+<div class="scroll"><table class="res" id="o-rows"></table></div>
+<div class="cols">
+<div>
+<h3>Fechamento do mês</h3>
+<table class="res calc" id="o-mes"></table>
+</div>
+<div>
+<h3>Mensagens de cobrança</h3>
+<div id="o-msgs"></div>
+</div>
+</div>
+<p class="summary" id="o-summary"></p>
+</section>
+<div class="buyline" data-fe-hidden="" hidden=""><p><b></b></p><a class="btn" data-fe-hidden="" hidden=""></a><a class="small" data-fe-hidden="" hidden=""></a></div>
+<h2>Seus lançamentos</h2>
+<form id="f" onsubmit="return false">
+<fieldset>
+<legend>Uma cobrança por linha: cliente; serviço; valor; vencimento; recebido em (vazio se não pagou)</legend>
+<textarea data-k="lanc" data-yj-mine="" id="lanc" rows="8" spellcheck="false"></textarea>
+<p class="small">Dá para colar direto do Excel ou do Google Planilhas (colunas separadas por tabulação). Datas como 05/11/2026. Valores como 1.200,00.</p>
+</fieldset>
+<fieldset>
+<legend>Seu contrato e seu mês</legend>
+<div class="row4">
+<label>Data de hoje (referência) <input data-k="hoje" data-yj-mine="" id="hoje" value="15/11/2026"/></label>
+<label>Multa do contrato (%) <input data-k="multa" data-yj-mine="" inputmode="decimal" value="2"/></label>
+<label>Juros do contrato ao mês (%) <input data-k="juros" data-yj-mine="" inputmode="decimal" value="1"/></label>
+<label>Despesas do mês (R$) <input data-k="despesas" data-yj-mine="" inputmode="decimal" value="450,00"/></label>
+</div>
+<div class="row4">
+<label>Regime <select data-k="regime" data-yj-mine="">
+<option selected="" value="mei">MEI de serviços (DAS 2026)</option>
+<option value="mei_comercio">MEI de comércio ou indústria (DAS 2026)</option>
+<option value="mei_ambos">MEI de comércio e serviços (DAS 2026)</option>
+<option value="simples">Simples Nacional (alíquota do seu DAS)</option>
+<option value="pf">Autônomo pessoa física (INSS + carnê-leão)</option>
+</select></label>
+<label>Alíquota do DAS no Simples (%) <input data-k="aliq" data-yj-mine="" inputmode="decimal" value="6"/></label>
+</div>
+</fieldset>
+<p><button class="btn2" id="mine" type="button">Começar com os meus (limpar o exemplo)</button> <button class="btn2" id="today" type="button">Usar a data de hoje</button> <button class="btn2" id="reset" type="button">Voltar ao exemplo</button></p>
+</form>
+<p class="small">planilha excel para autonomos · 6 inputs · 6 results · 5 formulas por linha · 4 abas .xlsx · 200 linhas</p>
+<h2 data-fe-hidden="" hidden=""></h2>
+<div class="note" data-fe-hidden="" hidden="" id="pro-msg"></div>
+<div class="pro-tools">
+<button class="btn2" data-pro="xlsx" type="button">Baixar a planilha Excel (.xlsx)</button>
+<button class="btn2" data-pro="ano" type="button">Ver o ano (12 meses + limite do MEI)</button>
+<button class="btn2" data-pro="ics" type="button">Lembretes de vencimento e cobrança (.ics)</button>
+<button class="btn2" data-pro="backup" type="button">Backup</button>
+<label class="btn2 file" data-pro-file="imp">Carregar backup<input accept=".json" id="imp" type="file"/></label>
+</div>
+<div hidden="" id="ano"><div class="scroll"><table class="res" id="ano-rows"></table></div><p class="small" id="ano-mei"></p></div>
+<fieldset>
+<legend>Recibo de pagamento</legend>
+<div class="row4">
+<label>Seu nome <input id="r-nome" value="Ana Exemplo Designer"/></label>
+<label>Seu CPF ou CNPJ <input id="r-doc" value="00.000.000/0001-00"/></label>
+<label>Cidade <input id="r-cid" value="Belo Horizonte"/></label>
+<label>Cobrança recebida <select id="r-lin"></select></label>
+</div>
+<div class="pro-tools"><button class="btn2" data-pro="recibo" type="button">Imprimir / PDF do recibo</button></div>
+</fieldset>
+<p aria-live="polite" class="small" id="imp-msg"></p>
+<div class="key" data-fe-hidden="" hidden=""><label data-fe-hidden="" hidden=""><input id="key"/><button class="btn2" id="key-go" type="button"></button></label><span class="small" data-fe-hidden="" hidden="" id="key-msg"></span><p><a class="btn" data-fe-hidden="" hidden=""></a></p></div>
+<h2>Perguntas</h2>
+<div id="faq">
+<details><summary>Como a multa e os juros são calculados?</summary><p>Com o que está no seu contrato. A multa é cobrada uma vez: valor × multa %. Os juros são pro rata: valor × juros ao mês × dias de atraso ÷ 30. No exemplo, R$ 1.200,00 com 36 dias de atraso: multa de R$ 24,00 e juros de R$ 14,40, total de R$ 1.238,40. Com a Agência Exemplo (R$ 3.500,00 há 16 dias: R$ 70,00 + R$ 18,67), o total a cobrar hoje dos dois é R$ 4.827,07, e cada dia a mais soma R$ 1,57 de juros.</p></details>
+<details><summary>Que imposto entra no fechamento do mês?</summary><p>MEI: o DAS fixo de 2026 (R$ 86,05 serviços, R$ 82,05 comércio ou indústria, R$ 87,05 os dois). Simples: a alíquota do seu DAS sobre o que entrou no mês. Autônomo pessoa física: INSS de 20 % até o teto e o carnê-leão pela tabela mensal de 2026, com a redução da Lei 15.270.</p></details>
+<details><summary>O que vem na planilha Excel?</summary><p>Um arquivo .xlsx com 4 abas: Painel do mês, Lançamentos com 200 linhas e fórmulas de situação, dias de atraso, multa e juros, Ano com os 12 meses e o limite do MEI, e Como usar. Abre no Excel, no Google Planilhas e no LibreOffice, sem macros.</p></details>
+<details data-fe-hidden="" hidden=""><summary></summary><p></p></details>
+<details><summary>Meus dados vão para algum lugar?</summary><p>Não. Tudo fica neste navegador (localStorage) e a planilha é montada aqui mesmo, sem enviar nada. Não é assessoria contábil nem jurídica: a multa e os juros valem se estiverem no seu contrato, e o seu contador confirma o imposto.</p></details>
+</div>
+<ul class="law">
+<li>MEI: DAS 2026 = 5 % do salário mínimo de R$ 1.621,00 (R$ 81,05) + R$ 1,00 de ICMS e/ou R$ 5,00 de ISS; limite de R$ 81.000,00 por ano (LC 123/2006, art. 18-A).</li>
+<li>IRPF: tabela mensal 2026 (isento até 2.428,80; 7,5 % / 182,16; 15 % / 394,16; 22,5 % / 675,49; 27,5 % / 908,73) e redução da Lei 15.270/2025 (até R$ 312,89 com rendimentos até R$ 5.000,00; R$ 978,62 − 0,133145 × rendimentos até R$ 7.350,00), página “Tabelas 2026” da Receita Federal. INSS 2026: teto R$ 8.475,55.</li>
+<li>Mora: o devedor de obrigação líquida e com data certa está em mora desde o vencimento (Código Civil, art. 397). Multa e juros só valem se estiverem no contrato ou na cobrança combinada.</li>
+<li>Simples Nacional: informe a alíquota efetiva do seu DAS; a página aplica sobre o que entrou no mês. No regime de competência o DAS incide sobre o faturado.</li>
+<li>Não é assessoria contábil, tributária ou jurídica.</li>
+</ul>
+</main>
+<div id="print-area"></div>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Salvar e continuar: <a href="https://getreadystack.com/pt/apps/planilha-excel-para-autonomos/">https://getreadystack.com/pt/apps/planilha-excel-para-autonomos/</a></p><script src="./engine.js"></script>
+<script src="./xlsx.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

@@ -77,6 +77,15 @@
    "tools": [
     "1099-tracker-w9-backup-withholding"
    ]
+  },
+  {
+   "id": "c3bc9dd8dd",
+   "name": {
+    "pt": "planilha excel para autônomos"
+   },
+   "tools": [
+    "planilha-excel-para-autonomos"
+   ]
   }
  ],
  "tools": {
@@ -129,6 +138,11 @@
    "lang": "en",
    "name": "1099 tracker",
    "hub": "https://getreadystack.com/apps/1099-tracker-w9-backup-withholding/"
+  },
+  "planilha-excel-para-autonomos": {
+   "lang": "pt",
+   "name": "planilha excel para autônomos",
+   "hub": "https://getreadystack.com/pt/apps/planilha-excel-para-autonomos/"
   }
  }
 }

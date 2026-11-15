@@ -20,6 +20,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [dropshipping orgánico — pruebas, vídeos, margen](dropshipping-organico-pruebas-videos-margen/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/dropshipping-organico-pruebas-videos-margen/) |
 | Freelancer income and expenses: who owes you, how late, next months' cash | [planilha de receitas e despesas](planilha-de-receitas-e-despesas/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-de-receitas-e-despesas/) |
 | 1099 tracker | [1099 tracker](1099-tracker-w9-backup-withholding/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/1099-tracker-w9-backup-withholding/) |
+| planilha excel para autônomos | [planilha excel para autônomos](planilha-excel-para-autonomos/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-excel-para-autonomos/) |
 
 <a id="de"></a>
 
@@ -37,6 +38,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [dropshipping orgánico — pruebas, vídeos, margen](dropshipping-organico-pruebas-videos-margen/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/dropshipping-organico-pruebas-videos-margen/) |
 | Einnahmen und Ausgaben für Selbstständige: wer schuldet, wie lange, Kasse der nächsten Monate | [planilha de receitas e despesas](planilha-de-receitas-e-despesas/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-de-receitas-e-despesas/) |
 | 1099 tracker | [1099 tracker](1099-tracker-w9-backup-withholding/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/1099-tracker-w9-backup-withholding/) |
+| planilha excel para autônomos | [planilha excel para autônomos](planilha-excel-para-autonomos/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-excel-para-autonomos/) |
 
 <a id="es"></a>
 
@@ -54,6 +56,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [Dropshipping Content Tracker](dropshipping-content-tracker/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/dropshipping-content-tracker/) |
 | Ingresos y gastos de autónomo: quién te debe, cuántos días y la caja de los próximos meses | [planilha de receitas e despesas](planilha-de-receitas-e-despesas/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-de-receitas-e-despesas/) |
 | 1099 tracker | [1099 tracker](1099-tracker-w9-backup-withholding/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/1099-tracker-w9-backup-withholding/) |
+| planilha excel para autônomos | [planilha excel para autônomos](planilha-excel-para-autonomos/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-excel-para-autonomos/) |
 
 <a id="pt"></a>
 
@@ -71,6 +74,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [dropshipping orgánico — pruebas, vídeos, margen](dropshipping-organico-pruebas-videos-margen/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/dropshipping-organico-pruebas-videos-margen/) |
 | Receitas e despesas de autônomo: quem deve, há quantos dias e o caixa dos próximos meses | [planilha de receitas e despesas](planilha-de-receitas-e-despesas/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-de-receitas-e-despesas/) |
 | 1099 tracker | [1099 tracker](1099-tracker-w9-backup-withholding/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/1099-tracker-w9-backup-withholding/) |
+| planilha excel para autônomos | [planilha excel para autônomos](planilha-excel-para-autonomos/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-excel-para-autonomos/) |
 
 <a id="ja"></a>
 
@@ -88,6 +92,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [dropshipping orgánico — pruebas, vídeos, margen](dropshipping-organico-pruebas-videos-margen/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/dropshipping-organico-pruebas-videos-margen/) |
 | フリーランスの収支：未入金・遅延日数・今後数か月の資金繰り | [planilha de receitas e despesas](planilha-de-receitas-e-despesas/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-de-receitas-e-despesas/) |
 | 1099 tracker | [1099 tracker](1099-tracker-w9-backup-withholding/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/1099-tracker-w9-backup-withholding/) |
+| planilha excel para autônomos | [planilha excel para autônomos](planilha-excel-para-autonomos/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-excel-para-autonomos/) |
 
 ---
 Rulestamp · https://getreadystack.com
