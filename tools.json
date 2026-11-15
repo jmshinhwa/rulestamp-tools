@@ -99,10 +99,12 @@
   {
    "id": "51d17d9bbf",
    "name": {
-    "ja": "売上管理 表"
+    "ja": "売上管理 表",
+    "es": "plantilla contabilidad Excel"
    },
    "tools": [
-    "uriage-kanri-hyo-handmade"
+    "uriage-kanri-hyo-handmade",
+    "plantilla-contabilidad-excel-etsy"
    ]
   }
  ],
@@ -171,6 +173,11 @@
    "lang": "ja",
    "name": "売上管理 表",
    "hub": "https://getreadystack.com/ja/apps/uriage-kanri-hyo-handmade/"
+  },
+  "plantilla-contabilidad-excel-etsy": {
+   "lang": "es",
+   "name": "plantilla contabilidad Excel",
+   "hub": "https://getreadystack.com/es/apps/plantilla-contabilidad-excel-etsy/"
   }
  }
 }

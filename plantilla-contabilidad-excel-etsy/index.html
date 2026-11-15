@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>plantilla contabilidad Excel | vendedores de Etsy en España: comisiones, IVA, margen, modelo 130</title>
+<meta content="plantilla contabilidad Excel para vendedores de Etsy en España: comisiones de Etsy de cada pedido (6,5 %, 4 % + 0,30 €, 0,88 %, Offsite Ads, IVA), IVA de tus ventas, margen por producto y el modelo 130 y 303 del trimestre. Hoja de cálculo Etsy ingresos gastos en el navegador, sin registro." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/es/apps/plantilla-contabilidad-excel-etsy/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<header class="top">
+<h1>plantilla contabilidad Excel | vendedores de Etsy en España: comisiones, IVA, margen, modelo 130</h1>
+<p class="lede"><b>Ejemplo (inventado, ya rellenado abajo)</b>: una ceramista que vende en Etsy desde España cobra <b>1.123,50 €</b> en 12 pedidos del 4.º trimestre y sufre una <b>pérdida de 234,58 € (20,9 %) en comisiones de Etsy</b>; <b>160,20 €</b> son IVA de Hacienda y, tras envíos, compras, el 303 y el 130, le quedan <b>96,39 €</b>. El 130 y el 303 se presentan del 1 al 30 de enero de 2027.</p>
+<p class="sub">Una hoja de cálculo Etsy ingresos gastos hecha para EE. UU. cuenta el procesamiento al 3 % + 0,25 $. Esta usa las tarifas de una tienda con cuenta de pagos en España: <b>6,5 % + 4 % + 0,30 € + 0,88 % regulatoria + Offsite Ads + 21 % de IVA sobre las tarifas</b> si Etsy no tiene tu NIF-IVA, y saca el modelo 130 y el 303 del trimestre. Control de ganancias Etsy en el navegador: sin registro, los datos se quedan en este aparato.</p>
+<p class="btns"><button class="btn" id="mine" type="button">Empezar con mis pedidos</button> <button class="btn ghost" id="demo" type="button">Volver al ejemplo</button></p>
+</header>
+<main>
+<section aria-live="polite" class="card result" data-yj="result" id="out"></section>
+<p class="proline" data-fe-hidden="" hidden="" id="proline"><b></b><a></a></p>
+<section class="card" id="inputs">
+<h2>Tus datos del trimestre</h2>
+<div class="grid">
+<label>Año<select data-k="" data-yj-mine="" id="anio"><option selected="" value="2026">2026</option><option value="2027">2027</option></select></label>
+<label>Trimestre<select data-k="" data-yj-mine="" id="trim"><option value="1">1.º (ene–mar)</option><option value="2">2.º (abr–jun)</option><option value="3">3.º (jul–sep)</option><option selected="" value="4">4.º (oct–dic)</option></select></label>
+<label>¿Etsy tiene tu NIF-IVA (alta en el ROI)?<select data-k="" data-yj-mine="" id="roi"><option selected="" value="no">no: Etsy me cobra IVA en sus tarifas</option><option value="si">sí: no me cobra IVA</option></select></label>
+<label>Casilla 01 de tu último 130 de este año (€)<input data-k="" data-yj-mine="" id="prev01" inputmode="decimal" value="6240"/></label>
+<label>Casilla 02 de tu último 130 de este año (€)<input data-k="" data-yj-mine="" id="prev02" inputmode="decimal" value="2870"/></label>
+<label>Casilla 05: suma de las casillas 07 positivas de tus 130 anteriores (€)<input data-k="" data-yj-mine="" id="prev05" inputmode="decimal" value="674"/></label>
+</div>
+<details class="adv"><summary>Ajustes (tarifas y régimen)</summary>
+<div class="grid">
+<label>Rendimiento neto de tu actividad el año pasado<select data-k="" data-yj-mine="" id="ded"><option selected="" value="0">más de 12.000 € (sin minoración)</option><option value="100">hasta 9.000 € (−100 €)</option><option value="75">9.000,01–10.000 € (−75 €)</option><option value="50">10.000,01–11.000 € (−50 €)</option><option value="25">11.000,01–12.000 € (−25 €)</option></select></label>
+<label>Tus precios en Etsy incluyen IVA<select data-k="" data-yj-mine="" id="conIva"><option selected="" value="si">sí, 21 %</option><option value="no">no (exento o sin IVA)</option></select></label>
+<label>Estimación directa simplificada (5 % de gastos de difícil justificación)<select data-k="" data-yj-mine="" id="gdj"><option selected="" value="si">sí</option><option value="no">no (normal)</option></select></label>
+<label>Etsy cobra IVA también sobre el procesamiento de pagos<select data-k="" data-yj-mine="" id="ivaPago"><option selected="" value="no">no (míralo en tu factura de Etsy)</option><option value="si">sí</option></select></label>
+<label>Publicación por artículo vendido (€)<input data-k="" data-yj-mine="" id="listEur" inputmode="decimal" value="0,18"/></label>
+<label>Offsite Ads (%)<select data-k="" data-yj-mine="" id="offRate"><option selected="" value="15">15 %</option><option value="12">12 % (tiendas de 10.000 USD o más al año)</option></select></label>
+</div>
+<p class="hint">Tarifas de Etsy para tiendas con cuenta de pagos en España (Etsy Help, leído el 15/11/2026): transacción 6,5 % y regulatoria 0,88 % sobre artículo + envío; procesamiento 4 % + 0,30 € sobre el total; publicación 0,20 USD por artículo vendido (0,18 € al cambio del BCE del 13/11/2026: 1 € = 1,1052 USD); Offsite Ads 15 % o 12 %, con tope de 100 USD por pedido (el tope no se aplica aquí). Si Etsy no tiene tu NIF-IVA, cobra IVA sobre sus tarifas; aquí se cuenta al 21 % y como gasto, no como IVA deducible.</p>
+</details>
+<h3>Pedidos de Etsy</h3>
+<div class="row ped head"><span>Fecha</span><span>Producto</span><span>Uds.</span><span>Artículos (€)</span><span>Envío cobrado (€)</span><span>Destino</span><span>Offsite Ads</span><span>Materiales (€)</span><span>Envío pagado (€)</span><span></span></div>
+<div id="peds"></div>
+<p class="btns"><button class="btn ghost" id="addped" type="button">+ pedido</button> <span class="hint">Todas las filas que quieras. "Materiales" es el coste de lo que se fue en ese pedido: solo sirve para el margen por producto (tus compras van abajo, en gastos).</span></p>
+<h3>Gastos del trimestre (compras, cuota de autónomos, Etsy Ads…)</h3>
+<div class="row gas head"><span>Fecha</span><span>Concepto</span><span>Total pagado (€)</span><span>IVA</span><span></span></div>
+<div id="gass"></div>
+<p class="btns"><button class="btn ghost" id="addgas" type="button">+ gasto</button> <span class="hint">IVA: el de la factura. Pon "0 / no deducible" para la cuota de autónomos, Etsy Ads sin NIF-IVA o tickets sin IVA.</span></p>
+</section>
+<section class="card pro" data-fe-hidden="" hidden="" id="pro"><h2></h2><ul><li><b></b></li><li><b></b></li><li><b></b><b></b></li><li><b></b><b></b><b></b></li></ul><div class="buybox" data-fe-hidden="" hidden=""><p class="price"></p><p class="btns"><a class="btn" data-fe-hidden="" hidden=""></a></p></div><div class="grid2"><label data-fe-hidden="" hidden=""><input id="key"/></label><button class="btn ghost" data-fe-hidden="" hidden="" id="unlock" type="button"></button></div><p class="hint" data-fe-hidden="" hidden="" id="keymsg"></p><p class="btns"><button class="btn" id="xlsx" type="button"></button><label class="btn ghost file"><input accept=".csv,text/csv" hidden="" id="csvin" type="file"/></label><button class="btn ghost" id="close" type="button"></button><button class="btn ghost" id="print1" type="button"></button><button class="btn ghost" id="ics" type="button"></button><button class="btn ghost" id="backup" type="button"></button><label class="btn ghost file"><input accept=".json" hidden="" id="restore" type="file"/></label></p><p class="hint" data-fe-hidden="" hidden="" id="promsg"></p><div id="hist"></div></section>
+<section class="card" hidden="" id="print"></section>
+<section class="card" id="how">
+<h2>Cómo se calcula</h2>
+<ol>
+<li><b>Comisiones de Etsy por pedido</b> = 6,5 % × (artículos + envío) + 4 % × total + 0,30 € + 0,88 % × (artículos + envío) + 0,18 € × unidades + Offsite Ads (15 % o 12 %) si el pedido vino de ahí + 21 % de IVA sobre esas tarifas si Etsy no tiene tu NIF-IVA. Cada tarifa se redondea al céntimo.</li>
+<li><b>IVA de tus ventas</b>: si tus precios incluyen IVA, total × 21 ÷ 121 en ventas a España y a otros países de la UE; 0 en ventas fuera de la UE (exportación). Ingreso = total − IVA.</li>
+<li><b>Modelo 130</b> (RIRPF art. 110): casilla 01 = la de tu último 130 + ingresos del trimestre; casilla 02 = la anterior + comisiones de Etsy + envíos pagados + base de tus gastos + 5 % de gastos de difícil justificación (simplificada, máx. 2.000 € al año); a ingresar = 20 % × (01 − 02) − casilla 05 − minoración.</li>
+<li><b>Modelo 303</b> (simplificado): IVA de tus ventas − IVA deducible de tus gastos. Plazos (RIRPF art. 111): del 1 al 20 de abril, julio y octubre y del 1 al 30 de enero.</li>
+<li><b>Lo que te queda</b> = cobrado − comisiones − envíos pagados − gastos pagados − 303 − 130.</li>
+</ol>
+<p><b>El ejemplo, escrito</b>: comisiones 73,03 € + 48,54 € + 9,89 € + 3,78 € + 67,05 € + 32,29 € = 234,58 € sobre 1.123,50 € cobrados. Lo que queda: 1.123,50 € − 234,58 € − 127,00 € de envíos pagados − 522,35 € de gastos − 120,57 € de 303 − 22,61 € de 130 = 96,39 €. Modelo 130: casilla 03 3.483,05 € × 20 % = 696,61 € − 674,00 € = 22,61 €.</p>
+<p class="hint">Cálculo con los datos que escribes; no es asesoramiento fiscal ni sustituye a tu gestor. Pensado para artículos físicos. Si tus ventas a otros países de la UE superan 10.000 € al año, el IVA es el del país del comprador (OSS), y eso no se calcula aquí. Presentar tarde sin requerimiento lleva recargo del 1 % más 1 punto por mes completo (LGT art. 27.2).</p>
+</section>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Guardar y continuar: <a href="https://getreadystack.com/es/apps/plantilla-contabilidad-excel-etsy/">https://getreadystack.com/es/apps/plantilla-contabilidad-excel-etsy/</a></p><script src="./conta.js"></script>
+<script src="./xlsx.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
