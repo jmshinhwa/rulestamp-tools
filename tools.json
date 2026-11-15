@@ -68,6 +68,15 @@
    "tools": [
     "planilha-de-receitas-e-despesas"
    ]
+  },
+  {
+   "id": "f3fc55631d",
+   "name": {
+    "en": "1099 tracker"
+   },
+   "tools": [
+    "1099-tracker-w9-backup-withholding"
+   ]
   }
  ],
  "tools": {
@@ -115,6 +124,11 @@
    "lang": "pt",
    "name": "planilha de receitas e despesas",
    "hub": "https://getreadystack.com/pt/apps/planilha-de-receitas-e-despesas/"
+  },
+  "1099-tracker-w9-backup-withholding": {
+   "lang": "en",
+   "name": "1099 tracker",
+   "hub": "https://getreadystack.com/apps/1099-tracker-w9-backup-withholding/"
   }
  }
 }
