@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>LinkedIn Automatisierung Kostenrechner | echte Kosten pro Konto in Euro, Add-ons, § 13b-Umsatzsteuer</title>
+<meta content="LinkedIn Automatisierung Tool im Kostencheck: Sitz, Zusatz-Konten, Daten-Credits und Sales Navigator in Euro pro Konto, dazu die 19 % Umsatzsteuer nach § 13b UStG, die Kleinunternehmer nicht zurückbekommen. Kosten pro Termin, Tool-Vergleich, Rechnungsliste." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/de/apps/linkedin-automatisierung-kostenrechner/" rel="canonical"/></head>
+<body>
+<main class="wrap">
+<h1>LinkedIn Automatisierung Kostenrechner | echte Kosten pro Konto in Euro, Add-ons, § 13b-Umsatzsteuer</h1>
+<p class="lede"><b>Beispiel (erfunden):</b> Kleinunternehmerin, 2 LinkedIn-Konten in einem Tool zu 79 USD pro Konto, dazu 2 Credit-Pakete à 29 USD. Das sind 216 USD = 195,44 € netto. Weil die Rechnung aus dem Ausland kommt, schuldet sie 19 % Umsatzsteuer nach § 13b UStG und darf sie als Kleinunternehmerin nicht abziehen: <b id="lede-loss">37,13 € im Monat, 445,56 € im Jahr verloren.</b> Pro Konto kostet das Tool damit 116,29 € statt der 71,48 € auf der Preisseite.</p>
+<p class="fix"><b>LinkedIn Automatisierung Tool, LinkedIn Akquise automatisieren, LinkedIn Outreach Tool: die Preisseiten zeigen den Sitzpreis in US-Dollar, ohne Steuer.</b> Hier stehen Zusatz-Konten, Credits, Sales Navigator, Wechselkurs und die Umsatzsteuer in einer Zahl pro Konto und pro Termin. Läuft in Ihrem Browser, ohne Konto, nichts wird hochgeladen.</p>
+<div class="grid">
+<form autocomplete="off" id="f" onsubmit="return false">
+<fieldset>
+<legend>1. Ihr Tool</legend>
+<label>Preise laden aus <select id="preset"><option value="">eigene Werte</option><option value="walead">WaLead (Basis 65 €, +50 € je Sender, +50 € je 1.000 Credits)</option><option value="expandi">Expandi Business (99 USD je Sitz)</option><option value="dripify">Dripify Pro monatlich (79 USD, 1.000 Credits 29 USD)</option><option value="heyreach">HeyReach Growth (79 USD je Sender)</option></select></label>
+<p class="small">Preise netto bei Monatszahlung, gelesen am 15.11.2026 auf den Preisseiten. Prüfen Sie Ihre Rechnung, Preise ändern sich.</p>
+<div class="row3">
+<label>Währung der Rechnung <select data-k="" data-yj-mine="" id="cur"><option selected="" value="USD">USD</option><option value="EUR">EUR</option></select></label>
+<label>Grundpreis pro Monat <input data-k="" data-yj-mine="" id="base" min="0" step="1" type="number" value="79"/></label>
+<label>Konten im Grundpreis <input data-k="" data-yj-mine="" id="incl_acc" min="1" step="1" type="number" value="1"/></label>
+<label>Preis je weiteres Konto <input data-k="" data-yj-mine="" id="extra_acc" min="0" step="1" type="number" value="79"/></label>
+<label>Ihre LinkedIn-Konten <input data-k="" data-yj-mine="" id="acc" min="1" step="1" type="number" value="2"/></label>
+<label>Sales Navigator je Konto (€/Monat) <input data-k="" data-yj-mine="" id="nav" min="0" step="0.01" type="number" value="0"/></label>
+</div>
+</fieldset>
+<fieldset>
+<legend>2. Daten-Credits (E-Mail- und Telefonsuche)</legend>
+<div class="row3">
+<label>Credits pro Monat gebraucht <input data-k="" data-yj-mine="" id="cred_need" min="0" step="100" type="number" value="2000"/></label>
+<label>Credits inklusive <input data-k="" data-yj-mine="" id="cred_incl" min="0" step="100" type="number" value="100"/></label>
+<label>Credits je Paket <input data-k="" data-yj-mine="" id="pack_size" min="0" step="100" type="number" value="1000"/></label>
+<label>Preis je Paket <input data-k="" data-yj-mine="" id="pack_price" min="0" step="1" type="number" value="29"/></label>
+</div>
+</fieldset>
+<fieldset>
+<legend>3. Steuer, Kurs, Termine</legend>
+<div class="row3">
+<label>Umsatzsteuer <select data-k="" data-yj-mine="" id="vat"><option selected="" value="klein">Kleinunternehmer (§ 19 UStG)</option><option value="regel">Regelbesteuert (Vorsteuerabzug)</option></select></label>
+<label>Steuersatz (%) <input data-k="" data-yj-mine="" id="vat_rate" min="0" step="1" type="number" value="19"/></label>
+<label>USD je 1 EUR <input data-k="" data-yj-mine="" id="fx" min="0.5" step="0.0001" type="number" value="1.1052"/></label>
+<label>Termine pro Monat (alle Konten) <input data-k="" data-yj-mine="" id="meetings" min="0" step="1" type="number" value="6"/></label>
+<label>Nächste Verlängerung <input id="renew" type="date" value="2027-01-15"/></label>
+<label>Kündigungsfrist (Tage) <input id="notice" min="0" step="1" type="number" value="30"/></label>
+</div>
+<p class="small">Kurs: EZB-Referenzkurs vom 13.11.2026, 1 EUR = 1,1052 USD. Ihre Bank rechnet oft mit Aufschlag, tragen Sie Ihren Kurs ein.</p>
+</fieldset>
+<p class="small"><button class="btn go" id="check" type="button">Echte Kosten prüfen</button> <button class="link" id="reset" type="button">Zurück zum Beispiel</button></p>
+</form>
+<section aria-live="polite" id="out">
+<div data-yj="result" id="res">
+<div class="kpi" id="kpi"></div>
+<p class="verdict" id="verdict"></p>
+<table id="bd"><thead><tr><th>Rechnung</th><th class="n">Wert</th></tr></thead><tbody></tbody></table>
+</div>
+<p class="paywall" hidden="" id="pw"><a hidden=""></a></p>
+<p class="small">So wird gerechnet: Tool = Grundpreis + weitere Konten × Preis je Konto + Pakete × Paketpreis, Pakete = (gebrauchte − inklusive Credits) ÷ Paketgröße, aufgerundet. USD ÷ Kurs = Euro. Sales Navigator × Konten kommt dazu. Umsatzsteuer = Steuersatz × Netto. Kleinunternehmer schulden sie nach § 13b Abs. 5 UStG (oder zahlen sie auf der Rechnung) und dürfen sie nach § 15 Abs. 2 Nr. 1 UStG nicht als Vorsteuer abziehen; regelbesteuerte Unternehmen zahlen und ziehen sie im selben Monat ab. Ein Rechner, keine Steuerberatung.</p>
+</section>
+</div>
+<section id="inv">
+<h2>Rechnungsliste: § 13b-Steuer je Monat</h2>
+<p class="small">Kleinunternehmer geben nach § 18 Abs. 4a UStG eine Umsatzsteuer-Voranmeldung nur für die Monate ab, in denen § 13b-Steuer anfällt. Die Liste zeigt pro Monat Netto in Euro und die Steuer.</p>
+<table id="it"><thead><tr><th>Datum</th><th>Tool</th><th class="n">Betrag</th><th>Währung</th><th class="n">Kurs</th><th></th></tr></thead><tbody></tbody></table>
+<p><button class="btn" data-pro="addinv" type="button">Rechnung hinzufügen</button></p>
+<table id="im"><thead><tr><th>Monat</th><th class="n">Rechnungen</th><th class="n">Netto €</th><th class="n">§ 13b-Steuer €</th></tr></thead><tbody></tbody></table>
+</section>
+<section hidden="" id="pro"><h2></h2><p class="small" id="pro-msg"></p><div class="tools"><button class="btn" data-pro="save" type="button"></button><button class="btn" data-pro="print" type="button"></button><button class="btn" data-pro="ics" type="button"></button><button class="btn" data-pro="csv" type="button"></button><button class="btn" data-pro="backup" type="button"></button><label class="btn file"><input accept=".json,application/json" id="imp" type="file"/></label></div><table hidden="" id="cmp"><thead><tr><th></th><th class="n"></th><th class="n"></th><th class="n"></th><th class="n"></th><th class="n"></th><th></th></tr></thead><tbody></tbody></table><p class="small"><input id="key" style="max-width:320px"/><button class="btn" id="key-go" type="button"></button><span id="key-msg"></span></p><div hidden="" id="sheet"></div></section>
+<section class="faq">
+<h2>Kein Bot in Ihrem Konto</h2>
+<p class="small">Diese Seite rechnet nur. Sie verbindet sich nicht mit LinkedIn und sendet nichts. Die deutsche LinkedIn-Nutzervereinbarung (gelesen am 15.11.2026) untersagt, „Bots oder andere nicht autorisierte automatisierte Methoden“ zu verwenden, um „Kontakte hinzuzufügen“ oder „Nachrichten zu senden“. Wägen Sie das Kontorisiko selbst ab, bevor Sie ein Tool kaufen.</p>
+</section>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Speichern und weitermachen: <a href="https://getreadystack.com/de/apps/linkedin-automatisierung-kostenrechner/">https://getreadystack.com/de/apps/linkedin-automatisierung-kostenrechner/</a></p><script src="./logic.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
