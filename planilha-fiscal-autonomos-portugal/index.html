@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>planilha fiscal para autónomos | recibos verdes 2026: Segurança Social, IVA, retenção</title>
+<meta content="planilha fiscal para autónomos em Portugal: escreva os seus recibos verdes e veja a declaração trimestral da Segurança Social (21,4 % sobre 70 %), o mês em que passa os 15.000 € e os 18.750 € da isenção de IVA e quando acaba a dispensa de retenção. No navegador, sem registo." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/pt/apps/planilha-fiscal-autonomos-portugal/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<header class="top">
+<h1>planilha fiscal para autónomos | recibos verdes 2026: Segurança Social, IVA, retenção</h1>
+<p class="lede"><b>Exemplo (inventado, já preenchido abaixo)</b>: uma freelancer em Lisboa a recibos verdes perde a isenção de IVA no recibo de 12/11/2026, quando passa os 18.750 €, e deve <b>552,00 € de IVA</b> nesse recibo; a dispensa de retenção acabou em novembro (<b>989,00 €</b> retidos pelos clientes) e a declaração trimestral de janeiro de 2027 fixa <b>329,56 € por mês</b> à Segurança Social.</p>
+<p class="sub">Os simuladores grátis fazem um trimestre de cada vez e esquecem o resto. Aqui escreve os recibos do ano uma vez: a planilha agrupa-os pelas cinco declarações trimestrais (janeiro, abril, julho, outubro e janeiro seguinte), soma o volume para o limite de 15.000 € do <b>art. 53.º do CIVA</b> e para os 18.750 € do art. 58.º, e diz em que mês a dispensa de retenção do <b>art. 101.º-B do CIRS</b> deixa de valer. Regras lidas a 15/11/2026 no Portal das Finanças, no gov.pt e nas FAQ da Segurança Social. Os dados ficam neste aparelho.</p>
+<p class="btns"><button class="btn" id="mine" type="button">Começar com os meus recibos</button> <button class="btn ghost" id="demo" type="button">Voltar ao exemplo</button></p>
+</header>
+<main>
+<section aria-live="polite" class="card result" data-yj="result" id="out"></section>
+<p class="proline" data-fe-hidden="" hidden="" id="proline"><b></b><a></a></p>
+<section class="card" id="inputs">
+<h2>Os seus dados</h2>
+<div class="grid">
+<label>Ano da planilha<select data-k="" data-yj-mine="" id="ano"><option selected="" value="2026">2026</option><option value="2027">2027</option></select></label>
+<label>Início de atividade (mês)<input data-k="" data-yj-mine="" id="inicio" type="month" value="2019-03"/></label>
+<label>Volume de negócios do ano anterior (€)<input data-k="" data-yj-mine="" id="vol_ant" inputmode="decimal" value="14200"/></label>
+<label>IVA no início do ano<select data-k="" data-yj-mine="" id="iva"><option selected="" value="isento">isento (art. 53.º)</option><option value="normal">regime normal (cobro IVA)</option></select></label>
+<label>Usa a dispensa de retenção (art. 101.º-B)?<select data-k="" data-yj-mine="" id="dispensa"><option selected="" value="sim">sim: "Sem retenção, nos termos do n.º 1 do artigo 101.º-B"</option><option value="nao">não</option></select></label>
+<label>Taxa de retenção dos clientes<select data-k="" data-yj-mine="" id="ret_taxa"><option selected="" value="23">23 % (atividade da tabela do art. 151.º)</option><option value="11.5">11,5 % (outros serviços)</option></select></label>
+<label>Taxa da Segurança Social<select data-k="" data-yj-mine="" id="taxa_ss"><option selected="" value="21.4">21,4 % (trabalhador independente)</option><option value="25.2">25,2 % (ENI / EIRL)</option></select></label>
+<label>Opção na declaração de janeiro de 2027<select data-k="" data-yj-mine="" id="aj_jan2"><option value="-25">−25 %</option><option value="-20">−20 %</option><option value="-15">−15 %</option><option value="-10">−10 %</option><option value="-5">−5 %</option><option selected="" value="0">sem alteração</option><option value="5">+5 %</option><option value="10">+10 %</option><option value="15">+15 %</option><option value="20">+20 %</option><option value="25">+25 %</option></select></label>
+<label>Tem contabilidade organizada? Lucro tributável do ano anterior (€)<input data-k="" data-yj-mine="" id="lucro_co" inputmode="decimal" placeholder="deixe vazio se não tem" value=""/></label>
+</div>
+<h3>Recibos verdes</h3>
+<div class="row rec head"><span>Data</span><span>Cliente</span><span>Valor sem IVA (€)</span><span>Tipo</span><span>Cliente com contabilidade organizada (retém)</span><span></span></div>
+<div id="recs"></div>
+<p class="btns"><button class="btn ghost" id="addrec" type="button">+ recibo</button> <span class="hint">Quantos recibos quiser. Inclua os de outubro a dezembro do ano anterior: são a declaração de janeiro.</span></p>
+</section>
+<section class="card pro" data-fe-hidden="" hidden="" id="pro"><h2></h2><ul><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b><b></b><b></b></li></ul><div class="buybox" data-fe-hidden="" hidden=""><p class="price"></p><p class="btns"><a class="btn" data-fe-hidden="" hidden=""></a></p></div><div class="grid2"><label data-fe-hidden="" hidden=""><input id="key"/></label><button class="btn ghost" data-fe-hidden="" hidden="" id="unlock" type="button"></button></div><p class="hint" data-fe-hidden="" hidden="" id="keymsg"></p><p class="btns"><button class="btn" id="xlsx" type="button"></button><label class="btn ghost file"><input accept=".csv,text/csv,.txt" hidden="" id="csvin" type="file"/></label><button class="btn ghost" id="close" type="button"></button><button class="btn ghost" id="print1" type="button"></button><button class="btn ghost" id="icsb" type="button"></button><button class="btn ghost" id="backup" type="button"></button><label class="btn ghost file"><input accept=".json" hidden="" id="restore" type="file"/></label></p><p class="hint" data-fe-hidden="" hidden="" id="promsg"></p><div id="hist"></div></section>
+<section class="card" hidden="" id="print"></section>
+<section class="card" id="how">
+<h2>Como se calcula</h2>
+<ol>
+<li><b>Segurança Social</b>: em cada declaração trimestral (até ao último dia de janeiro, abril, julho e outubro) conta 70 % dos serviços e 20 % das vendas de bens dos 3 meses anteriores. A base mensal é um terço disso, com a opção de ±25 % em intervalos de 5 %, e vale no mês da declaração e nos dois seguintes. Contribuição = 21,4 % da base (25,2 % para ENI/EIRL), no mínimo 20 € e com base máxima de 12 × IAS (12 × 537,13 € = 6.445,56 € em 2026). Paga-se entre o dia 10 e o dia 20 do mês seguinte. O 1.º enquadramento só produz efeitos no 1.º dia do 12.º mês após o início de atividade.</li>
+<li><b>Isenção de IVA</b> (CIVA art. 53.º e 58.º): isento se no ano anterior não passou 15.000 €. Se passar 15.000 € no ano, entra no regime normal a 1 de janeiro seguinte; se passar mais de 25 % (18.750 €), o IVA é devido a partir desse momento. Aqui conta 23 % (continente) a partir do recibo que passa os 18.750 €.</li>
+<li><b>Retenção na fonte</b> (CIRS art. 101.º e 101.º-B): clientes com contabilidade organizada retêm 23 % (atividades da tabela do art. 151.º) ou 11,5 %, sobre o valor antes do IVA. A dispensa vale para quem prevê menos de 15.000 € no ano e não os atingiu no ano anterior; cessa no mês seguinte àquele em que atinge o limite. Retenções abaixo de 25 € não se fazem.</li>
+<li><b>Contabilidade organizada</b>: a base é 1/12 do lucro tributável do ano anterior, no mínimo 1,5 × IAS (805,70 € em 2026). Quem está neste regime pode pedir a declaração trimestral até 30 de novembro, com efeitos em janeiro de 2027 (gov.pt, 06/11/2026).</li>
+</ol>
+<p><b>O exemplo, escrito</b>: declaração de janeiro de 2027 = 70 % × (2.300,00 € + 1.900,00 € + 2.400,00 €) = 4.620,00 € ÷ 3 = 1.540,00 € de base × 21,4 % = 329,56 € por mês. IVA: 20.250,00 € faturados passam os 18.750 € no recibo de 12/11/2026; 23 % × 2.400,00 € = 552,00 €. Retenção: 15.950,00 € atingidos em outubro, dispensa acaba em novembro; 23 % × 1.900,00 € + 23 % × 2.400,00 € = 437,00 € + 552,00 € = 989,00 €.</p>
+<p class="hint">Cálculo com os dados que escreve; não é aconselhamento fiscal nem substitui o seu contabilista. Não calcula o IRS final, o IVA da Madeira e dos Açores, a acumulação com trabalho por conta de outrem nem a isenção de pensionistas. O IAS de 2027 ainda não foi publicado: a declaração de janeiro de 2027 usa o teto de 2026.</p>
+</section>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Salvar e continuar: <a href="https://getreadystack.com/pt/apps/planilha-fiscal-autonomos-portugal/">https://getreadystack.com/pt/apps/planilha-fiscal-autonomos-portugal/</a></p><script src="./fiscal.js"></script>
+<script src="./xlsx.js"></script>
+<script src="./planilha.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

@@ -115,6 +115,15 @@
    "tools": [
     "tarifas-freelance"
    ]
+  },
+  {
+   "id": "e5cc490945",
+   "name": {
+    "pt": "planilha fiscal para autónomos"
+   },
+   "tools": [
+    "planilha-fiscal-autonomos-portugal"
+   ]
   }
  ],
  "tools": {
@@ -192,6 +201,11 @@
    "lang": "es",
    "name": "tarifas freelance",
    "hub": "https://getreadystack.com/es/apps/tarifas-freelance/"
+  },
+  "planilha-fiscal-autonomos-portugal": {
+   "lang": "pt",
+   "name": "planilha fiscal para autónomos",
+   "hub": "https://getreadystack.com/pt/apps/planilha-fiscal-autonomos-portugal/"
   }
  }
 }
