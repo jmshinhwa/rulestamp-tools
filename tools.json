@@ -133,6 +133,15 @@
    "tools": [
     "etsy-bookkeeping-spreadsheet"
    ]
+  },
+  {
+   "id": "95ccf2df3d",
+   "name": {
+    "en": "lead generation on Reddit: thread scorer + lead tracker"
+   },
+   "tools": [
+    "lead-generation-reddit-thread-scorer"
+   ]
   }
  ],
  "tools": {
@@ -220,6 +229,11 @@
    "lang": "en",
    "name": "Etsy bookkeeping spreadsheet 2027",
    "hub": "https://getreadystack.com/apps/etsy-bookkeeping-spreadsheet/"
+  },
+  "lead-generation-reddit-thread-scorer": {
+   "lang": "en",
+   "name": "lead generation on Reddit: thread scorer + lead tracker",
+   "hub": "https://getreadystack.com/apps/lead-generation-reddit-thread-scorer/"
   }
  }
 }

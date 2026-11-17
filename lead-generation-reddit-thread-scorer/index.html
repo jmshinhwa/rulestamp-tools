@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>lead generation on Reddit: thread scorer + lead tracker</title>
+<meta content="Lead generation on Reddit for founders and marketers: paste Reddit search results and see every thread scored 0-100 for buying intent, with the reason for each point. Pro keeps a lead book across days, marks threads you already saw, tracks replies to won deals and exports CSV." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/apps/lead-generation-reddit-thread-scorer/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<header class="top">
+<h1>lead generation on Reddit: thread scorer + lead tracker</h1>
+<p class="lede">Example (made-up invoicing app, 10 Reddit threads): 4 threads score hot because someone is asking for a tool, 3 are other founders selling or hiring, and the rest are off-topic or buried under 85 comments. At a $180 deal and a 10% close rate, those 4 hot threads hold <b>$72</b> of expected deals; left unanswered, it goes to whoever replies first. Paste your own Reddit search and every thread gets a score with the reason for each point: no Reddit login handed over, no API, nothing posted for you.</p>
+</header>
+<main>
+<section class="grid">
+<div class="inputs card">
+<h2>Your product and your paste</h2>
+<label>Start from
+      <select data-k="sample" id="sample">
+<option selected="" value="invoice">Example: invoicing app for freelancers (made-up)</option>
+<option value="reviews">Example: Shopify product-reviews app (made-up)</option>
+<option value="multi">Example: bookkeeping service, threads in 4 languages (made-up)</option>
+<option value="mine">My own paste</option>
+</select></label>
+<label>Keywords your buyers write (comma-separated)<input data-k="keywords" data-yj-mine="" id="keywords" value="invoice, invoicing, billing"/></label>
+<label>Competitors they leave (comma-separated)<input data-k="competitors" data-yj-mine="" id="competitors" value="AcmeBill, OldInvoicer"/></label>
+<div class="two">
+<label>Deal value ($)<input data-k="deal" data-yj-mine="" id="deal" inputmode="decimal" value="180"/></label>
+<label>Close rate per answered thread (%)<input data-k="close" data-yj-mine="" id="close" inputmode="decimal" value="10"/></label>
+</div>
+<label>Paste Reddit results: the JSON of a Reddit search, a Reddit .rss feed, or the text you copied from a search page
+      <textarea data-yj-mine="" id="paste" rows="9" spellcheck="false"></textarea></label>
+<p class="small" id="parse-msg"></p>
+</div>
+<div class="outcol">
+<div class="card result" data-yj="result" id="out">
+<div class="big"><span class="lbl">Hot leads in this paste</span><span class="num"><span id="r-hot">4</span> <small>of <span id="r-read">10</span> threads</small></span></div>
+<div class="trio">
+<div><span class="lbl">Expected deals in hot threads</span><b id="r-value">$72</b><span class="small" id="r-per">$180 × 10% = $18 a thread</span></div>
+<div><span class="lbl">Warm (worth a look)</span><b id="r-warm">1</b><span class="small">score 35-59</span></div>
+<div><span class="lbl">Sellers and job posts dropped</span><b id="r-noise">3</b><span class="small">not buyers</span></div>
+</div>
+<ol class="top3" id="r-top"></ol>
+<p class="loss" id="r-loss"></p>
+</div>
+<div class="card paidline" id="paid">
+<p data-fe-hidden="" hidden=""><b></b><b></b><b></b></p>
+<p class="warn" id="paid-why"></p>
+<div data-fe-hidden="" hidden="" id="pro-locked"><a class="btn" data-fe-hidden="" hidden=""></a><a class="btn alt" data-fe-hidden="" hidden=""></a><p class="small"><input data-fe-hidden="" hidden="" id="key-in"/><button data-fe-hidden="" hidden="" id="key-go" type="button"></button><span data-fe-hidden="" hidden="" id="key-msg"></span></p></div>
+</div>
+</div>
+</section>
+<section class="card">
+<h2>Every thread, scored, with the reason for each point</h2>
+<table class="rows"><tbody id="rows"></tbody></table>
+</section>
+<section class="card">
+<h2>Get today's threads from Reddit (no login handed to us)</h2>
+<p class="small">Open a link while signed in to Reddit in this browser. On the JSON link, select all (Ctrl+A), copy, and paste it above. If Reddit shows a page instead of JSON, copy the search page text: the scorer reads titles, subreddits, ages and comment counts from it. Search languages besides English:
+    <label class="inl"><input class="lg" type="checkbox" value="de"/> de</label> <label class="inl"><input class="lg" type="checkbox" value="es"/> es</label> <label class="inl"><input class="lg" type="checkbox" value="pt"/> pt</label> <label class="inl"><input class="lg" type="checkbox" value="ja"/> ja</label></p>
+<ul class="links" id="links"></ul>
+</section>
+<section class="card pro" data-fe-hidden="" hidden=""><h2></h2><div class="actions"><label class="inl"><select id="min-tier"><option></option><option></option></select></label><button id="save-book" type="button"></button><button id="dl-csv" type="button"></button><label class="inl"><input class="hr" id="ics-hour" max="23" min="0" type="number"/></label><button id="dl-ics" type="button"></button></div><div class="actions"><input id="wl-name"/><button id="wl-save" type="button"></button><button id="dl-backup" type="button"></button></div><div data-fe-hidden="" hidden="" id="pro-open" style="display:none"><div class="actions"><select id="wl-sel"></select><label class="inl"><input accept=".json" id="up-backup" type="file"/></label></div><p class="small" id="book-msg"></p><h3></h3><div id="book"></div><h3></h3><div id="weeks"></div></div></section>
+<section class="card">
+<h2>How the score works</h2>
+<ul class="small">
+<li>+25 for each of your keywords in the title, +12 in the text (up to +40) · +20 when a competitor you named appears.</li>
+<li>+30 when the thread asks for a tool or a recommendation ("looking for", "alternative to", "suche", "busco", "procuro", "おすすめ" ...) · +12 for pain right now ("by hand", "too expensive", "keeps crashing") · +5 if the title is a question.</li>
+<li>-35 for another seller or a job post ("I built", "feedback on my", "[Hiring]") · freshness +15 under 24 h, +8 under 72 h, -10 over 7 days · +10 for 5 comments or fewer, -10 over 60.</li>
+<li>Hot = 60+, warm = 35-59. A thread with none of your keywords or competitors stays at 30 or below.</li>
+</ul>
+<p class="small">Reddit's rules on self-promotion are set by each community's moderators: answer the question first and read the subreddit's rules before you mention a product. This page never posts, sends messages or votes for you. Not affiliated with Reddit, Inc.</p>
+</section>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Save and continue: <a href="https://getreadystack.com/apps/lead-generation-reddit-thread-scorer/">https://getreadystack.com/apps/lead-generation-reddit-thread-scorer/</a></p><script src="./app.js"></script>
+</body>
+</html>

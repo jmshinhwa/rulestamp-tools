@@ -27,6 +27,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | tarifas freelance | [tarifas freelance](tarifas-freelance/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/tarifas-freelance/) |
 | planilha fiscal para autónomos | [planilha fiscal para autónomos](planilha-fiscal-autonomos-portugal/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-fiscal-autonomos-portugal/) |
 | Etsy bookkeeping spreadsheet 2027 | [Etsy bookkeeping spreadsheet 2027](etsy-bookkeeping-spreadsheet/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-bookkeeping-spreadsheet/) |
+| lead generation on Reddit: thread scorer + lead tracker | [lead generation on Reddit: thread scorer + lead tracker](lead-generation-reddit-thread-scorer/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/lead-generation-reddit-thread-scorer/) |
 
 <a id="de"></a>
 
@@ -51,6 +52,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | tarifas freelance | [tarifas freelance](tarifas-freelance/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/tarifas-freelance/) |
 | planilha fiscal para autónomos | [planilha fiscal para autónomos](planilha-fiscal-autonomos-portugal/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-fiscal-autonomos-portugal/) |
 | Etsy bookkeeping spreadsheet 2027 | [Etsy bookkeeping spreadsheet 2027](etsy-bookkeeping-spreadsheet/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-bookkeeping-spreadsheet/) |
+| lead generation on Reddit: thread scorer + lead tracker | [lead generation on Reddit: thread scorer + lead tracker](lead-generation-reddit-thread-scorer/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/lead-generation-reddit-thread-scorer/) |
 
 <a id="es"></a>
 
@@ -75,6 +77,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | tarifas freelance | [tarifas freelance](tarifas-freelance/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/tarifas-freelance/) |
 | planilha fiscal para autónomos | [planilha fiscal para autónomos](planilha-fiscal-autonomos-portugal/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-fiscal-autonomos-portugal/) |
 | Etsy bookkeeping spreadsheet 2027 | [Etsy bookkeeping spreadsheet 2027](etsy-bookkeeping-spreadsheet/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-bookkeeping-spreadsheet/) |
+| lead generation on Reddit: thread scorer + lead tracker | [lead generation on Reddit: thread scorer + lead tracker](lead-generation-reddit-thread-scorer/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/lead-generation-reddit-thread-scorer/) |
 
 <a id="pt"></a>
 
@@ -99,6 +102,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | tarifas freelance | [tarifas freelance](tarifas-freelance/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/tarifas-freelance/) |
 | planilha fiscal para autónomos | [planilha fiscal para autónomos](planilha-fiscal-autonomos-portugal/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-fiscal-autonomos-portugal/) |
 | Etsy bookkeeping spreadsheet 2027 | [Etsy bookkeeping spreadsheet 2027](etsy-bookkeeping-spreadsheet/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-bookkeeping-spreadsheet/) |
+| lead generation on Reddit: thread scorer + lead tracker | [lead generation on Reddit: thread scorer + lead tracker](lead-generation-reddit-thread-scorer/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/lead-generation-reddit-thread-scorer/) |
 
 <a id="ja"></a>
 
@@ -123,6 +127,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | tarifas freelance | [tarifas freelance](tarifas-freelance/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/tarifas-freelance/) |
 | planilha fiscal para autónomos | [planilha fiscal para autónomos](planilha-fiscal-autonomos-portugal/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-fiscal-autonomos-portugal/) |
 | Etsy bookkeeping spreadsheet 2027 | [Etsy bookkeeping spreadsheet 2027](etsy-bookkeeping-spreadsheet/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-bookkeeping-spreadsheet/) |
+| lead generation on Reddit: thread scorer + lead tracker | [lead generation on Reddit: thread scorer + lead tracker](lead-generation-reddit-thread-scorer/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/lead-generation-reddit-thread-scorer/) |
 
 ---
 Rulestamp · https://getreadystack.com
