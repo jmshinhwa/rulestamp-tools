@@ -234,6 +234,15 @@
    "tools": [
     "rental-property-spreadsheet-tax-deductions"
    ]
+  },
+  {
+   "id": "c95bbf4266",
+   "name": {
+    "en": "rental tracker"
+   },
+   "tools": [
+    "rental-tracker-short-term-rental-hours"
+   ]
   }
  ],
  "tools": {
@@ -381,6 +390,11 @@
    "lang": "en",
    "name": "rental property spreadsheet",
    "hub": "https://getreadystack.com/apps/rental-property-spreadsheet-tax-deductions/"
+  },
+  "rental-tracker-short-term-rental-hours": {
+   "lang": "en",
+   "name": "rental tracker",
+   "hub": "https://getreadystack.com/apps/rental-tracker-short-term-rental-hours/"
   }
  }
 }

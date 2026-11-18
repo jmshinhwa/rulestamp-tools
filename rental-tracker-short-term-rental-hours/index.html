@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>rental tracker | STR hours, 7-day stay, 14-day rule, Schedule E</title>
+<meta content="Rental tracker for short-term rental hosts: average stay from your bookings (7-day rule), personal-use days against the 14-day / 10% limit, your hours against your cleaner's for material participation, Schedule E lines and the tax lost when the loss is passive." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/apps/rental-tracker-short-term-rental-hours/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main class="wrap">
+<h1>rental tracker | STR hours, 7-day stay, 14-day rule, Schedule E</h1>
+<p class="lede"><b>Example (made-up):</b> a Gatlinburg cabin host logged 81.5 hours by 2026-11-15 and the cleaner 102.5, so <b>the $27,016.00 short-term rental loss can't offset their pay and $6,483.84 of tax is lost at 24%.</b> 21 more logged hours by December 31 (and not fewer than the cleaner's) would keep it.</p>
+<p class="fix"><b>Hour trackers count your hours; spreadsheets count your money. This page does both and the two other tests:</b> the average stay from your bookings (7 days or less = not a rental activity), personal-use days against the 14-day / 10% limit, your hours against each other person's (the cleaner is "any other individual"), Schedule E line 2 days and lines 3-22, and the tax lost if the year ends as it stands. IRS rules read on 2026-11-18.</p>
+<section aria-live="polite" data-yj="result" id="out">
+<h2 id="o-title">2026 · Smoky Ridge Cabin, Gatlinburg, TN (example)</h2>
+<div class="tiles" id="o-tiles"><div class="tile"><span>Average stay</span><b>3.68 nights</b><small>47 guest stays · 173 fair rental days · 7 days or less: not a rental activity</small></div><div class="tile"><span>Personal-use days</span><b>12 of 17.3</b><small>5.3 days left before the 14-day / 10% limit</small></div><div class="tile"><span>Your hours</span><b>81.5</b><small>Dana (cleaner) logged 102.5</small></div><div class="tile bad"><span>Hours still needed</span><b>21</b><small>by December 31, 2026 to be not less than Dana (cleaner)</small></div><div class="tile bad"><span>Schedule E line 21</span><b>−$27,016.00</b><small>loss offsets none of your pay</small></div><div class="tile bad"><span>Tax lost this year</span><b>$6,483.84</b><small>$27,016.00 loss suspended at 24%</small></div></div>
+<ul class="flags" id="o-flags"><li class="main">Average stay 7 days or less, no material participation: loss passive</li><li class="bad">The $27,016.00 loss is passive and the $25,000 allowance is only for rental activities, so none of it offsets your pay this year: $6,483.84 of tax at 24%. Log 21 more hours by December 31 (and stay not less than Dana (cleaner)) and it becomes $6,483.84 saved.</li><li class="info">Rental share 93.51% (173 of 185 days used). $1,264.86 of interest and taxes is the personal part (Schedule A if you itemize).</li></ul>
+</section>
+<div class="buyline" data-fe-hidden="" hidden=""><p><b></b></p><a class="btn" data-fe-hidden="" hidden=""></a><a class="small" data-fe-hidden="" hidden=""></a></div>
+<section id="detail">
+<h2>Hours by person</h2>
+<div class="scroll"><table class="res"><thead><tr><th>Who</th><th>Hours</th><th>Against you</th></tr></thead><tbody id="o-people"></tbody></table></div>
+<h2>Schedule E for this rental</h2>
+<div class="scroll"><table class="res"><thead><tr><th>Line</th><th></th><th>Amount</th></tr></thead><tbody id="o-lines"><tr><td>1b</td><td>Type of property</td><td class="n">3 (vacation / short-term rental)</td></tr><tr><td>2</td><td>Fair rental days</td><td class="n">173</td></tr><tr><td>2</td><td>Personal use days</td><td class="n">12</td></tr><tr><td>3</td><td>Rents received</td><td class="n">$48,735.00</td></tr><tr><td>7</td><td>Cleaning and maintenance</td><td class="n">$7,691.49</td></tr><tr><td>9</td><td>Insurance</td><td class="n">$2,291.08</td></tr><tr><td>12</td><td>Mortgage interest</td><td class="n">$14,588.11</td></tr><tr><td>14</td><td>Repairs</td><td class="n">$1,533.62</td></tr><tr><td>15</td><td>Supplies</td><td class="n">$2,038.59</td></tr><tr><td>16</td><td>Taxes</td><td class="n">$3,647.03</td></tr><tr><td>17</td><td>Utilities</td><td class="n">$4,039.78</td></tr><tr><td>18</td><td>Depreciation</td><td class="n">$38,459.30</td></tr><tr><td>19</td><td>Other: host service fees (direct)</td><td class="n">$1,462.00</td></tr><tr><td>20</td><td>Total expenses</td><td class="n">$75,751.00</td></tr><tr><td>21</td><td>Income or (loss)</td><td class="n">−$27,016.00</td></tr><tr><td>22</td><td>Loss allowed this year (Form 8582)</td><td class="n">$0.00</td></tr></tbody></table></div>
+<p class="summary" id="o-summary"></p>
+</section>
+<form autocomplete="off" id="f" onsubmit="return false">
+<fieldset>
+<legend>You and the year</legend>
+<div class="row4">
+<label>Tax year <select data-k="year" data-yj-mine=""><option selected="" value="2026">2026</option><option value="2027">2027</option></select></label>
+<label class="span2">Rental (name or address) <input data-k="listing" data-yj-mine="" value="Smoky Ridge Cabin, Gatlinburg, TN (example)"/></label>
+<label>Your top tax rate, % <input data-k="rate" data-yj-mine="" inputmode="decimal" value="24"/></label>
+<label>Modified AGI (for the $25,000 allowance if stays average over 7 days) <input data-k="magi" data-yj-mine="" inputmode="decimal" value="165,000"/></label>
+</div>
+</fieldset>
+<fieldset>
+<legend>Stays: check-in; check-out; amount; who, one per line</legend>
+<label>who = <b>guest</b> (fair rent) · <b>owner</b> (you or a co-owner) · <b>family</b> · <b>below</b> (less than fair rent) · <b>friend</b> · <b>swap</b> (you use their place) · <b>repair</b> (full days fixing, not personal)
+      <textarea data-k="stays" data-yj-mine="" rows="8">2026-01-03; 2026-01-06; 740; guest
+2026-01-09; 2026-01-13; 955; guest
+2026-01-16; 2026-01-18; 525; guest
+2026-01-23; 2026-01-28; 1,170; guest
+2026-01-31; 2026-02-03; 740; guest
+2026-02-06; 2026-02-12; 1,385; guest
+2026-02-17; 2026-02-21; 955; guest
+2026-02-24; 2026-02-27; 740; guest
+2026-03-02; 2026-03-04; 555; guest
+2026-03-09; 2026-03-13; 1,015; guest
+2026-03-16; 2026-03-21; 1,245; guest
+2026-03-24; 2026-03-27; 785; guest
+2026-04-01; 2026-04-04; 815; guest
+2026-04-07; 2026-04-11; 1,055; guest
+2026-04-14; 2026-04-19; 0; owner
+2026-04-21; 2026-04-23; 575; guest
+2026-04-28; 2026-05-03; 1,295; guest
+2026-05-06; 2026-05-09; 860; guest
+2026-05-12; 2026-05-18; 1,625; guest
+2026-05-23; 2026-05-27; 1,115; guest
+2026-05-30; 2026-06-02; 860; guest
+2026-06-05; 2026-06-07; 645; guest
+2026-06-12; 2026-06-16; 1,195; guest
+2026-06-19; 2026-06-24; 1,470; guest
+2026-06-27; 2026-06-30; 920; guest
+2026-07-05; 2026-07-08; 980; guest
+2026-07-11; 2026-07-15; 1,275; guest
+2026-07-18; 2026-07-20; 685; guest
+2026-07-25; 2026-07-30; 1,570; guest
+2026-08-02; 2026-08-05; 980; guest
+2026-08-08; 2026-08-14; 1,865; guest
+2026-08-19; 2026-08-23; 1,275; guest
+2026-08-26; 2026-08-29; 980; guest
+2026-09-01; 2026-09-03; 615; guest
+2026-09-08; 2026-09-12; 1,135; guest
+2026-09-15; 2026-09-20; 1,395; guest
+2026-09-23; 2026-09-26; 875; guest
+2026-10-01; 2026-10-04; 890; guest
+2026-10-07; 2026-10-11; 1,155; guest
+2026-10-14; 2026-10-16; 625; guest
+2026-10-21; 2026-10-28; 0; owner
+2026-10-30; 2026-11-04; 1,420; guest
+2026-11-07; 2026-11-10; 815; guest
+2026-11-13; 2026-11-19; 1,535; guest
+2026-11-24; 2026-11-28; 1,055; guest
+2026-12-01; 2026-12-04; 950; guest
+2026-12-07; 2026-12-09; 665; guest
+2026-12-14; 2026-12-18; 1,235; guest
+2026-12-21; 2026-12-26; 1,520; guest</textarea></label>
+</fieldset>
+<fieldset>
+<legend>Hours log: date; who; hours; what you did, one per line</legend>
+<label>who = <b>you</b> or <b>spouse</b> (pooled) or any other person by name (cleaner, co-host, handyman, manager: each one counts against you)
+      <textarea data-k="hours" data-yj-mine="" rows="8">2026-01-31; you; 8; guest messages, 2 check-in walk-throughs, restock run
+2026-01-31; Dana (cleaner); 10; 4 turnovers
+2026-02-28; you; 6.5; guest messages, pricing changes, hot tub service visit
+2026-02-28; Dana (cleaner); 10; 4 turnovers
+2026-03-31; you; 7; guest messages, listing photos, restock run
+2026-03-31; Dana (cleaner); 10; 4 turnovers
+2026-04-30; you; 9.5; spring deck repair with handyman, guest messages
+2026-04-30; Dana (cleaner); 7.5; 3 turnovers
+2026-05-31; you; 7; guest messages, restock run, smoke detector test
+2026-05-31; Dana (cleaner); 10; 4 turnovers
+2026-06-30; you; 8.5; guest messages, AC repair visit, pricing for July
+2026-06-30; Dana (cleaner); 12.5; 5 turnovers
+2026-07-31; you; 8; guest messages, 2 check-in walk-throughs
+2026-07-31; Dana (cleaner); 10; 4 turnovers
+2026-08-31; you; 7.5; guest messages, restock run, review replies
+2026-08-31; Dana (cleaner); 10; 4 turnovers
+2026-09-30; you; 7; guest messages, pest control visit
+2026-09-30; Dana (cleaner); 10; 4 turnovers
+2026-10-31; you; 9; guest messages, gutter cleaning, winter pricing
+2026-10-31; Dana (cleaner); 7.5; 3 turnovers
+2026-11-15; you; 3.5; guest messages, restock run
+2026-11-15; Dana (cleaner); 5; 2 turnovers</textarea></label>
+</fieldset>
+<fieldset>
+<legend>Expenses for the year (whole property; the page takes the rental share)</legend>
+<div class="row4">
+<label>Mortgage interest <input data-k="interest" data-yj-mine="" inputmode="decimal" value="15,600"/></label>
+<label>Property taxes <input data-k="taxes" data-yj-mine="" inputmode="decimal" value="3,900"/></label>
+<label>Insurance <input data-k="insurance" data-yj-mine="" inputmode="decimal" value="2,450"/></label>
+<label>Utilities and internet <input data-k="utilities" data-yj-mine="" inputmode="decimal" value="4,320"/></label>
+<label>Cleaning (turnovers) <input data-k="cleaning" data-yj-mine="" inputmode="decimal" value="8,225"/></label>
+<label>Supplies <input data-k="supplies" data-yj-mine="" inputmode="decimal" value="2,180"/></label>
+<label>Repairs <input data-k="repairs" data-yj-mine="" inputmode="decimal" value="1,640"/></label>
+<label>Host service fees (taken in full) <input data-k="fees" data-yj-mine="" inputmode="decimal" value="1,462"/></label>
+<label>Depreciation (from Form 4562) <input data-k="depreciation" data-yj-mine="" inputmode="decimal" value="41,127"/></label>
+<label>Carried in: vacation-home operating <input data-k="carry_op" data-yj-mine="" inputmode="decimal" value="0"/></label>
+<label>Carried in: vacation-home depreciation <input data-k="carry_dep" data-yj-mine="" inputmode="decimal" value="0"/></label>
+<label>Carried in: suspended passive loss <input data-k="carry_pass" data-yj-mine="" inputmode="decimal" value="0"/></label>
+</div>
+<p class="small">Example depreciation: building $350,000 over 27.5 years ($12,727) plus $28,400 of furniture and a hot tub bought in 2026 at the 100% special allowance.</p>
+</fieldset>
+<p><button class="btn2" id="reset" type="button">Back to the example</button> <button class="btn2" id="clear" type="button">Start with my own (empty)</button></p>
+</form>
+<p class="small">rental tracker · 18 inputs · 6 results · 7-day stay , 14-day rule , material participation , Schedule E</p>
+<section id="stays-list">
+<h2>Stays read from the box</h2>
+<div class="scroll"><table class="res"><thead><tr><th>In</th><th>Out</th><th>Nights this year</th><th>Who</th><th>Amount</th></tr></thead><tbody id="o-stays"></tbody></table></div>
+</section>
+<section data-fe-hidden="" hidden="" id="pro"><h2></h2><p class="note" data-fe-hidden="" hidden="" id="pro-msg"></p><div class="pro-tools"><button class="btn2" data-pro="print" type="button"></button><label class="file btn2" data-pro-file="imp"><input accept=".csv,text/csv" id="imp" type="file"/></label><button class="btn2" data-pro="save" type="button"></button><button class="btn2" data-pro="close" type="button"></button><button class="btn2" data-pro="csv" type="button"></button><button class="btn2" data-pro="ics" type="button"></button><button class="btn2" data-pro="backup" type="button"></button><label class="file btn2" data-pro-file="load"><input accept=".json,application/json" id="load" type="file"/></label></div><p class="small" data-fe-hidden="" hidden="" id="pro-out"></p><div hidden="" id="props"><h3></h3><div class="scroll"><table class="book"><thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody id="prop-rows"></tbody></table></div></div><div class="key" data-fe-hidden="" hidden=""><label data-fe-hidden="" hidden=""><input id="key"/></label><button class="btn2" data-fe-hidden="" hidden="" id="key-go" type="button"></button><span class="small" data-fe-hidden="" hidden="" id="key-msg"></span></div><p><a class="btn" data-fe-hidden="" hidden=""></a></p></section>
+<section id="faq">
+<h2>Questions</h2>
+<details><summary>What does this rental tracker work out?</summary><p>From 18 inputs (year, rental, tax rate, MAGI, the stays box, the hours log, nine expense amounts and three carried-in amounts) it gives 6 results: the average stay in nights, personal-use days against the 14-day / 10% limit, your hours, the hours you still need, Schedule E line 21, and the tax lost this year if the loss is suspended.</p></details>
+<details><summary>Why does a 7-day average stay matter?</summary><p>IRS Publication 925 says an activity is not a rental activity when the average period of customer use is 7 days or less: total days in all rental periods divided by the number of rentals. A loss from it is then passive unless you materially participate, and the $25,000 allowance for rental real estate does not reach it.</p></details>
+<details><summary>Why do my cleaner's hours count against me?</summary><p>Treas. Reg. 1.469-5T(a)(3) is met when you participate more than 100 hours and not less than any other individual, owners or not. Each person is compared on their own, so one cleaner with 102.5 hours beats your 81.5. Your spouse's hours are pooled with yours. Over 500 hours of your own meets test (a)(1) whatever others log.</p></details>
+<details><summary>What is the 14-day personal use limit?</summary><p>Publication 527: you use a unit as a home when your personal days are more than the greater of 14 days or 10% of the days rented at a fair price. Family, below-fair-rent and swap nights count as personal. Then rental expenses are capped at rents in Worksheet 5-1 order and the rest carries to next year.</p></details>
+<details data-fe-hidden="" hidden=""><summary></summary><p></p></details>
+</section>
+<ul class="law small">
+<li>Sources read on 2026-11-18: IRS Publication 527 (2025), chapter 5 and Worksheet 5-1 (used as a home = personal use over the greater of 14 days or 10% of fair-rental days; expenses split by days rented at a fair price ÷ total days used; tiers and carryover) · Instructions for Schedule E (2025), line 2 · Publication 925 (2025): "The average period of customer use of the property is 7 days or less", the $25,000 special allowance for a passive rental real estate activity · Treas. Reg. § 1.469-1(e)(3)(iii) (average = days in all periods ÷ number of periods) · Treas. Reg. § 1.469-5T(a)(1) "more than 500 hours", (a)(3) "more than 100 hours" and "not less than the participation in the activity of any other individual", (f)(3) spouse.</li>
+<li>Checks material participation tests (a)(1) and (a)(3) only; the other five need facts a log does not hold. Average stay counts nights. Does not check significant personal services (Schedule C), real estate professional status or other passive income. Assumes interest and taxes sit in tier 1 (you itemize).</li>
+<li>Your data stays in this browser (localStorage). Nothing is sent to us. A calculation and record tool, not tax or legal advice.</li>
+</ul>
+</main>
+<div id="print-area"></div>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Save and continue: <a href="https://getreadystack.com/apps/rental-tracker-short-term-rental-hours/">https://getreadystack.com/apps/rental-tracker-short-term-rental-hours/</a></p><script src="./engine.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
