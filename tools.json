@@ -198,6 +198,15 @@
    "tools": [
     "automation-scripts-python-preview"
    ]
+  },
+  {
+   "id": "190c96751d",
+   "name": {
+    "en": "divorce asset division calculator"
+   },
+   "tools": [
+    "divorce-asset-division-calculator"
+   ]
   }
  ],
  "tools": {
@@ -325,6 +334,11 @@
    "lang": "es",
    "name": "bolsa de empleo España: ofertas de empleo por email de webs de empresas + BOE",
    "hub": "https://getreadystack.com/es/apps/bolsa-de-empleo/"
+  },
+  "divorce-asset-division-calculator": {
+   "lang": "en",
+   "name": "divorce asset division calculator",
+   "hub": "https://getreadystack.com/apps/divorce-asset-division-calculator/"
   }
  }
 }

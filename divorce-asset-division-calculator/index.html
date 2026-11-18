@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>divorce asset division calculator | separate property, equalization, after-tax</title>
+<meta content="Divorce asset division calculator for the US: list every asset and debt, set separate property apart, split 50/50 or by your percent, and see the equalization payment at face value and after the tax still owed on a 401(k), brokerage account or house. Data stays in your browser." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/apps/divorce-asset-division-calculator/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<header class="top">
+<h1>divorce asset division calculator | separate property, equalization, after-tax</h1>
+<p class="lede"><b>Example (made-up)</b>, already worked out below: Alex and Blake in California split $660,600 of marital property 50/50. Alex keeps the house and the 401(k) and pays Blake $160,700, then <b>walks away with $20,620 less than half after tax</b>, because that 401(k) still owes $46,640 in income tax.</p>
+<p class="sub">Free divorce asset split worksheets stop at face value. This one sets separate property apart row by row, works for the 9 community property states and the equitable distribution states, and shows what each spouse really keeps after the tax that comes due when a pre-tax 401(k), a brokerage account or a house is cashed in. No sign-up; your numbers stay in this browser.</p>
+</header>
+<main>
+<section class="card" id="res">
+<div aria-live="polite" data-yj="result" id="out"></div>
+<p class="src-line noprint" id="freeline">Free: one case, any number of assets and debts, the whole division on screen.</p>
+</section>
+<section class="card noprint" id="inputs">
+<h2>Your case</h2>
+<div class="grid">
+<label>Start from<select data-k="" id="sample"><option selected="" value="A">Example A (made-up): California, 50/50</option><option value="B">Example B (made-up): Pennsylvania, 45/55</option><option value="blank">Blank case (my own numbers)</option></select></label>
+<label>State where you file<select data-k="" data-yj-mine="" id="state"></select></label>
+<label>Spouse A name<input data-yj-mine="" id="nameA" value="Alex"/></label>
+<label>Spouse B name<input data-yj-mine="" id="nameB" value="Blake"/></label>
+<label>Spouse A's share of the marital estate (%)<input data-k="" data-yj-mine="" id="pctA" inputmode="decimal" value="50"/></label>
+<label>Income tax rate on pre-tax retirement money (%)<input data-k="" data-yj-mine="" id="ti" inputmode="decimal" value="22"/></label>
+<label>Capital-gains rate on brokerage, business, home gain (%)<input data-k="" data-yj-mine="" id="tcg" inputmode="decimal" value="15"/></label>
+<label>Home-sale gain exclusion per person ($)<input data-k="" data-yj-mine="" id="excl" inputmode="numeric" value="250000"/></label>
+</div>
+<p class="hint" id="statehint"></p>
+<h2>Assets and debts</h2>
+<p class="hint">One row per item, value as of the date your state uses (often the separation or the hearing date). Debts as positive amounts. <b>Separate part</b>: the amount that belongs to one spouse alone (owned before the wedding, an inheritance, a gift); leave the amount empty when the whole item is separate.</p>
+<div class="tbl"><table id="items"><thead><tr><th>Item</th><th>Type</th><th>Value ($)</th><th>Cost basis ($)</th><th>Separate part ($)</th><th>Separate owner</th><th>Kept by</th><th></th></tr></thead><tbody></tbody></table></div>
+<p class="btns"><button class="btn ghost" id="addA">+ Asset</button> <button class="btn ghost" id="addD">+ Debt</button> <button class="btn ghost" id="clear">Empty the list</button></p>
+</section>
+<section class="card pro noprint" data-fe-hidden="" hidden="" id="pro"><h2></h2><ul><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b><b></b><b></b></li></ul><div class="buyrow"><p class="price"></p><p class="btns"><a class="btn" data-fe-hidden="" hidden=""></a><a class="btn ghost" data-fe-hidden="" hidden=""></a></p></div><div class="row"><label data-fe-hidden="" hidden=""><input id="key"/></label><button class="btn ghost" data-fe-hidden="" hidden="" id="unlock"></button></div><p class="hint" data-fe-hidden="" hidden="" id="keymsg"></p><div data-fe-hidden="" hidden="" id="proarea"><div class="row"><label><input id="casename"/></label><button class="btn" id="savecase"></button><label><input id="scname"/></label><button class="btn ghost" id="savesc"></button></div><div id="cases"></div><div id="compare"></div><p class="btns"><button class="btn ghost" id="print"></button><button class="btn ghost" id="csv"></button><button class="btn ghost" id="backup"></button><label class="btn ghost file"><input accept=".json" hidden="" id="restore" type="file"/></label></p><div class="row"><label><input id="icsdate" type="date"/></label><label><select id="icswhat"><option></option><option></option><option></option><option></option></select></label><button class="btn ghost" id="ics"></button></div></div></section>
+<section class="card" id="how">
+<h2>How the calculator works</h2>
+<ul>
+<li><b>Marital part</b> of each item = value − separate part. Debts count as minus. <b>Net marital estate</b> = sum of the marital parts. Separate property is listed apart and is not divided.</li>
+<li><b>Target</b> for each spouse = net marital estate × that spouse's percent. <b>Kept</b> = the marital parts of the items that spouse keeps; an item marked "sell and split" is shared by the same percent.</li>
+<li><b>Equalization payment</b> (face value) = what spouse A keeps − spouse A's target. Above zero, A pays B; below zero, B pays A.</li>
+<li><b>Tax on cash-in</b> (marital part only): pre-tax retirement = value × your income tax rate; brokerage or business = (value − cost basis) × your capital-gains rate; home = (value − cost basis − exclusion) × your capital-gains rate, never below zero. Cash, Roth money, vehicles and debts: none. <b>After-tax payment</b> = the same even-up measured on value minus that tax.</li>
+<li><b>Worked example A</b>: estate $640,000 − $385,000 + $18,000 + $212,000 + $48,000 + $96,000 + $24,000 + $17,000 − $9,400 = $660,600; half = $330,300. Alex keeps $640,000 − $385,000 + $212,000 + $24,000 = $491,000, so Alex pays $491,000 − $330,300 = $160,700. Tax: Alex's 401(k) $212,000 × 22% = $46,640; brokerage ($96,000 − $60,000) × 15% = $5,400; home gain $230,000 is under the $250,000 exclusion. After tax the estate is $608,560 and half is $304,280; Alex keeps $491,000 − $46,640 = $444,360, so the after-tax payment is $140,080. Paying $160,700 instead leaves Alex $283,660, which is $20,620 less than half.</li>
+</ul>
+<h2>Community property or equitable distribution</h2>
+<p>IRS Publication 555 (Rev. 12-2024) lists 9 community property states: Arizona, California, Idaho, Louisiana, Nevada, New Mexico, Texas, Washington and Wisconsin. The calculator starts those at 50/50. The other states and DC divide by equitable distribution, which means fair, not always equal: type the percent you agreed or are asking for. Alaska, South Dakota and Tennessee also have state-law community property elections that a couple must choose.</p>
+<p>IRS Publication 504 (2025): generally no gain or loss is recognized when property moves to a spouse or, incident to the divorce, to a former spouse; the one who receives it also receives the tax that is still built into it. That is why the after-tax column exists. IRS Publication 523: a single filer who meets the ownership and use tests may exclude up to $250,000 of gain on a main home ($500,000 if married filing jointly).</p>
+<p class="src">Sources read 2026-11-18: irs.gov/pub/irs-pdf/p555.pdf · p504.pdf · p523.pdf. Courts in many states divide at face value unless a tax is immediate and certain; use the after-tax column to negotiate and ask your attorney how your court treats it. A record-and-calculation tool for your own numbers: not legal or tax advice.</p>
+</section>
+</main>
+<footer><p>divorce asset division calculator · your data stays in this browser.</p></footer>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Save and continue: <a href="https://getreadystack.com/apps/divorce-asset-division-calculator/">https://getreadystack.com/apps/divorce-asset-division-calculator/</a></p><script src="./dad.js"></script>
+<script src="./sample.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

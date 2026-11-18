@@ -35,6 +35,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 | monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
 | automation scripts | [automation scripts](automation-scripts-python-preview/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automation-scripts-python-preview/) |
+| divorce asset division calculator | [divorce asset division calculator](divorce-asset-division-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/divorce-asset-division-calculator/) |
 
 <a id="de"></a>
 
@@ -67,6 +68,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 | monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
 | automation scripts | [automation scripts](automation-scripts-python-preview/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automation-scripts-python-preview/) |
+| divorce asset division calculator | [divorce asset division calculator](divorce-asset-division-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/divorce-asset-division-calculator/) |
 
 <a id="es"></a>
 
@@ -99,6 +101,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 | monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
 | automation scripts | [automation scripts](automation-scripts-python-preview/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automation-scripts-python-preview/) |
+| divorce asset division calculator | [divorce asset division calculator](divorce-asset-division-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/divorce-asset-division-calculator/) |
 
 <a id="pt"></a>
 
@@ -131,6 +134,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 | monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
 | automation scripts | [automation scripts](automation-scripts-python-preview/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automation-scripts-python-preview/) |
+| divorce asset division calculator | [divorce asset division calculator](divorce-asset-division-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/divorce-asset-division-calculator/) |
 
 <a id="ja"></a>
 
@@ -163,6 +167,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 | monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
 | automation scripts | [automation scripts](automation-scripts-python-preview/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automation-scripts-python-preview/) |
+| divorce asset division calculator | [divorce asset division calculator](divorce-asset-division-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/divorce-asset-division-calculator/) |
 
 ---
 Rulestamp · https://getreadystack.com
