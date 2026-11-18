@@ -1,0 +1,94 @@
+:root { --ink: #1d2433; --mute: #5b6475; --line: #e3e6ec; --bg: #f7f8fa; --card: #fff; --acc: #0f766e; --acc2: #0b5e57; --bad: #b42318; --warn: #fff4e5; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: var(--ink); background: var(--bg); }
+.efc { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
+h1 { font-size: 1.7rem; line-height: 1.25; margin: 6px 0 10px; }
+h2 { font-size: 1.3rem; margin: 0 0 10px; }
+h3 { font-size: 1.08rem; margin: 22px 0 8px; }
+.lede { font-size: 1.08rem; margin: 0 0 8px; }
+.sub { color: var(--mute); margin: 0 0 16px; }
+.calc { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 900px) { .calc { grid-template-columns: 0.9fr 1.1fr; align-items: start; } }
+.inputs { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 12px; }
+.inputs label { display: flex; flex-direction: column; gap: 4px; font-size: 0.86rem; color: var(--mute); }
+.inputs .wide { grid-column: 1 / -1; }
+.inputs input, .inputs select, .actions input, .keyform input { font: inherit; color: var(--ink); padding: 8px 9px; border: 1px solid #cfd4dc; border-radius: 7px; background: #fff; min-width: 0; width: 100%; }
+.inputs input:focus, .inputs select:focus { outline: 2px solid var(--acc); outline-offset: 0; }
+.more summary { cursor: pointer; color: var(--acc2); font-size: 0.9rem; }
+.more-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 12px; margin-top: 10px; }
+.hint { color: var(--mute); font-size: 0.84rem; margin: 8px 0 0; }
+#out { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; min-height: 120px; }
+.r-big { margin: 0 0 10px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; }
+.r-big span { font-size: 0.95rem; color: var(--mute); }
+.r-big b { font-size: 2.1rem; line-height: 1.1; color: var(--acc2); }
+.r-big em { font-style: normal; color: var(--mute); }
+.tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 0 0 12px; }
+.tiles div { border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; background: #fbfcfd; }
+.tiles span { display: block; font-size: 0.78rem; color: var(--mute); }
+.tiles b { display: block; font-size: 1.25rem; }
+.tiles small { color: var(--mute); font-size: 0.76rem; }
+.m-tiles { grid-template-columns: repeat(4, 1fr); }
+table { border-collapse: collapse; width: 100%; font-size: 0.9rem; }
+caption { text-align: left; color: var(--mute); font-size: 0.8rem; padding: 0 0 6px; }
+th, td { text-align: left; padding: 6px 6px; border-bottom: 1px solid var(--line); vertical-align: top; font-weight: normal; }
+td { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.r-tab tr.sum th, .r-tab tr.sum td, .m-tab tr.sum th, .m-tab tr.sum td { font-weight: 600; }
+tr.big th, tr.big td { font-size: 1.05rem; color: var(--acc2); }
+tr.zero td, tr.note td, tr.note th { color: var(--mute); }
+.r-if, .r-target, .r-warn { margin: 10px 0 0; }
+.r-warn { color: var(--bad); }
+.buyline { font-size: 0.9rem; color: var(--mute); margin: 10px 2px 0; }
+.buyline a, .probox a.buy { color: var(--acc2); font-weight: 600; }
+.pro, .rates, .faq { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px; margin-top: 22px; }
+.steps { padding-left: 20px; }
+.steps li { margin: 0 0 6px; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-end; margin: 10px 0; }
+button { font: inherit; padding: 8px 12px; border-radius: 7px; border: 1px solid var(--acc); background: var(--acc); color: #fff; cursor: pointer; }
+button:hover { background: var(--acc2); }
+button.ghost { background: #fff; color: var(--acc2); }
+button.del { padding: 0 8px; background: #fff; color: var(--bad); border-color: #e7c1bd; }
+label.inline { display: flex; flex-direction: column; font-size: 0.82rem; color: var(--mute); gap: 3px; }
+.actions label.inline input { width: 170px; }
+.msg { color: var(--acc2); font-size: 0.9rem; min-height: 1.2em; }
+.m-label { font-weight: 600; margin: 14px 0 6px; }
+.month { border: 1px dashed #c7cdd6; border-radius: 10px; padding: 12px; overflow-x: auto; }
+.m-head { color: var(--mute); margin: 0 0 8px; font-size: 0.9rem; }
+.m-tab, .m-items { margin-top: 8px; }
+.m-tab tr.fee th { padding-left: 16px; }
+.m-items input.ucost { width: 90px; padding: 4px 6px; border: 1px solid #cfd4dc; border-radius: 6px; font: inherit; text-align: right; }
+.m-note { color: var(--mute); font-size: 0.86rem; }
+.m-lines { margin-top: 10px; }
+.m-lines summary { cursor: pointer; color: var(--acc2); }
+.scroll { overflow-x: auto; }
+.h-tab, .p-tab, .rates-tab { min-width: 640px; }
+.p-tab tr.low td, .p-tab tr.low th { background: var(--warn); }
+.p-tab th small, .m-items th small { display: block; color: var(--mute); font-size: 0.75rem; }
+.probox { border: 2px solid var(--acc); border-radius: 10px; padding: 12px 14px; margin: 14px 0; background: #f0faf8; }
+.probox a.buy { display: inline-block; margin-right: 10px; }
+.keyform { display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-end; margin-top: 16px; }
+.keyform input { width: 260px; }
+.facts { padding-left: 20px; font-size: 0.92rem; }
+.src { font-size: 0.84rem; color: var(--mute); }
+.src a { color: var(--acc2); }
+.faq details { border-bottom: 1px solid var(--line); padding: 8px 0; }
+.faq summary { cursor: pointer; font-weight: 600; }
+.foot { color: var(--mute); font-size: 0.84rem; margin-top: 18px; }
+.print-area { display: none; }
+@media (max-width: 560px) {
+  .inputs, .more-grid { grid-template-columns: 1fr; }
+  .m-tiles { grid-template-columns: 1fr 1fr; }
+  .tiles b { font-size: 1.12rem; }
+}
+@media (max-width: 480px) {
+  .tiles { grid-template-columns: 1fr 1fr; }
+  .tiles div:last-child { grid-column: 1 / -1; }
+  .r-big b { font-size: 1.8rem; }
+  h1 { font-size: 1.4rem; }
+}
+@media print {
+  body { background: #fff; }
+  .efc { display: none; }
+  .print-area { display: block; padding: 0 8px; }
+  .print-area .del { display: none; }
+  .h-tab { min-width: 0; }
+}

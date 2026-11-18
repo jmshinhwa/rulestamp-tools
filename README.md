@@ -41,6 +41,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Muse AI prompts | [Muse AI prompts](muse-ai-prompts/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/muse-ai-prompts/) |
 | rental property spreadsheet | [rental property spreadsheet](rental-property-spreadsheet-tax-deductions/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-property-spreadsheet-tax-deductions/) |
 | rental tracker | [rental tracker](rental-tracker-short-term-rental-hours/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-tracker-short-term-rental-hours/) |
+| Etsy Fee Calculator | [Etsy Fee Calculator](etsy-fee-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-fee-calculator/) |
 
 <a id="de"></a>
 
@@ -79,6 +80,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Muse AI prompts | [Muse AI prompts](muse-ai-prompts/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/muse-ai-prompts/) |
 | rental property spreadsheet | [rental property spreadsheet](rental-property-spreadsheet-tax-deductions/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-property-spreadsheet-tax-deductions/) |
 | rental tracker | [rental tracker](rental-tracker-short-term-rental-hours/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-tracker-short-term-rental-hours/) |
+| Etsy Fee Calculator | [Etsy Fee Calculator](etsy-fee-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-fee-calculator/) |
 
 <a id="es"></a>
 
@@ -117,6 +119,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Muse AI prompts | [Muse AI prompts](muse-ai-prompts/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/muse-ai-prompts/) |
 | rental property spreadsheet | [rental property spreadsheet](rental-property-spreadsheet-tax-deductions/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-property-spreadsheet-tax-deductions/) |
 | rental tracker | [rental tracker](rental-tracker-short-term-rental-hours/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-tracker-short-term-rental-hours/) |
+| Etsy Fee Calculator | [Etsy Fee Calculator](etsy-fee-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-fee-calculator/) |
 
 <a id="pt"></a>
 
@@ -155,6 +158,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Muse AI prompts | [Muse AI prompts](muse-ai-prompts/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/muse-ai-prompts/) |
 | rental property spreadsheet | [rental property spreadsheet](rental-property-spreadsheet-tax-deductions/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-property-spreadsheet-tax-deductions/) |
 | rental tracker | [rental tracker](rental-tracker-short-term-rental-hours/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-tracker-short-term-rental-hours/) |
+| Etsy Fee Calculator | [Etsy Fee Calculator](etsy-fee-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-fee-calculator/) |
 
 <a id="ja"></a>
 
@@ -193,6 +197,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Muse AI prompts | [Muse AI prompts](muse-ai-prompts/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/muse-ai-prompts/) |
 | rental property spreadsheet | [rental property spreadsheet](rental-property-spreadsheet-tax-deductions/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-property-spreadsheet-tax-deductions/) |
 | rental tracker | [rental tracker](rental-tracker-short-term-rental-hours/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-tracker-short-term-rental-hours/) |
+| Etsy Fee Calculator | [Etsy Fee Calculator](etsy-fee-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-fee-calculator/) |
 
 ---
 Rulestamp · https://getreadystack.com

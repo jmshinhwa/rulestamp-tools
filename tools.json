@@ -245,6 +245,15 @@
    "tools": [
     "rental-tracker-short-term-rental-hours"
    ]
+  },
+  {
+   "id": "88087143a2",
+   "name": {
+    "en": "Etsy Fee Calculator"
+   },
+   "tools": [
+    "etsy-fee-calculator"
+   ]
   }
  ],
  "tools": {
@@ -402,6 +411,11 @@
    "lang": "es",
    "name": "gastos mensuales Excel",
    "hub": "https://getreadystack.com/es/apps/gastos-mensuales-excel-control-recibos/"
+  },
+  "etsy-fee-calculator": {
+   "lang": "en",
+   "name": "Etsy Fee Calculator",
+   "hub": "https://getreadystack.com/apps/etsy-fee-calculator/"
   }
  }
 }
