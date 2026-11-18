@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>gastos mensuales Excel | recibos, subidas, cobros dobles</title>
+<meta content="Gastos mensuales con control de recibos domiciliados: apunta tus recibos fijos, pega los cargos del banco y ves qué recibo subió, cuál te cobraron dos veces, cuál no esperabas y hasta qué día puedes devolverlo (8 semanas). Exporta el mes a Excel." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/es/apps/gastos-mensuales-excel-control-recibos/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main class="wrap">
+<h1>gastos mensuales Excel | recibos, subidas, cobros dobles</h1>
+<p class="lede"><b>Ejemplo (inventado):</b> 8 recibos domiciliados de un hogar en España, octubre de 2026: la fibra sube de 45,00 € a 49,50 € y el seguro de hogar de 186,30 € a 214,60 €, una pérdida de 82,30 € al año; además la TV se cobra dos veces y entra un recibo de 9,99 € que no esperabas: <b>56,78 € a revisar</b>. El primer plazo para devolverlo en el banco acaba el 28/11/2026.</p>
+<p class="fix"><b>¿Tu plantilla de gastos mensuales solo suma lo que gastaste?</b> Una hoja de Excel suma 49,50 € igual que 45,00 €: no te dice que la fibra subió ni que un recibo entró dos veces. Aquí cada cargo del banco se compara con el recibo que esperabas, y cada cargo marcado lleva su fecha límite: 8 semanas desde el cargo para pedir la devolución de un adeudo domiciliado (art. 49.1 del Real Decreto-ley 19/2018).</p>
+<p class="spec small">gastos mensuales Excel · control de facturas mensuales y seguimiento de recibos · 5 inputs (mes, fecha de hoy, margen de subida, tus recibos, cargos del banco) · 4 avisos (subida, cobro doble, recibo que no esperabas, recibo sin cargo) · 2 plazos (8 semanas · 13 meses) · sin cuenta ni conexión al banco: los datos se quedan en tu navegador · actualizado 2026-11-18</p>
+<section aria-live="polite" data-yj="result" id="out">
+<div class="tiles" id="o-tiles"><div class="tile bad"><span>A revisar en octubre 2026</span><b>56,78 €</b><i>4 cargos: subida Fibra y móvil, subida Seguro de hogar, cobro doble Plataforma TV, recibo que no esperabas RECIBO REVISTA DIGITAL PLUS</i></div><div class="tile hot"><span>Primer plazo para devolverlo en el banco</span><b>28/11/2026</b><i>quedan 10 días · Fibra y móvil 4,50 € · 8 semanas desde el cargo</i></div><div class="tile"><span>Las subidas te cuestan al año</span><b>82,30 €</b><i>Fibra y móvil 54,00 € · Seguro de hogar 28,30 €</i></div></div>
+<h2 id="o-title">Recibos de octubre 2026</h2>
+<div class="scroll">
+<table class="res">
+<thead><tr><th>Recibo</th><th>Esperado</th><th>Cobrado</th><th>Qué pasa</th><th>Devolver hasta</th></tr></thead>
+<tbody id="o-rows"><tr class=""><td class="sc"><b>Luz</b><small>ELECTRA SUR · día 5</small></td><td class="nm">62,40 €</td><td class="nm">62,40 € <small>5 oct</small></td><td>Como siempre</td><td class="nm"></td></tr><tr class="neg"><td class="sc"><b>Fibra y móvil</b><small>TELCO FIBRA · día 3</small></td><td class="nm">45,00 €</td><td class="nm">49,50 € <small>3 oct</small></td><td>Sube 4,50 € (+10 %)</td><td class="nm"><b>28/11/2026</b><small>quedan 10 días</small></td></tr><tr class=""><td class="sc"><b>Gimnasio</b><small>GYM CENTRO · día 1</small></td><td class="nm">39,90 €</td><td class="nm">39,90 € <small>1 oct</small></td><td>Como siempre</td><td class="nm"></td></tr><tr class=""><td class="sc"><b>Comunidad</b><small>COMUNIDAD PROP · día 10</small></td><td class="nm">55,00 €</td><td class="nm">55,00 € <small>10 oct</small></td><td>Como siempre</td><td class="nm"></td></tr><tr class="neg"><td class="sc"><b>Seguro de hogar</b><small>SEGUROS AZUL · día 15 · cada 12 meses</small></td><td class="nm">186,30 €</td><td class="nm">214,60 € <small>15 oct</small></td><td>Sube 28,30 € (+15,2 %)</td><td class="nm"><b>10/12/2026</b><small>quedan 22 días</small></td></tr><tr class="warn"><td class="sc"><b>Agua</b><small>AGUAS MUNICIPALES · día 20 · cada 2 meses</small></td><td class="nm">31,20 €</td><td class="nm">—</td><td>Sin cargo: tocaba el 20 oct</td><td class="nm"></td></tr><tr class="neg"><td class="sc"><b>Plataforma TV</b><small>STREAMFLIX · día 22</small></td><td class="nm">13,99 €</td><td class="nm">13,99 € <small>22 oct</small>13,99 € <small>22 oct</small></td><td>Cobrado 2 veces: 13,99 € de más</td><td class="nm"><b>17/12/2026</b><small>quedan 29 días</small></td></tr><tr class="mute"><td class="sc"><b>Gas</b><small>GAS NORTE · día 12 · cada 2 meses</small></td><td class="nm">—</td><td class="nm">—</td><td>No toca este mes (cada 2 meses)</td><td class="nm"></td></tr><tr class="neg"><td class="sc"><b>RECIBO REVISTA DIGITAL PLUS</b><small>no está en tu lista de recibos</small></td><td class="nm">—</td><td class="nm">9,99 € <small>24 oct</small></td><td>Recibo que no esperabas: si no lo autorizaste, tienes hasta el 24/11/2027 (13 meses)</td><td class="nm"><b>19/12/2026</b><small>quedan 31 días</small></td></tr></tbody>
+</table>
+</div>
+<p class="summary" id="o-summary">Recibos de octubre 2026: esperado 433,79 €, cobrado 459,37 €. A revisar 56,78 € (subida Fibra y móvil 4,50 €, devolver hasta 28/11/2026; subida Seguro de hogar 28,30 €, devolver hasta 10/12/2026; cobro doble Plataforma TV 13,99 €, devolver hasta 17/12/2026; recibo que no esperabas RECIBO REVISTA DIGITAL PLUS 9,99 €, devolver hasta 19/12/2026). Subidas al año: 82,30 €. Sin cargo: Agua 31,20 €. Gasto del mes con tarjeta y transferencias: 934,35 €; total salido 1.393,72 €.</p>
+<p><button class="btn2" id="copy" type="button">Copiar el resumen</button> <span class="small" id="copy-msg"></span></p>
+</section>
+<div class="buyline" data-fe-hidden="" hidden=""><p><b></b></p><a class="btn" data-fe-hidden="" hidden=""></a><a class="small" data-fe-hidden="" hidden=""></a><p class="promsg" data-fe-hidden="" hidden="" id="pro-msg"></p></div>
+<form autocomplete="off" id="f" onsubmit="return false">
+<fieldset>
+<legend>1. El mes que revisas</legend>
+<div class="row3">
+<label>Mes de los cargos <input data-k="mes" data-yj-mine="" type="month" value="2026-10"/></label>
+<label>Fecha de hoy (para contar los días que quedan) <input data-k="hoy" data-yj-mine="" type="date" value="2026-11-18"/></label>
+<label>Avisar si un recibo sube más de (%) <input data-k="tol" data-yj-mine="" inputmode="decimal" value="2"/></label>
+</div>
+</fieldset>
+<fieldset>
+<legend>2. Tus recibos y los cargos del banco</legend>
+<label>Tus recibos fijos, uno por línea: <code>nombre; texto que sale en el banco; día; importe</code> · opcional <code>; cada N meses; primer mes</code> (<code>2; 2</code> = bimestral desde febrero, <code>12; 10</code> = anual en octubre)
+      <textarea data-k="recibos" data-yj-mine="" rows="8">Luz; ELECTRA SUR; 5; 62,40
+Fibra y móvil; TELCO FIBRA; 3; 45,00
+Gimnasio; GYM CENTRO; 1; 39,90
+Comunidad; COMUNIDAD PROP; 10; 55,00
+Seguro de hogar; SEGUROS AZUL; 15; 186,30; 12; 10
+Agua; AGUAS MUNICIPALES; 20; 31,20; 2; 2
+Plataforma TV; STREAMFLIX; 22; 13,99
+Gas; GAS NORTE; 12; 38,90; 2; 1</textarea></label>
+<label>Cargos del banco: copia los movimientos del mes desde la web o la app de tu banco y pégalos aquí (<code>fecha; concepto; importe</code>; sirve con tabulador o con la columna de saldo detrás)
+      <textarea data-k="cargos" data-yj-mine="" rows="9">01/10/2026;RECIBO GYM CENTRO;-39,90
+03/10/2026;RECIBO TELCO FIBRA SL;-49,50
+05/10/2026;RECIBO ELECTRA SUR SA;-62,40
+08/10/2026;COMPRA TARJETA SUPERMERCADO;-84,35
+10/10/2026;RECIBO COMUNIDAD PROP;-55,00
+12/10/2026;TRANSFERENCIA ALQUILER OCTUBRE;-850,00
+15/10/2026;RECIBO SEGUROS AZUL;-214,60
+22/10/2026;RECIBO STREAMFLIX;-13,99
+22/10/2026;RECIBO STREAMFLIX;-13,99
+24/10/2026;RECIBO REVISTA DIGITAL PLUS;-9,99
+25/10/2026;NOMINA OCTUBRE;1.850,00</textarea></label>
+<p><button class="btn2" id="reset" type="button">Volver al ejemplo</button> <button class="btn2" id="clear" type="button">Vaciar para poner los míos</button>
+<label class="inline">Importar el CSV del banco <input accept=".csv,.txt,text/csv,text/plain" id="csv" type="file"/></label> <span class="small" id="imp-msg"></span></p>
+</fieldset>
+</form>
+<section data-fe-hidden="" hidden="" id="pro"><h2></h2><p class="small locked-note"></p><p><button class="btn2" id="save-month" type="button"></button><button class="btn2" id="xlsx-out" type="button"></button><button class="btn2" id="ics-out" type="button"></button><label class="inline"><input id="ics-days" max="14" min="0" style="width:4em" type="number"/></label><button class="btn2" id="print" type="button"></button></p><div class="pro-body"><div class="row2"><label><select id="prof"></select></label><p><input id="prof-new" style="display:inline-block;width:12em"/><button class="btn2" id="prof-save" type="button"></button><button class="btn2" id="prof-del" type="button"></button></p></div><h3 id="y-title"></h3><div class="scroll"><table class="res"><thead id="y-head"></thead><tbody id="y-rows"></tbody></table></div></div></section>
+<section>
+<h2>Cómo revisa cada recibo</h2>
+<ol>
+<li>Cada recibo de tu lista busca en los cargos del mes el texto que sale en el banco (sin mayúsculas ni tildes). Si el recibo es bimestral, trimestral o anual, solo se espera en sus meses.</li>
+<li><b>Subida:</b> el cargo supera el importe esperado más el margen que pones (2 % en el ejemplo). El coste al año es la diferencia × 12 ÷ cada cuántos meses llega.</li>
+<li><b>Cobro doble:</b> el mismo recibo entra más de una vez en el mes. <b>Recibo que no esperabas:</b> una línea con RECIBO, ADEUDO, DOMIC., SEPA o CUOTA que no está en tu lista. Las compras con tarjeta y las transferencias se suman aparte y no se marcan.</li>
+<li><b>Plazo:</b> fecha del cargo + 8 semanas (56 días). Si un recibo no lo autorizaste nunca, el plazo para comunicarlo es de 13 meses desde el cargo (art. 43.1).</li>
+</ol>
+<p class="law"><b>La regla, leída en el BOE el 2026-11-18:</b> Real Decreto-ley 19/2018, de servicios de pago. Art. 48.2: en los adeudos domiciliados SEPA, el ordenante tiene «un derecho incondicional de devolución» dentro de los plazos del art. 49. Art. 49.1: «ocho semanas contadas a partir de la fecha de adeudo de los fondos en su cuenta»; el banco responde en 10 días hábiles. Art. 43.1: operaciones no autorizadas, «trece meses contados desde la fecha del adeudo». Rige para consumidores; una empresa o autónomo puede tener otro plazo en su contrato (art. 34.1). Devolver un recibo no cancela lo que debas: úsalo para lo que se cobró de más o no reconoces, y avisa a la compañía. Fuente: boe.es, BOE-A-2018-16036.</p>
+</section>
+<section data-fe-hidden="" hidden="" id="key-box"><h2></h2><p class="small"></p><div class="row2"><input data-fe-hidden="" hidden="" id="key"/><button class="btn2" data-fe-hidden="" hidden="" id="key-go" type="button"></button></div><p class="small" data-fe-hidden="" hidden="" id="key-msg"></p></section>
+<section class="faq">
+<h2>Preguntas</h2>
+<details><summary>¿De dónde salen los 56,78 € del ejemplo?</summary><p>Fibra 49,50 € en vez de 45,00 € (4,50 €), seguro de hogar 214,60 € en vez de 186,30 € (28,30 €), plataforma de TV cobrada dos veces (13,99 €) y un recibo de 9,99 € que no estaba en la lista: 4,50 + 28,30 + 13,99 + 9,99 = 56,78 €. Al año, las subidas son 4,50 × 12 + 28,30 = 82,30 €.</p></details>
+<details><summary>¿Hasta cuándo puedo devolver un recibo domiciliado?</summary><p>Ocho semanas desde la fecha del cargo en tu cuenta si lo autorizaste (art. 49.1 RDL 19/2018): la fibra cargada el 03/10/2026 se puede devolver hasta el 28/11/2026. Si nunca lo autorizaste, 13 meses desde el cargo (art. 43.1).</p></details>
+<details><summary>¿Se conecta a mi banco?</summary><p>No. No pide usuario ni contraseña del banco: copias los movimientos del mes y los pegas. Todo se calcula y se guarda en tu navegador.</p></details>
+<details><summary>¿Y el Excel?</summary><p>Se abre en Excel, LibreOffice y Google Sheets.</p></details>
+</section>
+<p class="small">Herramienta de registro y cálculo con los datos que tú pegas. No es asesoramiento financiero ni jurídico.</p>
+</main>
+<div id="print-cal"></div>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Guardar y continuar: <a href="https://getreadystack.com/es/apps/gastos-mensuales-excel-control-recibos/">https://getreadystack.com/es/apps/gastos-mensuales-excel-control-recibos/</a></p><script src="./engine.js"></script>
+<script src="./xlsx.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

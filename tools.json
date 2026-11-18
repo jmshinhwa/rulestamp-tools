@@ -184,10 +184,12 @@
   {
    "id": "30769c22c6",
    "name": {
-    "en": "monthly bill tracker"
+    "en": "monthly bill tracker",
+    "es": "gastos mensuales Excel"
    },
    "tools": [
-    "monthly-bill-tracker-paycheck-planner"
+    "monthly-bill-tracker-paycheck-planner",
+    "gastos-mensuales-excel-control-recibos"
    ]
   },
   {
@@ -395,6 +397,11 @@
    "lang": "en",
    "name": "rental tracker",
    "hub": "https://getreadystack.com/apps/rental-tracker-short-term-rental-hours/"
+  },
+  "gastos-mensuales-excel-control-recibos": {
+   "lang": "es",
+   "name": "gastos mensuales Excel",
+   "hub": "https://getreadystack.com/es/apps/gastos-mensuales-excel-control-recibos/"
   }
  }
 }

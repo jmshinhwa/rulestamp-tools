@@ -34,6 +34,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 | monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
+| 〃 | [gastos mensuales Excel](gastos-mensuales-excel-control-recibos/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/gastos-mensuales-excel-control-recibos/) |
 | automation scripts | [automation scripts](automation-scripts-python-preview/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automation-scripts-python-preview/) |
 | divorce asset division calculator | [divorce asset division calculator](divorce-asset-division-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/divorce-asset-division-calculator/) |
 | bookkeeping spreadsheet for UK sole traders 2026/27 | [bookkeeping spreadsheet for UK sole traders 2026/27](bookkeeping-spreadsheet-uk-sole-trader/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/bookkeeping-spreadsheet-uk-sole-trader/) |
@@ -71,6 +72,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 | monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
+| 〃 | [gastos mensuales Excel](gastos-mensuales-excel-control-recibos/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/gastos-mensuales-excel-control-recibos/) |
 | automation scripts | [automation scripts](automation-scripts-python-preview/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automation-scripts-python-preview/) |
 | divorce asset division calculator | [divorce asset division calculator](divorce-asset-division-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/divorce-asset-division-calculator/) |
 | bookkeeping spreadsheet for UK sole traders 2026/27 | [bookkeeping spreadsheet for UK sole traders 2026/27](bookkeeping-spreadsheet-uk-sole-trader/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/bookkeeping-spreadsheet-uk-sole-trader/) |
@@ -107,7 +109,8 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
-| monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
+| gastos mensuales Excel | [gastos mensuales Excel](gastos-mensuales-excel-control-recibos/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/gastos-mensuales-excel-control-recibos/) |
+| 〃 | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
 | automation scripts | [automation scripts](automation-scripts-python-preview/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automation-scripts-python-preview/) |
 | divorce asset division calculator | [divorce asset division calculator](divorce-asset-division-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/divorce-asset-division-calculator/) |
 | bookkeeping spreadsheet for UK sole traders 2026/27 | [bookkeeping spreadsheet for UK sole traders 2026/27](bookkeeping-spreadsheet-uk-sole-trader/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/bookkeeping-spreadsheet-uk-sole-trader/) |
@@ -145,6 +148,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 | monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
+| 〃 | [gastos mensuales Excel](gastos-mensuales-excel-control-recibos/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/gastos-mensuales-excel-control-recibos/) |
 | automation scripts | [automation scripts](automation-scripts-python-preview/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automation-scripts-python-preview/) |
 | divorce asset division calculator | [divorce asset division calculator](divorce-asset-division-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/divorce-asset-division-calculator/) |
 | bookkeeping spreadsheet for UK sole traders 2026/27 | [bookkeeping spreadsheet for UK sole traders 2026/27](bookkeeping-spreadsheet-uk-sole-trader/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/bookkeeping-spreadsheet-uk-sole-trader/) |
@@ -182,6 +186,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 | monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
+| 〃 | [gastos mensuales Excel](gastos-mensuales-excel-control-recibos/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/gastos-mensuales-excel-control-recibos/) |
 | automation scripts | [automation scripts](automation-scripts-python-preview/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automation-scripts-python-preview/) |
 | divorce asset division calculator | [divorce asset division calculator](divorce-asset-division-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/divorce-asset-division-calculator/) |
 | bookkeeping spreadsheet for UK sole traders 2026/27 | [bookkeeping spreadsheet for UK sole traders 2026/27](bookkeeping-spreadsheet-uk-sole-trader/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/bookkeeping-spreadsheet-uk-sole-trader/) |
