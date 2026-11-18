@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Trading Journal | Erwartungswert pro Setup nach Spread, Kommission &amp; Swap</title>
+<meta content="Trading Journal für Price-Action-Trader: MT4-, MT5- oder cTrader-Historie einfügen und für jedes Setup den Erwartungswert vor und nach Spread, Kommission und Swap sehen, mit Break-even-Trefferquote und Kostenpuffer. Daten bleiben im Browser." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/de/apps/trading-journal-erwartungswert-setup/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<header class="top">
+<h1>Trading Journal | Erwartungswert pro Setup nach Spread, Kommission &amp; Swap</h1>
+<p class="lede"><b>Beispiel (erfunden)</b>, unten schon ausgerechnet: 42 Trades in EURUSD, GBPUSD und Gold. Das Setup „Ausbruch 1-Minute“ bringt vor Kosten +4,91 € je Trade, <b>nach Spread und Kommission −3,79 € je Trade</b>: 14 Trades, 121,80 € Kosten: 53,00 € verloren, obwohl vor Kosten +68,80 € Vorteil da waren.</p>
+<p class="sub">Eine Trading Journal Vorlage in Excel zeigt meist nur den Gewinn. Hier fügst du die Historie aus MetaTrader 4, MetaTrader 5 oder cTrader ein und siehst für jedes Setup: Erwartung brutto, Kosten je Trade, Erwartung netto, Break-even-Trefferquote und wie viel Zusatzkosten es noch trägt. Ohne Anmeldung, die Daten bleiben in deinem Browser.</p>
+</header>
+<main>
+<section class="card" id="res">
+<div aria-live="polite" data-yj="result" id="out"></div>
+<p class="src-line noprint" id="freeline">Kostenlos: eine Historie, beliebig viele Trades, jedes Setup vollständig auf dem Bildschirm.</p>
+</section>
+<section class="card" id="inputs">
+<h2>Deine Daten</h2>
+<div class="grid">
+<label>Beispiel laden<select data-k="" id="beispiel"><option selected="" value="A">A: Forex &amp; Gold, ECN mit Kommission</option><option value="B">B: Gold &amp; DAX Swing, CFD ohne Kommission</option><option value="eigene">Eigene Historie (unten einfügen)</option></select></label>
+<label>Woher kommen die Ergebnisse?<select data-k="" data-yj-mine="" id="mode"><option selected="" value="drin">Broker-Export (Spread steckt schon im Ergebnis)</option><option value="abziehen">Ohne Kosten notiert (Backtest, Handnotiz): Spread abziehen</option></select></label>
+<label>Zusatz-Slippage je Lot (Annahme, €)<input data-k="" data-yj-mine="" id="slip" inputmode="decimal" value="0"/></label>
+<label>Risiko je Trade = 1R<input data-k="" data-yj-mine="" id="risk" inputmode="decimal" value="60"/></label>
+<label>Mindestens Trades je Setup, bevor du urteilst<input data-k="" data-yj-mine="" id="minN" inputmode="numeric" value="10"/></label>
+<label>Kontowährung<select data-k="" data-yj-mine="" id="cur"><option selected="" value="EUR">EUR €</option><option value="USD">USD $</option><option value="CHF">CHF</option><option value="GBP">GBP £</option></select></label>
+</div>
+<label class="wide">Historie (hier einfügen: eine Zeile je Trade, mit Kopfzeile; Spalte „Setup“ für dein Muster)
+    <textarea data-yj-mine="" id="paste" rows="9" spellcheck="false"></textarea></label>
+<p class="hint">Geht: die Tabelle aus dem MT4-/MT5-Bericht im Browser kopiert, die cTrader-CSV im Editor geöffnet, oder Spalten aus deiner Trading Journal Vorlage (Eröffnung, Schließung, Symbol, Typ, Lots, Kommission, Swap, Gewinn, Setup). Tab, Semikolon oder Komma; Zahlen als 1.234,56 oder 1,234.56. Ein- und Auszahlungen werden übersprungen.</p>
+<h2>Spread je Symbol (€ je 1,00 Lot, Hin und Rück)</h2>
+<p class="hint">Typischer Spread deines Kontos × Wert je Punkt. Beispiel EURUSD: 0,2 Pip × rund 8,50 € je Pip und Lot ≈ 1,70 €. Ein leeres Feld zählt 0.</p>
+<div class="spreads" id="spreads"></div>
+<p class="btns"><button class="btn" id="run">Setups nach Kosten rechnen</button> <button class="btn ghost" id="clear">Leeren</button></p>
+</section>
+<section class="card pro" data-fe-hidden="" hidden="" id="pro"><h2></h2><ul><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b><b></b><b></b><b></b></li></ul><div class="buyrow"><p class="price"></p><p class="btns"><a class="btn" data-fe-hidden="" hidden=""></a><a class="btn ghost" data-fe-hidden="" hidden=""></a></p></div><div class="row"><label data-fe-hidden="" hidden=""><input id="key"/></label><button class="btn ghost" data-fe-hidden="" hidden="" id="unlock"></button></div><p class="hint" data-fe-hidden="" hidden="" id="keymsg"></p><div data-fe-hidden="" hidden="" id="proarea"><div class="row"><label><input data-yj-mine="" id="acct"/></label><label class="btn file"><input accept=".htm,.html,.csv,.txt,.tsv" hidden="" id="file" type="file"/></label><button class="btn ghost" id="save"></button></div><p class="btns"><button class="btn ghost" id="csv"></button><button class="btn ghost" id="print"></button><button class="btn ghost" id="ics"></button><button class="btn ghost" id="backup"></button><label class="btn ghost file"><input accept=".json" hidden="" id="restore" type="file"/></label></p><div id="accts"></div><div id="tag"></div><div id="months"></div></div></section>
+<section class="card" id="how">
+<h2>So wird gerechnet</h2>
+<ul>
+<li><b>Spread je Trade</b> = Lots × dein Spread je Lot. Beim Broker-Export steckt er schon im Ergebnis; er wird nur zurückgerechnet, damit du den Vorteil vor Kosten siehst: <b>Brutto</b> = Ergebnis + Spread.</li>
+<li><b>Netto</b> = Brutto − Spread − Zusatz-Slippage + Kommission + Swap (Kommission und negativer Swap kommen mit Minus aus dem Export). <b>Kosten</b> = Brutto − Netto.</li>
+<li><b>Erwartung je Trade</b> = Summe ÷ Anzahl Trades des Setups; <b>in R</b> = Netto-Erwartung ÷ dein Risiko je Trade.</li>
+<li><b>Break-even-Trefferquote</b> = Ø Verlust ÷ (Ø Gewinn + Ø Verlust), beides netto. Liegt deine Trefferquote darunter, verliert das Setup.</li>
+<li><b>Kostenpuffer</b> = Netto ÷ gehandelte Lots: so viele € je Lot darf eine Ausführung schlechter werden, bevor das Setup bei 0 landet.</li>
+<li><b>Rechenweg Beispiel A</b>, „Ausbruch 1-Minute“: Ergebnis +45,00 € + Spread 14 × 1,00 Lot × 1,70 € = 23,80 € → brutto +68,80 €; Kommission 14 × 7,00 € = 98,00 €; 68,80 € − 23,80 € − 98,00 € = −53,00 €; −53,00 € ÷ 14 = −3,79 € je Trade.</li>
+</ul>
+<p class="src">Zeiten wie im Export (Serverzeit deines Brokers). Ein Werkzeug zum Aufzeichnen und Rechnen mit deinen eigenen Trades: keine Signale, keine Anlageberatung.</p>
+</section>
+</main>
+<footer><p>Trading Journal · die Daten bleiben in diesem Browser.</p></footer>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Speichern und weitermachen: <a href="https://getreadystack.com/de/apps/trading-journal-erwartungswert-setup/">https://getreadystack.com/de/apps/trading-journal-erwartungswert-setup/</a></p><script src="./tj.js"></script>
+<script src="./sample.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

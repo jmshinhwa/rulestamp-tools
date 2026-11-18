@@ -30,6 +30,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | lead generation on Reddit: thread scorer + lead tracker | [lead generation on Reddit: thread scorer + lead tracker](lead-generation-reddit-thread-scorer/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/lead-generation-reddit-thread-scorer/) |
 | Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF | [Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF](jobborse-stellenangebote/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/jobborse-stellenangebote/) |
 | Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
+| Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
 
 <a id="de"></a>
 
@@ -57,6 +58,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | lead generation on Reddit: thread scorer + lead tracker | [lead generation on Reddit: thread scorer + lead tracker](lead-generation-reddit-thread-scorer/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/lead-generation-reddit-thread-scorer/) |
 | Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF | [Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF](jobborse-stellenangebote/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/jobborse-stellenangebote/) |
 | Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
+| Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
 
 <a id="es"></a>
 
@@ -84,6 +86,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | lead generation on Reddit: thread scorer + lead tracker | [lead generation on Reddit: thread scorer + lead tracker](lead-generation-reddit-thread-scorer/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/lead-generation-reddit-thread-scorer/) |
 | Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF | [Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF](jobborse-stellenangebote/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/jobborse-stellenangebote/) |
 | Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
+| Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
 
 <a id="pt"></a>
 
@@ -111,6 +114,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | lead generation on Reddit: thread scorer + lead tracker | [lead generation on Reddit: thread scorer + lead tracker](lead-generation-reddit-thread-scorer/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/lead-generation-reddit-thread-scorer/) |
 | Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF | [Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF](jobborse-stellenangebote/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/jobborse-stellenangebote/) |
 | Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
+| Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
 
 <a id="ja"></a>
 
@@ -138,6 +142,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | lead generation on Reddit: thread scorer + lead tracker | [lead generation on Reddit: thread scorer + lead tracker](lead-generation-reddit-thread-scorer/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/lead-generation-reddit-thread-scorer/) |
 | Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF | [Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF](jobborse-stellenangebote/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/jobborse-stellenangebote/) |
 | Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
+| Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
 
 ---
 Rulestamp · https://getreadystack.com

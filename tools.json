@@ -160,6 +160,15 @@
    "tools": [
     "video-compressor"
    ]
+  },
+  {
+   "id": "f4ba8ff9be",
+   "name": {
+    "de": "Trading Journal"
+   },
+   "tools": [
+    "trading-journal-erwartungswert-setup"
+   ]
   }
  ],
  "tools": {
@@ -262,6 +271,11 @@
    "lang": "en",
    "name": "Video compressor – compress to an MB limit, batch to ZIP, no upload",
    "hub": "https://getreadystack.com/apps/video-compressor/"
+  },
+  "trading-journal-erwartungswert-setup": {
+   "lang": "de",
+   "name": "Trading Journal",
+   "hub": "https://getreadystack.com/de/apps/trading-journal-erwartungswert-setup/"
   }
  }
 }
