@@ -33,6 +33,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 | monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
+| automation scripts | [automation scripts](automation-scripts-python-preview/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automation-scripts-python-preview/) |
 
 <a id="de"></a>
 
@@ -63,6 +64,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 | monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
+| automation scripts | [automation scripts](automation-scripts-python-preview/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automation-scripts-python-preview/) |
 
 <a id="es"></a>
 
@@ -93,6 +95,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 | monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
+| automation scripts | [automation scripts](automation-scripts-python-preview/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automation-scripts-python-preview/) |
 
 <a id="pt"></a>
 
@@ -123,6 +126,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 | monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
+| automation scripts | [automation scripts](automation-scripts-python-preview/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automation-scripts-python-preview/) |
 
 <a id="ja"></a>
 
@@ -153,6 +157,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 | monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
+| automation scripts | [automation scripts](automation-scripts-python-preview/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/automation-scripts-python-preview/) |
 
 ---
 Rulestamp · https://getreadystack.com

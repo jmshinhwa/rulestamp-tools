@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>automation scripts | Python: invoices, contacts, bank, files</title>
+<meta content="Python automation scripts for freelancers and small sellers: overdue invoices with reminder drafts, duplicate contacts, bank transactions by category, rename and sort files, split a CSV per client. Run each one on your own file in the browser first and see the exact result, then take the script with your settings written in. Standard library only, no pip install, nothing uploaded." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/apps/automation-scripts-python-preview/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<header class="top">
+<h1>automation scripts | Python: invoices, contacts, bank, files</h1>
+<p class="lede"><b>Made-up example</b>, already run below: a freelance designer's invoices.csv with 12 invoices, checked on Nov 18, 2026. The overdue invoices script finds <b>$4,910.00 unpaid past the due date on 6 invoices</b>, $1,900.00 of it more than 60 days late, and drafts one reminder email per client. INV-1038 turns 31 days late on Nov 22, 2026. Another 3 invoices, $2,975.50, are not due yet.</p>
+<p class="sub">Five Python automation scripts for the files freelancers and small sellers handle every week. Pick a script, drop in your own CSV or files, and see exactly what it will do before anything runs on your computer. Same rules every run, no AI guessing, nothing uploaded: the preview runs in this browser.</p>
+</header>
+<main>
+<nav aria-label="Scripts" class="tabs" id="tabs">
+<button class="on" data-s="overdue" type="button">Overdue invoices</button>
+<button data-s="dedupe" type="button">Duplicate contacts</button>
+<button data-s="bank" type="button">Bank categories</button>
+<button data-s="files" type="button">Rename &amp; sort files</button>
+<button data-s="split" type="button">Split CSV per client</button>
+</nav>
+<section class="card" id="res">
+<div aria-live="polite" data-yj="result" id="out"></div>
+</section>
+<p class="freeline" id="freeline">Free: any of the five scripts on your own file, every row, the whole result on screen. $29 once or $6.99 per month.</p>
+<section class="card" id="inputs">
+<h2>Your file and settings</h2>
+<div class="grid">
+<label>Script<select data-k="" data-yj-mine="" id="script">
+<option selected="" value="overdue">Overdue invoices + reminder drafts</option>
+<option value="dedupe">Merge and dedupe contacts</option>
+<option value="bank">Bank transactions by category</option>
+<option value="files">Rename and sort files</option>
+<option value="split">Split one CSV into one file per client</option>
+</select></label>
+<label class="for-csv">Your CSV (from Excel, Sheets, your bank, your invoicing app)<input accept=".csv,.txt,.tsv" id="file" type="file"/></label>
+<label class="for-files">Your files (only names and dates are read)<input id="pick" multiple="" type="file"/></label>
+</div>
+<p class="hint" id="src">Using the made-up example file. <button class="link" id="reset" type="button">Back to the example</button></p>
+<div class="grid" id="cols"></div>
+<div class="grid opts" data-for="overdue">
+<label>Check as of<input data-k="" data-yj-mine="" id="asof" type="date" value="2026-11-18"/></label>
+<label>Grace days before an invoice counts as late<input data-k="" data-yj-mine="" id="grace" max="365" min="0" type="number" value="0"/></label>
+<label>Dates in the file<select data-k="" id="datefmt"><option selected="" value="auto">Find out (11/04/2026 = Nov 4)</option><option value="mdy">MM/DD/YYYY</option><option value="dmy">DD/MM/YYYY</option></select></label>
+<label>Your name (signs the reminders)<input data-k="" data-yj-mine="" id="yourname" value="Sam Rivera"/></label>
+<label class="wide">Payment line in the reminders<input data-k="" data-yj-mine="" id="paynote" value="You can pay by bank transfer or card using the link on the invoice."/></label>
+</div>
+<div class="grid opts" data-for="dedupe" hidden="">
+<label>Rows without an email<select data-k="" id="phone"><option selected="" value="1">Match them on phone number</option><option value="0">Keep them all</option></select></label>
+</div>
+<div class="grid opts" data-for="bank" hidden="">
+<label>Spending in the file is<select data-k="" id="sign"><option selected="" value="negative">Negative (-59.99)</option><option value="positive">Positive (59.99)</option></select></label>
+<label>Dates in the file<select data-k="" id="bdatefmt"><option selected="" value="auto">Find out</option><option value="mdy">MM/DD/YYYY</option><option value="dmy">DD/MM/YYYY</option></select></label>
+<label class="wide">Rules, one per line: words in the description = category<textarea data-k="" id="rules" rows="6"></textarea></label>
+</div>
+<div class="grid opts" data-for="files" hidden="">
+<label>Put the date in front (2026-10-15_)<select data-k="" id="fdate"><option selected="" value="1">Yes, the file's modified date</option><option value="0">No</option></select></label>
+<label>Clean the names<select data-k="" id="ftidy"><option selected="" value="1">Lower case, spaces to dashes, no odd signs</option><option value="0">Keep as they are</option></select></label>
+<label>Sort into folders<select data-k="" id="ffolder"><option selected="" value="type">By type (Images, Documents …)</option><option value="month">By month (2026-10)</option><option value="none">No folders</option></select></label>
+<label class="wide">Or paste names, one per line: name, YYYY-MM-DD<textarea id="flist" rows="5"></textarea></label>
+</div>
+<div class="grid opts" data-for="split" hidden="">
+<p class="hint">Pick the column to split by and, if you like, an amount column to total per file, in the column boxes above.</p>
+</div>
+<p class="btns"><button class="btn" id="run" type="button">Check the file</button></p>
+</section>
+<section class="card pro" data-fe-hidden="" hidden="" id="pro"><h2></h2><ul><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b></li></ul><div class="buyrow"><p class="price"></p><p class="btns"><a class="btn" data-fe-hidden="" hidden=""></a><a class="btn ghost" data-fe-hidden="" hidden=""></a></p></div><div class="row"><label data-fe-hidden="" hidden=""><input id="key"/></label><button class="btn ghost" data-fe-hidden="" hidden="" id="unlock" type="button"></button></div><p class="hint" data-fe-hidden="" hidden="" id="keymsg"></p><div class="protools"><p class="btns"><button class="btn ghost" data-pro="py" type="button"></button><button class="btn ghost" data-pro="files" type="button"></button><button class="btn ghost" data-pro="save" type="button"></button><button class="btn ghost" data-pro="sched" type="button"></button></p><p class="hint" data-fe-hidden="" hidden="" id="promsg"></p><div id="setups"></div><div hidden="" id="schedbox"><div class="grid"><label><input id="sdir"/></label><label><input id="sfile"/></label><label><select id="sday"><option selected=""></option><option></option><option></option><option></option><option></option></select></label><label><input id="stime" type="time"/></label></div><pre id="schedout"></pre></div></div></section>
+<section class="card" id="how">
+<h2>How the scripts decide</h2>
+<p><b>Overdue invoices</b>: an invoice is open while the paid-on cell is empty (or, if your file has an amount-paid column, while amount minus paid is above zero). Days late = the check date minus the due date. Buckets 1-30, 31-60, 61-90 and 91+ days; "enters next bucket" is the date it moves up. One reminder per client lists all of that client's late invoices; past 30 days the wording is firmer, past 60 it is a final reminder. The script writes the drafts; it does not send email.</p>
+<p><b>Duplicate contacts</b>: emails are compared without spaces and capitals. The first row is kept and empty cells in it are filled from its duplicates. Rows without an email can be matched on the last 10 digits of the phone number.</p>
+<p><b>Bank categories</b>: the first rule whose words appear in the description wins. Money in without a rule is "Income (no rule)", money out without a rule is "Uncategorized", so you see exactly which rules to add.</p>
+<p><b>Rename and sort files</b>: names that would collide get -2, -3. The script shows the plan and changes nothing until you add --go; then it writes an undo log.</p>
+<p><b>Split CSV</b>: one file per value of the column you pick, with the same columns as the original, largest group first.</p>
+<p class="hint">Amounts like $1,250.00, 1.250,00 € and (59.99) are read; dates as 2026-11-18, 11/18/2026 or 18.11.2026. The page and the Python file use the same rules; both were run on the same test files and gave the same answers.</p>
+</section>
+</main>
+<footer class="foot"><p>automation scripts · Python, standard library only · your files stay on your computer</p></footer>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Save and continue: <a href="https://getreadystack.com/apps/automation-scripts-python-preview/">https://getreadystack.com/apps/automation-scripts-python-preview/</a></p><script src="./engine.js"></script>
+<script src="./py.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

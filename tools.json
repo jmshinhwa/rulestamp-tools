@@ -187,6 +187,15 @@
    "tools": [
     "monthly-bill-tracker-paycheck-planner"
    ]
+  },
+  {
+   "id": "80a1f2fb5f",
+   "name": {
+    "en": "automation scripts"
+   },
+   "tools": [
+    "automation-scripts-python-preview"
+   ]
   }
  ],
  "tools": {
@@ -304,6 +313,11 @@
    "lang": "en",
    "name": "monthly bill tracker",
    "hub": "https://getreadystack.com/apps/monthly-bill-tracker-paycheck-planner/"
+  },
+  "automation-scripts-python-preview": {
+   "lang": "en",
+   "name": "automation scripts",
+   "hub": "https://getreadystack.com/apps/automation-scripts-python-preview/"
   }
  }
 }
