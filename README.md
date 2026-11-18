@@ -38,6 +38,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | divorce asset division calculator | [divorce asset division calculator](divorce-asset-division-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/divorce-asset-division-calculator/) |
 | bookkeeping spreadsheet for UK sole traders 2026/27 | [bookkeeping spreadsheet for UK sole traders 2026/27](bookkeeping-spreadsheet-uk-sole-trader/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/bookkeeping-spreadsheet-uk-sole-trader/) |
 | Muse AI prompts | [Muse AI prompts](muse-ai-prompts/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/muse-ai-prompts/) |
+| rental property spreadsheet | [rental property spreadsheet](rental-property-spreadsheet-tax-deductions/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-property-spreadsheet-tax-deductions/) |
 
 <a id="de"></a>
 
@@ -73,6 +74,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | divorce asset division calculator | [divorce asset division calculator](divorce-asset-division-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/divorce-asset-division-calculator/) |
 | bookkeeping spreadsheet for UK sole traders 2026/27 | [bookkeeping spreadsheet for UK sole traders 2026/27](bookkeeping-spreadsheet-uk-sole-trader/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/bookkeeping-spreadsheet-uk-sole-trader/) |
 | Muse AI prompts | [Muse AI prompts](muse-ai-prompts/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/muse-ai-prompts/) |
+| rental property spreadsheet | [rental property spreadsheet](rental-property-spreadsheet-tax-deductions/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-property-spreadsheet-tax-deductions/) |
 
 <a id="es"></a>
 
@@ -108,6 +110,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | divorce asset division calculator | [divorce asset division calculator](divorce-asset-division-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/divorce-asset-division-calculator/) |
 | bookkeeping spreadsheet for UK sole traders 2026/27 | [bookkeeping spreadsheet for UK sole traders 2026/27](bookkeeping-spreadsheet-uk-sole-trader/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/bookkeeping-spreadsheet-uk-sole-trader/) |
 | Muse AI prompts | [Muse AI prompts](muse-ai-prompts/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/muse-ai-prompts/) |
+| rental property spreadsheet | [rental property spreadsheet](rental-property-spreadsheet-tax-deductions/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-property-spreadsheet-tax-deductions/) |
 
 <a id="pt"></a>
 
@@ -143,6 +146,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | divorce asset division calculator | [divorce asset division calculator](divorce-asset-division-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/divorce-asset-division-calculator/) |
 | bookkeeping spreadsheet for UK sole traders 2026/27 | [bookkeeping spreadsheet for UK sole traders 2026/27](bookkeeping-spreadsheet-uk-sole-trader/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/bookkeeping-spreadsheet-uk-sole-trader/) |
 | Muse AI prompts | [Muse AI prompts](muse-ai-prompts/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/muse-ai-prompts/) |
+| rental property spreadsheet | [rental property spreadsheet](rental-property-spreadsheet-tax-deductions/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-property-spreadsheet-tax-deductions/) |
 
 <a id="ja"></a>
 
@@ -178,6 +182,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | divorce asset division calculator | [divorce asset division calculator](divorce-asset-division-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/divorce-asset-division-calculator/) |
 | bookkeeping spreadsheet for UK sole traders 2026/27 | [bookkeeping spreadsheet for UK sole traders 2026/27](bookkeeping-spreadsheet-uk-sole-trader/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/bookkeeping-spreadsheet-uk-sole-trader/) |
 | Muse AI prompts | [Muse AI prompts](muse-ai-prompts/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/muse-ai-prompts/) |
+| rental property spreadsheet | [rental property spreadsheet](rental-property-spreadsheet-tax-deductions/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-property-spreadsheet-tax-deductions/) |
 
 ---
 Rulestamp · https://getreadystack.com

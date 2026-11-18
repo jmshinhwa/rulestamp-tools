@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>rental property spreadsheet | tax deduction tracker, safe harbors, Schedule E</title>
+<meta content="Rental property spreadsheet and tax deduction tracker for US landlords: each expense sorted into deduct now or depreciate, with the de minimis, routine maintenance and small taxpayer safe harbors, 27.5-year depreciation, Schedule E lines and the $25,000 passive loss allowance." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/apps/rental-property-spreadsheet-tax-deductions/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main class="wrap">
+<h1>rental property spreadsheet | tax deduction tracker, safe harbors, Schedule E</h1>
+<p class="lede"><b>Example (made-up):</b> a Boise landlord’s $5,900.00 HVAC replacement in August 2026 fits under the $8,800.00 small taxpayer cap, so it can be deducted this year; <b>without the safe harbor statement on the 2026 return only $80.48 is, and $1,280.29 of tax is lost at 22%.</b> Repairs, maintenance and improvements on the $440,000 building come to $7,475.00.</p>
+<p class="fix"><b>Rental bookkeeping apps file the HVAC under CapEx or fixed assets and depreciate it; their pricing pages name no safe harbor test.</b> Here each expense line gets its treatment (repair, routine maintenance, de minimis item, small taxpayer safe harbor or 27.5-year depreciation), your Schedule E lines 3-21 with and without the elections, and how much of the loss the $25,000 passive allowance lets you use at your income. Rules as published by the IRS, read on 2026-11-18.</p>
+<section aria-live="polite" data-yj="result" id="out">
+<h2 id="o-title">2026 · 418 Alder Street, Boise, ID 83702</h2>
+<div class="tiles" id="o-tiles"></div>
+<ul class="flags" id="o-flags"></ul>
+</section>
+<div class="buyline" data-fe-hidden="" hidden=""><p><b></b></p><a class="btn" data-fe-hidden="" hidden=""></a><a class="small" data-fe-hidden="" hidden=""></a></div>
+<section id="detail">
+<h2>Each expense and its treatment</h2>
+<div class="scroll"><table class="res"><thead><tr><th>Date</th><th>Expense</th><th>Paid</th><th>Treatment</th><th>Deducted this year</th><th>Sch. E line</th></tr></thead><tbody id="o-rows"></tbody></table></div>
+<h2>Schedule E, with and without the safe harbor elections</h2>
+<div class="scroll"><table class="res"><thead><tr><th>Line</th><th></th><th>With elections</th><th>Without</th></tr></thead><tbody id="o-lines"></tbody></table></div>
+<p class="summary" id="o-summary"></p>
+</section>
+<form autocomplete="off" id="f" onsubmit="return false">
+<fieldset>
+<legend>You and the tax year</legend>
+<div class="row4">
+<label>Tax year <select data-k="year" data-yj-mine=""><option selected="" value="2026">2026</option><option value="2027">2027</option></select></label>
+<label>Filing status <select data-k="status" data-yj-mine=""><option selected="" value="single">Single, head of household or joint</option><option value="mfs_apart">Married separately, lived apart all year</option><option value="mfs_together">Married separately, lived together</option></select></label>
+<label>Modified AGI (MAGI) <input data-k="magi" data-yj-mine="" inputmode="decimal" value="118,000"/></label>
+<label>Your top tax rate, % <input data-k="rate" data-yj-mine="" inputmode="decimal" value="22"/></label>
+<label>You actively participate (approve tenants, set rent, approve repairs) <select data-k="active" data-yj-mine=""><option selected="" value="yes">Yes</option><option value="no">No</option></select></label>
+<label>Loss carried in from last year (Form 8582) <input data-k="prior" data-yj-mine="" inputmode="decimal" value="0"/></label>
+<label>Your name (for the statements) <input data-k="owner" data-yj-mine="" value="Chris Morgan (example)"/></label>
+</div>
+</fieldset>
+<fieldset>
+<legend>The rental building</legend>
+<div class="row4">
+<label class="span2">Property address <input data-k="property" data-yj-mine="" value="418 Alder Street, Boise, ID 83702"/></label>
+<label>Building basis, without land <input data-k="basis" data-yj-mine="" inputmode="decimal" value="440,000"/></label>
+<label>Placed in service (YYYY-MM) <input data-k="pis" data-yj-mine="" value="2021-07"/></label>
+<label>Audited financial statement (AFS)? <select data-k="afs" data-yj-mine=""><option selected="" value="no">No: $2,500 de minimis limit</option><option value="yes">Yes: $5,000 limit</option></select></label>
+<label>Rents received this year <input data-k="rents" data-yj-mine="" inputmode="decimal" value="31,200"/></label>
+</div>
+</fieldset>
+<fieldset>
+<legend>Expenses paid this year: date; what; amount; type, one per line</legend>
+<label>Types: <b>repair</b> (keeps it working) · <b>routine</b> (recurring upkeep, expected more than once in 10 years) · <b>improve</b> (betterment, restoration of a major component, new use) · <b>item</b> (appliance, carpet, furniture) · <b>land</b> (fence, driveway) · interest · taxes · insurance · utilities · management · advertising · legal · cleaning · supplies · travel · commissions · other
+      <textarea data-k="lines" data-yj-mine="" rows="10">2026-01-31; Mortgage interest (Form 1098); 14,880; interest
+2026-04-10; Property tax, first half; 2,605; taxes
+2026-11-10; Property tax, second half; 2,605; taxes
+2026-03-01; Landlord insurance policy; 1,740; insurance
+2026-02-10; Fix leaking kitchen faucet; 240; repair
+2026-04-03; HVAC annual service; 185; routine
+2026-05-22; Patch drywall and repaint after tenant; 1,150; repair
+2026-06-30; Dishwasher (new appliance); 780; item
+2026-08-14; Replace HVAC condenser and air handler; 5,900; improve</textarea></label>
+<p class="small">Paste straight from your bank export or a spreadsheet: semicolons, tabs or | between the four parts all work. Any number of lines.</p>
+</fieldset>
+<p><button class="btn2" id="reset" type="button">Back to the example</button> <button class="btn2" id="clear" type="button">Start with my own (empty)</button></p>
+</form>
+<p class="small">rental property spreadsheet · 13 inputs · 6 results · repair or improve , safe harbors , Schedule E , passive loss</p>
+<section data-fe-hidden="" hidden="" id="pro"><h2></h2><p class="note" data-fe-hidden="" hidden="" id="pro-msg"></p><div class="pro-tools"><button class="btn2" data-pro="print" type="button"></button><button class="btn2" data-pro="save" type="button"></button><button class="btn2" data-pro="close" type="button"></button><button class="btn2" data-pro="csv" type="button"></button><button class="btn2" data-pro="ledger" type="button"></button><button class="btn2" data-pro="ics" type="button"></button><button class="btn2" data-pro="backup" type="button"></button><label class="file btn2" data-pro-file="imp"><input accept=".json,application/json" id="imp" type="file"/></label></div><p class="small" data-fe-hidden="" hidden="" id="pro-out"></p><div hidden="" id="props"><h3></h3><div class="scroll"><table class="book"><thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody id="prop-rows"></tbody></table></div></div><div class="key" data-fe-hidden="" hidden=""><label data-fe-hidden="" hidden=""><input id="key"/></label><button class="btn2" data-fe-hidden="" hidden="" id="key-go" type="button"></button><span class="small" data-fe-hidden="" hidden="" id="key-msg"></span></div><p><a class="btn" data-fe-hidden="" hidden=""></a></p></section>
+<section id="faq">
+<h2>Questions</h2>
+<details><summary>What does this rental property spreadsheet work out?</summary><p>From 13 inputs (tax year, filing status, MAGI, your tax rate, active participation, loss carried in, your name, address, building basis, placed-in-service month, AFS, rents and the expense lines) it gives 6 results: whether the small taxpayer safe harbor fits, the amount deducted this year instead of over 27.5 years, the tax lost without the statements, Schedule E line 21, the loss allowed and the loss carried on.</p></details>
+<details><summary>When can an improvement be deducted in one year?</summary><p>Under the small taxpayer safe harbor (Treas. Reg. § 1.263(a)-3(h)): average gross receipts of $10 million or less, building unadjusted basis of $1 million or less, and the year's total for repairs, maintenance, improvements and similar work on that building at or under the lesser of 2% of the basis or $10,000. You elect it each year with a statement attached to the return.</p></details>
+<details><summary>What if the total goes over the cap?</summary><p>The cap is a condition on the whole year's total for the building, so the page treats the improvements as capitalized and depreciates them over 27.5 years from the month they were placed in service. In the example with a $360,000 basis the cap is $7,200, the total $7,475.00 is $275.00 over, and the $5,900.00 HVAC is capitalized.</p></details>
+<details><summary>How is the passive loss limit counted?</summary><p>If you actively participate, up to $25,000 of rental loss can offset other income ($12,500 if married filing separately and living apart). It drops by 50% of MAGI over $100,000 ($50,000) and is gone at $150,000 ($75,000). The rest is suspended on Form 8582 and carried forward. The page assumes this rental is your only passive activity.</p></details>
+<details data-fe-hidden="" hidden=""><summary></summary><p></p></details>
+</section>
+<ul class="law small">
+<li>Sources read on 2026-11-18: IRS, Tangible Property Final Regulations FAQ (irs.gov, updated 04-Aug-2026): de minimis $2,500 / $5,000 per invoice or item, small taxpayer safe harbor limits, routine maintenance "more than once during the 10-year period" · Publication 527 (2025): 27.5 years, straight line, mid-month; appliances, carpets and furniture 5 years; "The 100% special depreciation allowance is restored for qualified property acquired and placed into service after January 19, 2025" · Publications 527 and 925: $25,000 special allowance, $100,000-$150,000 phase-out.</li>
+<li>Assumes the rental is a residential building you own, average gross receipts under $10 million, no real estate professional status and no other passive activity. Depreciation uses the IRS rates (first year by month, 3.636% in years 2-9). Items over the de minimis limit take the 100% bonus depreciation unless you elect out.</li>
+<li>Your data stays in this browser (localStorage). Nothing is sent to us. A calculation and record tool, not tax or legal advice.</li>
+</ul>
+</main>
+<div id="print-area"></div>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Save and continue: <a href="https://getreadystack.com/apps/rental-property-spreadsheet-tax-deductions/">https://getreadystack.com/apps/rental-property-spreadsheet-tax-deductions/</a></p><script src="./engine.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

@@ -225,6 +225,15 @@
    "tools": [
     "muse-ai-prompts"
    ]
+  },
+  {
+   "id": "0d63cd0d0b",
+   "name": {
+    "en": "rental property spreadsheet"
+   },
+   "tools": [
+    "rental-property-spreadsheet-tax-deductions"
+   ]
   }
  ],
  "tools": {
@@ -367,6 +376,11 @@
    "lang": "en",
    "name": "Muse AI prompts",
    "hub": "https://getreadystack.com/apps/muse-ai-prompts/"
+  },
+  "rental-property-spreadsheet-tax-deductions": {
+   "lang": "en",
+   "name": "rental property spreadsheet",
+   "hub": "https://getreadystack.com/apps/rental-property-spreadsheet-tax-deductions/"
   }
  }
 }
