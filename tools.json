@@ -146,10 +146,12 @@
   {
    "id": "205b6ce8cf",
    "name": {
-    "de": "Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF"
+    "de": "Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF",
+    "es": "bolsa de empleo España: ofertas de empleo por email de webs de empresas + BOE"
    },
    "tools": [
-    "jobborse-stellenangebote"
+    "jobborse-stellenangebote",
+    "bolsa-de-empleo"
    ]
   },
   {
@@ -318,6 +320,11 @@
    "lang": "en",
    "name": "automation scripts",
    "hub": "https://getreadystack.com/apps/automation-scripts-python-preview/"
+  },
+  "bolsa-de-empleo": {
+   "lang": "es",
+   "name": "bolsa de empleo España: ofertas de empleo por email de webs de empresas + BOE",
+   "hub": "https://getreadystack.com/es/apps/bolsa-de-empleo/"
   }
  }
 }

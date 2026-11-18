@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>bolsa de empleo España | ofertas de empleo por email desde las páginas de empleo de las empresas + BOE</title>
+<meta content="bolsa de empleo España: ofertas leídas en directo de las páginas de empleo de 82 empresas que contratan en España, por ciudad y en remoto, con su fecha real de publicación, avisos de ofertas antiguas, refechadas y de ETT, convocatorias del BOE (II.B) y ofertas de empleo por email." name="description"/>
+<meta content="#0f5c4d" name="theme-color"/>
+<link href="icon.svg" rel="icon" type="image/svg+xml"/>
+<link href="style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/es/apps/bolsa-de-empleo/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main class="wrap">
+<header class="top">
+<div class="langbar"><select aria-label="Idioma" id="lang"></select></div>
+<h1 data-t="h1" id="h1">bolsa de empleo España: ofertas leídas directamente de las páginas de empleo de las empresas, con su fecha real de publicación</h1>
+<p class="sub" data-t="sub">Ofertas de empleo por email cada día · convocatorias del BOE (Oposiciones y concursos) · por ciudad y en remoto</p>
+<ul class="better">
+<li data-t="b1" id="b1">Ofertas reales en esta pantalla antes de registrarte: leídas en directo de las páginas de empleo de 82 empresas que contratan en España (Primark, Inditex, Sanitas, Vueling, idealista, Cabify…), por ciudad o en remoto, con el enlace a la candidatura en la web de la propia empresa.</li>
+<li data-t="b2">Cada oferta con su fecha real de publicación: las abiertas hace más de 60 días, las refechadas, las publicadas varias veces y las de ETT quedan marcadas antes de que envíes tu CV.</li>
+<li data-t="b3">Plan de pago, cada mes: tus búsquedas se releen 2 veces al día y un e-mail trae solo las ofertas nuevas desde el último correo, más las convocatorias del BOE (II.B Oposiciones y concursos) que contienen tu palabra clave.</li>
+</ul>
+<div class="side">
+<p class="lede" data-t="ledeWait" id="lede">Leyendo ahora las páginas de empleo de las empresas…</p>
+<div class="cta">
+<a class="buy" data-fe-hidden="" hidden="" id="buyTop"><span></span><b class="pM"></b></a>
+<span class="mode" id="mode"></span>
+</div>
+</div>
+</header>
+<nav class="tabs" role="tablist">
+<button aria-selected="true" class="on" data-t="tJobs" data-tab="j" role="tab" type="button">Ofertas</button>
+<button aria-selected="false" data-t="tBoe" data-tab="b" role="tab" type="button">Empleo público (BOE)</button>
+<button aria-selected="false" data-t="tSaved" data-tab="s" role="tab" type="button">Mis búsquedas y alertas</button>
+<button aria-selected="false" data-t="tHist" data-tab="h" role="tab" type="button">Historial de ofertas cerradas</button>
+</nav>
+<section class="pane" id="pane-j">
+<div class="fields" id="fields"></div>
+<details class="picker" id="picker">
+<summary><span data-t="fPick">Elegir empresas</span> · <span id="pickedN"></span></summary>
+<div class="pickbar"><input data-tp="coSearch" id="coFilter" placeholder="Filtrar empresas" type="search"/> <button data-t="all" id="selAll" type="button">elegir todas las mostradas</button> <button data-t="none" id="selNone" type="button">quitar todas</button></div>
+<div class="colist" id="colist"></div>
+<form class="addurl" id="addForm"><label><span data-t="addUrl">Añadir una página de empleo</span><input data-tp="addUrlPh" id="addIn" maxlength="300" placeholder="empresa.teamtailor.com · jobs.lever.co/… · jobs.smartrecruiters.com/… · boards.greenhouse.io/…" type="text"/></label><button data-t="addBtn" type="submit">Añadir</button></form>
+<p class="hint" id="addMsg"></p>
+</details>
+<form class="filters" id="filters" onsubmit="return false">
+<label><span data-t="q">Puesto o palabra clave</span><input data-tp="qPh" id="q" maxlength="200" placeholder="p. ej. administrativo · enfermero|enfermera · -prácticas" type="search"/></label>
+<label><span data-t="city">Ciudad</span><select id="ci"></select></label>
+<label class="ck"><input checked="" id="ciRemote" type="checkbox"/> <span data-t="ciRemote">+ remoto</span></label>
+<input id="cc" type="hidden" value="ES"/>
+<label><span data-t="within">Publicada</span><select id="within"></select></label>
+<label><span data-t="sort">Orden</span><select id="sort"></select></label>
+<label class="ck"><input id="remote" type="checkbox"/> <span data-t="remote">Solo remoto</span></label>
+<label class="ck"><input id="hideStale" type="checkbox"/> <span data-t="hideStale">Ocultar abiertas &gt; 60 días</span></label>
+<label class="ck"><input id="hideEtt" type="checkbox"/> <span data-t="hideEtt">Ocultar ETT / agencias</span></label>
+<label class="ck"><input id="hideRedated" type="checkbox"/> <span data-t="hideRedated">Ocultar refechadas y republicadas</span></label>
+</form>
+<div aria-live="polite" class="tiles" id="tiles"></div>
+<p class="hint" id="readAt"></p>
+<div class="actions">
+<button data-t="saveB" id="saveB" type="button">Guardar esta búsqueda</button>
+<button id="csvB" type="button"><span data-t="csvB">Exportar CSV</span> <span class="tag paid" data-t="paidTag">De pago</span></button>
+<span class="hint" id="actMsg"></span>
+</div>
+<div class="tablewrap"><table class="jobs" id="jobs"><thead><tr><th data-t="colRole">Puesto</th><th data-t="colCo">Empresa</th><th data-t="colLoc">Ubicación</th><th data-t="colPosted">Publicada</th><th data-t="colFlags">Avisos</th><th data-t="applied">enviado</th></tr></thead><tbody id="rows"></tbody></table></div>
+<p><button hidden="" id="moreB" type="button"></button></p>
+<details class="how"><summary data-t="howT">Cómo funcionan los avisos</summary><p data-t="howP">Las fechas son las de las propias empresas: Greenhouse first_published, Lever createdAt, Ashby publishedAt, Workable published_on, Teamtailor pubDate, Recruitee published_at, SmartRecruiters releasedDate. «Refechada» = publicada 30+ días antes de una actualización hecha en los últimos 14 días. «Publicada N veces» = el mismo título y lugar varias veces en la misma empresa. «Republicada» = el mismo título y lugar que se cerró antes (desde nuestras copias fechadas). «ETT / agencia» = la página es de una empresa de trabajo temporal o de selección.</p></details>
+<p class="scope" data-t="scope">Cubre empresas que publican sus ofertas en Greenhouse, Lever, Ashby, Workable, Teamtailor, Recruitee o SmartRecruiters (no InfoJobs, LinkedIn ni Indeed). Del BOE solo se lee la sección II.B (Oposiciones y concursos): las bolsas de empleo temporal de los boletines provinciales y autonómicos no están incluidas. Sin candidatura automática ni CV con IA.</p>
+</section>
+<section class="pane" hidden="" id="pane-b">
+<h2 data-t="boeT">Empleo público: BOE, sección II.B Oposiciones y concursos</h2>
+<p data-t="boeP">Las convocatorias de los últimos días de publicación del Boletín Oficial del Estado, leídas de sus datos abiertos. Escribe un puesto o una palabra (p. ej. «enfermero», «administrativo», «Policía») para ver solo las que lo contienen.</p>
+<form class="filters" onsubmit="return false"><label><span data-t="boeQ">Palabra en el título o el organismo</span><input id="boeQ" maxlength="120" placeholder="enfermero · administrativo · Policía" type="search"/></label></form>
+<p aria-live="polite" class="hint" id="boeMsg"></p>
+<div id="boeList"></div>
+<p class="hint" data-t="boeAlert">Con el plan de pago, las convocatorias nuevas que contienen tu palabra clave llegan en el mismo e-mail de alertas.</p>
+<p class="scope" data-t="boeSrc">Fuente: datos abiertos del BOE (boe.es). Solo sección II.B; los boletines provinciales y autonómicos no se leen.</p>
+</section>
+<section class="pane" hidden="" id="pane-s">
+<div id="savedBox"></div>
+<div class="card" id="digBox">
+<h2 data-t="digT">Resumen semanal por e-mail (gratis)</h2>
+<p data-t="digP">Un e-mail a la semana para esta búsqueda guardada: las ofertas publicadas por primera vez desde el último correo, con sus avisos.</p>
+<form class="row" id="digForm"><label><span data-t="email">E-mail</span><input autocomplete="email" id="digEmail" maxlength="200" required="" type="email"/></label><button data-t="digB" type="submit">Enviarme el resumen semanal</button></form>
+<p class="hint" id="digMsg"></p>
+</div>
+<div class="card" id="paidBox">
+<h2 data-t="alertsT">Ofertas de empleo por email, 2 veces al día</h2>
+<p data-t="alertsP">Cada búsqueda guardada se relee 2 veces al día (hacia las 8:00 y las 17:00, hora de Madrid); un e-mail trae solo las ofertas publicadas desde el último correo y las convocatorias nuevas del BOE (II.B) que contienen tu palabra clave, en el idioma que elijas.</p>
+<div data-fe-hidden="" hidden="" id="keyBox"></div>
+<div id="acctBox"></div>
+</div>
+</section>
+<section class="pane" hidden="" id="pane-h">
+<h2 data-t="histT">Historial de ofertas cerradas</h2>
+<p data-t="histP">Ofertas que desaparecieron de las páginas de estas empresas desde que empezamos a guardar copias fechadas, con el día en que las vimos por primera vez y el día en que se cerraron.</p>
+<p><button data-t="histLoad" id="histB" type="button">Ver el historial de las empresas de mi búsqueda</button> <button id="histCsv" type="button"><span data-t="csvB">Exportar CSV</span></button></p>
+<p class="hint" id="histMsg"></p>
+<div id="hist"></div>
+</section>
+<section class="buybox" data-fe-hidden="" hidden="" id="buybox"><h2></h2><p class="btns"><a class="buy" data-fe-hidden="" hidden=""><span></span><b class="pM"></b></a><a class="buy alt" data-fe-hidden="" hidden=""><span></span><b class="pY"></b></a></p><p class="hint"></p><p class="hint"></p></section>
+<p class="related"><span data-t="related">¿Has encontrado una oferta? Prepara tu CV:</span> <a data-t="relLink" href="/es/apps/hacer-curriculum-ats-oferta/" id="relA">hacer currículum</a> · <a href="/es/apps/" id="allA">todas las herramientas</a></p>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Guardar y continuar: <a href="https://getreadystack.com/es/apps/bolsa-de-empleo/">https://getreadystack.com/es/apps/bolsa-de-empleo/</a></p><script src="directory.js"></script>
+<script src="engine.js"></script>
+<script src="i18n.js"></script>
+<script src="lic.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
