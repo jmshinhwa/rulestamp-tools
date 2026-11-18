@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Jobbörse Stellenangebote – direkt vom Arbeitgeber, echtes Alter jeder Stelle, Job Alerts 2× täglich</title>
+<meta content="Jobbörse Stellenangebote für Deutschland live aus der offiziellen Jobbörse der Bundesagentur für Arbeit: nur Arbeitgeber direkt (ohne Zeitarbeit und Personalvermittlung), Datum der Erstveröffentlichung und Alter jeder Stelle, Job Alerts Stellenangebote 2× täglich, Eigenbemühungen-Nachweis als PDF." name="description"/>
+<meta content="#0f5c4d" name="theme-color"/>
+<link href="icon.svg" rel="icon" type="image/svg+xml"/>
+<link href="style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/de/apps/jobborse-stellenangebote/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main class="wrap">
+<header class="top">
+<div class="langbar"><select aria-label="Sprache / Language" id="lang"></select></div>
+<h1 data-t="h1" id="h1">Jobbörse Stellenangebote – nur Arbeitgeber direkt, mit dem echten Alter jeder Stelle</h1>
+<p class="sub" data-t="sub">Job Alerts Stellenangebote · Stellenangebote Benachrichtigung 2× täglich · Eigenbemühungen-Nachweis als PDF</p>
+<p class="country"><span aria-hidden="true" class="flag"></span><span data-t="country">Für Deutschland · Daten live aus der offiziellen Jobbörse der Bundesagentur für Arbeit</span></p>
+<ul class="better">
+<li data-t="b1">Beruf und Ort eingeben → sofort die ganze Liste, ohne Konto. Ein Klick „nur Arbeitgeber direkt“ blendet Zeitarbeit und private Personalvermittlung zusammen aus – z. B. Buchhalter Köln: 289 Angebote → 95 direkt (gelesen 18.11.2026).</li>
+<li data-t="b2">Jede Stelle mit dem Datum der Erstveröffentlichung und ihrem Alter in Tagen statt „vor 30+ Tagen“; seit über 60 Tagen online und mehrfach inseriert ist markiert.</li>
+<li data-t="b3">Im Abo, jeden Monat: jede gespeicherte Suche wird 2× täglich neu gelesen, eine E-Mail bringt nur die neuen Angebote, und jede Bewerbung landet im Eigenbemühungen-Nachweis (PDF/CSV) – fehlt der Nachweis, droht eine Sperrzeit von 2 Wochen (§ 159 SGB III) – z. B. bei 50,00 € Arbeitslosengeld pro Tag: 14 × 50,00 € = 700,00 €.</li>
+</ul>
+<div class="side">
+<p class="lede" data-t="ledeWait" id="lede">Lese die Jobbörse der Bundesagentur für Arbeit …</p>
+<div class="cta">
+<a class="buy" data-fe-hidden="" hidden="" id="buyTop"><span></span><b class="pM"></b></a>
+<span class="mode" id="mode"></span>
+</div>
+</div>
+</header>
+<nav class="tabs" role="tablist">
+<button aria-selected="true" class="on" data-t="tJobs" data-tab="j" role="tab" type="button">Stellen</button>
+<button aria-selected="false" data-t="tSaved" data-tab="s" role="tab" type="button">Meine Suchen &amp; Alerts</button>
+<button aria-selected="false" data-tab="n" role="tab" type="button"><span data-t="tLog">Eigenbemühungen-Nachweis</span> <b class="cnt" id="logN"></b></button>
+<button aria-selected="false" data-t="tHist" data-tab="h" role="tab" type="button">Verlauf</button>
+</nav>
+<section class="pane" id="pane-j">
+<form class="search" id="search">
+<label><span data-t="was">Beruf oder Stichwort</span><input autocomplete="off" data-tp="wasPh" id="was" maxlength="120" placeholder="z. B. Buchhalter" type="search"/></label>
+<label><span data-t="wo">Ort oder PLZ</span><input autocomplete="off" data-tp="woPh" id="wo" maxlength="80" placeholder="z. B. Köln" type="search"/></label>
+<label><span data-t="r">Umkreis</span><select id="r"></select></label>
+<button class="go" data-t="go" type="submit">Stellen suchen</button>
+<label class="ck dck"><input checked="" id="d" type="checkbox"/> <span data-t="d">nur Arbeitgeber direkt</span></label>
+<button class="linkb" data-t="sample" id="sampleB" type="button">Beispiel: Buchhalter in Köln</button>
+</form>
+<div aria-live="polite" class="tiles" id="tiles"></div>
+<form class="filters" id="filters" onsubmit="return false">
+<label><span data-t="q">In den Ergebnissen filtern</span><input data-tp="qPh" id="q" maxlength="200" type="search"/></label>
+<label><span data-t="within">Veröffentlicht</span><select id="within"></select></label>
+<label><span data-t="sort">Sortieren</span><select id="sort"></select></label>
+<label class="ck"><input id="hideStale" type="checkbox"/> <span data-t="hideStale"></span></label>
+<label class="ck"><input id="sal" type="checkbox"/> <span data-t="sal"></span></label>
+<label class="ck"><input id="tz" type="checkbox"/> <span data-t="tz"></span></label>
+<label class="ck"><input id="ho" type="checkbox"/> <span data-t="ho"></span></label>
+</form>
+<p class="hint" id="readAt"></p>
+<div class="actions">
+<button data-t="saveB" id="saveB" type="button">Diese Suche merken</button>
+<button id="csvB" type="button"><span data-t="csvB">CSV-Export</span> <span class="tag paid" data-t="paidTag">Abo</span></button>
+<span class="hint" id="actMsg"></span>
+</div>
+<details class="picker" id="coBox">
+<summary><span data-t="coT">Karriereseiten von Arbeitgebern (Personio)</span> <span class="tag paid" data-t="paidTag">Abo</span> <span id="coN"></span></summary>
+<p class="hint" data-t="coP"></p>
+<form class="addurl" id="coForm"><label><input data-tp="coPh" id="coIn" maxlength="300" type="text"/></label><button data-t="coAdd" type="submit">Hinzufügen</button></form>
+<p class="hint" id="coMsg"></p>
+<ul class="colist" id="coList"></ul>
+</details>
+<div class="tablewrap"><table class="jobs" id="jobs"><thead><tr><th data-t="colRole">Stelle</th><th data-t="colCo">Arbeitgeber</th><th data-t="colLoc">Ort</th><th data-t="colPosted">Online seit</th><th data-t="colFlags">Merkmale</th><th data-t="colAp">Bewerbung</th></tr></thead><tbody id="rows"></tbody></table></div>
+<p><button hidden="" id="moreB" type="button"></button></p>
+<details class="how"><summary data-t="howT"></summary><p data-t="howP"></p></details>
+<p class="scope" data-t="scope"></p>
+</section>
+<section class="pane" hidden="" id="pane-s">
+<div class="card" id="freeBox"></div>
+<div class="card" id="paidBox">
+<h2 data-t="alertsT">Job Alerts 2× täglich</h2>
+<p data-t="alertsP"></p>
+<div data-fe-hidden="" hidden="" id="keyBox"></div>
+<div id="acctBox"></div>
+</div>
+</section>
+<section class="pane" hidden="" id="pane-n">
+<h2 data-t="logT">Nachweis der Eigenbemühungen</h2>
+<p data-t="logP"></p>
+<p class="note" data-t="logNote"></p>
+<div class="row">
+<label><span data-t="who">Name</span><input autocomplete="name" id="whoName" maxlength="100" type="text"/></label>
+<label><span data-t="kdnr">Kundennummer</span><input id="whoNr" maxlength="40" type="text"/></label>
+<label><span data-t="from">von</span><input id="logFrom" type="date"/></label>
+<label><span data-t="to">bis</span><input id="logTo" type="date"/></label>
+</div>
+<p class="hint" id="logCount"></p>
+<div class="tablewrap"><table class="jobs log" id="logT"><thead><tr><th data-t="colDate">Datum</th><th data-t="colCo">Arbeitgeber</th><th data-t="colRole">Stelle</th><th data-t="colArt">Art</th><th data-t="colSt">Stand</th><th data-t="colNote">Notiz</th><th></th></tr></thead><tbody id="logRows"></tbody></table></div>
+<div class="actions">
+<button data-t="addRow" id="addRow" type="button">Eintrag hinzufügen</button>
+<button class="primary" id="pdfB" type="button"><span data-t="pdfB">Nachweis als PDF drucken</span> <span class="tag paid" data-t="paidTag">Abo</span></button>
+<button id="csvLog" type="button"><span data-t="csvLog">Nachweis als CSV</span> <span class="tag paid" data-t="paidTag">Abo</span></button>
+<span class="hint" id="logMsg"></span>
+</div>
+<p class="hint" data-t="logFree" id="logFree"></p>
+</section>
+<section class="pane" hidden="" id="pane-h">
+<h2 data-t="histT">Verlauf</h2>
+<p data-t="histP"></p>
+<div id="histBox"></div>
+</section>
+<section class="buybox" data-fe-hidden="" hidden="" id="buybox"><h2></h2><ul class="better small"><li></li></ul><p class="btns"><a class="buy" data-fe-hidden="" hidden=""><span></span><b class="pM"></b></a><a class="buy alt" data-fe-hidden="" hidden=""><span></span><b class="pY"></b></a></p><p class="hint"></p><p class="hint"></p></section>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Speichern und weitermachen: <a href="https://getreadystack.com/de/apps/jobborse-stellenangebote/">https://getreadystack.com/de/apps/jobborse-stellenangebote/</a></p><script src="engine.js"></script>
+<script src="i18n.js"></script>
+<script src="lic.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
