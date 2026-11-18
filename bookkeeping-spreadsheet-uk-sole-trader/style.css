@@ -1,0 +1,40 @@
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#1d2433;background:#f4f6f8}
+.top{max-width:1120px;margin:0 auto;padding:24px 16px 8px}
+h1{font-size:1.6rem;line-height:1.25;margin:0 0 10px}
+h2{font-size:1.15rem;margin:0 0 10px}
+.lede{font-size:1.02rem;max-width:900px;margin:0}
+main{max-width:1120px;margin:0 auto;padding:8px 16px 40px}
+.grid{display:grid;grid-template-columns:minmax(260px,380px) 1fr;gap:16px;align-items:start}
+.card{background:#fff;border:1px solid #dde3ea;border-radius:10px;padding:16px;margin-bottom:16px}
+label{display:block;font-size:.9rem;margin:0 0 8px}
+input,select{display:block;width:100%;padding:7px 8px;border:1px solid #c5ced8;border-radius:6px;font:inherit;margin-top:2px}
+details summary{cursor:pointer;font-weight:600;margin:6px 0 8px}
+.result{border:2px solid #0f6e4f;background:#f6fbf8}
+.big .lbl{display:block;font-size:.95rem;color:#3c4a5c}
+.big .num{display:block;font-size:2.6rem;font-weight:800;color:#0f6e4f;line-height:1.1}
+.loss{background:#fff3e6;border-left:4px solid #d9730d;padding:8px 10px;margin:10px 0;font-size:.95rem}
+.loss:empty{display:none}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:8px 0}
+.trio>div{background:#fff;border:1px solid #d7e6de;border-radius:8px;padding:8px}
+.trio .lbl{display:block;font-size:.8rem;color:#55657a}
+.trio b{display:block;font-size:1.25rem}
+.small{font-size:.85rem;color:#4a5869}
+.upsell{font-size:.92rem;margin:-4px 0 16px}
+a.buy,button.primary{background:#0f6e4f;color:#fff;border:0;border-radius:6px;padding:7px 12px;text-decoration:none;font-weight:600;display:inline-block}
+button{font:inherit;padding:6px 10px;border:1px solid #9fb0c2;border-radius:6px;background:#fff;cursor:pointer;margin:2px 4px 2px 0}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+td,th{padding:5px 6px;border-bottom:1px solid #edf0f3;text-align:left;vertical-align:top}
+td.n{text-align:right;white-space:nowrap}
+tr.tot td{border-top:2px solid #c9d3dd}
+.tablewrap{overflow-x:auto}
+.ledger input,.ledger select{margin:0;min-width:90px}
+.ledger td:nth-child(2) input{min-width:180px}
+button.x{border:0;color:#b42318;font-size:1.2rem}
+.warn{color:#b42318}
+.warn:empty{display:none}
+.ok{color:#0f6e4f;font-weight:600}
+.actions{display:flex;flex-wrap:wrap;gap:4px}
+@media (max-width:820px){.grid{grid-template-columns:1fr}}
+@media (max-width:480px){.trio{grid-template-columns:1fr}.big .num{font-size:2.1rem}}
+@media print{.inputs,#ledger .small,#pro,.upsell,header .lede,button{display:none!important}.grid{grid-template-columns:1fr}body{background:#fff}}

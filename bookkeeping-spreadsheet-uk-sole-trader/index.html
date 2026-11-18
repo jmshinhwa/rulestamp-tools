@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en-GB">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>bookkeeping spreadsheet for UK sole traders 2026/27 | ledger, SA103S boxes, 55p mileage, tax set-aside</title>
+<meta content="Bookkeeping spreadsheet for UK self-employed sole traders: log income, costs and business miles, see your SA103S boxes, profit, Income Tax + Class 4 to set aside and the cash due on 31 January, at 2026/27 rates incl. the 55p mileage rate." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/apps/bookkeeping-spreadsheet-uk-sole-trader/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<header class="top">
+<h1>bookkeeping spreadsheet for UK sole traders 2026/27: ledger, SA103S boxes, 55p mileage and the tax to set aside</h1>
+<p class="lede">Example (made-up mobile hairdresser, 2026/27): £38,400.00 turnover and 8,200 business miles. The tax to set aside is £4,197.44, but 31 January 2028 needs £6,296.16 once HMRC's first payment on account is added; a sheet still at last year's 45p claims £820.00 less for those miles, so you overpay £213.20 in tax. Type your own year below: the boxes, the bill and the January cash appear as you type, at this year's HMRC rates, with nothing to install and no bank login.</p>
+</header>
+<main>
+<section class="grid">
+<div class="inputs card">
+<h2>Your year <span class="small">(example: made-up mobile hairdresser)</span></h2>
+<label>Tax year
+      <select data-k="year" data-yj-mine="">
+<option selected="" value="2026-27">2026/27 (6 Apr 2026 - 5 Apr 2027) · 55p a mile</option>
+<option value="2025-26">2025/26 (return due 31 Jan 2027) · 45p a mile</option>
+</select></label>
+<label>Box 9 Turnover: takings, fees, sales (£)<input data-k="turnover" data-yj-mine="" inputmode="decimal" value="38,400.00"/></label>
+<label>Box 10 Other business income (£)<input data-k="other" data-yj-mine="" inputmode="decimal" value="0"/></label>
+<label>Business miles in your own car or van / motorcycle<input data-k="miles" data-yj-mine="" inputmode="numeric" value="8200"/></label>
+<label>Vehicle for those miles
+      <select data-k="vehicle" data-yj-mine="">
+<option selected="" value="car">Car or van (55p first 10,000, then 25p)</option>
+<option value="moto">Motorcycle (24p)</option>
+</select></label>
+<details open=""><summary>Allowable expenses, SA103S boxes 11-19 (£)</summary>
+<label>11 Goods bought for resale or used<input data-k="b11" data-yj-mine="" inputmode="decimal" value="3,150.00"/></label>
+<label>12 Travel not in the miles (train, parking)<input data-k="b12" data-yj-mine="" inputmode="decimal" value="240.00"/></label>
+<label>13 Wages and staff<input data-k="b13" data-yj-mine="" inputmode="decimal" value="0"/></label>
+<label>14 Rent, rates, power, insurance<input data-k="b14" data-yj-mine="" inputmode="decimal" value="620.00"/></label>
+<label>15 Repairs and maintenance<input data-k="b15" data-yj-mine="" inputmode="decimal" value="180.00"/></label>
+<label>16 Accountancy, legal, professional<input data-k="b16" data-yj-mine="" inputmode="decimal" value="0"/></label>
+<label>17 Interest, bank and card charges<input data-k="b17" data-yj-mine="" inputmode="decimal" value="96.00"/></label>
+<label>18 Phone, stationery, office<input data-k="b18" data-yj-mine="" inputmode="decimal" value="540.00"/></label>
+<label>19 Other allowable expenses<input data-k="b19" data-yj-mine="" inputmode="decimal" value="350.00"/></label>
+</details>
+<label>Other taxable income, e.g. a PAYE job (£)<input data-k="paye" data-yj-mine="" inputmode="decimal" value="0"/></label>
+<label>Payments on account already paid for this year (£)<input data-k="poa" data-yj-mine="" inputmode="decimal" value="0"/></label>
+<p class="small">England, Wales and Northern Ireland Income Tax bands. Scotland has its own bands.</p>
+</div>
+<div class="outcol">
+<div class="card result" data-yj="result" id="out">
+<div class="big"><span class="lbl" id="res-jan-lbl">Cash to have ready by 31 January 2028</span><span class="num" id="res-jan">£6,296.16</span></div>
+<p class="loss" id="loss-line"></p>
+<div class="trio">
+<div><span class="lbl">Tax to set aside</span><b id="res-set">£4,197.44</b><span class="small" id="res-set-sub"></span></div>
+<div><span class="lbl">Profit taxed</span><b id="res-profit">£28,714.00</b><span class="small" id="res-profit-sub"></span></div>
+<div><span class="lbl">Mileage claim</span><b id="res-miles">£4,510.00</b><span class="small" id="res-miles-sub"></span></div>
+</div>
+<p class="small" id="poa-line"></p>
+</div>
+<p class="upsell" data-fe-hidden="" hidden=""><a class="buy" data-fe-hidden="" hidden=""></a><a data-fe-hidden="" hidden=""></a></p>
+<div class="card">
+<h2>Your SA103S boxes and the bill</h2>
+<table class="fees" id="box-table"></table>
+<ul class="small" id="notes"></ul>
+</div>
+</div>
+</section>
+<section class="card" id="ledger">
+<h2>Ledger: one line per sale, cost or trip</h2>
+<p class="small">Type rows as they happen, pick the SA103S box, then put the totals into the boxes above. Fuel, insurance and servicing for a vehicle you claim the mileage rate for are kept but not claimed. The running totals follow the Making Tax Digital quarters (from 6 April).</p>
+<div class="tablewrap"><table class="ledger"><thead><tr><th>Date</th><th>What</th><th>Box</th><th>£ or miles</th><th></th></tr></thead><tbody id="ledger-body"></tbody></table></div>
+<p><button id="add-row" type="button">+ Add a row</button> <button id="sample-ledger" type="button">Load a made-up ledger</button> <button class="primary" id="to-boxes" type="button">Put ledger totals in the boxes</button></p>
+<p class="small" id="ledger-sum"></p>
+<div class="tablewrap"><table class="fees" id="quarters"></table></div>
+</section>
+<section class="card" data-fe-hidden="" hidden="" id="pro"><h2></h2><p class="warn" data-fe-hidden="" hidden="" id="pro-why"></p><div class="actions"><button id="btn-import" type="button"></button><input accept=".csv,text/csv" hidden="" id="csv-file" type="file"/><button id="btn-xlsx" type="button"></button><button id="btn-print" type="button"></button><button id="btn-ics" type="button"></button></div><p class="small" id="book-msg"></p><div data-fe-hidden="" hidden="" id="pro-locked"><ul><li></li><li></li><li></li><li></li><li></li></ul><p><button id="btn-sample-csv" type="button"></button></p><div id="sample-out"></div><p><a class="buy" data-fe-hidden="" hidden=""></a><a data-fe-hidden="" hidden=""></a></p><p class="small"><input data-fe-hidden="" hidden="" id="key-in"/><button data-fe-hidden="" hidden="" id="key-go" type="button"></button><span data-fe-hidden="" hidden="" id="key-msg"></span></p></div><div data-fe-hidden="" hidden="" id="pro-open" style="display:none"><p class="ok"></p></div></section>
+<section class="card">
+<h2>Where the numbers come from (read 18 November 2026 on GOV.UK)</h2>
+<ul class="small">
+<li>Income Tax rates and Personal Allowances: £12,570, 20% to £50,270, 40% to £125,140, 45% above; the allowance falls by £1 for every £2 over £100,000.</li>
+<li>Self-employed National Insurance rates, 2026 to 2027: Class 4 at 6% on profits over £12,570 up to £50,270 and 2% above; Class 2 treated as paid from £7,105 profit.</li>
+<li>Simplified expenses: cars and goods vehicles 55p a mile for the first 10,000 miles in 2026-2027 (45p before 6 April 2026), 25p after, motorcycles 24p.</li>
+<li>SA103S (2026): boxes 9 to 22; under £90,000 turnover you may put total expenses in box 20 only.</li>
+<li>Income Tax: increasing the trading allowance (28 October 2026): £1,000 rises to £3,000 from 2027 to 2028.</li>
+<li>Making Tax Digital for Income Tax: over £50,000 from 6 April 2026, over £30,000 (2025/26) from 6 April 2027, over £20,000 (2026/27) from 6 April 2028; updates due 7 August, 7 November, 7 February, 7 May; no penalty points for late quarterly updates in 2026 to 2027.</li>
+<li>Payments on account: half of the bill each on 31 January and 31 July, none if the bill is under £1,000 or more than 80% of your tax is taken at source.</li>
+</ul>
+<p class="small">Record-keeping and arithmetic only, not tax advice. Your numbers stay in this browser.</p>
+</section>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Save and continue: <a href="https://getreadystack.com/apps/bookkeeping-spreadsheet-uk-sole-trader/">https://getreadystack.com/apps/bookkeeping-spreadsheet-uk-sole-trader/</a></p><script src="./app.js"></script>
+</body>
+</html>

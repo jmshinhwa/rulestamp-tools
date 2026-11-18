@@ -207,6 +207,15 @@
    "tools": [
     "divorce-asset-division-calculator"
    ]
+  },
+  {
+   "id": "3ad9446b2f",
+   "name": {
+    "en": "bookkeeping spreadsheet for UK sole traders 2026/27"
+   },
+   "tools": [
+    "bookkeeping-spreadsheet-uk-sole-trader"
+   ]
   }
  ],
  "tools": {
@@ -339,6 +348,11 @@
    "lang": "en",
    "name": "divorce asset division calculator",
    "hub": "https://getreadystack.com/apps/divorce-asset-division-calculator/"
+  },
+  "bookkeeping-spreadsheet-uk-sole-trader": {
+   "lang": "en",
+   "name": "bookkeeping spreadsheet for UK sole traders 2026/27",
+   "hub": "https://getreadystack.com/apps/bookkeeping-spreadsheet-uk-sole-trader/"
   }
  }
 }
