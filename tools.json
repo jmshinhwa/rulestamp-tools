@@ -169,6 +169,15 @@
    "tools": [
     "trading-journal-erwartungswert-setup"
    ]
+  },
+  {
+   "id": "6d83d817b3",
+   "name": {
+    "en": "cash buyers list"
+   },
+   "tools": [
+    "cash-buyers-list-finder"
+   ]
   }
  ],
  "tools": {
@@ -276,6 +285,11 @@
    "lang": "de",
    "name": "Trading Journal",
    "hub": "https://getreadystack.com/de/apps/trading-journal-erwartungswert-setup/"
+  },
+  "cash-buyers-list-finder": {
+   "lang": "en",
+   "name": "cash buyers list",
+   "hub": "https://getreadystack.com/apps/cash-buyers-list-finder/"
   }
  }
 }

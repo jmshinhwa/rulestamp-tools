@@ -31,6 +31,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF | [Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF](jobborse-stellenangebote/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/jobborse-stellenangebote/) |
 | Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
+| cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 
 <a id="de"></a>
 
@@ -59,6 +60,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF | [Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF](jobborse-stellenangebote/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/jobborse-stellenangebote/) |
 | Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
+| cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 
 <a id="es"></a>
 
@@ -87,6 +89,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF | [Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF](jobborse-stellenangebote/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/jobborse-stellenangebote/) |
 | Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
+| cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 
 <a id="pt"></a>
 
@@ -115,6 +118,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF | [Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF](jobborse-stellenangebote/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/jobborse-stellenangebote/) |
 | Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
+| cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 
 <a id="ja"></a>
 
@@ -143,6 +147,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF | [Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF](jobborse-stellenangebote/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/jobborse-stellenangebote/) |
 | Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
+| cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 
 ---
 Rulestamp · https://getreadystack.com

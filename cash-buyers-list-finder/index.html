@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>cash buyers list | find cash buyers, merge LLCs, match deals</title>
+<meta content="Cash buyers list builder for wholesalers: paste a sold-records CSV from your county, Propwire or PropStream; it keeps cash sales, merges each investor's LLC spellings, ranks repeat cash buyers and shows who fits your deal." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/apps/cash-buyers-list-finder/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main class="wrap">
+<h1>cash buyers list | find cash buyers, merge LLCs, match deals</h1>
+<p class="lede"><b>Example (made-up):</b> 35 recorded sales from Atlanta zips 30310, 30311 and 30314. Your deal in 30310 at $125,000 carries a $10,000 assignment fee that is lost if no buyer takes it by 2026-12-18 — and only 4 buyers in the file bought cash in 30310 near that price. A raw list shows 20 buyer names; they are 9 buyers, so 11 would be skip-traced twice.</p>
+<p class="fix"><b>Bought lists go stale and repeat the same investor under three LLC spellings.</b> This builds your cash buyers list from the sales recorded in your own market: loans, bank deeds and $10 transfers are dropped, spellings and shared mailing addresses are merged, and buyers with no cash buy in 12 months move to a stale line.</p>
+<p class="spec small">cash buyers list · 10 inputs (sold-records CSV, as-of date, window, repeat threshold, buyer kind, deal zip, deal price, deal type, assignment fee, assign-by date) · reads county recorder, Propwire, PropStream and MLS sold exports · no account, the file never leaves your browser · updated 2026-11-18</p>
+<section aria-live="polite" data-yj="result" id="out">
+<div class="tiles" id="o-tiles"><div class="tile hot"><span>Repeat cash buyers found · 2+ cash buys since 2025-11-18</span><b>6</b><i>of 9 cash buyers · 22 cash buys in 12 months</i></div><div class="tile"><span>Buyers who fit your deal · 30310 · $125,000 SFR</span><b>4 buyers</b><i>your $10,000 assignment fee · assign by 2026-12-18 (30 days)</i></div><div class="tile"><span>Name spellings merged into one buyer</span><b>20 → 9</b><i>11 duplicates you would skip-trace twice · 2 stale buyers dropped</i></div></div>
+<h2>Who fits your deal</h2>
+<div id="o-match"><ol class="match"><li><b>MAPLE RIDGE HOMES LLC</b> — 3 cash buys in 30310 ($118,000–$131,000), last 2026-10-28 · 6 in 12 months</li><li><b>REDLINE PROPERTY GROUP LLC</b> — 3 cash buys in 30310 ($95,000–$126,000), last 2026-11-03 · 4 in 12 months</li><li><b>KINGSLEY HOMEBUYERS LLC</b> — 2 cash buys in 30310 ($121,000–$133,000), last 2026-09-29 · 2 in 12 months</li><li><b>BRIGHTWATER HOMES LLC</b> — 1 cash buy in 30310 ($139,000), last 2026-04-22 · 1 in 12 months</li></ol><p class="small">Bought in 30310 but outside your deal: HAYES DARNELL (buys $72,000–$88,000)</p></div>
+<h2 id="o-title">Cash buyers ranked · 2025-11-18 to 2026-11-18</h2>
+<div class="scroll">
+<table class="res">
+<thead><tr><th>#</th><th>Buyer</th><th>Cash buys</th><th>Price paid</th><th>Zips · type</th><th>Mailing address</th></tr></thead>
+<tbody id="o-rows"><tr class="fit"><td class="nm">1</td><td class="sc"><b>MAPLE RIDGE HOMES LLC</b> <em class="tag">fits your deal</em><small>also recorded as: Maple Ridge Homes, L.L.C. · Maple Ridge Homes LLC · Maple Ridge Homes Llc · MAPLE RIDGE HOMES L L C</small><small class="why">merged: same name once LLC, Inc, punctuation and word order are ignored</small></td><td class="nm"><b>6</b><small>last 2026-10-28</small></td><td class="nm">$112,000–$168,000<small>median $127,750</small></td><td>30310 ×3, 30311 ×2, 30314<small>SFR</small></td><td class="ml">PO BOX 4471, ATLANTA GA 30302</td></tr><tr class="fit"><td class="nm">2</td><td class="sc"><b>REDLINE PROPERTY GROUP LLC</b> <em class="tag">fits your deal</em><small>also recorded as: RPG Holdings LLC · Redline Property Grp LLC</small><small class="why">merged: same name once LLC, Inc, punctuation and word order are ignored + same mailing address</small></td><td class="nm"><b>4</b><small>last 2026-11-03</small></td><td class="nm">$95,000–$140,000<small>median $117,500</small></td><td>30310 ×3, 30311<small>SFR, Multi</small></td><td class="ml">880 W PEACHTREE ST NW STE 1200, ATLANTA GA 30309</td></tr><tr class=""><td class="nm">3</td><td class="sc"><b>J &amp; K RENTALS INC</b><small>also recorded as: J&amp;K Rentals Inc. · J AND K RENTALS INC</small><small class="why">merged: same name once LLC, Inc, punctuation and word order are ignored</small></td><td class="nm"><b>3</b><small>last 2026-10-10</small></td><td class="nm">$85,000–$110,000<small>median $98,000</small></td><td>30314 ×3<small>SFR, Multi</small></td><td class="ml">3125 DELOWE DR, EAST POINT GA 30344</td></tr><tr class="fit"><td class="nm">4</td><td class="sc"><b>KINGSLEY HOMEBUYERS LLC</b> <em class="tag">fits your deal</em><small>also recorded as: Kingsley Homebuyers LLC</small><small class="why">merged: same name once LLC, Inc, punctuation and word order are ignored</small></td><td class="nm"><b>2</b><small>last 2026-09-29</small></td><td class="nm">$121,000–$133,000</td><td>30310 ×2<small>SFR</small></td><td class="ml">455 GLEN IRIS DR NE UNIT 6, ATLANTA GA 30308</td></tr><tr class=""><td class="nm">5</td><td class="sc"><b>PEACHTREE FLIP CO LLC</b><small>also recorded as: Peachtree Flip Co.</small><small class="why">merged: same name once LLC, Inc, punctuation and word order are ignored</small></td><td class="nm"><b>2</b><small>last 2026-08-05</small></td><td class="nm">$152,000–$186,000</td><td>30311 ×2<small>SFR</small></td><td class="ml">2970 PEACHTREE RD NW STE 300, ATLANTA GA 30305</td></tr><tr class=""><td class="nm">6</td><td class="sc"><b>HAYES DARNELL</b><small>also recorded as: Darnell Hayes</small><small class="why">merged: same name once LLC, Inc, punctuation and word order are ignored</small></td><td class="nm"><b>2</b><small>last 2026-07-21</small></td><td class="nm">$72,000–$88,000</td><td>30310 ×2<small>SFR</small></td><td class="ml">519 HOLDERNESS ST SW, ATLANTA GA 30310</td></tr><tr class="one"><td class="nm">7</td><td class="sc"><b>Tomas Reyes</b></td><td class="nm"><b>1</b><small>last 2026-09-08</small></td><td class="nm">$99,000</td><td>30311<small>SFR</small></td><td class="ml">88 Ormewood Ave SE, Atlanta GA 30315</td></tr><tr class="one"><td class="nm">8</td><td class="sc"><b>SOUTHSIDE LAND TRUST</b></td><td class="nm"><b>1</b><small>last 2026-06-02</small></td><td class="nm">$24,000</td><td>30314<small>Land</small></td><td class="ml">PO BOX 90211, ATLANTA GA 30364</td></tr><tr class="fit one"><td class="nm">9</td><td class="sc"><b>BRIGHTWATER HOMES LLC</b> <em class="tag">fits your deal</em></td><td class="nm"><b>1</b><small>last 2026-04-22</small></td><td class="nm">$139,000</td><td>30310<small>SFR</small></td><td class="ml">1100 SPRING ST NW STE 450, ATLANTA GA 30309</td></tr></tbody>
+</table>
+</div>
+<p class="small" id="o-stale">Stale, no cash buy since 2025-11-18: OAKLINE CAPITAL LLC (3 buys, last 2025-06-12) · ORTIZ LENA (1 buy, last 2025-05-14)</p>
+<p class="small" id="o-notes">35 rows read · 26 cash sales · 6 with a loan skipped · 2 bank/agency deeds skipped · 1 nominal transfer under $1,000 skipped · unmeasured 0</p>
+<p class="small" id="o-cols">Columns used: buyer “Buyer Name” · date “Sale Date” · price “Sale Price” · loan “Loan Amount” · mailing “Buyer Mailing Address” · zip “Property Zip” · type “Property Type”</p>
+<p class="summary" id="o-summary">Cash buyers list, 2025-11-18 to 2026-11-18: 6 repeat cash buyers (2+ buys) of 9 · 22 cash buys · 20 name spellings merged into 9 buyers. Top: MAPLE RIDGE HOMES LLC 6 cash buys ($112,000–$168,000); REDLINE PROPERTY GROUP LLC 4 cash buys ($95,000–$140,000); J &amp; K RENTALS INC 3 cash buys ($85,000–$110,000). Deal 30310 · $125,000 SFR: 4 buyers fit (MAPLE RIDGE HOMES LLC, REDLINE PROPERTY GROUP LLC, KINGSLEY HOMEBUYERS LLC, BRIGHTWATER HOMES LLC).</p>
+<p><button class="btn2" id="copy" type="button">Copy the summary</button> <span class="small" id="copy-msg"></span></p>
+</section>
+<div class="buyline" data-fe-hidden="" hidden=""><p><b></b></p><a class="btn" data-fe-hidden="" hidden=""></a><a class="small" data-fe-hidden="" hidden=""></a><p class="promsg" data-fe-hidden="" hidden="" id="pro-msg"></p></div>
+<form autocomplete="off" id="f" onsubmit="return false">
+<fieldset>
+<legend>1. Your sold-records export</legend>
+<label>Paste the CSV (first row = column names). Needed: buyer, sale date, sale price. Better: loan amount or lender, buyer mailing address, property zip, property type.
+      <textarea data-k="csv" data-yj-mine="" rows="9" spellcheck="false">Sale Date,Buyer Name,Buyer Mailing Address,Property Address,Property Zip,Property Type,Sale Price,Loan Amount
+2026-11-03,REDLINE PROPERTY GROUP LLC,"880 W PEACHTREE ST NW STE 1200, ATLANTA GA 30309",1452 Sylvan Rd SW,30310,SFR,109000,
+2026-10-28,MAPLE RIDGE HOMES LLC,"PO BOX 4471, ATLANTA GA 30302",1187 Lucile Ave SW,30310,SFR,131000,
+2026-10-17,Jasmine Carter,"1240 Lucile Ave SW, Atlanta GA 30310",1240 Lucile Ave SW,30310,SFR,289000,280330
+2026-10-10,J &amp; K RENTALS INC,"3125 DELOWE DR, EAST POINT GA 30344",811 Joseph E Boone Blvd NW,30314,Duplex,98000,
+2026-09-29,KINGSLEY HOMEBUYERS LLC,"455 GLEN IRIS DR NE UNIT 6, ATLANTA GA 30308",1314 Graymont Dr SW,30310,SFR,121000,
+2026-09-15,"Maple Ridge Homes, L.L.C.","P.O. Box 4471, Atlanta, GA 30302",742 Oakland Dr SW,30310,SFR,124500,0
+2026-09-08,Tomas Reyes,"88 Ormewood Ave SE, Atlanta GA 30315",1756 Olympian Way SW,30311,SFR,99000,
+2026-09-02,Michael and Ana Brooks,"2150 Westwood Ave SW, Atlanta GA 30311",2150 Westwood Ave SW,30311,SFR,315000,252000
+2026-08-28,FEDERAL NATIONAL MORTGAGE ASSOCIATION,"PO BOX 650043, DALLAS TX 75265",1102 Sylvan Rd SW,30310,SFR,151200,
+2026-08-19,RPG Holdings LLC,"880 West Peachtree Street NW Suite 1200, Atlanta, GA 30309",986 Dill Ave SW,30310,SFR,126000,
+2026-08-05,PEACHTREE FLIP CO LLC,"2970 PEACHTREE RD NW STE 300, ATLANTA GA 30305",1995 Beecher Rd SW,30311,SFR,186000,
+2026-07-21,HAYES DARNELL,"519 HOLDERNESS ST SW, ATLANTA GA 30310",1361 Avon Ave SW,30310,SFR,72000,
+2026-07-11,KEISHA WARD,"1077 Lena St NW, Atlanta GA 30314",1077 Lena St NW,30314,SFR,245000,240562
+2026-07-02,Maple Ridge Homes LLC,"PO Box 4471 Atlanta GA 30302",215 Peeples St SW,30310,SFR,118000,
+2026-06-30,REDLINE PROPERTY GROUP LLC,"880 W PEACHTREE ST NW STE 1200, ATLANTA GA 30309",1452 Sylvan Rd SW,30310,SFR,10,
+2026-06-24,J&amp;K Rentals Inc.,"3125 Delowe Drive, East Point, GA 30344",64 Chestnut St NW,30314,SFR,85000,
+2026-06-02,SOUTHSIDE LAND TRUST,"PO BOX 90211, ATLANTA GA 30364",0 Proctor St NW,30314,Vacant Land,24000,
+2026-05-20,MAPLE RIDGE HOMES LLC,"PO BOX 4471, ATLANTA GA 30302",1630 Beecher St SW,30311,SFR,142000,
+2026-05-06,Greenleaf Rentals LLC,"3400 Lenox Rd NE Ste 210, Atlanta GA 30326",1490 Avon Ave SW,30310,Duplex,210000,157500
+2026-04-22,BRIGHTWATER HOMES LLC,"1100 SPRING ST NW STE 450, ATLANTA GA 30309",1288 Lucile Ave SW,30310,SFR,139000,
+2026-04-07,Redline Property Grp LLC,"880 W Peachtree St NW #1200, Atlanta GA 30309",2240 Campbellton Rd SW,30311,Duplex,140000,
+2026-03-27,Peachtree Flip Co.,"2970 Peachtree Rd NW Suite 300, Atlanta, GA 30305",1820 Westhaven Dr SW,30311,SFR,152000,
+2026-03-18,Kingsley Homebuyers LLC,"455 Glen Iris Dr NE #6, Atlanta GA 30308",1757 Westwood Ave SW,30310,SFR,133000,
+2026-03-12,Robert Kim,"2215 Fairhaven Cir NE, Atlanta GA 30305",1688 Beecher St SW,30311,SFR,262000,209600
+2026-02-25,WELLS FARGO BANK NA,"1 HOME CAMPUS, DES MOINES IA 50328",1544 Westwood Ave SW,30311,SFR,98500,
+2026-02-11,Maple Ridge Homes Llc,"PO Box 4471, Atlanta, GA 30302",2088 Westwood Ave SW,30311,SFR,168000,
+2026-01-30,Darnell Hayes,"519 Holderness St SW, Atlanta, GA 30310",1033 Hopkins St SW,30310,SFR,88000,
+2026-01-15,J AND K RENTALS INC,"3125 Delowe Dr East Point GA 30344",1029 Lena St NW,30314,SFR,110000,
+2026-01-08,Aaliyah Brown,"1302 Sylvan Rd SW, Atlanta GA 30310",1302 Sylvan Rd SW,30310,SFR,238000,233681
+2025-12-30,REDLINE PROPERTY GROUP LLC,"880 W PEACHTREE ST NW STE 1200 ATLANTA GA 30309",1601 Murphy Ave SW,30310,SFR,95000,
+2025-12-09,MAPLE RIDGE HOMES L L C,"PO BOX 4471 ATLANTA GA 30302",541 Lawshe St NW,30314,SFR,112000,
+2025-06-12,OAKLINE CAPITAL LLC,"3340 PEACHTREE RD NE STE 1800, ATLANTA GA 30326",1405 Sells Ave SW,30310,SFR,104000,
+2025-05-14,ORTIZ LENA,"2716 Ridge Ave, Decatur GA 30032",1918 Venetian Dr SW,30311,SFR,115000,
+2025-03-03,Oakline Capital LLC,"3340 Peachtree Rd NE Suite 1800, Atlanta GA 30326",1546 Lucile Ave SW,30310,SFR,97000,
+2024-11-19,OAKLINE CAPITAL LLC,"3340 PEACHTREE RD NE STE 1800, ATLANTA GA 30326",752 Oakland Dr SW,30310,SFR,91000,
+</textarea></label>
+<p><label class="inline">Open a CSV file <input accept=".csv,.tsv,.txt,text/csv" id="open" type="file"/></label>
+<button class="btn2" id="reset" type="button">Back to the example</button> <button class="btn2" id="clear" type="button">Empty it for my file</button> <span class="small" id="open-msg"></span></p>
+<div class="row4">
+<label>Count buys up to <input data-k="asof" type="date" value="2026-11-18"/></label>
+<label>Window <select data-k="months"><option value="6">last 6 months</option><option selected="" value="12">last 12 months</option><option value="24">last 24 months</option></select></label>
+<label>Repeat buyer = <select data-k="minbuys"><option selected="" value="2">2+ cash buys</option><option value="3">3+ cash buys</option><option value="5">5+ cash buys</option></select></label>
+<label>Buyers <select data-k="who"><option selected="" value="all">companies and people</option><option value="companies">companies, LLCs, trusts only</option><option value="people">people only</option></select></label>
+</div>
+</fieldset>
+<fieldset>
+<legend>2. Your deal</legend>
+<div class="row5">
+<label>Property zip <input data-k="dzip" data-yj-mine="" inputmode="numeric" maxlength="5" value="30310"/></label>
+<label>Your price to the buyer <input data-k="dprice" data-yj-mine="" inputmode="decimal" value="125000"/></label>
+<label>Property type <select data-k="dtype"><option value="any">any type</option><option selected="" value="SFR">single-family</option><option value="Multi">2-4 units</option><option value="Condo">condo or townhouse</option><option value="Land">land or lot</option><option value="Mobile">mobile home</option><option value="Commercial">commercial</option></select></label>
+<label>Your assignment fee <input data-k="fee" data-yj-mine="" inputmode="decimal" value="10000"/></label>
+<label>Assign by (contract date) <input data-k="assignby" data-yj-mine="" type="date" value="2026-12-18"/></label>
+</div>
+</fieldset>
+</form>
+<section data-fe-hidden="" hidden="" id="pro"><h2></h2><p class="small locked-note"></p><p><label class="inline"><input accept=".csv,.tsv,.txt,text/csv" id="add" type="file"/></label><button class="btn2" id="csv-out" type="button"></button><button class="btn2" id="blast-out" type="button"></button><button class="btn2" id="deal-save" type="button"></button><button class="btn2" id="ics-out" type="button"></button><button class="btn2" id="print" type="button"></button></p><div class="pro-body"><h3></h3><ul class="small" id="files"></ul><h3></h3><div class="scroll"><table class="res pipe"><thead><tr><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody id="p-rows"></tbody></table></div><h3></h3><div class="scroll"><table class="res"><thead><tr><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody id="d-rows"></tbody></table></div></div></section>
+<section>
+<h2>How the list is built</h2>
+<ol>
+<li>A sale counts as cash when the row has no loan amount (or 0), no lender and no financing word such as conventional, FHA or VA. Without any loan, lender or financing column the page says so and counts every sale.</li>
+<li>Deeds to banks, Fannie Mae, HUD and city or county agencies are dropped, and so are transfers under $1,000 (an owner moving a house between its own LLCs for $10 is not a purchase).</li>
+<li>One buyer = the same name once LLC, Inc, Co, punctuation and word order are ignored, or the same mailing address. Each merged row shows the spellings it joined and why.</li>
+<li>Rank = cash buys between the window start and the as-of date, then the most recent buy. Buyers whose last cash buy is older go to the stale line instead of your list.</li>
+<li>A buyer fits your deal when they bought cash in its zip inside the window, your price sits between 80% of their lowest and 120% of their highest cash price, and they bought that property type.</li>
+</ol>
+</section>
+<section data-fe-hidden="" hidden="" id="key-box"><h2></h2><p class="small"></p><div class="row2"><input data-fe-hidden="" hidden="" id="key"/><button class="btn2" data-fe-hidden="" hidden="" id="key-go" type="button"></button></div><p class="small" data-fe-hidden="" hidden="" id="key-msg"></p></section>
+<section class="faq">
+<h2>Questions</h2>
+<details><summary>Where do I get the sold-records CSV?</summary><p>From any source that lists recorded sales with the buyer's name: your county recorder or assessor's sales search, a Propwire or PropStream export of sold properties, or an MLS sold export. Pull 12 months of sales for the zips you wholesale in. The page finds the columns by name and shows which ones it used.</p></details>
+<details><summary>Why are 20 names only 9 buyers?</summary><p>County records type the same company in different ways: "MAPLE RIDGE HOMES LLC", "Maple Ridge Homes, L.L.C." and "MAPLE RIDGE HOMES L L C" are one buyer. In the example, RPG Holdings LLC is joined to Redline Property Group LLC because both use the same mailing address. Skip tracing each spelling would pay for the same investor twice.</p></details>
+<details><summary>Does it give me phone numbers?</summary><p>No. It does not sell data or skip-trace. It turns the records you already have into a ranked list with one mailing address per real buyer, which is what you send to your skip-trace service or mail to.</p></details>
+</section>
+<p class="small">A record-keeping and sorting tool for the sales data you load. It does not judge any property or tell you what to buy or sell.</p>
+</main>
+<div id="print-sheet"></div>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Save and continue: <a href="https://getreadystack.com/apps/cash-buyers-list-finder/">https://getreadystack.com/apps/cash-buyers-list-finder/</a></p><script src="./engine.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
