@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Muse AI prompts | permission-safe prompt builder for Marketplace, inbox, shopping and trips</title>
+<meta content="Muse AI prompts fitted to your own Muse permission settings: pick the task, say how your Connectors and web access are set, and get a copy-paste prompt with stop-and-ask lines, your money limit, a privacy-safe version and the exact Settings to change. Runs in your browser, no sign-up." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/apps/muse-ai-prompts/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main class="wrap">
+<header>
+<h1>Muse AI prompts | permission-safe prompt builder for Marketplace, inbox, shopping and trips</h1>
+<p class="lede" id="lede">Example (made-up): Dana lets Muse sell her $180 oak desk on Facebook Marketplace with "Always allow" on; 6 of the 7 steps would run without asking her, 4 of them cannot be undone, and an offer of $90 accepted without her loses $90 of her asking price.</p>
+<p class="sub">Pick a task, tell the page how your Muse permissions are set, and it counts what would run without your yes, then writes the prompt that makes Muse stop and ask. Built on Meta's own help pages, read 18 Nov 2026. Your inputs stay in this browser.</p>
+</header>
+<section aria-live="polite" class="result" data-yj="result" id="out">
+<p class="r-label" id="r-label">Steps that would run without asking you</p>
+<p class="r-big" id="r-big">0 of 0</p>
+<p class="r-loss" id="r-loss"></p>
+<div class="tiles">
+<div class="tile"><span class="t-l">Steps in this workflow</span><b id="t-steps">0</b><small id="t-steps-n"></small></div>
+<div class="tile"><span class="t-l">Steps that send, change or pay</span><b id="t-write">0</b><small>write actions in Meta's wording</small></div>
+<div class="tile bad"><span class="t-l">Run without a fresh yes</span><b id="t-un">0</b><small id="t-un-n"></small></div>
+<div class="tile warn"><span class="t-l">Cannot be undone</span><b id="t-undo">0</b><small>a sent message or a payment stays sent</small></div>
+<div class="tile"><span class="t-l">Money exposed without a guard</span><b id="t-loss">$0</b><small id="t-loss-n"></small></div>
+<div class="tile ok"><span class="t-l">Guard lines in your prompt</span><b id="t-guard">0</b><small>stop-and-ask, limits, privacy, log</small></div>
+</div>
+</section>
+<p class="proline" data-fe-hidden="" hidden="" id="proline"></p>
+<section class="card" id="inputs">
+<h2>1. Your task and your settings</h2>
+<div class="grid">
+<label>Task
+        <select data-k="task" data-yj-mine="" id="task">
+<option value="sell">Sell an item on Facebook Marketplace</option>
+<option value="inbox">Sort the inbox and reply to email</option>
+<option value="meeting">Book a meeting from an email thread</option>
+<option value="shop">Buy something online on a budget</option>
+<option value="trip">Plan a trip: flights and hotel</option>
+<option value="watch">Watch a price and alert me</option>
+<option value="bill">Call a provider to lower a bill</option>
+</select></label>
+<label>Connector permission (Settings → Permissions → Connectors)
+        <select data-k="conn" data-yj-mine="" id="conn">
+<option value="always_ask">Always ask</option>
+<option value="some">Ask for some actions</option>
+<option value="task">I tap "Allow for this task"</option>
+<option selected="" value="always">"Always allow" is already on</option>
+</select></label>
+<label>Web access default
+        <select data-k="web" data-yj-mine="" id="web">
+<option value="always_ask">Always ask</option>
+<option selected="" value="some">Ask for some actions</option>
+<option value="task">I tap "Allow for this task"</option>
+<option value="always">"Allow for this site" is already on</option>
+</select></label>
+<label id="l-a"><span id="n-a">Asking price</span> ($)<input data-k="a" data-yj-mine="" id="a" inputmode="decimal" value="180"/></label>
+<label id="l-b"><span id="n-b">Lowest price you accept</span> ($)<input data-k="b" data-yj-mine="" id="b" inputmode="decimal" value="150"/></label>
+<label id="l-c"><span id="n-c">A lowball offer to test</span> ($)<input data-k="c" data-yj-mine="" id="c" inputmode="decimal" value="90"/></label>
+<label class="wide">What it is about (keep names, addresses and order numbers out)
+        <input data-k="item" data-yj-mine="" id="item" value="oak standing desk, 140 x 70 cm"/></label>
+<label class="chk"><input checked="" data-k="sign" id="sign" type="checkbox"/> Sign messages "(sent by my Muse assistant)"</label>
+</div>
+<p class="hint">The page never contacts Muse or Meta. It applies Meta's published permission rules to the steps of the task you pick.</p>
+</section>
+<section class="card">
+<h2>2. The steps and who says yes</h2>
+<table><thead><tr><th>#</th><th>Step</th><th>Type</th><th>Asks you first?</th><th>Undo?</th></tr></thead><tbody id="steps"></tbody></table>
+</section>
+<section class="card">
+<h2>3. Your Muse AI prompt</h2>
+<p class="hint">Paste it as the first message of the task. The rules name every step that your settings would let through.</p>
+<textarea id="prompt" readonly="" rows="14"></textarea>
+<div class="btns"><button id="copy">Copy prompt</button><button class="ghost" id="copysafe">Copy privacy-safe version</button><span class="hint" id="copymsg"></span></div>
+<h3>Privacy-safe version</h3>
+<p class="hint">The item line becomes a placeholder, and any email or phone number typed above becomes [EMAIL] / [PHONE], so the text you hand over carries nothing personal.</p>
+<textarea id="safe" readonly="" rows="6"></textarea>
+</section>
+<section class="card">
+<h2>4. What to change in Muse Settings for this task</h2>
+<ol id="check"></ol>
+</section>
+<section class="card pro" data-fe-hidden="" hidden="" id="pro"><h2></h2><p></p><ul class="plist"><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b></li></ul><div class="btns"><a class="btn" data-fe-hidden="" hidden="" id="buy-y"></a><a class="btn ghost" data-fe-hidden="" hidden="" id="buy-m"></a></div><div class="keybox" data-fe-hidden="" hidden=""><label data-fe-hidden="" hidden=""><input id="key"/></label><button class="ghost" data-fe-hidden="" hidden="" id="unlock"></button><span class="hint" data-fe-hidden="" hidden="" id="keymsg"></span></div><div class="prozone"><h3></h3><div class="btns"><label><input id="wname"/></label><button id="save"></button><button class="ghost" id="pack"></button><button class="ghost" id="exp"></button><label class="filebtn ghost"><input accept=".json,application/json" id="imp" type="file"/></label></div><table><thead><tr><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody id="lib"></tbody></table><h3></h3><table><thead><tr><th></th><th></th><th></th><th></th></tr></thead><tbody id="aud"></tbody></table><h3></h3><div class="btns"><label><input id="rdate" type="date"/></label><label><input id="rweeks" inputmode="numeric"/></label><button class="ghost" id="ics"></button></div></div></section>
+<section class="card">
+<h2>Where the rules come from</h2>
+<ul class="src">
+<li>Meta Help Center, "How Muse works with your guidance and approval" (read 18 Nov 2026): "Always allow: Muse can take this type of action for this Connector in the future without asking again" · "Ask for some actions, your Muse will ask for permission before every write action and important read actions" · "Some other actions, like sending an email, cannot be reversed".</li>
+<li>Meta Help Center, "How Muse works with Connectors": Facebook, Instagram and Threads "are connected automatically if you have your accounts in the same Accounts Center"; information Muse used "might still remain in Muse's memories" after you disconnect.</li>
+<li>Meta Help Center, "About Muse subscriptions": free "with a usage limit"; Power plan ($20/month) 500M Muse tokens per week and 10 phone calls per day; Maximum plan ($100/month) 3B Muse tokens per week and 20 phone calls per day.</li>
+<li>Dexerto, 30 Sep 2026: a creator who chose "Allow Always" for Marketplace messages had Muse accept a lowball offer and send his address to a buyer.</li>
+</ul>
+<p class="hint">Not affiliated with Meta. Muse is Meta's product; this page is an independent prompt tool. The step list per task is our own model of the task, not Meta's.</p>
+</section>
+<footer class="hint">Your inputs and your library stay in this browser (localStorage).</footer>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Save and continue: <a href="https://getreadystack.com/apps/muse-ai-prompts/">https://getreadystack.com/apps/muse-ai-prompts/</a></p><script src="./muse.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

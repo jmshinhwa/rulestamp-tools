@@ -216,6 +216,15 @@
    "tools": [
     "bookkeeping-spreadsheet-uk-sole-trader"
    ]
+  },
+  {
+   "id": "3aec63d96d",
+   "name": {
+    "en": "Muse AI prompts"
+   },
+   "tools": [
+    "muse-ai-prompts"
+   ]
   }
  ],
  "tools": {
@@ -353,6 +362,11 @@
    "lang": "en",
    "name": "bookkeeping spreadsheet for UK sole traders 2026/27",
    "hub": "https://getreadystack.com/apps/bookkeeping-spreadsheet-uk-sole-trader/"
+  },
+  "muse-ai-prompts": {
+   "lang": "en",
+   "name": "Muse AI prompts",
+   "hub": "https://getreadystack.com/apps/muse-ai-prompts/"
   }
  }
 }
