@@ -178,6 +178,15 @@
    "tools": [
     "cash-buyers-list-finder"
    ]
+  },
+  {
+   "id": "30769c22c6",
+   "name": {
+    "en": "monthly bill tracker"
+   },
+   "tools": [
+    "monthly-bill-tracker-paycheck-planner"
+   ]
   }
  ],
  "tools": {
@@ -290,6 +299,11 @@
    "lang": "en",
    "name": "cash buyers list",
    "hub": "https://getreadystack.com/apps/cash-buyers-list-finder/"
+  },
+  "monthly-bill-tracker-paycheck-planner": {
+   "lang": "en",
+   "name": "monthly bill tracker",
+   "hub": "https://getreadystack.com/apps/monthly-bill-tracker-paycheck-planner/"
   }
  }
 }

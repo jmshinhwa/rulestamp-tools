@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>monthly bill tracker | pay-by date, which paycheck, late fee</title>
+<meta content="Monthly bill tracker for people paid weekly, every two weeks or twice a month: list your bills, see which paycheck pays each one, the day you run short before payday and the late fees at stake. Weekends and Federal Reserve bank holidays are moved for you. No sign-up, your data stays in your browser." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/apps/monthly-bill-tracker-paycheck-planner/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<header class="top">
+<h1>monthly bill tracker | pay-by date, which paycheck, late fee</h1>
+<p class="lede"><b>Made-up example</b>, already worked out below: paid $1,640.00 every other Friday, 11 bills in December 2026. The month looks fine, $3,736.00 of bills against $4,920.00 of pay. But the Dec 4 paycheck has to carry $1,751.00 of bills, so on <b>Wed Dec 16 the account is $41.00 short, two days before payday</b>, and the $260.00 credit card payment due that day risks a $32.00 late fee.</p>
+<p class="sub">A bill tracker spreadsheet tells you what is due. This one also tells you which paycheck pays it. Put in your pay schedule and your bills: every due date that falls on a weekend or a bank holiday moves to the business day before, each bill is matched to the paycheck that lands before it, and you see the first day you would be short. No sign-up, no bank login, your data stays in your browser.</p>
+</header>
+<main>
+<section class="card" id="res">
+<div aria-live="polite" data-yj="result" id="out"></div>
+</section>
+<p class="freeline" id="freeline">Free: one month, any number of bills, the whole answer on screen.</p>
+<section class="card" id="inputs">
+<h2>Your pay</h2>
+<div class="grid">
+<label>Start from<select data-k="" id="example"><option selected="" value="A">Example A: paid every other Friday</option><option value="B">Example B: paid on the 15th and the last day</option><option value="own">My own bills (clear the list)</option></select></label>
+<label>Month to plan<select data-k="" data-yj-mine="" id="month"></select></label>
+<label>How often are you paid?<select data-k="" data-yj-mine="" id="freq"><option value="weekly">Every week</option><option selected="" value="biweekly">Every two weeks</option><option value="semimonthly">Twice a month (15th and last day)</option><option value="monthly">Once a month</option></select></label>
+<label>One payday you know<input data-k="" data-yj-mine="" id="anchor" type="date" value="2026-12-04"/></label>
+<label>Payday on a weekend or bank holiday<select data-k="" data-yj-mine="" id="shift"><option selected="" value="before">Paid the business day before</option><option value="after">Paid the business day after</option></select></label>
+<label>Take-home per paycheck ($)<input data-k="" data-yj-mine="" id="pay" inputmode="decimal" value="1,640.00"/></label>
+<label>Cash in the account on the 1st ($)<input data-k="" data-yj-mine="" id="start" inputmode="decimal" value="1,520.00"/></label>
+<label>Cushion to keep ($)<input data-k="" data-yj-mine="" id="buffer" inputmode="decimal" value="100.00"/></label>
+</div>
+<h2>Your bills</h2>
+<p class="hint">Due day = the day of the month on the bill. Late fee = the amount printed on your statement or contract. Every quarter / once a year: pick the first month it is due.</p>
+<div class="tablewrap">
+<table class="bills" id="bills">
+<thead><tr><th>Bill</th><th>Amount $</th><th>Due day</th><th>Late fee $</th><th>Paid by</th><th>Repeats</th><th>First month</th><th></th></tr></thead>
+<tbody></tbody>
+</table>
+</div>
+<p class="btns"><button class="btn ghost" id="add" type="button">+ Add a bill</button> <button class="btn" id="run" type="button">Check which paycheck pays each bill</button></p>
+</section>
+<section class="card pro" data-fe-hidden="" hidden="" id="pro"><h2></h2><ul><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b><b></b><b></b></li></ul><div class="buyrow"><p class="price"></p><p class="btns"><a class="btn" data-fe-hidden="" hidden=""></a><a class="btn ghost" data-fe-hidden="" hidden=""></a></p></div><div class="row"><label data-fe-hidden="" hidden=""><input id="key"/></label><button class="btn ghost" data-fe-hidden="" hidden="" id="unlock" type="button"></button></div><p class="hint" data-fe-hidden="" hidden="" id="keymsg"></p><div class="protools"><p class="btns"><button class="btn ghost" data-pro="save" type="button"></button><button class="btn ghost" data-pro="next" type="button"></button><button class="btn ghost" data-pro="year" type="button"></button><button class="btn ghost" data-pro="ics" type="button"></button><button class="btn ghost" data-pro="print" type="button"></button><button class="btn ghost" data-pro="csv" type="button"></button><button class="btn ghost" data-pro="backup" type="button"></button><label class="btn ghost file"><input accept=".json" hidden="" id="restore" type="file"/></label></p><p class="hint" data-fe-hidden="" hidden="" id="promsg"></p><div id="checklist"></div><div id="yearout"></div></div></section>
+<section class="card" id="how">
+<h2>How the dates are worked out</h2>
+<p><b>Safe pay-by day</b> = the due date, or the last bank business day before it when the due date is a Saturday, Sunday or a day the Federal Reserve Banks are closed. Some lenders accept a payment on the next business day; planning with the earlier day means the money is there either way.</p>
+<p><b>Bank holidays</b> come from the Federal Reserve's own list, "Holidays Observed by the Federal Reserve System 2026-2030" (federalreserve.gov/aboutthefed/k8.htm, read on Nov 18, 2026). In December 2026 that is Christmas Day, Friday Dec 25; Friday Jan 1, 2027 is New Year's Day, so a payday scheduled for Jan 1 lands on Thu Dec 31 when your employer pays the business day before.</p>
+<p><b>Which paycheck pays a bill</b> = the last paycheck that lands on or before the bill's safe pay-by day. Bills before the first paycheck of the month are paid from the cash in the account on the 1st.</p>
+<p class="hint">A planning tool for your own numbers, not financial advice. Late fees are the amounts you type in from your own bills.</p>
+</section>
+</main>
+<footer class="foot"><p>monthly bill tracker · data stays in your browser · no bank login</p></footer>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Save and continue: <a href="https://getreadystack.com/apps/monthly-bill-tracker-paycheck-planner/">https://getreadystack.com/apps/monthly-bill-tracker-paycheck-planner/</a></p><script src="./engine.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

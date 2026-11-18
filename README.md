@@ -32,6 +32,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
+| monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
 
 <a id="de"></a>
 
@@ -61,6 +62,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
+| monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
 
 <a id="es"></a>
 
@@ -90,6 +92,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
+| monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
 
 <a id="pt"></a>
 
@@ -119,6 +122,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
+| monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
 
 <a id="ja"></a>
 
@@ -148,6 +152,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
+| monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
 
 ---
 Rulestamp · https://getreadystack.com
