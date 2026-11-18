@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Video compressor – compress video to size for Gmail 25 MB or Discord 20 MB, see the size first, no upload</title>
+<meta content="Video compressor that runs on your own device: pick Gmail 25 MB, Discord 20 MB or any MB, see the predicted file size before you compress, and get an MP4 under that limit. No upload, no account, no watermark." name="description"/>
+<meta content="#1d3557" name="theme-color"/>
+<link href="icon.svg" rel="icon" type="image/svg+xml"/>
+<link href="style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/apps/video-compressor/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main class="wrap">
+<header class="top">
+<nav aria-label="Language" class="langbar"><a aria-current="page" href="/apps/video-compressor/" hreflang="en" lang="en">English</a> <a href="/de/apps/video-compressor/" hreflang="de" lang="de">Deutsch</a> <a href="/es/apps/video-compressor/" hreflang="es" lang="es">Español</a> <a href="/pt/apps/video-compressor/" hreflang="pt" lang="pt">Português</a> <a href="/ja/apps/video-compressor/" hreflang="ja" lang="ja">日本語</a></nav>
+<h1 id="h1">Video compressor – pick the limit, see the size first, get a file under it</h1>
+<p class="sub">Compress video to size · compress video for email and Discord · reduce video file size – on your own device</p>
+<ul class="better">
+<li>Pick Gmail 25 MB, Discord 20 MB or type any MB: the predicted file size and frame size show BEFORE you press Compress. If a pass comes out over the limit, it is re-encoded lower on its own, so you do not guess and check.</li>
+<li>The video never leaves your device: it is encoded in this browser tab. No upload cap, no ads over the button, no account, no watermark.</li>
+<li class="b3" data-fe-hidden="" hidden=""></li>
+</ul>
+</header>
+<section aria-label="Video compressor – pick the limit, see the size first, get a file under it" class="tool">
+<div class="step">
+<label class="drop" id="drop">
+<input accept="video/*,.mp4,.mov,.m4v,.webm,.mkv" id="file" multiple="" type="file"/>
+<b>Drop a video here or choose a file</b><span>MP4, MOV, WebM, MKV · it stays on this device</span>
+</label>
+<button class="ghost" id="sample" type="button">Try a sample video (made-up clip → 1 MB)</button>
+<p class="warn" hidden="" id="support"></p>
+</div>
+<div class="step">
+<h2>1 · Where is it going?</h2>
+<div class="chips" id="dests"></div>
+<p class="row" hidden="" id="customRow"><label>Limit in MB <input id="customMB" inputmode="decimal" min="0.2" step="0.1" type="number" value="10"/></label></p>
+<p class="src" hidden="" id="destSrc"><span></span> · <a rel="noopener" target="_blank">source</a></p>
+<p class="row"><label><input id="noAudio" type="checkbox"/> Remove sound (more room for the picture)</label></p>
+<p class="row pro-only" data-fe-hidden="" hidden=""><label><input disabled="" id="fillOpt" type="checkbox"/></label></p>
+</div>
+<div aria-live="polite" class="step" hidden="" id="plan">
+<h2>2 · Before you compress</h2>
+<p class="mono" id="srcLine"></p>
+<p class="pred" id="predLine"></p>
+<p class="note" id="predNote"></p>
+<p class="note pro-line" hidden="" id="multiNote"></p>
+<p><button class="go" id="go" type="button">Compress</button> <button class="ghost" hidden="" id="cancel" type="button">Cancel</button></p>
+<div class="prog" hidden="" id="prog"><div id="progBar"></div><span id="progTxt"></span></div>
+<p class="warn" hidden="" id="err" role="alert"></p>
+</div>
+<div class="step result" hidden="" id="result">
+<h2>3 · Result</h2>
+<output id="res"><b id="resHead"></b><span id="resLine"></span></output>
+<p class="note" hidden="" id="opusNote">Sound was saved as Opus because this browser has no AAC encoder: it plays in Chrome, Edge, Firefox, Android, Windows and recent Safari; for an older iPhone, compress in Chrome or Edge on Windows/Mac, or tick “Remove sound”.</p>
+<p><button class="go" id="dl" type="button">Download MP4</button></p>
+<div hidden="" id="cmp">
+<h3>Same frame, before and after <small id="cmpT"></small></h3>
+<div class="cmp"><figure><canvas id="cmpA"></canvas><figcaption>Original</figcaption></figure><figure><canvas id="cmpB"></canvas><figcaption>Compressed</figcaption></figure></div>
+</div>
+</div>
+<div class="step" hidden="" id="batch">
+<h2>All files</h2>
+<table><thead><tr><th>File</th><th>Original</th><th>Compressed</th><th>Status</th></tr></thead><tbody id="batchRows"></tbody></table>
+<p class="pred" hidden="" id="zipLine"></p>
+<p><button class="go" hidden="" id="zipDl" type="button">Download ZIP</button></p>
+</div>
+</section>
+<section class="pro" data-fe-hidden="" hidden="" id="pro"><h2><small data-fe-hidden="" hidden="" id="proState"></small></h2><ul><li></li><li></li><li></li><li></li></ul><p class="note"></p><p class="cta"><a class="buy" data-fe-hidden="" hidden="" id="buyM"></a><a class="buy alt" data-fe-hidden="" hidden="" id="buyY"></a></p><p class="row"><input autocomplete="off" data-fe-hidden="" hidden="" id="key"/><button data-fe-hidden="" hidden="" id="keyGo" type="button"></button><span data-fe-hidden="" hidden="" id="keyMsg"></span></p><div class="pro-tools"><p class="row"><input id="destName"/><input id="destMB" min="0.2" step="0.1" type="number"/><button disabled="" id="saveDest" type="button"></button></p><h3><button disabled="" id="csv" type="button"></button></h3><p class="note" id="histLock"></p><table><thead><tr><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody id="histRows"></tbody></table></div></section>
+<section class="info">
+<h2>Nothing is uploaded</h2>
+<p>The file is read and encoded inside this browser tab with the browser's own video encoder (WebCodecs).</p>
+<details><summary>Why is the size shown before I compress?</summary><p>The size of a video is bitrate × length. We take your limit, keep 3% for the MP4 index, give the sound its share and print the rest as the video bitrate and frame size. If the encoder still overshoots, the next pass lowers the bitrate by the overshoot – and if the encoder ignores the bitrate, the frame gets smaller – at most 4 passes.</p></details>
+<details><summary>Which limits do the buttons use?</summary><p>Gmail: 25 MB per message for personal accounts (above that Gmail turns the file into a Drive link). Discord: 20 MB without Nitro, 50 MB with Nitro Basic. Each button shows the date we read the official help page.</p></details>
+<details><summary>Does a long or 4K video work?</summary><p>Yes, as long as your device can decode it; the file is read in pieces, not uploaded. Long 4K files take minutes on a laptop. The result is held in memory, so very large results need a computer rather than a phone. Tested so far in desktop Chrome; phone browsers are not tested yet.</p></details>
+<p class="credit" data-fe-hidden="" hidden=""><a></a></p>
+</section>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Save and continue: <a href="https://getreadystack.com/apps/video-compressor/">https://getreadystack.com/apps/video-compressor/</a></p><script src="engine.js"></script>
+<script src="i18n.js"></script>
+<script src="lic.js"></script>
+<script src="app.js" type="module"></script>
+</body>
+</html>

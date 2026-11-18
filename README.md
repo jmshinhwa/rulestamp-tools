@@ -29,6 +29,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Etsy bookkeeping spreadsheet 2027 | [Etsy bookkeeping spreadsheet 2027](etsy-bookkeeping-spreadsheet/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-bookkeeping-spreadsheet/) |
 | lead generation on Reddit: thread scorer + lead tracker | [lead generation on Reddit: thread scorer + lead tracker](lead-generation-reddit-thread-scorer/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/lead-generation-reddit-thread-scorer/) |
 | Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF | [Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF](jobborse-stellenangebote/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/jobborse-stellenangebote/) |
+| Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
 
 <a id="de"></a>
 
@@ -55,6 +56,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Etsy bookkeeping spreadsheet 2027 | [Etsy bookkeeping spreadsheet 2027](etsy-bookkeeping-spreadsheet/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-bookkeeping-spreadsheet/) |
 | lead generation on Reddit: thread scorer + lead tracker | [lead generation on Reddit: thread scorer + lead tracker](lead-generation-reddit-thread-scorer/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/lead-generation-reddit-thread-scorer/) |
 | Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF | [Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF](jobborse-stellenangebote/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/jobborse-stellenangebote/) |
+| Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
 
 <a id="es"></a>
 
@@ -81,6 +83,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Etsy bookkeeping spreadsheet 2027 | [Etsy bookkeeping spreadsheet 2027](etsy-bookkeeping-spreadsheet/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-bookkeeping-spreadsheet/) |
 | lead generation on Reddit: thread scorer + lead tracker | [lead generation on Reddit: thread scorer + lead tracker](lead-generation-reddit-thread-scorer/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/lead-generation-reddit-thread-scorer/) |
 | Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF | [Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF](jobborse-stellenangebote/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/jobborse-stellenangebote/) |
+| Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
 
 <a id="pt"></a>
 
@@ -107,6 +110,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Etsy bookkeeping spreadsheet 2027 | [Etsy bookkeeping spreadsheet 2027](etsy-bookkeeping-spreadsheet/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-bookkeeping-spreadsheet/) |
 | lead generation on Reddit: thread scorer + lead tracker | [lead generation on Reddit: thread scorer + lead tracker](lead-generation-reddit-thread-scorer/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/lead-generation-reddit-thread-scorer/) |
 | Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF | [Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF](jobborse-stellenangebote/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/jobborse-stellenangebote/) |
+| Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
 
 <a id="ja"></a>
 
@@ -133,6 +137,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Etsy bookkeeping spreadsheet 2027 | [Etsy bookkeeping spreadsheet 2027](etsy-bookkeeping-spreadsheet/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-bookkeeping-spreadsheet/) |
 | lead generation on Reddit: thread scorer + lead tracker | [lead generation on Reddit: thread scorer + lead tracker](lead-generation-reddit-thread-scorer/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/lead-generation-reddit-thread-scorer/) |
 | Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF | [Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF](jobborse-stellenangebote/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/jobborse-stellenangebote/) |
+| Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
 
 ---
 Rulestamp · https://getreadystack.com

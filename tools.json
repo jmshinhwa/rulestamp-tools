@@ -151,6 +151,15 @@
    "tools": [
     "jobborse-stellenangebote"
    ]
+  },
+  {
+   "id": "d0f31f5d07",
+   "name": {
+    "en": "Video compressor – compress to an MB limit, batch to ZIP, no upload"
+   },
+   "tools": [
+    "video-compressor"
+   ]
   }
  ],
  "tools": {
@@ -248,6 +257,11 @@
    "lang": "de",
    "name": "Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF",
    "hub": "https://getreadystack.com/de/apps/jobborse-stellenangebote/"
+  },
+  "video-compressor": {
+   "lang": "en",
+   "name": "Video compressor – compress to an MB limit, batch to ZIP, no upload",
+   "hub": "https://getreadystack.com/apps/video-compressor/"
   }
  }
 }
