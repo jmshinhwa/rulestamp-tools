@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Price action trading journal | expectancy per setup after spread, commission &amp; slippage</title>
+<meta content="Price action trading journal: paste your MT4, MT5, cTrader or Tradovate history and see each setup's expectancy before and after spread, commission, swap and slippage, with its break-even win rate. No sign-up, data stays in your browser." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/apps/price-action-trading-journal/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<header class="top">
+<h1>Price action trading journal | expectancy per setup after spread, commission &amp; slippage</h1>
+<p class="lede"><b>Example (made-up)</b>, already computed below: 42 trades in EURUSD, GBPUSD and gold. The "1-minute breakout" setup makes +$5.21 per trade before costs and <b>−$3.79 per trade after spread and commission</b>: 14 trades, $126.00 in costs, so a +$73.00 edge became a $53.00 loss.</p>
+<p class="sub">A trading journal spreadsheet usually shows profit only, and journals that do count fees put them in one "commissions and fees" line. Here you paste your history from MetaTrader 4, MetaTrader 5, cTrader or Tradovate and see, for every setup: gross expectancy, cost per trade, net expectancy, break-even win rate and how much extra cost it can still absorb. No sign-up; your data stays in your browser.</p>
+</header>
+<main>
+<section class="card" id="res">
+<div aria-live="polite" data-yj="result" id="out"></div>
+<p class="src-line noprint" id="freeline">Free: one history, any number of trades, every setup in full on screen.</p>
+</section>
+<section class="card" id="inputs">
+<h2>Your trades</h2>
+<div class="grid">
+<label>Load an example<select data-k="" id="example"><option selected="" value="A">A: forex &amp; gold, ECN with commission</option><option value="B">B: MNQ &amp; MES futures, Tradovate CSV</option><option value="own">My own history (paste below)</option></select></label>
+<label>Where do the results come from?<select data-k="" data-yj-mine="" id="mode"><option selected="" value="in">Broker export (spread is already inside the result)</option><option value="add">Noted without costs (backtest, hand notes): take the spread off</option></select></label>
+<label>Extra slippage per lot or contract (assumption, $)<input data-k="" data-yj-mine="" id="slip" inputmode="decimal" value="0"/></label>
+<label>Risk per trade = 1R ($)<input data-k="" data-yj-mine="" id="risk" inputmode="decimal" value="60"/></label>
+<label>Minimum trades per setup before you judge it<input data-k="" data-yj-mine="" id="minN" inputmode="numeric" value="10"/></label>
+<label>Commission per lot or contract, round trip (only if your export has no fee column)<input data-k="" data-yj-mine="" id="comm" inputmode="decimal" value="0"/></label>
+<label>Account currency<select data-k="" data-yj-mine="" id="cur"><option selected="" value="USD">USD $</option><option value="EUR">EUR €</option><option value="GBP">GBP £</option><option value="AUD">AUD A$</option><option value="CAD">CAD C$</option></select></label>
+</div>
+<label class="wide">History (paste here: one row per trade with a header row; add a "Setup" column for your pattern)
+    <textarea data-yj-mine="" id="paste" rows="9" spellcheck="false"></textarea></label>
+<p class="hint">Works with: the table from an MT4/MT5 report copied in the browser, a cTrader history CSV, a Tradovate Performance CSV, or columns from your own journal spreadsheet (Open Time, Close Time, Symbol, Type, Lots, Commission, Swap, Profit, Setup). Tab, comma or semicolon; numbers as 1,234.56 or $(25.00). Deposits and withdrawals are skipped. Dates like 10/05/2026 are read as month/day unless the file shows a day above 12 first.</p>
+<h2>Spread or slippage per symbol ($ per 1 lot or 1 contract, round trip)</h2>
+<p class="hint">Your account's typical spread × value per point. EURUSD: 0.2 pip × $10 per pip and lot = $2.00. Futures: ticks you usually lose × tick value (MNQ 1 tick = $0.50, MES 1 tick = $1.25). An empty box counts as 0.</p>
+<div class="spreads" id="spreads"></div>
+<p class="btns"><button class="btn" id="run">Compute setups after costs</button> <button class="btn ghost" id="clear">Clear</button></p>
+</section>
+<section class="card pro" data-fe-hidden="" hidden="" id="pro"><h2></h2><ul><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b><b></b><b></b><b></b></li></ul><div class="buyrow"><p class="price"></p><p class="btns"><a class="btn" data-fe-hidden="" hidden=""></a><a class="btn ghost" data-fe-hidden="" hidden=""></a></p></div><div class="row"><label data-fe-hidden="" hidden=""><input id="key"/></label><button class="btn ghost" data-fe-hidden="" hidden="" id="unlock"></button></div><p class="hint" data-fe-hidden="" hidden="" id="keymsg"></p><div data-fe-hidden="" hidden="" id="proarea"><div class="row"><label><input data-yj-mine="" id="acct"/></label><label class="btn file"><input accept=".htm,.html,.csv,.txt,.tsv" hidden="" id="file" type="file"/></label><button class="btn ghost" id="save"></button></div><p class="btns"><button class="btn ghost" id="csv"></button><button class="btn ghost" id="print"></button><button class="btn ghost" id="ics"></button><button class="btn ghost" id="backup"></button><label class="btn ghost file"><input accept=".json" hidden="" id="restore" type="file"/></label></p><div id="accts"></div><div id="tag"></div><div id="months"></div></div></section>
+<section class="card" id="how">
+<h2>How it is computed</h2>
+<ul>
+<li><b>Spread per trade</b> = lots × your spread per lot. In a broker export it is already inside the result; it is only added back so you see the edge before costs: <b>gross</b> = result + spread.</li>
+<li><b>Net</b> = gross − spread − extra slippage + commission + swap (commission and negative swap come with a minus from the export). <b>Costs</b> = gross − net. If the export has no fee column, commission = lots × your commission per lot.</li>
+<li><b>Expectancy per trade</b> = sum ÷ number of trades in the setup; <b>in R</b> = net expectancy ÷ your risk per trade.</li>
+<li><b>Break-even win rate</b> = average loss ÷ (average win + average loss), both net. If your win rate is below it, the setup loses money.</li>
+<li><b>Cost buffer</b> = net ÷ lots traded: how many dollars per lot your fills can get worse before the setup lands at 0.</li>
+<li><b>Worked example A</b>, "1-minute breakout": result +$45.00 + spread 14 × 1.00 lot × $2.00 = $28.00 → gross +$73.00; commission 14 × $7.00 = $98.00; $73.00 − $28.00 − $98.00 = −$53.00; −$53.00 ÷ 14 = −$3.79 per trade.</li>
+</ul>
+<p class="src">Times as in your export (your broker's server time). A tool to record and compute your own trades: no signals, not financial advice.</p>
+</section>
+</main>
+<footer><p>Price action trading journal · your data stays in this browser.</p></footer>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Save and continue: <a href="https://getreadystack.com/apps/price-action-trading-journal/">https://getreadystack.com/apps/price-action-trading-journal/</a></p><script src="./tj.js"></script>
+<script src="./sample.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

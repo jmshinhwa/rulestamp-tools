@@ -166,10 +166,12 @@
   {
    "id": "f4ba8ff9be",
    "name": {
-    "de": "Trading Journal"
+    "de": "Trading Journal",
+    "en": "Price action trading journal"
    },
    "tools": [
-    "trading-journal-erwartungswert-setup"
+    "trading-journal-erwartungswert-setup",
+    "price-action-trading-journal"
    ]
   },
   {
@@ -444,6 +446,11 @@
    "lang": "ja",
    "name": "家計簿 エクセル｜夫婦の精算と特別費を計算してExcelに出す家計簿 テンプレート（カードCSV読込・銀行連携なし）",
    "hub": "https://getreadystack.com/ja/apps/household-budget-planning/"
+  },
+  "price-action-trading-journal": {
+   "lang": "en",
+   "name": "Price action trading journal",
+   "hub": "https://getreadystack.com/apps/price-action-trading-journal/"
   }
  }
 }

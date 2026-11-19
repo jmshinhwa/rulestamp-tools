@@ -31,7 +31,8 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF | [Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF](jobborse-stellenangebote/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/jobborse-stellenangebote/) |
 | 〃 | [bolsa de empleo España: ofertas de empleo por email de webs de empresas + BOE](bolsa-de-empleo/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/bolsa-de-empleo/) |
 | Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
-| Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
+| Price action trading journal | [Price action trading journal](price-action-trading-journal/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/price-action-trading-journal/) |
+| 〃 | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 | monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
 | 〃 | [gastos mensuales Excel](gastos-mensuales-excel-control-recibos/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/gastos-mensuales-excel-control-recibos/) |
@@ -73,6 +74,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [bolsa de empleo España: ofertas de empleo por email de webs de empresas + BOE](bolsa-de-empleo/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/bolsa-de-empleo/) |
 | Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
+| 〃 | [Price action trading journal](price-action-trading-journal/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/price-action-trading-journal/) |
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 | monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
 | 〃 | [gastos mensuales Excel](gastos-mensuales-excel-control-recibos/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/gastos-mensuales-excel-control-recibos/) |
@@ -114,6 +116,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [Jobbörse Stellenangebote – Job Alerts direkt vom Arbeitgeber, Nachweis-PDF](jobborse-stellenangebote/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/jobborse-stellenangebote/) |
 | Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
+| 〃 | [Price action trading journal](price-action-trading-journal/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/price-action-trading-journal/) |
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 | gastos mensuales Excel | [gastos mensuales Excel](gastos-mensuales-excel-control-recibos/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/gastos-mensuales-excel-control-recibos/) |
 | 〃 | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
@@ -155,6 +158,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [bolsa de empleo España: ofertas de empleo por email de webs de empresas + BOE](bolsa-de-empleo/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/bolsa-de-empleo/) |
 | Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
+| 〃 | [Price action trading journal](price-action-trading-journal/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/price-action-trading-journal/) |
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 | monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
 | 〃 | [gastos mensuales Excel](gastos-mensuales-excel-control-recibos/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/gastos-mensuales-excel-control-recibos/) |
@@ -196,6 +200,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [bolsa de empleo España: ofertas de empleo por email de webs de empresas + BOE](bolsa-de-empleo/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/bolsa-de-empleo/) |
 | Video compressor – compress to an MB limit, batch to ZIP, no upload | [Video compressor – compress to an MB limit, batch to ZIP, no upload](video-compressor/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/video-compressor/) |
 | Trading Journal | [Trading Journal](trading-journal-erwartungswert-setup/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/trading-journal-erwartungswert-setup/) |
+| 〃 | [Price action trading journal](price-action-trading-journal/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/price-action-trading-journal/) |
 | cash buyers list | [cash buyers list](cash-buyers-list-finder/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cash-buyers-list-finder/) |
 | monthly bill tracker | [monthly bill tracker](monthly-bill-tracker-paycheck-planner/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/monthly-bill-tracker-paycheck-planner/) |
 | 〃 | [gastos mensuales Excel](gastos-mensuales-excel-control-recibos/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/gastos-mensuales-excel-control-recibos/) |
