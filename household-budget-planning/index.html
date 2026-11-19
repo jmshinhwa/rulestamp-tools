@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>家計簿 エクセル｜夫婦の精算と特別費まで自動計算する家計簿 テンプレート（銀行連携なし・広告なし）</title>
+<meta content="家計簿 エクセル：夫/妻/共通の支出を入れると、予算と実績の差額、負担割合どおりの夫婦精算「今月 妻→夫 ¥◯」、年払いの特別費の毎月の積立がその場で出ます。銀行ログイン不要、データはブラウザの中だけ。Proはカード明細CSVの読み込みと、数式入りの .xlsx（今月・精算・特別費・年間・明細）。" name="description"/>
+
+<link href="style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/ja/apps/household-budget-planning/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<header class="top">
+<a class="brand" href="/ja/">Rulestamp</a>
+<label class="lang"><span data-i="lang">表示言語</span>
+<select aria-label="language" id="uiLang">
+<option value="ja">日本語</option><option value="en">English</option><option value="de">Deutsch</option><option value="es">Español</option><option value="pt">Português</option>
+</select>
+</label>
+</header>
+<main>
+<section class="hero" id="hero">
+<h1 id="h1"><span class="kw">家計簿 エクセル</span><span data-i="h1rest">｜夫婦の精算と特別費まで自動計算（銀行連携なし）</span></h1>
+<p class="sub" data-i="sub">家計簿 テンプレートの手打ちも、家計管理 アプリの口座連携もいらない家計簿。夫・妻・共通を分けて入れるだけで、予算との差と今月の精算額が出ます。</p>
+<p class="lede" data-i="lede">記入例（架空の世帯）：共通の支出 ¥201,620 を 6:4 で分けると、今月の精算は「妻→夫 ¥27,548」。外食は予算 ¥15,000 に対して ¥22,410 で ¥7,410 のオーバー。来月の自動車保険 ¥60,000 は、毎月 ¥5,000 の積立で用意できる計算です。</p>
+<ul class="better">
+<li data-fe-hidden="" data-i="b1" hidden=""></li>
+<li data-i="b2">1行ごとに 夫／妻／共通 を選ぶと、負担割合（例 6:4、または収入比）どおりの夫婦精算「今月 妻→夫 ¥◯」が画面に出ます。年払いの特別費（自動車税・固定資産税・保険…）は 12 で割った毎月の積立と、払う月に表示。</li>
+</ul>
+<p class="why" data-fe-hidden="" data-i="why" hidden=""></p>
+<div class="cta">
+<button class="primary" data-i="sample" id="sampleBtn" type="button">記入例で計算してみる</button>
+<a class="ghost" data-i="own" href="#setup">自分の家計で始める</a>
+<a class="buy" data-fe-hidden="" hidden="" id="buyTop"><span data-i="buyM"></span><b class="pM"></b></a>
+</div>
+<p class="small" data-i="freeLine">無料：1世帯・1か月分、行数の制限なし。予算と実績、夫婦精算、特別費の積立まで全部画面に出ます。アカウント不要・広告なし・データはこのブラウザの中だけ。</p>
+</section>
+<section aria-live="polite" class="card" id="result">
+<h2 data-i="secResult">今月の結果</h2>
+<p class="empty" data-i="resultEmpty" id="resultEmpty">「記入例で計算してみる」を押すか、下に支出を入れてください。</p>
+<div hidden="" id="resultBody">
+<p class="settle" id="settleLine"></p>
+<div class="kpis" id="kpis"></div>
+<ul class="alerts" id="alerts"></ul>
+<table class="tbl" id="catTable"><thead><tr><th data-i="thCat">分類</th><th data-i="thBud">予算</th><th data-i="thAct">実績</th><th data-i="thDiff">差額</th></tr></thead><tbody></tbody></table>
+<details class="calc"><summary data-i="calcHow">精算の計算を見る</summary><pre id="calcText"></pre></details>
+</div>
+</section>
+<section class="card" id="setup">
+<h2 data-i="secSetup">世帯と月</h2>
+<div class="grid">
+<label><span data-i="nameA">1人目の呼び名</span><input id="nameA" value="夫"/></label>
+<label><span data-i="nameB">2人目の呼び名</span><input id="nameB" value="妻"/></label>
+<label><span data-i="incA">1人目の手取り（今月）</span><input id="incA" inputmode="numeric" min="0" step="1" type="number"/></label>
+<label><span data-i="incB">2人目の手取り（今月）</span><input id="incB" inputmode="numeric" min="0" step="1" type="number"/></label>
+<label><span data-i="ratioA">共通の支出の負担割合（1人目 %）</span><input id="ratioA" max="100" min="0" step="1" type="number" value="50"/></label>
+<div class="ratioBox"><span id="ratioText"></span> <button class="ghost sm" data-i="ratioInc" id="ratioInc" type="button">収入比にする</button></div>
+<label><span data-i="month">月</span><input id="ym" type="month"/></label>
+</div>
+<p class="small" data-fe-hidden="" data-i="monthNote" hidden="" id="monthNote"></p>
+</section>
+<section class="card" id="entry">
+<h2 data-i="secEntry">支出を入れる</h2>
+<form class="row" id="lineForm">
+<input aria-label="日付" id="lDate" required="" type="date"/>
+<input aria-label="内容" data-ph="phShop" id="lShop" placeholder="お店・内容（例：イオン）" required=""/>
+<input aria-label="金額" data-ph="phAmt" id="lAmt" inputmode="numeric" placeholder="金額" required="" step="1" type="number"/>
+<select aria-label="誰の支出" id="lWho"></select>
+<select aria-label="支払った人" id="lPaid"></select>
+<select aria-label="分類" id="lCat"></select>
+<button class="primary sm" data-i="add" type="submit">追加</button>
+</form>
+<p class="small" data-i="entryHint">分類は「自動」のままなら、お店の名前から決めます（例：イオン→食費、東京電力→水道光熱）。行の分類はあとから変えられます。</p>
+<table class="tbl" id="lineTable"><thead><tr><th data-i="thDate">日付</th><th data-i="thShop">内容</th><th data-i="thAmt">金額</th><th data-i="thCat">分類</th><th data-i="thWho">誰の</th><th data-i="thPaid">支払</th><th></th></tr></thead><tbody></tbody></table>
+</section>
+<section class="card" id="budget">
+<h2 data-i="secBudget">予算（分類は自由に追加・名前変更できます）</h2>
+<table class="tbl" id="budTable"><thead><tr><th data-i="thCat">分類</th><th data-i="thBud">予算</th><th></th></tr></thead><tbody></tbody></table>
+<button class="ghost sm" data-i="catAdd" id="catAdd" type="button">＋ 分類を追加</button>
+</section>
+<section class="card" id="special">
+<h2 data-i="secSpecial">特別費（年払い）→ 毎月の積立</h2>
+<table class="tbl" id="spTable"><thead><tr><th data-i="thName">名前</th><th data-i="thAmt">金額</th><th data-i="thMonth">払う月</th><th data-i="thMonthly">毎月の積立</th><th></th></tr></thead><tbody></tbody></table>
+<button class="ghost sm" data-i="spAdd" id="spAdd" type="button">＋ 特別費を追加</button>
+<p class="small" id="spSum"></p>
+</section>
+<section class="card pro" data-fe-hidden="" hidden="" id="pro"><h2 data-i="secPro"></h2><p class="proLead" data-i="proLead"></p><p class="state" data-fe-hidden="" hidden="" id="proState"></p><div class="proGrid"><div class="proItem"><h3 data-i="csvT"></h3><p class="small" data-i="csvD"></p><div class="row"><input data-ph="phCard" id="csvCard"/><select id="csvPaid"></select><select id="csvWho"></select><label class="file"><span data-i="csvPick"></span><input accept=".csv,.txt,text/csv" id="csvFile" type="file"/></label></div><p class="small" id="csvMsg"></p></div><div class="proItem"><h3 data-i="xlsxT"></h3><p class="small" data-i="xlsxD"></p><div class="row"><button class="primary sm" data-i="xlsxBtn" id="xlsxBtn" type="button"></button><button class="ghost sm" data-i="printBtn" id="printBtn" type="button"></button><button class="ghost sm" data-i="icsBtn" id="icsBtn" type="button"></button></div></div><div class="proItem"><h3 data-i="yearT"></h3><table class="tbl" id="yearTable"><thead><tr><th data-i="thMonth2"></th><th data-i="thInc"></th><th data-i="thSpend"></th><th data-i="thSp"></th><th data-i="thLeft"></th><th data-i="thSettle"></th></tr></thead><tbody></tbody></table></div></div><div class="buyBox"><a class="buy" data-fe-hidden="" hidden="" id="buyM"><span data-i="buyM"></span><b class="pM"></b></a><a class="buy alt" data-fe-hidden="" hidden="" id="buyY"><span data-i="buyY"></span><b class="pY"></b></a></div><p class="small" data-i="proNote"></p><form class="row" data-fe-hidden="" hidden="" id="keyForm"><input autocomplete="off" data-fe-hidden="" data-ph="phKey" hidden="" id="keyIn"/><button class="ghost sm" data-i="keyBtn" type="submit"></button><button class="ghost sm" data-fe-hidden="" data-i="keyDel" hidden="" id="keyDel" type="button"></button></form><p class="small" data-fe-hidden="" hidden="" id="keyMsg"></p></section>
+<section class="card" id="data">
+<h2 data-i="secData">データ（この端末の中だけ）</h2>
+<p class="small" data-i="dataD">入力はこのブラウザに自動で保存されます。ログイン不要。バックアップファイルを作れば、別の端末やパートナーのスマホでも同じ家計を開けます。</p>
+<div class="row">
+<button class="ghost sm" data-i="expBtn" id="expBtn" type="button">バックアップを保存</button>
+<label class="file ghost sm"><span data-i="impBtn">バックアップを開く</span><input accept=".json,application/json" id="impFile" type="file"/></label>
+<button class="ghost sm" data-i="resetBtn" id="resetBtn" type="button">すべて消す</button>
+</div>
+<p class="small" id="dataMsg"></p>
+</section>
+<section class="card more" id="more">
+<h2 data-i="secMore">ほかのツール</h2>
+<ul>
+<li><a data-i="moreAll" href="/ja/apps/">Rulestamp のツール一覧（日本語）</a></li>
+<li><a href="/en/apps/household-budget-planning/" hreflang="en">English</a> · <a href="/de/apps/household-budget-planning/" hreflang="de">Deutsch</a> · <a href="/es/apps/household-budget-planning/" hreflang="es">Español</a> · <a href="/pt/apps/household-budget-planning/" hreflang="pt">Português</a></li>
+</ul>
+</section>
+</main>
+<div aria-hidden="true" id="printRoot"></div>
+<footer class="foot"><span data-i="foot">記入例の世帯・金額は架空です。計算はあなたのブラウザの中で行われます。</span></footer>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">保存して続ける: <a href="https://getreadystack.com/ja/apps/household-budget-planning/">https://getreadystack.com/ja/apps/household-budget-planning/</a></p><script src="engine.js"></script>
+<script src="sample.js"></script>
+<script src="i18n.js"></script>
+<script src="lic.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

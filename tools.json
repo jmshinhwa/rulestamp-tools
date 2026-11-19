@@ -263,6 +263,15 @@
    "tools": [
     "arbeitszeitnachweis-vorlage-bau-7-tage-frist"
    ]
+  },
+  {
+   "id": "42499c978c",
+   "name": {
+    "ja": "家計簿 エクセル｜夫婦の精算と特別費を計算してExcelに出す家計簿 テンプレート（カードCSV読込・銀行連携なし）"
+   },
+   "tools": [
+    "household-budget-planning"
+   ]
   }
  ],
  "tools": {
@@ -430,6 +439,11 @@
    "lang": "de",
    "name": "Arbeitszeitnachweis vorlage Bau",
    "hub": "https://getreadystack.com/de/apps/arbeitszeitnachweis-vorlage-bau-7-tage-frist/"
+  },
+  "household-budget-planning": {
+   "lang": "ja",
+   "name": "家計簿 エクセル｜夫婦の精算と特別費を計算してExcelに出す家計簿 テンプレート（カードCSV読込・銀行連携なし）",
+   "hub": "https://getreadystack.com/ja/apps/household-budget-planning/"
   }
  }
 }
