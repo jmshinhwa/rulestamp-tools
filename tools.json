@@ -274,6 +274,15 @@
    "tools": [
     "household-budget-planning"
    ]
+  },
+  {
+   "id": "293aa26bbe",
+   "name": {
+    "ja": "FX ロット計算"
+   },
+   "tools": [
+    "fx-lot-keisan-kiroku"
+   ]
   }
  ],
  "tools": {
@@ -451,6 +460,11 @@
    "lang": "en",
    "name": "Price action trading journal",
    "hub": "https://getreadystack.com/apps/price-action-trading-journal/"
+  },
+  "fx-lot-keisan-kiroku": {
+   "lang": "ja",
+   "name": "FX ロット計算",
+   "hub": "https://getreadystack.com/ja/apps/fx-lot-keisan-kiroku/"
   }
  }
 }

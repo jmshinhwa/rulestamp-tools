@@ -45,6 +45,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Etsy Fee Calculator | [Etsy Fee Calculator](etsy-fee-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-fee-calculator/) |
 | Arbeitszeitnachweis vorlage Bau | [Arbeitszeitnachweis vorlage Bau](arbeitszeitnachweis-vorlage-bau-7-tage-frist/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/arbeitszeitnachweis-vorlage-bau-7-tage-frist/) |
 | 家計簿 エクセル｜夫婦の精算と特別費を計算してExcelに出す家計簿 テンプレート（カードCSV読込・銀行連携なし） | [家計簿 エクセル｜夫婦の精算と特別費を計算してExcelに出す家計簿 テンプレート（カードCSV読込・銀行連携なし）](household-budget-planning/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/household-budget-planning/) |
+| FX ロット計算 | [FX ロット計算](fx-lot-keisan-kiroku/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/fx-lot-keisan-kiroku/) |
 
 <a id="de"></a>
 
@@ -87,6 +88,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Etsy Fee Calculator | [Etsy Fee Calculator](etsy-fee-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-fee-calculator/) |
 | Arbeitszeitnachweis vorlage Bau | [Arbeitszeitnachweis vorlage Bau](arbeitszeitnachweis-vorlage-bau-7-tage-frist/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/arbeitszeitnachweis-vorlage-bau-7-tage-frist/) |
 | 家計簿 エクセル｜夫婦の精算と特別費を計算してExcelに出す家計簿 テンプレート（カードCSV読込・銀行連携なし） | [家計簿 エクセル｜夫婦の精算と特別費を計算してExcelに出す家計簿 テンプレート（カードCSV読込・銀行連携なし）](household-budget-planning/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/household-budget-planning/) |
+| FX ロット計算 | [FX ロット計算](fx-lot-keisan-kiroku/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/fx-lot-keisan-kiroku/) |
 
 <a id="es"></a>
 
@@ -129,6 +131,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Etsy Fee Calculator | [Etsy Fee Calculator](etsy-fee-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-fee-calculator/) |
 | Arbeitszeitnachweis vorlage Bau | [Arbeitszeitnachweis vorlage Bau](arbeitszeitnachweis-vorlage-bau-7-tage-frist/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/arbeitszeitnachweis-vorlage-bau-7-tage-frist/) |
 | 家計簿 エクセル｜夫婦の精算と特別費を計算してExcelに出す家計簿 テンプレート（カードCSV読込・銀行連携なし） | [家計簿 エクセル｜夫婦の精算と特別費を計算してExcelに出す家計簿 テンプレート（カードCSV読込・銀行連携なし）](household-budget-planning/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/household-budget-planning/) |
+| FX ロット計算 | [FX ロット計算](fx-lot-keisan-kiroku/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/fx-lot-keisan-kiroku/) |
 
 <a id="pt"></a>
 
@@ -171,6 +174,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Etsy Fee Calculator | [Etsy Fee Calculator](etsy-fee-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-fee-calculator/) |
 | Arbeitszeitnachweis vorlage Bau | [Arbeitszeitnachweis vorlage Bau](arbeitszeitnachweis-vorlage-bau-7-tage-frist/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/arbeitszeitnachweis-vorlage-bau-7-tage-frist/) |
 | 家計簿 エクセル｜夫婦の精算と特別費を計算してExcelに出す家計簿 テンプレート（カードCSV読込・銀行連携なし） | [家計簿 エクセル｜夫婦の精算と特別費を計算してExcelに出す家計簿 テンプレート（カードCSV読込・銀行連携なし）](household-budget-planning/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/household-budget-planning/) |
+| FX ロット計算 | [FX ロット計算](fx-lot-keisan-kiroku/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/fx-lot-keisan-kiroku/) |
 
 <a id="ja"></a>
 
@@ -213,6 +217,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Etsy Fee Calculator | [Etsy Fee Calculator](etsy-fee-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-fee-calculator/) |
 | Arbeitszeitnachweis vorlage Bau | [Arbeitszeitnachweis vorlage Bau](arbeitszeitnachweis-vorlage-bau-7-tage-frist/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/arbeitszeitnachweis-vorlage-bau-7-tage-frist/) |
 | 家計簿 エクセル｜夫婦の精算と特別費を計算してExcelに出す家計簿 テンプレート（カードCSV読込・銀行連携なし） | [家計簿 エクセル｜夫婦の精算と特別費を計算してExcelに出す家計簿 テンプレート（カードCSV読込・銀行連携なし）](household-budget-planning/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/household-budget-planning/) |
+| FX ロット計算 | [FX ロット計算](fx-lot-keisan-kiroku/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/fx-lot-keisan-kiroku/) |
 
 ---
 Rulestamp · https://getreadystack.com

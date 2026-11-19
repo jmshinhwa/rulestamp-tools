@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>FX ロット計算 | 損切り価格から発注ロット | トレード記録 | 1日の損失上限・R倍数</title>
+<meta content="FX ロット計算：口座残高・許容損失%・エントリーと損切り価格から発注ロット、損切り時の損失、必要証拠金（4%）、実効レバレッジを計算。トレード リスク計算機と損切り ロット計算に、今日の損失を次のロットに反映するトレード記録（R倍数・連敗ストップ）付き。登録不要、データはこのブラウザだけ。" name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/ja/apps/fx-lot-keisan-kiroku/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<header class="top">
+<h1>FX ロット計算 | 損切り価格から発注ロット | トレード記録 | 1日の損失上限・R倍数</h1>
+<p class="lede"><b>記入例（架空）</b>、下で計算済み：口座100万円・許容損失2%・USD/JPY 154.20で買い・損切り153.90なら<b>6.6ロット</b>、損切りにかかれば<b>¥19,800</b>の損失。同じ6.6ロットを1ロット＝10万通貨の口座で入れると、損切り1回で<b>¥198,000（口座の19.8%）</b>が消えます。</p>
+<p class="sub">トレード リスク計算機・損切り ロット計算として、pipsを数えずに損切り価格をそのまま入れるだけ。円以外の通貨ペア（EUR/USDなど）は決済通貨の円レートを自分で入れるので、レート取得の失敗で止まりません。1日の損失上限と今日すでに出た損失を入れると、次のトレードのロットが自動で小さくなります。</p>
+</header>
+<main>
+<section class="card" id="res">
+<div aria-live="polite" data-yj="result" id="out"></div>
+<p class="src-line" id="freeline">無料：1回のトレードの答え（ロット・損失・利益・R:R・証拠金・レバレッジ）がすべて画面に出ます。Proは毎日の記録を残し、今日の損失を次のロット計算に自動で入れます。</p>
+</section>
+<section class="card" id="inputs">
+<h2>あなたのトレード</h2>
+<div class="grid">
+<label>はじめの値<select data-k="" id="sample"><option selected="" value="A">記入例A（架空）：USD/JPY 買い</option><option value="B">記入例B（架空）：今日すでに-36,000円</option><option value="C">記入例C（架空）：EUR/USD 売り</option><option value="blank">空欄（自分の数字）</option></select></label>
+<label>口座残高（円）<input data-k="" data-yj-mine="" id="bal" inputmode="numeric"/></label>
+<label>1回の許容損失（口座の%）<input data-k="" data-yj-mine="" id="risk" inputmode="decimal"/></label>
+<label>通貨ペア<select data-k="" data-yj-mine="" id="pair"></select></label>
+<label>売買<select data-k="" data-yj-mine="" id="dir"><option value="buy">買い</option><option value="sell">売り</option></select></label>
+<label>エントリー価格<input data-k="" data-yj-mine="" id="entry" inputmode="decimal"/></label>
+<label>損切り価格<input data-k="" data-yj-mine="" id="stop" inputmode="decimal"/></label>
+<label>利確価格（空欄可）<input data-k="" data-yj-mine="" id="target" inputmode="decimal"/></label>
+<label>1ロットの通貨数（業者で違う）<select data-k="" data-yj-mine="" id="unit"><option value="1000">1,000通貨</option><option selected="" value="10000">10,000通貨</option><option value="100000">100,000通貨</option></select></label>
+<label>発注できる最小単位（ロット）<select data-k="" data-yj-mine="" id="step"><option value="0.01">0.01</option><option selected="" value="0.1">0.1</option><option value="1">1</option></select></label>
+<label id="qjpyl">決済通貨の円レート<input data-k="" data-yj-mine="" id="qjpy" inputmode="decimal"/></label>
+<label>1日の損失上限（口座の%・空欄で使わない）<input data-k="" data-yj-mine="" id="dayPct" inputmode="decimal"/></label>
+<label>今日すでに出た損失（円）<input data-k="" data-yj-mine="" id="dayLost" inputmode="numeric"/></label>
+</div>
+<p class="hint" id="lostfrom"></p>
+</section>
+<section class="card pro" data-fe-hidden="" hidden="" id="pro"><h2></h2><ul><li><b></b><b></b></li><li><b></b><b></b></li><li><b></b></li><li><b></b><b></b><b></b><b></b></li></ul><div class="buyrow"><p class="price"></p><p class="btns"><a class="btn" data-fe-hidden="" hidden=""></a><a class="btn ghost" data-fe-hidden="" hidden=""></a></p></div><div class="row"><label data-fe-hidden="" hidden=""><input id="key"/></label><button class="btn ghost" data-fe-hidden="" hidden="" id="unlock"></button></div><p class="hint" data-fe-hidden="" hidden="" id="keymsg"></p><div data-fe-hidden="" hidden="" id="proarea"><div class="row"><label><select id="acct"></select></label><label><input id="acctname"/></label><label><input id="acctbal" inputmode="numeric"/></label><button class="btn ghost" id="addacct"></button><label><input id="streak" inputmode="numeric"/></label></div><p class="btns"><button class="btn ghost" id="csv"></button><label class="btn ghost file"><input accept=".csv" hidden="" id="csvin" type="file"/></label><button class="btn ghost" id="backup"></button><label class="btn ghost file"><input accept=".json" hidden="" id="restore" type="file"/></label></p></div><p class="btns"><button class="btn" id="addtrade"></button></p><p class="hint" id="logtitle"></p><div id="stats"></div><div class="tbl"><table id="log"><thead><tr><th></th><th></th><th></th><th class="n"></th><th class="n"></th><th class="n"></th><th class="n"></th><th class="n"></th><th class="n"></th><th></th><th></th></tr></thead><tbody></tbody></table></div></section>
+<section class="card" id="how">
+<h2>計算のしかた</h2>
+<ul>
+<li><b>損切り幅（pips）</b>＝|エントリー − 損切り| ÷ 1pip（円の通貨ペアは0.01円、それ以外は0.0001）。</li>
+<li><b>許容損失</b>＝口座残高 × 許容% 。1日の上限を使うときは <b>今日の残り</b>＝口座残高 × 上限% − 今日すでに出た損失 、小さいほうを使います。</li>
+<li><b>1ロットの損失</b>＝損切り幅（価格） × 1ロットの通貨数 × 決済通貨の円レート（円の通貨ペアは1）。<b>発注ロット</b>＝許容損失 ÷ 1ロットの損失 を最小単位で切り捨て（上回らないように）。</li>
+<li><b>必要証拠金</b>＝通貨数 × エントリー価格 × 円レート × 4%。<b>実効レバレッジ</b>＝その取引額 ÷ 口座残高。</li>
+<li><b>R倍数</b>＝決済の損益 ÷ 予定した損失（ロット × 1ロットの損失）。+2Rは予定損失の2倍の利益、−1Rは予定どおりの損切り。</li>
+<li><b>記入例A</b>：(154.20 − 153.90) ÷ 0.01 ＝ 30pips。1ロット（1万通貨）の損失 ＝ 0.30 × 10,000 ＝ ¥3,000。許容 ¥1,000,000 × 2% ＝ ¥20,000 → ¥20,000 ÷ ¥3,000 ＝ 6.66… → <b>6.6ロット</b>、損切り時 6.6 × ¥3,000 ＝ <b>¥19,800</b>。取引額 66,000 × 154.20 ＝ ¥10,177,200、証拠金 × 4% ＝ ¥407,088、レバレッジ10.18倍。1ロット＝10万通貨の口座なら 6.6 × 0.30 × 100,000 ＝ ¥198,000。</li>
+<li><b>記入例B</b>：1日の上限 ¥1,000,000 × 5% ＝ ¥50,000 − 今日の損失 ¥36,000 ＝ 残り ¥14,000 → ¥14,000 ÷ ¥3,000 ＝ 4.66… → <b>4.6ロット</b>、損切り時 ¥13,800。</li>
+</ul>
+<h2>証拠金4%（レバレッジ25倍）の根拠</h2>
+<p>個人の店頭FXの証拠金は、金融商品取引業等に関する内閣府令 第117条第7項により想定元本の4%以上（レバレッジ25倍まで）。業者が4%より高い証拠金率を決めていることもあるので、自分の業者の率も確かめてください。1ロットの通貨数も業者・口座で1,000/1万/10万通貨と違います。</p>
+<p class="src">出典：e-Gov法令検索「金融商品取引業等に関する内閣府令」第117条（2026-11-18確認）。ご自身の数字を記録・計算する道具です。投資助言ではなく、売買のタイミングや通貨ペアを勧めるものではありません。</p>
+</section>
+</main>
+<footer><p>FX ロット計算 · データはこのブラウザの中だけ（サーバーに送りません）。</p></footer>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">保存して続ける: <a href="https://getreadystack.com/ja/apps/fx-lot-keisan-kiroku/">https://getreadystack.com/ja/apps/fx-lot-keisan-kiroku/</a></p><script src="./fxl.js"></script>
+<script src="./sample.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
