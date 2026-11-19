@@ -42,6 +42,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | rental property spreadsheet | [rental property spreadsheet](rental-property-spreadsheet-tax-deductions/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-property-spreadsheet-tax-deductions/) |
 | rental tracker | [rental tracker](rental-tracker-short-term-rental-hours/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-tracker-short-term-rental-hours/) |
 | Etsy Fee Calculator | [Etsy Fee Calculator](etsy-fee-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-fee-calculator/) |
+| Arbeitszeitnachweis vorlage Bau | [Arbeitszeitnachweis vorlage Bau](arbeitszeitnachweis-vorlage-bau-7-tage-frist/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/arbeitszeitnachweis-vorlage-bau-7-tage-frist/) |
 
 <a id="de"></a>
 
@@ -81,6 +82,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | rental property spreadsheet | [rental property spreadsheet](rental-property-spreadsheet-tax-deductions/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-property-spreadsheet-tax-deductions/) |
 | rental tracker | [rental tracker](rental-tracker-short-term-rental-hours/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-tracker-short-term-rental-hours/) |
 | Etsy Fee Calculator | [Etsy Fee Calculator](etsy-fee-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-fee-calculator/) |
+| Arbeitszeitnachweis vorlage Bau | [Arbeitszeitnachweis vorlage Bau](arbeitszeitnachweis-vorlage-bau-7-tage-frist/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/arbeitszeitnachweis-vorlage-bau-7-tage-frist/) |
 
 <a id="es"></a>
 
@@ -120,6 +122,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | rental property spreadsheet | [rental property spreadsheet](rental-property-spreadsheet-tax-deductions/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-property-spreadsheet-tax-deductions/) |
 | rental tracker | [rental tracker](rental-tracker-short-term-rental-hours/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-tracker-short-term-rental-hours/) |
 | Etsy Fee Calculator | [Etsy Fee Calculator](etsy-fee-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-fee-calculator/) |
+| Arbeitszeitnachweis vorlage Bau | [Arbeitszeitnachweis vorlage Bau](arbeitszeitnachweis-vorlage-bau-7-tage-frist/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/arbeitszeitnachweis-vorlage-bau-7-tage-frist/) |
 
 <a id="pt"></a>
 
@@ -159,6 +162,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | rental property spreadsheet | [rental property spreadsheet](rental-property-spreadsheet-tax-deductions/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-property-spreadsheet-tax-deductions/) |
 | rental tracker | [rental tracker](rental-tracker-short-term-rental-hours/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-tracker-short-term-rental-hours/) |
 | Etsy Fee Calculator | [Etsy Fee Calculator](etsy-fee-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-fee-calculator/) |
+| Arbeitszeitnachweis vorlage Bau | [Arbeitszeitnachweis vorlage Bau](arbeitszeitnachweis-vorlage-bau-7-tage-frist/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/arbeitszeitnachweis-vorlage-bau-7-tage-frist/) |
 
 <a id="ja"></a>
 
@@ -198,6 +202,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | rental property spreadsheet | [rental property spreadsheet](rental-property-spreadsheet-tax-deductions/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-property-spreadsheet-tax-deductions/) |
 | rental tracker | [rental tracker](rental-tracker-short-term-rental-hours/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/rental-tracker-short-term-rental-hours/) |
 | Etsy Fee Calculator | [Etsy Fee Calculator](etsy-fee-calculator/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-fee-calculator/) |
+| Arbeitszeitnachweis vorlage Bau | [Arbeitszeitnachweis vorlage Bau](arbeitszeitnachweis-vorlage-bau-7-tage-frist/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/arbeitszeitnachweis-vorlage-bau-7-tage-frist/) |
 
 ---
 Rulestamp · https://getreadystack.com

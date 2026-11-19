@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Arbeitszeitnachweis vorlage Bau | 7-Tage-Frist § 17 MiLoG, Mindestlohn, Pausen je Kolonne</title>
+<meta content="Arbeitszeitnachweis vorlage für Bau und Transport: Beginn, Ende und Pause je Mitarbeiter und Baustelle eintragen. Die Seite prüft die 7-Tage-Frist nach § 17 MiLoG, wer nach MiLoDokV befreit ist, den Mindestlohn je Arbeitstag und die Pausen nach § 4 ArbZG." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/de/apps/arbeitszeitnachweis-vorlage-bau-7-tage-frist/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main class="wrap">
+<h1>Arbeitszeitnachweis vorlage Bau | 7-Tage-Frist § 17 MiLoG, Mindestlohn, Pausen je Kolonne</h1>
+<p class="lede"><b>Beispiel (erfunden):</b> Eine Baukolonne in KW 46/2026. Die Stundenzettel von der Baustelle kamen erst am Dienstag, 17.11.2026, ins Büro. Für Montag, 09.11.2026, lief die Frist aber am 16.11.2026 ab: <b>3 Einträge nach der 7-Tage-Frist</b>, dafür sieht § 21 MiLoG ein Bußgeld <b>bis 50.000 €</b> vor. Dazu bekommt der Helfer 13,50 € je Stunde: <b>17,60 € Mindestlohn-Lücke</b> in einer Woche, ab 01.01.2027 (14,60 €) sind es 48,40 €.</p>
+<p class="fix"><b>Zeiterfassungs-Apps zeigen Stunden. Diese Vorlage zeigt, welcher Eintrag zu spät kam, wer gar nicht aufzeichnen muss und wem der Mindestlohn fehlt.</b> Die ganze Woche der Kolonne steht in einer Tabelle, Zeiten tippst du mit der Tastatur, alles bleibt in deinem Browser, ohne Konto und ohne Netz auf der Baustelle.</p>
+<div class="grid">
+<form autocomplete="off" id="f" onsubmit="return false">
+<fieldset>
+<legend>1. Woche und Betrieb</legend>
+<div class="row3">
+<label>Woche (ein Tag reicht) <input data-k="" data-yj-mine="" id="woche" type="date" value="2026-11-09"/></label>
+<label>Branche <select data-k="" data-yj-mine="" id="branche">
+<option selected="" value="bau">Baugewerbe</option>
+<option value="transport">Spedition, Transport, Logistik</option>
+<option value="gastro">Gaststätten und Beherbergung</option>
+<option value="reinigung">Gebäudereinigung</option>
+<option value="andere">andere Branche nach § 2a SchwarzArbG</option>
+<option value="keine">keine § 2a-Branche (nur Minijobs zählen)</option>
+</select></label>
+<label>Geprüft am <input data-k="" data-yj-mine="" id="pruef" type="date" value="2026-11-19"/></label>
+</div>
+<p class="small">„Geprüft am“ entscheidet bei leeren Feldern „eingetragen am“: vor Fristende ist der Tag noch offen, danach fehlt er.</p>
+</fieldset>
+<p class="small"><button class="btn go" id="check" type="button">Woche prüfen</button> <button class="link" id="reset" type="button">Zurück zum Beispiel</button></p>
+</form>
+<div class="res">
+<section aria-live="polite" data-yj="result" id="out">
+<div class="kpi" id="kpi"></div>
+<p class="verdict" id="verdict"></p>
+<table id="st"><thead><tr><th>Tag</th><th>Mitarbeiter</th><th class="n">Std.</th><th>Frist bis</th><th>Status</th></tr></thead><tbody></tbody></table>
+<h3>Stunden je Baustelle</h3>
+<table id="bs"><tbody></tbody></table>
+<p class="small" id="ml"></p>
+</section>
+<p class="paywall" data-fe-hidden="" hidden="" id="pw"><a data-fe-hidden="" hidden=""></a></p>
+</div>
+</div>
+<section id="team">
+<h2>2. Die Kolonne</h2>
+<p class="small">Stundenlohn für die Mindestlohn-Prüfung. Monatsbrutto entscheidet über die Befreiung nach MiLoDokV (über 4.461 €, oder über 2.974 €, wenn es seit 12 vollen Monaten nachweislich gezahlt wurde).</p>
+<table id="wt"><thead><tr><th>Name</th><th>Art</th><th>Stundenlohn €</th><th>Monatsbrutto €</th><th>seit 12 Monaten belegt</th><th>Pflicht?</th><th></th></tr></thead><tbody></tbody></table>
+<p><button class="btn" id="wadd" type="button">Mitarbeiter hinzufügen</button></p>
+</section>
+<section id="log">
+<h2>3. Arbeitszeitnachweis der Woche</h2>
+<p class="small">Eine Zeile pro Person und Tag. „Eingetragen am“ ist der Tag, an dem die Zeit aufgezeichnet wurde, nicht der Arbeitstag.</p>
+<div class="scroll"><table id="dt"><thead><tr><th>Mitarbeiter</th><th>Datum</th><th>Baustelle</th><th>Beginn</th><th>Ende</th><th>Pause Min.</th><th class="n">Std.</th><th>eingetragen am</th><th></th></tr></thead><tbody></tbody></table></div>
+<p><button class="btn" id="add" type="button">Zeile hinzufügen</button> <button class="btn" id="copy" type="button">Zeilen des letzten Tags für den nächsten Tag kopieren</button> <button class="link" id="clear" type="button">Woche leeren</button></p>
+</section>
+<section data-fe-hidden="" hidden="" id="pro"><h2></h2><p class="small" data-fe-hidden="" hidden="" id="pro-msg"></p><div class="tools"><button class="btn" data-pro="month" type="button"></button><button class="btn" data-pro="site" type="button"></button><button class="btn" data-pro="keep" type="button"></button><button class="btn" data-pro="ics" type="button"></button><button class="btn" data-pro="csv" type="button"></button><label class="btn file"><input accept=".csv,text/csv" id="csvin" type="file"/></label><button class="btn" data-pro="backup" type="button"></button><label class="btn file"><input accept=".json,application/json" id="imp" type="file"/></label></div><div class="row3"><label><input id="p-monat" type="month"/></label><label><input id="p-firma"/></label></div><div class="offer" hidden="" id="sheet"></div><h3></h3><p><input data-fe-hidden="" hidden="" id="key"/><button class="btn" data-fe-hidden="" hidden="" id="key-go" type="button"></button><span class="small" data-fe-hidden="" hidden="" id="key-msg"></span></p></section>
+<section class="small" id="how">
+<h2>So prüft die Vorlage</h2>
+<ul>
+<li><b>Frist:</b> Beginn, Ende und Dauer müssen spätestens bis zum Ablauf des siebten Kalendertages nach dem Arbeitstag aufgezeichnet sein (§ 17 Abs. 1 MiLoG). Arbeitstag Montag 09.11.2026 → Frist bis Montag 16.11.2026, 24 Uhr. Wochenende und Feiertage verlängern nichts.</li>
+<li><b>Wer muss:</b> alle Arbeitnehmer in den Branchen nach § 2a SchwarzArbG (Bau, Transport und Logistik, Gaststätten, Gebäudereinigung und weitere) und alle Minijobber in jeder Branche. Nicht: Angehörige des Inhabers, Monatsbrutto über 4.461 €, oder über 2.974 € seit 12 Monaten belegt (MiLoDokV § 1).</li>
+<li><b>Mindestlohn:</b> je Tag nach Datum, 13,90 € ab 01.01.2026 und 14,60 € ab 01.01.2027 (MiLoV5). Lücke = (Mindestlohn − Stundenlohn) × Stunden.</li>
+<li><b>Pausen und Höchstzeit:</b> mehr als 6 Std. → 30 Min., mehr als 9 Std. → 45 Min. (§ 4 ArbZG); mehr als 10 Std. am Tag ist nach § 3 ArbZG nicht erlaubt.</li>
+<li>Ein Rechner, keine Rechtsberatung.</li>
+</ul>
+</section>
+<section class="small" id="src">
+<h2>Quellen (gelesen am 19.11.2026)</h2>
+<ul>
+<li>§ 17 Abs. 1 MiLoG: „spätestens bis zum Ablauf des siebten auf den Tag der Arbeitsleistung folgenden Kalendertages aufzuzeichnen und diese Aufzeichnungen mindestens zwei Jahre … aufzubewahren“, gesetze-im-internet.de/milog/__17.html</li>
+<li>§ 21 Abs. 1 Nr. 8 und Abs. 3 MiLoG: Aufzeichnung nicht rechtzeitig erstellt → Geldbuße bis zu fünfzigtausend Euro, gesetze-im-internet.de/milog/__21.html</li>
+<li>MiLoDokV § 1: 4.461 € bzw. 2.974 € (12 Monate), Ehegatten, Lebenspartner, Kinder und Eltern des Arbeitgebers, gesetze-im-internet.de/milodokv_2015/__1.html</li>
+<li>§ 2a Abs. 1 SchwarzArbG: Baugewerbe, Gaststätten, Personenbeförderung, Spedition/Transport/Logistik, Schausteller, Gebäudereinigung, Messebau, Fleischwirtschaft, Prostitution, Wach- und Sicherheit, Friseur und Kosmetik, gesetze-im-internet.de/schwarzarbg_2004/__2a.html</li>
+<li>MiLoV5 § 1: 13,90 € ab 01.01.2026, 14,60 € ab 01.01.2027, gesetze-im-internet.de/milov5/__1.html</li>
+<li>§ 3 und § 4 ArbZG, gesetze-im-internet.de/arbzg/</li>
+</ul>
+</section>
+<p class="small foot">Arbeitszeitnachweis vorlage · rechnet in deinem Browser · nichts wird hochgeladen · keine Rechtsberatung</p>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Speichern und weitermachen: <a href="https://getreadystack.com/de/apps/arbeitszeitnachweis-vorlage-bau-7-tage-frist/">https://getreadystack.com/de/apps/arbeitszeitnachweis-vorlage-bau-7-tage-frist/</a></p><script src="./logic.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

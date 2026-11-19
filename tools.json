@@ -254,6 +254,15 @@
    "tools": [
     "etsy-fee-calculator"
    ]
+  },
+  {
+   "id": "9f0b123dff",
+   "name": {
+    "de": "Arbeitszeitnachweis vorlage Bau"
+   },
+   "tools": [
+    "arbeitszeitnachweis-vorlage-bau-7-tage-frist"
+   ]
   }
  ],
  "tools": {
@@ -416,6 +425,11 @@
    "lang": "en",
    "name": "Etsy Fee Calculator",
    "hub": "https://getreadystack.com/apps/etsy-fee-calculator/"
+  },
+  "arbeitszeitnachweis-vorlage-bau-7-tage-frist": {
+   "lang": "de",
+   "name": "Arbeitszeitnachweis vorlage Bau",
+   "hub": "https://getreadystack.com/de/apps/arbeitszeitnachweis-vorlage-bau-7-tage-frist/"
   }
  }
 }
