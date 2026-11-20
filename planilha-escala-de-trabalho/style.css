@@ -1,0 +1,63 @@
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#14212b;background:#f2f5f7}
+.top{background:#123f63;color:#fff;padding:26px 20px}
+.top h1{margin:0 auto 8px;font-size:1.65rem;max-width:980px}
+.lead,.top .hit{max-width:980px;margin:0 auto}
+.top .hit{background:rgba(255,255,255,.1);border-left:4px solid #f2b134;padding:.55rem .8rem;margin-top:.7rem}
+main{max-width:980px;margin:0 auto;padding:16px}
+.card{background:#fff;border-radius:12px;padding:18px 20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.card h2{margin-top:0;font-size:1.2rem}
+.result{border-top:5px solid #c2410c}
+.res-h{font-size:1.3rem!important;line-height:1.3}.res-h b{color:#c2410c}
+.res-l{margin:.2rem 0 .8rem;color:#33424c}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.turnos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px}
+fieldset{border:1px solid #d3dde4;border-radius:10px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:8px 10px}
+legend{font-weight:700;padding:0 6px}
+label{display:flex;flex-direction:column;font-size:.88rem;gap:4px}
+label small{color:#5a6a73;font-size:.76rem}
+input,select{font:inherit;padding:7px 9px;border:1px solid #c3cfd8;border-radius:8px;background:#fff;min-width:0}
+button,.buy{font:inherit;padding:8px 14px;border-radius:8px;border:0;background:#123f63;color:#fff;cursor:pointer;text-decoration:none;display:inline-block}
+button.ghost{background:#e6edf2;color:#14212b}
+.buy{background:#f2b134;color:#14212b;font-weight:600}.buy.alt{background:#fff;border:1px solid #f2b134}
+table{border-collapse:collapse;width:100%}
+td,th{padding:6px 8px;border-bottom:1px solid #e3e9ee;text-align:left;font-size:.9rem}
+table.cmp td:not(:first-child),table.cmp th:not(:first-child){text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+table.cmp .cur{background:#fff3e8}
+table.cmp tr.tot td{font-weight:700;border-top:2px solid #123f63}
+table.cmp small{color:#6a7a83}
+.ok{color:#11733a;font-weight:600}.bad{color:#b4231a;font-weight:600}
+.tl{background:#f5f8fa;border-radius:8px;padding:8px 10px;font-size:.9rem}
+ul.alert{margin:.5rem 0;padding-left:1.1rem;color:#8a2a12;font-size:.9rem}
+.next{font-size:.92rem;color:#2b3b44;margin:-6px 4px 0}
+.feat{columns:2;font-size:.92rem}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:end;margin:12px 0}
+.file input{display:none}.file{background:#e6edf2;padding:8px 14px;border-radius:8px;cursor:pointer;flex-direction:row}
+.key{display:flex;gap:8px;align-items:end;flex-wrap:wrap}
+.scroll{overflow-x:auto}
+.fine{font-size:.86rem;color:#3b4a52}
+.small{font-size:.84rem;color:#4f5d66}
+.err{color:#b02a37}
+button.go{font-weight:600}
+table.cal td{vertical-align:top;width:14.28%;height:62px;border:1px solid #e3e9ee;font-size:.78rem;padding:4px}
+table.cal th{text-align:center;font-size:.8rem}
+table.cal td b{display:block;font-size:.9rem}
+table.cal td.f{background:#e9f6ee;color:#11733a;font-weight:600}
+table.cal td.t{background:#fff}
+table.cal td.dom{box-shadow:inset 0 -3px 0 #c2410c}
+table.cal td.fer i{display:block;color:#c2410c;font-size:.72rem}
+table.cal td.vazio{background:#f7f9fa}
+table.team input{width:100%;min-width:70px;padding:5px 6px;font-size:.85rem}
+table.quadro td,table.quadro th{padding:3px 4px;font-size:.74rem;text-align:center;border:1px solid #e3e9ee;white-space:nowrap}
+table.quadro td:first-child,table.quadro th:first-child{text-align:left}
+table.quadro td.f{background:#e9f6ee;color:#11733a;font-weight:700}
+table.quadro th.dom,table.quadro td.dom{border-bottom:3px solid #c2410c}
+table.quadro th.fer{color:#c2410c}
+table.quadro td.al{text-align:left;white-space:normal;min-width:220px;color:#8a2a12}
+table.quadro tr.cob td{font-weight:700;background:#f5f8fa}
+@media (max-width:640px){.feat{columns:1}.top h1{font-size:1.3rem}fieldset{grid-template-columns:1fr 1fr 1fr}table.cmp td,table.cmp th{font-size:.8rem;padding:5px 4px}}
+@media print{body.printing .top,body.printing main>section:not(#pro),body.printing .next,body.printing #proPitch,body.printing .feat,body.printing .price,body.printing .key,body.printing .row,body.printing table.team{display:none!important}
+body.printing .card{box-shadow:none}body.printing{background:#fff}@page{size:landscape;margin:8mm}}
+table.cmp td:first-child,table.cmp th:first-child{font-size:.82rem;color:#33424c}
+table.cmp th{vertical-align:bottom}
+@media (max-width:620px){table.cmp td,table.cmp th{font-size:.78rem;padding:5px 3px}table.cmp td:first-child{max-width:96px}}

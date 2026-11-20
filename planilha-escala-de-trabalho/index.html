@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>planilha escala de trabalho: 6x1, 5x2, 12x36 · regra de 42h</title>
+<meta content="planilha escala de trabalho no navegador: compare 6x1, 5x2 e 12x36 com o seu turno e o seu salário e veja a hora extra, o DSR, o intervalo e as folgas pela EC 141/2026 (42h e 2 folgas a partir de 16/12/2026). Grátis, sem cadastro." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/pt/apps/planilha-escala-de-trabalho/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<header class="top">
+<h1>planilha escala de trabalho: 6x1, 5x2, 12x36 · regra de 42h</h1>
+<p class="lead">Exemplo (inventado): uma vendedora de loja ganha R$ 2.200,00 na 6x1, das 09:00 às 17:20 com 1h de intervalo — 44h por semana. A partir de 16/12/2026 o limite cai para 42h e o repouso passa a ser de 2 dias por semana (Emenda Constitucional 141/2026). Se a loja mantiver essa escala em janeiro de 2027, perde <b>R$ 172,58 por mês com essa funcionária</b>: R$ 139,18 de hora extra + R$ 33,40 de DSR — e a 6x1 continua sem a 2ª folga.</p>
+<p class="hit">Aqui você monta a escala com o seu turno, o seu salário e o mês, e vê lado a lado o que a 6x1, a 5x2 e a 12x36 custam e quais regras cada uma quebra.</p>
+</header>
+<main>
+<section aria-live="polite" class="card result" data-yj="result" id="out">
+<h2 class="res-h">6x1 em janeiro de 2027: <b>R$ 172,58</b> de custo extra por funcionário</h2><p class="res-l">44h por semana passam 2h do limite de 42h · só 1 dia de folga por semana, e a EC 141/2026 exige 2 a partir de 16/12/2026.</p><table class="cmp"><thead><tr><th>Por funcionário · 42h</th><th class="cur">6x1 (atual)</th><th class="">5x2</th><th class="">12x36</th></tr></thead><tbody><tr class=""><td>Turno</td><td class="cur">09:00–17:20<br/><small>intervalo 60 min</small></td><td class="">09:00–18:00<br/><small>intervalo 60 min</small></td><td class="">07:00–19:00<br/><small>intervalo 60 min</small></td></tr><tr class=""><td>Horas por semana</td><td class="cur">44h</td><td class="">40h</td><td class="">38h30 (média)</td></tr><tr class=""><td>Folgas por semana</td><td class="cur">✗ 1 dia</td><td class="">2 dias</td><td class="">3,5 dias</td></tr><tr class=""><td>Acima de 42h/semana</td><td class="cur">✗ 2h</td><td class="">0h</td><td class="">0h</td></tr><tr class=""><td>Valor da hora</td><td class="cur">R$ 10,48 <small>÷210</small></td><td class="">R$ 11,00 <small>÷200</small></td><td class="">R$ 11,43 <small>÷192,5</small></td></tr><tr class=""><td>Hora extra 50%</td><td class="cur">R$ 139,18</td><td class="">R$ 0,00</td><td class="">R$ 0,00</td></tr><tr class=""><td>DSR da hora extra</td><td class="cur">R$ 33,40</td><td class="">R$ 0,00</td><td class="">R$ 0,00</td></tr><tr class=""><td>Intervalo indenizado</td><td class="cur">R$ 0,00</td><td class="">R$ 0,00</td><td class="">R$ 0,00</td></tr><tr class=""><td>Noturno 20%</td><td class="cur">R$ 0,00</td><td class="">R$ 0,00</td><td class="">R$ 0,00</td></tr><tr class="tot"><td>Extra no mês</td><td class="cur"><b>R$ 172,58</b></td><td class=""><b>R$ 0,00</b></td><td class=""><b>R$ 0,00</b></td></tr><tr class=""><td>Horas no mês</td><td class="cur">194h51</td><td class="">177h09</td><td class="">170h30</td></tr><tr class=""><td>Custo por hora</td><td class="cur">R$ 12,18</td><td class="">R$ 12,42</td><td class="">R$ 12,90</td></tr><tr class=""><td>Regras</td><td class="cur"><span class="bad">✗ 2 alerta(s)</span></td><td class=""><span class="ok">✓ ok</span></td><td class=""><span class="ok">✓ ok</span></td></tr></tbody></table><p class="tl"><b>Hora extra por semana da sua 6x1:</b> até 15/12/2026 → 0h = R$ 0,00 · a partir de 16/12/2026 → 2h = R$ 31,43 ✗ folgas · a partir de 16/12/2027 → 4h = R$ 66,00 ✗ folgas</p><ul class="alert"><li>Só 1 dia de folga por semana — o regime exige 2 (EC 141/2026)</li><li>Semana: 44h — 2h acima de 42h</li></ul><p class="small">Mês de 31 dias = 4,43 semanas · DSR = hora extra × (5 domingos + 1 feriado(s)) ÷ 25 dias úteis.</p>
+</section>
+<p class="next" data-fe-hidden="" hidden="" id="nextLine"></p>
+<section class="card" id="calc">
+<h2>Os seus números</h2>
+<div class="grid">
+<label>Salário mensal do funcionário (R$)<input data-k="salario" data-yj-mine="" id="salario" inputmode="decimal" value="2200"/></label>
+<label>Regra<select data-k="regime" data-yj-mine="" id="regime">
+<option value="44">até 15/12/2026 (44h, 1 folga)</option>
+<option selected="" value="42">a partir de 16/12/2026 (42h, 2 folgas)</option>
+<option value="40">a partir de 16/12/2027 (40h, 2 folgas)</option></select></label>
+<label>Mês da escala<select data-k="mes" data-yj-mine="" id="mes"></select><small>Conta domingos e feriados nacionais para o DSR.</small></label>
+<label>A escala que você usa hoje<select data-k="atual" data-yj-mine="" id="atual">
+<option selected="" value="6x1">6x1</option><option value="5x2">5x2</option><option value="12x36">12x36</option></select></label>
+<label>Dia acima de 8h tem acordo de compensação ou convenção?<select data-k="acordo" data-yj-mine="" id="acordo">
+<option selected="" value="sim">sim — conta só o que passar da semana</option><option value="nao">não — o que passar de 8h no dia é hora extra</option></select></label>
+</div>
+<div class="turnos">
+<fieldset><legend>6x1</legend>
+<label>Entrada<input data-k="e6_ini" data-yj-mine="" id="e6_ini" inputmode="numeric" value="09:00"/></label>
+<label>Saída<input data-k="e6_fim" data-yj-mine="" id="e6_fim" inputmode="numeric" value="17:20"/></label>
+<label>Intervalo (min)<input data-k="e6_int" data-yj-mine="" id="e6_int" inputmode="numeric" value="60"/></label></fieldset>
+<fieldset><legend>5x2</legend>
+<label>Entrada<input data-k="e5_ini" data-yj-mine="" id="e5_ini" inputmode="numeric" value="09:00"/></label>
+<label>Saída<input data-k="e5_fim" data-yj-mine="" id="e5_fim" inputmode="numeric" value="18:00"/></label>
+<label>Intervalo (min)<input data-k="e5_int" data-yj-mine="" id="e5_int" inputmode="numeric" value="60"/></label></fieldset>
+<fieldset><legend>12x36</legend>
+<label>Entrada<input data-k="e12_ini" data-yj-mine="" id="e12_ini" inputmode="numeric" value="07:00"/></label>
+<label>Saída<input data-k="e12_fim" data-yj-mine="" id="e12_fim" inputmode="numeric" value="19:00"/></label>
+<label>Intervalo (min)<input data-k="e12_int" data-yj-mine="" id="e12_int" inputmode="numeric" value="60"/></label></fieldset>
+</div>
+<p><button class="go" id="calcular" type="button">Comparar as escalas</button> <button class="ghost" id="exemplo" type="button">Voltar ao exemplo</button></p>
+</section>
+<section class="card" id="mesSec">
+<h2>A escala do mês de um funcionário</h2>
+<div class="row">
+<label>1ª folga no mês (dia)<input data-k="folga1" data-yj-mine="" id="folga1" inputmode="numeric" size="4" value="3"/></label>
+<span class="small">A escala usada é a "atual" acima, com o turno dela. A folga gira no ciclo da escala.</span>
+</div>
+<div class="scroll" id="gradeOut">
+<h3>6x1 · janeiro de 2027 · 09:00–17:20</h3><table class="cal"><thead><tr><th>seg</th><th>ter</th><th>qua</th><th>qui</th><th>sex</th><th>sáb</th><th>dom</th></tr></thead><tbody><tr><td class="vazio"></td><td class="vazio"></td><td class="vazio"></td><td class="vazio"></td><td class="t fer" title="Confraternização Universal"><b>1</b><span>09:00–17:20</span><i>feriado</i></td><td class="t" title=""><b>2</b><span>09:00–17:20</span></td><td class="f dom" title=""><b>3</b><span>FOLGA</span></td></tr><tr><td class="t" title=""><b>4</b><span>09:00–17:20</span></td><td class="t" title=""><b>5</b><span>09:00–17:20</span></td><td class="t" title=""><b>6</b><span>09:00–17:20</span></td><td class="t" title=""><b>7</b><span>09:00–17:20</span></td><td class="t" title=""><b>8</b><span>09:00–17:20</span></td><td class="t" title=""><b>9</b><span>09:00–17:20</span></td><td class="f dom" title=""><b>10</b><span>FOLGA</span></td></tr><tr><td class="t" title=""><b>11</b><span>09:00–17:20</span></td><td class="t" title=""><b>12</b><span>09:00–17:20</span></td><td class="t" title=""><b>13</b><span>09:00–17:20</span></td><td class="t" title=""><b>14</b><span>09:00–17:20</span></td><td class="t" title=""><b>15</b><span>09:00–17:20</span></td><td class="t" title=""><b>16</b><span>09:00–17:20</span></td><td class="f dom" title=""><b>17</b><span>FOLGA</span></td></tr><tr><td class="t" title=""><b>18</b><span>09:00–17:20</span></td><td class="t" title=""><b>19</b><span>09:00–17:20</span></td><td class="t" title=""><b>20</b><span>09:00–17:20</span></td><td class="t" title=""><b>21</b><span>09:00–17:20</span></td><td class="t" title=""><b>22</b><span>09:00–17:20</span></td><td class="t" title=""><b>23</b><span>09:00–17:20</span></td><td class="f dom" title=""><b>24</b><span>FOLGA</span></td></tr><tr><td class="t" title=""><b>25</b><span>09:00–17:20</span></td><td class="t" title=""><b>26</b><span>09:00–17:20</span></td><td class="t" title=""><b>27</b><span>09:00–17:20</span></td><td class="t" title=""><b>28</b><span>09:00–17:20</span></td><td class="t" title=""><b>29</b><span>09:00–17:20</span></td><td class="t" title=""><b>30</b><span>09:00–17:20</span></td><td class="f dom" title=""><b>31</b><span>FOLGA</span></td></tr></tbody></table><p class="small"><b>26</b> dias de trabalho · <b>5</b> folgas · domingos de folga: <b>3, 10, 17, 24, 31</b> · feriados trabalhados: <b>1</b> · maior sequência sem folga: <b>6 dias</b></p><ul class="alert"><li>1 feriado(s) trabalhado(s): sem folga compensatória, o dia é pago em dobro (TST, Súmula 146).</li></ul>
+</div>
+</section>
+<section class="card" data-fe-hidden="" hidden="" id="pro"><h2></h2><p data-fe-hidden="" hidden="" id="proPitch"></p><ul class="feat"><li></li><li></li><li></li><li></li><li></li><li></li></ul><p class="price"><a class="buy" data-fe-hidden="" hidden=""></a><a class="buy alt" data-fe-hidden="" hidden=""></a></p><div class="key" data-fe-hidden="" hidden=""><label><input autocomplete="off" id="chave"/></label><button id="chaveOk" type="button"></button><span id="chaveMsg" role="status"></span></div><div data-fe-hidden="" hidden="" id="proApp"><div class="row"><label><select id="pMes"></select></label><button id="pAdd" type="button"></button><button class="go" id="pGerar" type="button"></button><button id="pProx" type="button"></button></div><div class="scroll"><table class="team" id="pTeam"></table></div><div class="row"><button id="pXlsx" type="button"></button><button id="pCsv" type="button"></button><button id="pPrint" type="button"></button><button class="ghost" id="pBackup" type="button"></button><label class="file"><input accept=".json,application/json" id="pRestore" type="file"/></label></div><div class="scroll" id="pOut"></div></div></section>
+<section class="card fine">
+<h2>Como a conta é feita</h2>
+<p>Regras de 16/12/2026: a Emenda Constitucional 141, de 16/10/2026 (DOU 16/10/2026, edição extra), muda o art. 7º da Constituição — duração normal de até 8 horas por dia e repouso semanal remunerado de 2 dias, um deles preferencialmente no domingo. Pelo art. 6º da EC, 2 meses após a publicação (16/12/2026) a semana não pode passar de 42 horas, e 1 ano depois (16/12/2027), de 40 horas, sem redução de salário (art. 2º). Convenção ou acordo coletivo pode compensar as folgas na média de 2 por semana dentro do mês, com pelo menos 1 folga a cada semana (art. 7º, § 2º). O Decreto 13.173, de 19/11/2026, fixa o divisor 210 para 42h e 200 para 40h, e vale o divisor menor quando a jornada contratada é menor (art. 5º); na 12x36, a hora extra aparece quando a média do mês passa do limite semanal (art. 3º).</p>
+<p>Fórmulas: valor da hora = salário ÷ divisor (o menor entre o do regime e 5 × as horas da semana). Hora extra = horas acima do limite por semana × (dias do mês ÷ 7) × valor da hora × 1,5 (CLT art. 59). DSR sobre a hora extra habitual = hora extra × (domingos + feriados) ÷ dias úteis do mês (TST, Súmula 172). Intervalo: turno acima de 6h precisa de 1h; de 4h a 6h, 15 min; o que faltar é indenizado com 50% (CLT art. 71, § 4º); na 12x36 o intervalo pode ser indenizado (art. 59-A). Adicional noturno: 20% sobre as horas entre 22h e 5h, com a hora noturna de 52 min 30 s (CLT art. 73), supondo o intervalo fora desse horário. Descanso entre turnos de 11h (art. 66). Feriados: só os nacionais; feriados estaduais e municipais e a prorrogação do horário noturno não entram na conta.</p>
+<p>Ferramenta de cálculo e organização; não é consultoria jurídica. A convenção coletiva da sua categoria pode ter regras próprias. Seus dados ficam só neste navegador.</p>
+</section>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Salvar e continuar: <a href="https://getreadystack.com/pt/apps/planilha-escala-de-trabalho/">https://getreadystack.com/pt/apps/planilha-escala-de-trabalho/</a></p><script src="./escala.js"></script>
+<script src="./view.js"></script>
+<script src="./xlsx.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

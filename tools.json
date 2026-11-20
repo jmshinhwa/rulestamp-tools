@@ -287,10 +287,12 @@
   {
    "id": "991654904e",
    "name": {
-    "de": "Dienstplan erstellen"
+    "de": "Dienstplan erstellen",
+    "pt": "planilha escala de trabalho: 6x1, 5x2, 12x36 · regra de 42h"
    },
    "tools": [
-    "dienstplan-erstellen"
+    "dienstplan-erstellen",
+    "planilha-escala-de-trabalho"
    ]
   }
  ],
@@ -479,6 +481,11 @@
    "lang": "de",
    "name": "Dienstplan erstellen",
    "hub": "https://getreadystack.com/de/apps/dienstplan-erstellen/"
+  },
+  "planilha-escala-de-trabalho": {
+   "lang": "pt",
+   "name": "planilha escala de trabalho: 6x1, 5x2, 12x36 · regra de 42h",
+   "hub": "https://getreadystack.com/pt/apps/planilha-escala-de-trabalho/"
   }
  }
 }
