@@ -289,12 +289,14 @@
    "name": {
     "de": "Dienstplan erstellen",
     "pt": "planilha escala de trabalho: 6x1, 5x2, 12x36 · regra de 42h",
-    "ja": "シフト作成"
+    "ja": "シフト作成",
+    "es": "cuadrante turnos"
    },
    "tools": [
     "dienstplan-erstellen",
     "planilha-escala-de-trabalho",
-    "shift-sakusei-roukihou-jinkenhi"
+    "shift-sakusei-roukihou-jinkenhi",
+    "cuadrante-turnos-descanso-12-horas-coste"
    ]
   }
  ],
@@ -493,6 +495,11 @@
    "lang": "ja",
    "name": "シフト作成",
    "hub": "https://getreadystack.com/ja/apps/shift-sakusei-roukihou-jinkenhi/"
+  },
+  "cuadrante-turnos-descanso-12-horas-coste": {
+   "lang": "es",
+   "name": "cuadrante turnos",
+   "hub": "https://getreadystack.com/es/apps/cuadrante-turnos-descanso-12-horas-coste/"
   }
  }
 }

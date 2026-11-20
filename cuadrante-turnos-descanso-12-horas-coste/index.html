@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>cuadrante turnos | descanso 12 h, horas, coste, registro</title>
+<meta content="cuadrante turnos: pega o escribe el cuadrante de la semana y ve cada descanso de menos de 12 h entre jornadas, los días de más de 9 h, el día y medio semanal, las horas frente al contrato, el SMI 2026 por hora y el coste de la semana." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/es/apps/cuadrante-turnos-descanso-12-horas-coste/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<header class="top">
+<h1>cuadrante turnos | descanso 12 h, horas, coste, registro</h1>
+<p class="lede"><b>Ejemplo inventado</b> (es el que ves abajo): un bar de 5 personas con 172 h de turnos a la semana y 1.687,20 € de coste bruto. El cuadrante tiene <b>2 descansos de menos de 12 h</b> entre jornadas: Lucía cierra el viernes a las 23:30 y abre el sábado a las 08:00 (8 h 30). Cada descanso roto puede ser una infracción grave con multa de 751 € a 7.500 € (LISOS, arts. 7.5 y 40.1.b).</p>
+<p class="sub">Una plantilla de Excel no te avisa: tienes que revisar a mano cada cierre y cada apertura. Aquí escribes los turnos como los pones en el tablón (8-16, 10-14/18-22, L) y ves al momento los 6 límites del Estatuto de los Trabajadores y el coste. Sin registro: los datos se quedan en tu navegador.</p>
+</header>
+<main>
+<section aria-live="polite" class="card" data-yj="result" id="out"></section>
+<p class="hint upsell" data-fe-hidden="" hidden="" id="upsell"><a></a></p>
+<section class="card" id="inputs">
+<h2>Tu cuadrante: cambia los turnos y mira el resultado</h2>
+<div class="grid">
+<label>Lunes de la semana<input data-k="" data-yj-mine="" id="week" type="date" value="2026-11-23"/></label>
+<label>Descanso mínimo entre jornadas (h) <small>12 por ley; tu convenio puede fijar otro (RD 1561/1995)</small><input data-k="" data-yj-mine="" id="rest" inputmode="decimal" value="12"/></label>
+<label>Máximo de horas ordinarias al día <small>9 por ley, salvo tu convenio</small><input data-k="" data-yj-mine="" id="maxDay" inputmode="decimal" value="9"/></label>
+<label>Horas de trabajo al año de tu convenio <small>para el SMI por hora</small><input data-k="" data-yj-mine="" id="annualHours" inputmode="decimal" value="1802,29"/></label>
+</div>
+<label class="wide">Pega o escribe el cuadrante: Nombre · horas de contrato a la semana · € brutos por hora · Lun … Dom. Añade «(menor)» al nombre de un menor de 18 y una fila «Necesarias» con las personas mínimas por día.
+    <textarea data-k="" data-yj-mine="" id="grid" rows="9" spellcheck="false" wrap="off">Nombre	Contrato h/sem	€/h	Lun	Mar	Mié	Jue	Vie	Sáb	Dom
+Lucía	40	9,80	L	L	15:30-23:30 p15	15:30-23:30 p15	15:30-23:30 p15	08-16 p15	08-16 p15
+Marcos	40	10,20	07-15 p15	07-15 p15	07-15 p15	07-17 p15	07-13	L	L
+Ana	20	9,60	11-16	11-16	L	L	19-23	12-16/19-23	L
+Javi	30	9,20	L	15:30-23:30 p15	09-15	L	L	16-24 p15	16-24 p15
+Sara	40	10,00	08-14	08-14	08-14	08-14	08-14	09-14	09-14
+Necesarias			3	3	3	3	3	5	3</textarea></label>
+<p class="btns"><button class="btn" id="go">Revisar el cuadrante</button> <button class="btn ghost" id="clear">Vaciar y escribir el mío</button></p>
+<p class="hint">Turnos: <code>8-16</code> · <code>08:00-16:00</code> · partido <code>10-14/18-22</code> · noche <code>22-6</code> · libre <code>L</code> (también V vacaciones, B baja). Añade <code>p15</code> si el turno ya lleva su pausa de 15 minutos. Columnas separadas por tabulador (copiar de Excel o Google Sheets), punto y coma o barra |.</p>
+</section>
+<section class="card paid" data-fe-hidden="" hidden="" id="pro"><h2></h2><p></p><ul><li><b></b><b></b></li><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b><b></b></li><li><b></b></li></ul><p class="price"></p><p class="btns"><a class="btn" data-fe-hidden="" hidden=""></a><a class="btn ghost" data-fe-hidden="" hidden=""></a></p><div class="row"><label data-fe-hidden="" hidden=""><input id="key"/></label><button class="btn ghost" data-fe-hidden="" hidden="" id="unlock"></button></div><p class="hint" data-fe-hidden="" hidden="" id="keymsg"></p><div data-fe-hidden="" hidden="" id="proarea"><div class="row"><label><input data-yj-mine="" id="team"/></label><button class="btn" id="save"></button><button class="btn ghost" id="next"></button></div><div class="row"><button class="btn ghost" id="print"></button><button class="btn ghost" id="reg"></button><button class="btn ghost" id="regcsv"></button><button class="btn ghost" id="csv"></button></div><div class="row"><label><select id="who"></select></label><button class="btn ghost" id="ics"></button><button class="btn ghost" id="backup"></button><label class="file"><input accept=".json,application/json" id="restore" type="file"/></label></div><div id="hist"></div></div></section>
+<section class="card" hidden="" id="regsheet"></section>
+<section class="card" id="how">
+<h2>Qué revisa y con qué regla</h2>
+<ul>
+<li><b>Descanso entre jornadas</b>: al menos 12 horas entre el final de una jornada y el comienzo de la siguiente (art. 34.3 ET). El RD 1561/1995 permite bajarlo a 10 h en hostelería de temporada por convenio (art. 7.2) y a 7 h el día de un cambio de turno, compensando la diferencia en los días siguientes (art. 19.2). Si es tu caso, cambia el mínimo arriba.</li>
+<li><b>Horas al día</b>: no más de 9 horas ordinarias de trabajo efectivo, salvo otra distribución en convenio; 8 para menores de 18 (art. 34.3 ET).</li>
+<li><b>Pausa</b>: si un tramo seguido pasa de 6 horas, pausa de al menos 15 minutos; menores, 30 minutos a partir de 4 h 30 (art. 34.4 ET).</li>
+<li><b>Descanso semanal</b>: día y medio seguido, acumulable en periodos de hasta 14 días; menores, 2 días (art. 37.1 ET).</li>
+<li><b>Horas frente al contrato</b>: a tiempo parcial no caben horas extra (art. 12.4.c ET), solo complementarias con pacto escrito (art. 12.5); las horas extra tienen un máximo de 80 al año (art. 35.2). Menores: ni horas extra ni trabajo de 22:00 a 06:00 (art. 6 ET).</li>
+<li><b>SMI 2026 por hora</b>: 1.221 € al mes × 14 pagas = 17.094 € al año (RD 126/2026), referido a la jornada legal. Dividido por las horas de trabajo al año a 40 h semanales con 30 días de vacaciones y 14 festivos ((365 − 30) ÷ 7 × 40 − 14 × 8 = 1.802,29 h) da 9,48 € por hora trabajada. Escribe la jornada anual de tu convenio y la cifra cambia.</li>
+<li><b>Coste</b>: horas del cuadrante × € brutos por hora de cada persona. Es coste salarial bruto; no suma la cotización de la empresa.</li>
+</ul>
+<p class="src">Fuentes leídas el 20/11/2026 en el BOE: Estatuto de los Trabajadores (BOE-A-2015-11430), RD 126/2026 del SMI (BOE-A-2026-3815), RD 1561/1995 (BOE-A-1995-21346) y LISOS (BOE-A-2000-15060). Es una herramienta de cálculo, no asesoramiento legal: tu convenio colectivo puede cambiar los límites.</p>
+<p class="src">Para fichar la jornada real: <a href="/es/apps/registro-horario-empleados-fichaje/">registro horario de empleados</a>.</p>
+</section>
+</main>
+<footer>cuadrante turnos · datos solo en tu navegador · sin cuenta</footer>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Guardar y continuar: <a href="https://getreadystack.com/es/apps/cuadrante-turnos-descanso-12-horas-coste/">https://getreadystack.com/es/apps/cuadrante-turnos-descanso-12-horas-coste/</a></p><script src="./calc.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

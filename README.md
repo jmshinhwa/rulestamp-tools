@@ -49,6 +49,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Dienstplan erstellen | [Dienstplan erstellen](dienstplan-erstellen/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/dienstplan-erstellen/) |
 | 〃 | [planilha escala de trabalho: 6x1, 5x2, 12x36 · regra de 42h](planilha-escala-de-trabalho/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-escala-de-trabalho/) |
 | 〃 | [シフト作成](shift-sakusei-roukihou-jinkenhi/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/shift-sakusei-roukihou-jinkenhi/) |
+| 〃 | [cuadrante turnos](cuadrante-turnos-descanso-12-horas-coste/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cuadrante-turnos-descanso-12-horas-coste/) |
 
 <a id="de"></a>
 
@@ -95,6 +96,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Dienstplan erstellen | [Dienstplan erstellen](dienstplan-erstellen/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/dienstplan-erstellen/) |
 | 〃 | [planilha escala de trabalho: 6x1, 5x2, 12x36 · regra de 42h](planilha-escala-de-trabalho/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-escala-de-trabalho/) |
 | 〃 | [シフト作成](shift-sakusei-roukihou-jinkenhi/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/shift-sakusei-roukihou-jinkenhi/) |
+| 〃 | [cuadrante turnos](cuadrante-turnos-descanso-12-horas-coste/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cuadrante-turnos-descanso-12-horas-coste/) |
 
 <a id="es"></a>
 
@@ -138,7 +140,8 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | Arbeitszeitnachweis vorlage Bau | [Arbeitszeitnachweis vorlage Bau](arbeitszeitnachweis-vorlage-bau-7-tage-frist/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/arbeitszeitnachweis-vorlage-bau-7-tage-frist/) |
 | 家計簿 エクセル｜夫婦の精算と特別費を計算してExcelに出す家計簿 テンプレート（カードCSV読込・銀行連携なし） | [家計簿 エクセル｜夫婦の精算と特別費を計算してExcelに出す家計簿 テンプレート（カードCSV読込・銀行連携なし）](household-budget-planning/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/household-budget-planning/) |
 | FX ロット計算 | [FX ロット計算](fx-lot-keisan-kiroku/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/fx-lot-keisan-kiroku/) |
-| Dienstplan erstellen | [Dienstplan erstellen](dienstplan-erstellen/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/dienstplan-erstellen/) |
+| cuadrante turnos | [cuadrante turnos](cuadrante-turnos-descanso-12-horas-coste/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cuadrante-turnos-descanso-12-horas-coste/) |
+| 〃 | [Dienstplan erstellen](dienstplan-erstellen/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/dienstplan-erstellen/) |
 | 〃 | [planilha escala de trabalho: 6x1, 5x2, 12x36 · regra de 42h](planilha-escala-de-trabalho/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-escala-de-trabalho/) |
 | 〃 | [シフト作成](shift-sakusei-roukihou-jinkenhi/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/shift-sakusei-roukihou-jinkenhi/) |
 
@@ -187,6 +190,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | planilha escala de trabalho: 6x1, 5x2, 12x36 · regra de 42h | [planilha escala de trabalho: 6x1, 5x2, 12x36 · regra de 42h](planilha-escala-de-trabalho/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-escala-de-trabalho/) |
 | 〃 | [Dienstplan erstellen](dienstplan-erstellen/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/dienstplan-erstellen/) |
 | 〃 | [シフト作成](shift-sakusei-roukihou-jinkenhi/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/shift-sakusei-roukihou-jinkenhi/) |
+| 〃 | [cuadrante turnos](cuadrante-turnos-descanso-12-horas-coste/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cuadrante-turnos-descanso-12-horas-coste/) |
 
 <a id="ja"></a>
 
@@ -233,6 +237,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | シフト作成 | [シフト作成](shift-sakusei-roukihou-jinkenhi/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/shift-sakusei-roukihou-jinkenhi/) |
 | 〃 | [Dienstplan erstellen](dienstplan-erstellen/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/dienstplan-erstellen/) |
 | 〃 | [planilha escala de trabalho: 6x1, 5x2, 12x36 · regra de 42h](planilha-escala-de-trabalho/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-escala-de-trabalho/) |
+| 〃 | [cuadrante turnos](cuadrante-turnos-descanso-12-horas-coste/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cuadrante-turnos-descanso-12-horas-coste/) |
 
 ---
 Rulestamp · https://getreadystack.com
