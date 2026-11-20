@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Dienstplan erstellen | Schichtplan mit Ruhezeit-, Pausen- und Mindestlohn-Prüfung (2027)</title>
+<meta content="Dienstplan erstellen im Browser: Schichten eintippen, sofort sehen, wo die 11 Stunden Ruhezeit (§ 5 ArbZG), die Pause von 30/45 Minuten (§ 4), der Mindestlohn 14,60 € ab 01.01.2027 oder die Minijob-Grenze verletzt sind, mit der frühesten erlaubten Uhrzeit und den Lohnkosten der Woche." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/de/apps/dienstplan-erstellen/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main class="wrap">
+<header>
+<h1>Dienstplan erstellen | Schichtplan mit Ruhezeit-, Pausen- und Mindestlohn-Prüfung (2027)</h1>
+<p class="lede" id="lede">Beispiel (erfunden): Ein Café mit 4 Leuten plant die Woche 28.12.2026 – 03.01.2027. Ben schließt an Silvester um 23:30 und soll an Neujahr um 09:00 öffnen: nur 9:30 h Ruhezeit statt 11 h, ein Verstoß gegen § 5 ArbZG mit Bußgeld bis 30.000 €. Mit 14,00 € Stundenlohn liegt er ab 01.01.2027 unter dem Mindestlohn von 14,60 €.</p>
+<p class="sub">Excel-Vorlagen rechnen erst, wenn man sie herunterlädt und richtig ausfüllt. Hier tippen Sie Team und Schichten ein, und jeder Verstoß steht sofort mit der Uhrzeit da, ab der die Schicht erlaubt wäre. Ohne Anmeldung, die Daten bleiben in Ihrem Browser.</p>
+</header>
+<section aria-live="polite" class="result" data-yj="result" id="out">
+<p class="r-label" id="r-label">Dienstplan</p>
+<p class="r-big" id="r-big">0 Verstöße</p>
+<p class="r-loss" id="r-loss"></p>
+<div class="tiles">
+<div class="tile"><span class="t-l">Ruhezeit unter 11 h (§ 5 ArbZG)</span><b id="t-rest">0</b><small id="t-rest-n"></small></div>
+<div class="tile"><span class="t-l">Pause zu kurz (§ 4 ArbZG)</span><b id="t-pause">0</b><small>30 Min. ab 6 h, 45 Min. ab 9 h Arbeit</small></div>
+<div class="tile"><span class="t-l">Fehlt zum Mindestlohn</span><b id="t-milo">0,00 €</b><small id="t-milo-n"></small></div>
+<div class="tile"><span class="t-l">Minijob über der Grenze</span><b id="t-mini">0</b><small id="t-mini-n"></small></div>
+<div class="tile"><span class="t-l">Über 10 h am Tag / 60 h pro Woche</span><b id="t-max">0</b><small>§ 3 ArbZG</small></div>
+<div class="tile"><span class="t-l">Lohnkosten der Woche (brutto)</span><b id="t-cost">0,00 €</b><small id="t-cost-n"></small></div>
+</div>
+<ul class="fixes" id="fixes"></ul>
+<div class="tablewrap" id="table"></div>
+</section>
+<p class="proline" data-fe-hidden="" hidden="" id="proline"></p>
+<section class="card" id="eingabe">
+<h2>1. Woche und Branche</h2>
+<div class="grid">
+<label>Woche ab (Montag)<input data-k="" data-yj-mine="" id="woche" type="date" value="2026-12-28"/></label>
+<label>Branche<select data-k="" data-yj-mine="" id="branche">
+<option selected="" value="gastro">Gastronomie / Hotel</option>
+<option value="pflege">Pflege / Klinik / Betreuung</option>
+<option value="handel">Einzelhandel / Bäckerei-Verkauf</option>
+<option value="verkehr">Verkehrsbetrieb</option>
+<option value="sonst">Andere Branche</option>
+</select></label>
+</div>
+<p class="hint">Gastronomie, Hotel, Pflege und Verkehr dürfen die Ruhezeit auf 10 h verkürzen, wenn eine andere Ruhezeit binnen 4 Wochen auf 12 h verlängert wird (§ 5 Abs. 2 ArbZG). Andere Branchen: immer 11 h.</p>
+<h2>2. Team: Name; Art; Stundenlohn</h2>
+<textarea data-k="" data-yj-mine="" id="team" rows="5" spellcheck="false">Anna; Vollzeit; 15,50
+Ben; Teilzeit; 14,00
+Clara; Minijob; 13,90
+Deniz; Minijob; 14,60</textarea>
+<p class="hint">Art: Vollzeit, Teilzeit, Minijob oder Azubi (für Azubis gilt der Mindestlohn nicht, die Ausbildungsvergütung prüft die App nicht).</p>
+<h2>3. Schichten: Name; Tag; Beginn-Ende; Pause in Minuten</h2>
+<textarea data-k="" data-yj-mine="" id="plan" rows="15" spellcheck="false">Anna; Mo; 07:00-15:30; 30
+Anna; Di; 07:00-15:30; 30
+Anna; Mi; 07:00-15:30; 30
+Anna; Do; 07:00-14:15; 15
+Anna; Sa; 08:00-16:30; 30
+Ben; Mo; 14:00-22:00; 30
+Ben; Di; 14:00-22:00; 30
+Ben; Do; 16:00-23:30; 30
+Ben; Fr; 09:00-15:00; 0
+Ben; So; 14:00-22:00; 30
+Clara; Mi; 10:00-15:00; 0
+Clara; Fr; 12:00-18:00; 0
+Deniz; Sa; 16:00-22:00; 0
+Deniz; So; 10:00-13:30; 0</textarea>
+<p class="hint">Tag als Mo … So oder als Datum (31.12.). Nachtschicht über Mitternacht einfach so schreiben: 22:00-06:00. Zwei Schichten am selben Tag = zwei Zeilen.</p>
+<ul class="errs" id="errs"></ul>
+<p><button class="ghost" id="reset" type="button">Beispiel wieder laden</button></p>
+</section>
+<section class="card" id="regeln">
+<h2>Diese Regeln prüft der Dienstplan</h2>
+<ul>
+<li><b>Ruhezeit:</b> nach Ende der täglichen Arbeitszeit mindestens 11 Stunden ohne Unterbrechung (§ 5 Abs. 1 ArbZG). In Gaststätten, Beherbergung, Pflege, Kliniken und Verkehrsbetrieben bis zu 1 Stunde kürzer, wenn binnen eines Kalendermonats oder 4 Wochen eine andere Ruhezeit auf 12 Stunden verlängert wird (§ 5 Abs. 2).</li>
+<li><b>Pausen:</b> mehr als 6 bis 9 Stunden Arbeit: mindestens 30 Minuten; mehr als 9 Stunden: 45 Minuten; Teile von mindestens 15 Minuten; nie länger als 6 Stunden am Stück ohne Pause (§ 4 ArbZG). Deshalb zeigt die App, bis wann die Pause beginnen muss.</li>
+<li><b>Höchstarbeitszeit:</b> 8 Stunden je Werktag, bis 10 Stunden, wenn der Durchschnitt in 6 Monaten oder 24 Wochen bei 8 Stunden bleibt (§ 3 ArbZG).</li>
+<li><b>Bußgeld:</b> Verstöße gegen §§ 3, 4 und 5 ArbZG: bis 30.000 € (§ 22 Abs. 2 ArbZG). Mindestlohn nicht gezahlt: bis 500.000 € (§ 21 Abs. 3 MiLoG).</li>
+<li><b>Mindestlohn:</b> 13,90 € je Stunde ab 01.01.2026, 14,60 € ab 01.01.2027 (§ 1 MiLoV5). Die App nimmt für jede Schicht den Satz ihres Datums.</li>
+<li><b>Minijob-Grenze:</b> Mindestlohn × 130 ÷ 3, aufgerundet (§ 8 Abs. 1a SGB IV): 603 € im Monat 2026, 633 € ab 2027. Die Wochenansicht rechnet den Wochenlohn × 13 ÷ 3 auf den Monat hoch.</li>
+<li><b>Aufzeichnung:</b> bei Minijobs Beginn, Ende und Dauer der täglichen Arbeitszeit spätestens bis zum 7. Tag danach aufschreiben und 2 Jahre aufbewahren (§ 17 MiLoG).</li>
+</ul>
+<p class="hint">Quellen: Arbeitszeitgesetz, Mindestlohngesetz, Fünfte Mindestlohnanpassungsverordnung und SGB IV auf gesetze-im-internet.de, gelesen am 20.11.2026. Nicht geprüft: Jugendarbeitsschutz, Sonn- und Feiertagszuschläge, Tarifverträge. Keine Rechtsberatung.</p>
+</section>
+<section class="card pro" data-fe-hidden="" hidden="" id="pro"><h2></h2><p class="btns"><a class="btn" data-fe-hidden="" hidden=""></a><a class="btn ghost" data-fe-hidden="" hidden=""></a></p><div class="keybox" data-fe-hidden="" hidden=""><label data-fe-hidden="" hidden=""><input autocomplete="off" id="key"/></label><button data-fe-hidden="" hidden="" id="unlock" type="button"></button><span class="hint" data-fe-hidden="" hidden="" id="keymsg"></span></div><h3></h3><p class="btns"><button id="save" type="button"></button><button class="ghost" id="next" type="button"></button></p><div id="saved"></div><p class="hint"></p><h3></h3><p class="grid"><label><input id="monat" type="month"/></label></p><div id="month"></div><h3></h3><p class="btns"><button id="print" type="button"></button><button id="sheets" type="button"></button><button id="csv" type="button"></button><label class="filebtn"><input accept=".csv,text/csv" id="csvin" type="file"/></label><label class="inl"><select id="icsname"></select></label><button id="ics" type="button"></button><button id="backup" type="button"></button><label class="filebtn"><input accept=".json,application/json" id="restore" type="file"/></label></p></section>
+<footer class="hint">
+<p>Die Daten bleiben nur in diesem Browser (localStorage). Die App plant und prüft, sie stempelt keine Zeiten und rechnet keine Löhne ab. Nicht rechtlich beraten: Ausnahmen aus Tarifverträgen (§ 7 ArbZG) kennt nur Ihr Betrieb.</p>
+</footer>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Speichern und weitermachen: <a href="https://getreadystack.com/de/apps/dienstplan-erstellen/">https://getreadystack.com/de/apps/dienstplan-erstellen/</a></p><script src="./dp.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

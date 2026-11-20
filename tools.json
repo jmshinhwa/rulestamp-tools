@@ -283,6 +283,15 @@
    "tools": [
     "fx-lot-keisan-kiroku"
    ]
+  },
+  {
+   "id": "991654904e",
+   "name": {
+    "de": "Dienstplan erstellen"
+   },
+   "tools": [
+    "dienstplan-erstellen"
+   ]
   }
  ],
  "tools": {
@@ -465,6 +474,11 @@
    "lang": "ja",
    "name": "FX ロット計算",
    "hub": "https://getreadystack.com/ja/apps/fx-lot-keisan-kiroku/"
+  },
+  "dienstplan-erstellen": {
+   "lang": "de",
+   "name": "Dienstplan erstellen",
+   "hub": "https://getreadystack.com/de/apps/dienstplan-erstellen/"
   }
  }
 }
