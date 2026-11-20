@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>シフト作成 | 休憩・深夜割増・最低賃金を自動チェック | 人件費 | シフト表の印刷とLINE画像</title>
+<meta content="シフト作成：時刻を入れるだけで、労基法の休憩（6時間超45分・8時間超60分）、22時〜5時の深夜割増25%、18歳未満の深夜業、都道府県別の最低賃金（令和8年度・発効日で切り替え）をチェックし、割増込みの人件費と人件費率を出します。シフト表 テンプレートの代わりに使えるシフト作成 アプリ。" name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/ja/apps/shift-sakusei-roukihou-jinkenhi/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main class="wrap">
+<h1>シフト作成 | 休憩・深夜割増・最低賃金を自動チェック | 人件費 | シフト表の印刷とLINE画像</h1>
+<p class="lede"><b>記入例（架空）：</b>東京都のカフェ、スタッフ6人の1週間のシフト。「9-18 休憩45分」の日は実働8時間15分なので休憩が15分足りず（60分が必要）、<b>時給1,250円のままのスタッフは、10月1日からの東京都の最低賃金1,280円に1週間で¥780足りません。</b>時給×時間だけのシフト表 テンプレートには出ない深夜・時間外の割増は¥7,726。この表で見つかった違反は14件です。</p>
+<p class="fix"><b>シフト表を作るだけで終わりにしません。</b>セルに「9-18/45」と打つと、その場で実働・休憩・深夜（22時〜5時）・時間外を計算し、労基法の休憩不足、18歳未満の深夜と時間外、最低賃金割れに赤い印をつけます。最低賃金は47都道府県の令和8年度の額を発効日で切り替えるので、12月に変わる岩手・熊本・沖縄も日ごとに正しい額で比べます。スタッフ全員のアプリ登録は要りません。</p>
+<section class="card" id="input">
+<h2>シフト表を入れる</h2>
+<div class="grid">
+<label>都道府県（最低賃金） <select data-k="pref" data-yj-mine="" id="pref"></select></label>
+<label>表の初日（YYYY-MM-DD） <input data-k="start" data-yj-mine="" id="start" inputmode="numeric" value="2026-11-22"/></label>
+<label>この期間の売上見込み（円・空欄可） <input data-k="sales" data-yj-mine="" id="sales" inputmode="decimal" value="1,150,000"/></label>
+</div>
+<p class="small">セルの書き方：<code>9-18/60</code>（9時〜18時・休憩60分） · <code>17:30-22</code> · <code>22-5</code>（日をまたぐ） · <code>18-26/60</code>（26時＝翌2時） · 空欄か「休」は休み。年齢で「18歳未満」を選ぶと、深夜と時間外も見ます。</p>
+<div class="scroll"><table class="edit" id="grid"></table></div>
+<p class="small"><button class="btn2" id="add" type="button">スタッフを追加</button> <button class="btn2" id="reset" type="button">記入例を入れる</button> <button class="btn2" id="clear" type="button">空のシフト表にする</button>
+<button class="btn2" id="month" type="button">1か月の表にする（同じ曜日のシフトで埋める）</button></p>
+</section>
+<section aria-live="polite" data-yj="result" id="out">
+<h2>チェック結果と人件費</h2>
+<div class="tiles" id="o-tiles"></div>
+<ul class="issues" id="o-issues"></ul>
+<p class="small" id="o-mw"></p>
+<h3>シフト表（赤＝要確認）</h3>
+<div class="scroll"><table class="res shift" id="o-table"></table></div>
+<h3>スタッフごとの給与（割増込み）</h3>
+<div class="scroll"><table class="res"><thead><tr><th>スタッフ</th><th>時給</th><th>実働h</th><th>深夜h</th><th>時間外h</th><th>基本</th><th>深夜割増</th><th>時間外割増</th><th>最低賃金の不足</th><th>合計</th></tr></thead><tbody id="o-staff"></tbody></table></div>
+<p class="summary" id="o-summary"></p>
+<p><button class="btn2" id="png" type="button">LINE用の画像にする</button> <button class="btn2" id="copy" type="button">結果をコピー</button> <span class="small" id="copy-msg"></span></p>
+<p hidden="" id="png-wrap"><img alt="シフト表の画像" id="png-img"/><br/><a class="btn2" download="shift.png" id="png-dl">画像を保存</a> <span class="small">スマホでは画像を長押しして保存し、LINEのトークに送ってください。</span></p>
+</section>
+<section class="card" data-fe-hidden="" hidden="" id="pro-sec"><div class="buyline" data-fe-hidden="" hidden=""><p><b></b></p><p class="small"></p><a class="btn" data-fe-hidden="" hidden=""></a></div><div class="tools"><label><input id="book-name"/></label><button class="btn2 pro" data-fe-hidden="" data-pro="save" hidden="" type="button"></button><select id="book-list"><option></option></select><button class="btn2 pro" data-fe-hidden="" data-pro="load" hidden="" type="button"></button><button class="btn2 pro" data-fe-hidden="" data-pro="print" hidden="" type="button"></button><button class="btn2 pro" data-fe-hidden="" data-pro="csv" hidden="" type="button"></button><label class="btn2 pro filebtn" data-fe-hidden="" data-pro="csvin" hidden=""><input accept=".csv,text/csv,.txt" hidden="" id="csv-in" type="file"/></label><button class="btn2 pro" data-fe-hidden="" data-pro="next" hidden="" type="button"></button><button class="btn2 pro" data-fe-hidden="" data-pro="backup" hidden="" type="button"></button><label class="btn2 pro filebtn" data-fe-hidden="" data-pro="imp" hidden=""><input accept=".json,application/json" hidden="" id="json-in" type="file"/></label></div><p class="note" data-fe-hidden="" hidden="" id="pro-msg"></p><p class="small"><input data-fe-hidden="" hidden="" id="key"/><button class="btn2" data-fe-hidden="" hidden="" id="key-go" type="button"></button><span data-fe-hidden="" hidden="" id="key-msg"></span></p></section>
+<section class="card small">
+<h2>計算のしかた（根拠）</h2>
+<ul>
+<li>実働 = 終業 − 始業 − 休憩。<b>休憩</b>は実働が6時間を超えたら45分以上、8時間を超えたら60分以上（労働基準法34条1項）。実働ちょうど6時間なら休憩なしでも違反ではありません。</li>
+<li><b>深夜</b>は22時〜翌5時の実働に時給の25%を上乗せ（37条4項）。休憩は深夜以外の時間に取るものとして数えます（深夜の時間を少なく見積もらないため）。</li>
+<li><b>時間外</b>は1日8時間・週40時間（32条）を超えた分に25%（37条1項・割増賃金令）。週は日曜〜土曜で区切り（表の最初と最後の週は表にある日だけで数えます）、日をまたぐシフトは始業の日に数えます。表の中で時間外が60時間を超えた分は50%で計算します（37条1項ただし書）。時間外には36協定の届出が必要です（36条）。</li>
+<li><b>18歳未満</b>は22時〜5時に働かせられません（61条・交替制の満16歳以上の男性を除く）。36協定による時間外もできません（60条）。</li>
+<li><b>最低賃金</b>は時給（割増を除く）と比べます（最低賃金法4条・違反は50万円以下の罰金＝同法40条）。47都道府県の令和8年度の額を、各県の発効日の前日までは令和7年度の額で比べます。出典：厚生労働省「地域別最低賃金の全国一覧」（2026-11-20に確認）。</li>
+<li>労基法34条・37条・61条の違反は6か月以下の拘禁刑または30万円以下の罰金（119条）。金額は1円未満を四捨五入。月給の社員、法定休日の労働（35%）、変形労働時間制、特定（産業別）最低賃金は計算しません。</li>
+<li>入れた名前や時給はブラウザの外へ送りません。法律の判断が必要なときは社会保険労務士や労働基準監督署に確認してください。</li>
+</ul>
+<p class="small">7 checks on every shift (break, night premium, overtime, minor night work, minor overtime, minimum wage, weekly rest day) · 6 inputs per shift (name, wage, age, start, end, break) · 6 results (violations, minimum wage gap, labor cost, night and overtime premium, hours, labor cost ratio) · 47 prefectures. Free: one week or one month table with PNG image for LINE.</p>
+</section>
+</main>
+<div id="print-area"></div>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">保存して続ける: <a href="https://getreadystack.com/ja/apps/shift-sakusei-roukihou-jinkenhi/">https://getreadystack.com/ja/apps/shift-sakusei-roukihou-jinkenhi/</a></p><script src="./engine.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
