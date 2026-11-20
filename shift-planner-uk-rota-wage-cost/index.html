@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en-GB">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>shift planner | UK rota, wage cost, minimum wage, breaks</title>
+<meta content="shift planner for small UK teams: paste or type your weekly rota and see each person's paid hours and wage cost, anyone paid below the minimum wage for their age, short rest between shifts, missing breaks, and the same rota at the April 2027 rates." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/apps/shift-planner-uk-rota-wage-cost/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<header class="top">
+<h1>shift planner | UK rota, wage cost, minimum wage, breaks</h1>
+<p class="lede"><b>Made-up example</b> (it is the rota below): a 5-person café, 171.5 paid hours and £2,076.60 of wages this week. Tom is 19 on £10.50 an hour, below the £10.85 minimum for 18 to 20: <b>£12.25 owed for this one week</b>. Priya closes Friday at 23:00 and opens Saturday at 07:00, 8 h off where the law says 11 h.</p>
+<p class="sub">A rota template only lays out the shifts. This shift planner also does the pay side: hours × £ per hour for each person, the minimum wage for their age band on the week's date, and the same rota at the rates that start on 1 April 2027 (£13.21 for 21 and over). No sign-up: your rota stays in your browser.</p>
+</header>
+<main>
+<section aria-live="polite" class="card" data-yj="result" id="out"></section>
+<p class="hint upsell" data-fe-hidden="" hidden="" id="upsell"><a></a></p>
+<section class="card" id="inputs">
+<h2>Your rota: change any shift and the checks rerun</h2>
+<div class="grid">
+<label>Week starting (Monday)<input data-k="" data-yj-mine="" id="week" type="date" value="2026-11-23"/></label>
+<label>Daily rest between working days (h) <small>11 by law (12 for under 18s)</small><input data-k="" data-yj-mine="" id="rest" inputmode="decimal" value="11"/></label>
+<label>Holiday pay on top (%) <small>12.07 if you accrue holiday on hours worked; 0 to leave it out</small><input data-k="" data-yj-mine="" id="hol" inputmode="decimal" value="0"/></label>
+<label class="chk"><input id="ni" type="checkbox"/> Add employer National Insurance (15% over £96 a week; 0% for under 21s up to £967)</label>
+</div>
+<label class="wide">Paste from Excel or Google Sheets, or type: Name · Age · £ per hour · Mon … Sun. Add a <b>Needed</b> row with the number of people you need each day. Write <code>apprentice</code> in the age column for the apprentice rate.
+    <textarea data-k="" data-yj-mine="" id="grid" rows="9" spellcheck="false" wrap="off">Name	Age	£/hour	Mon	Tue	Wed	Thu	Fri	Sat	Sun
+Priya	34	12.90	7-15 b30	7-15 b30	off	off	15-23 b30	7-15 b30	9-17 b30
+Tom	19	10.50	10-18	10-18 b30	off	10-18 b30	off	10-16	10-16
+Ellie	17	8.20	off	off	16-20	off	16-20	9-18 b30	off
+Marco	45	13.50	7-15 b30	7-15 b30	7-15 b30	7-15 b30	7-15 b30	7-15 b30	7-15 b30
+Jade	22	12.71	off	15-23 b30	15-23 b30	15-23 b30	off	15-23 b30	off
+Needed			2	2	2	2	4	4	3</textarea></label>
+<p class="btns"><button class="btn" id="go">Check my rota</button> <button class="btn ghost" id="clear">Clear and type my own</button></p>
+<p class="hint">Shifts: <code>9-17</code> · <code>09:00-17:30</code> · <code>9am-5pm</code> · split <code>10-14/18-22</code> · night <code>22-6</code> · day off <code>off</code> (also <code>hol</code>, <code>sick</code>). Add <code>b30</code> for an unpaid 30-minute break; paid hours are the shift minus the break. Columns split by tab (copy from a spreadsheet), comma, semicolon or |.</p>
+</section>
+<section class="card paid" data-fe-hidden="" hidden="" id="pro"><h2></h2><p></p><ul><li><b></b><b></b></li><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b></li></ul><p class="price"></p><p class="btns"><a class="btn" data-fe-hidden="" hidden=""></a><a class="btn ghost" data-fe-hidden="" hidden=""></a></p><div class="row"><label data-fe-hidden="" hidden=""><input id="key"/></label><button class="btn ghost" data-fe-hidden="" hidden="" id="unlock"></button></div><p class="hint" data-fe-hidden="" hidden="" id="keymsg"></p><div data-fe-hidden="" hidden="" id="proarea"><div class="row"><label><input data-yj-mine="" id="team"/></label><button class="btn" id="save"></button><button class="btn ghost" id="next"></button></div><div class="row"><button class="btn ghost" id="print"></button><button class="btn ghost" id="csv"></button><label><select id="who"></select></label><button class="btn ghost" id="ics"></button><button class="btn ghost" id="backup"></button><label class="file"><input accept=".json,application/json" id="restore" type="file"/></label></div><div id="hist"></div></div></section>
+<section class="card" id="how">
+<h2>What it checks, and the rule behind each check</h2>
+<ul>
+<li><b>Minimum wage by age</b>: from 1 April 2026, £12.71 an hour for 21 and over, £10.85 for 18 to 20, £8.00 for under 18 and for the apprentice rate. From 1 April 2027: £13.21, £11.27, £8.31 and £8.31. The week's date picks the rate. Arrears = (minimum − pay rate) × paid hours. If you underpay, the arrears must be paid back at once, and HMRC can send a notice for the arrears plus a fine.</li>
+<li><b>Daily rest</b>: 11 hours between working days, 12 for under 18s. If someone finishes at 20:00 they should not start before 07:00 the next day.</li>
+<li><b>Rest break</b>: one uninterrupted 20-minute break when the working day is over 6 hours. Under 18s get 30 minutes when it is over 4.5 hours. A 20-minute gap in a split shift counts.</li>
+<li><b>Weekly rest</b>: 24 hours off each week, or 48 hours each fortnight. Under 18s get 48 hours a week.</li>
+<li><b>Weekly hours</b>: 48 hours a week on average, normally over 17 weeks, unless the worker opted out in writing. Under 18s: at most 8 hours a day and 40 hours a week, with no averaging.</li>
+<li><b>Wage cost</b>: paid hours × £ per hour. You can add holiday pay as a percentage, and employer National Insurance at 15% over £96 a week. Under 21s pay 0% up to £967 a week. Many small employers' Employment Allowance (£10,500 a year) covers their employer NI bill, so the NI box is off by default.</li>
+</ul>
+<p class="src">Sources read on 20 Nov 2026 on GOV.UK: National Minimum Wage and National Living Wage rates; Rest breaks at work; Maximum weekly working hours; The National Minimum Wage and Living Wage; Rates and thresholds for employers 2026 to 2027. Shift patterns, compensatory rest and some jobs have exceptions. This is a calculation tool, not legal or payroll advice.</p>
+</section>
+</main>
+<footer>shift planner · your rota stays in your browser · no account</footer>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Save and continue: <a href="https://getreadystack.com/apps/shift-planner-uk-rota-wage-cost/">https://getreadystack.com/apps/shift-planner-uk-rota-wage-cost/</a></p><script src="./calc.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
