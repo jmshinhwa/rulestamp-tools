@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben</title>
+<meta content="ASO Tool im Browser: App-Store-ID eingeben, Name (30), Untertitel (30) und Keyword-Feld (100) nach Apples eigenen Regeln prüfen. Sie sehen, wie viele Keyword-Zeichen verschenkt sind, und bekommen das aufgeräumte Keyword-Feld für Deutschland, Japan, Spanien, Mexiko, Brasilien, Portugal, USA und Großbritannien." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/de/apps/aso-tool/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main class="wrap">
+<header>
+<h1>ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben</h1>
+<p class="lede" id="lede">Beispiel (erfunden): Ein Haushaltsbuch heißt „Haushaltsbuch – Budget Planer“ und füllt sein Keyword-Feld mit 99 Zeichen. 41 davon sind verschenkt: „budget“ und „planer“ stehen schon im Namen, „finanzen“ ist die Kategorie, „sparen“ steht zweimal drin, und 11 Leerzeichen nach Kommas zählen mit. Dazu kommt „kostenlos“, eine Preisangabe, die Apple nach Regel 2.3.7 in Metadaten nicht will. Aufgeräumt sind 52 Zeichen frei für neue Suchwörter.</p>
+<p class="sub" id="edge">Viele ASO-Tools sind Mac-Apps zum Herunterladen oder wollen erst ein Konto. Hier läuft die Prüfung im Browser: App-Store-ID eingeben, Keyword-Feld einfügen, und jede Meldung nennt Apples eigene Regel mit Quelle, auch für japanische, spanische und portugiesische Einträge. Die Prüfung einer Sprache kostet nichts und braucht kein Konto; Ihre Texte bleiben im Browser.</p>
+</header>
+<section aria-live="polite" class="result" data-yj="result" id="out">
+<p class="r-label" id="r-label">Keyword-Feld · Deutschland (de-DE)</p>
+<p class="r-big" id="r-big">41 von 100 Keyword-Zeichen verschenkt</p>
+<p class="r-loss" id="r-loss">Aufgeräumt sind 52 Zeichen frei für neue Suchwörter.</p>
+<div class="sum" id="sum">
+<div class="tile" id="t-name">Name: 29 von 30 Zeichen</div>
+<div class="tile" id="t-sub">Untertitel: 29 von 30 Zeichen</div>
+<div class="tile" id="t-risk">Verstöße gegen Regel 2.3.7: 1</div>
+<div class="tile" id="t-room">Frei nach dem Aufräumen: 52 Zeichen</div>
+<div class="tile key" data-fe-hidden="" hidden="" id="t-waste"></div>
+</div>
+<div class="bars" id="bars"></div>
+<ul class="fixes" id="fixes"></ul>
+<div class="clean">
+<p class="c-h" id="clean-h">Aufgeräumtes Keyword-Feld</p>
+<p class="c-v" id="clean-v">sparen,geld,konto,kassenbuch,bank,haushalt,kasse</p>
+<button class="ghost" id="copy-clean" type="button">Kopieren</button> <span class="hint" id="copy-msg"></span>
+</div>
+</section>
+<p class="proline" data-fe-hidden="" hidden="" id="proline"><b class="pM"></b><b class="pY"></b><a></a></p>
+<section class="card" id="eingabe">
+<h2>1. App live laden</h2>
+<div class="grid g3">
+<label class="wide">App-Store-Link oder ID<input autocomplete="off" id="appid" inputmode="url" placeholder="https://apps.apple.com/de/app/…/id1234567890" spellcheck="false" type="text"/></label>
+<label>Storefront<select id="cc">
+<option selected="" value="de">Deutschland (de-DE)</option>
+<option value="us">USA (en-US)</option>
+<option value="gb">Großbritannien (en-GB)</option>
+<option value="jp">Japan (ja)</option>
+<option value="es">Spanien (es-ES)</option>
+<option value="mx">Mexiko (es-MX)</option>
+<option value="br">Brasilien (pt-BR)</option>
+<option value="pt">Portugal (pt-PT)</option>
+</select></label>
+</div>
+<p class="btns"><button class="btn" id="load" type="button">Live laden</button> <span class="hint" id="load-msg"></span></p>
+<p class="hint">Wir lesen die öffentliche App-Store-Seite und Apples Lookup-API: Name, Untertitel, Kategorie, Firmenname, Version und die Sprache der Beschreibung. Das Keyword-Feld ist privat, das sieht nur App Store Connect. Fügen Sie es unten ein.</p>
+<h2>2. Ihre Texte</h2>
+<div class="grid g2">
+<label>Name (höchstens 30)<input data-k="" data-yj-mine="" id="title" spellcheck="false" type="text" value="Haushaltsbuch – Budget Planer"/><small class="cnt" id="c-title"></small></label>
+<label>Untertitel (höchstens 30)<input data-k="" data-yj-mine="" id="subtitle" spellcheck="false" type="text" value="Ausgaben &amp; Einnahmen im Blick"/><small class="cnt" id="c-subtitle"></small></label>
+</div>
+<label class="blk">Keyword-Feld (höchstens 100, aus App Store Connect)<textarea data-k="" data-yj-mine="" id="keywords" rows="3" spellcheck="false">budget, sparen, finanzen, geld, kostenlos, planer, sparen, konto, kassenbuch, bank, haushalt, kasse</textarea><small class="cnt" id="c-keywords"></small></label>
+<div class="grid g3">
+<label>Kategorie (wie im Store)<input data-k="" data-yj-mine="" id="category" spellcheck="false" type="text" value="Finanzen"/></label>
+<label>Sprache der Texte<select data-k="" data-yj-mine="" id="lang">
+<option selected="" value="de">Deutsch</option>
+<option value="en">Englisch</option>
+<option value="ja">Japanisch</option>
+<option value="es">Spanisch</option>
+<option value="pt">Portugiesisch</option>
+</select></label>
+<label>Firmenname (Anbieter)<input id="seller" placeholder="z. B. Muster Apps GmbH" spellcheck="false" type="text" value=""/></label>
+</div>
+<p class="hint">Die Prüfung läuft bei jeder Eingabe neu. Sie gilt für eine Lokalisierung, also Name, Untertitel und Keywords einer Sprache.</p>
+</section>
+<section class="card" data-fe-hidden="" hidden="" id="pro"><h2></h2><ul class="list"><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b></li><li><b></b></li></ul><p class="btns"><a class="btn" data-fe-hidden="" hidden=""></a><a class="btn ghost" data-fe-hidden="" hidden=""></a></p><div class="grid g2 keyrow" data-fe-hidden="" hidden=""><label data-fe-hidden="" hidden=""><input autocomplete="off" id="key" spellcheck="false" type="text"/></label><p class="btns"><button class="btn ghost" data-fe-hidden="" hidden="" id="key-go" type="button"></button></p></div><p class="hint" data-fe-hidden="" hidden="" id="keymsg"></p><div class="protools"><h3></h3><p class="btns"><button class="btn" id="all-go" type="button"></button><span class="hint" id="all-msg"></span></p><div class="tablewrap" id="all"></div><h3></h3><div class="grid g3"><label><select id="to"><option selected=""></option><option></option><option></option><option></option><option></option><option></option><option></option><option></option></select></label><label><input id="brand" spellcheck="false" type="text"/></label><label><input id="notes" spellcheck="false" type="text"/></label></div><p class="btns"><button class="btn" id="draft-go" type="button"></button><span class="hint" id="draft-msg"></span></p><div id="draft"></div><h3></h3><div class="grid g3"><label><input id="ver" spellcheck="false" type="text"/></label><label><select id="savecc"><option selected=""></option><option></option><option></option><option></option><option></option><option></option><option></option><option></option></select></label><p class="btns"><button class="btn" id="save" type="button"></button></p></div><div id="history"></div><h3></h3><p class="btns"><button class="btn ghost" id="x-asc" type="button"></button><button class="btn ghost" id="x-csv" type="button"></button><button class="btn ghost" id="x-json" type="button"></button><label class="btn ghost file"><input accept=".json,application/json" id="x-in" type="file"/></label></p><p class="hint" id="x-msg"></p></div></section>
+<section class="card" id="regeln">
+<h2>Welche Regeln geprüft werden</h2>
+<p>Jede Meldung beruht auf Apples eigenen Seiten, gelesen am 25.11.2026:</p>
+<ul class="list small">
+<li>Name und Untertitel höchstens 30 Zeichen (App Store Product Page; App Review Guidelines 2.3.7).</li>
+<li>Keyword-Feld höchstens 100 Zeichen, Begriffe mit Kommas trennen, ohne Leerzeichen (App Store Search). Die App-Store-Connect-Hilfe nennt 100 Bytes; das prüfen wir mit, weil japanische Zeichen 3 Bytes zählen.</li>
+<li>Keine Wörter wiederholen, die schon in Name, Untertitel oder Kategorie stehen; Pluralformen gelten als Duplikat; Füllwörter wie „the“ und „to“ und allgemeine Wörter wie „app“ bringen nichts (App Store Search).</li>
+<li>App- und Firmenname sind schon durchsuchbar; Namen anderer Apps oder Firmen sind nicht erlaubt (App-Store-Connect-Hilfe).</li>
+<li>Keine Preisangaben und keine Namen bekannter Apps in den Metadaten (Regel 2.3.7); „Für Kinder“ nur in der Kategorie Kinder (Regel 2.3.8). Stand der Richtlinien: 16.10.2026.</li>
+</ul>
+<p class="hint">Kein Angebot von Apple. App Store und App Store Connect sind Marken der Apple Inc. Das Tool sagt nichts über Suchvolumen oder Rankings; es prüft Ihre Texte gegen Apples veröffentlichte Regeln.</p>
+</section>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Speichern und weitermachen: <a href="https://getreadystack.com/de/apps/aso-tool/">https://getreadystack.com/de/apps/aso-tool/</a></p><script src="./aso.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

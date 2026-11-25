@@ -51,6 +51,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [planilha escala de trabalho: 6x1, 5x2, 12x36 · regra de 42h](planilha-escala-de-trabalho/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-escala-de-trabalho/) |
 | 〃 | [シフト作成](shift-sakusei-roukihou-jinkenhi/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/shift-sakusei-roukihou-jinkenhi/) |
 | 〃 | [cuadrante turnos](cuadrante-turnos-descanso-12-horas-coste/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cuadrante-turnos-descanso-12-horas-coste/) |
+| ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben | [ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben](aso-tool/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/aso-tool/) |
 
 <a id="de"></a>
 
@@ -99,6 +100,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [シフト作成](shift-sakusei-roukihou-jinkenhi/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/shift-sakusei-roukihou-jinkenhi/) |
 | 〃 | [cuadrante turnos](cuadrante-turnos-descanso-12-horas-coste/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cuadrante-turnos-descanso-12-horas-coste/) |
 | 〃 | [shift planner](shift-planner-uk-rota-wage-cost/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/shift-planner-uk-rota-wage-cost/) |
+| ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben | [ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben](aso-tool/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/aso-tool/) |
 
 <a id="es"></a>
 
@@ -147,6 +149,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [planilha escala de trabalho: 6x1, 5x2, 12x36 · regra de 42h](planilha-escala-de-trabalho/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-escala-de-trabalho/) |
 | 〃 | [シフト作成](shift-sakusei-roukihou-jinkenhi/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/shift-sakusei-roukihou-jinkenhi/) |
 | 〃 | [shift planner](shift-planner-uk-rota-wage-cost/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/shift-planner-uk-rota-wage-cost/) |
+| ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben | [ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben](aso-tool/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/aso-tool/) |
 
 <a id="pt"></a>
 
@@ -195,6 +198,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [シフト作成](shift-sakusei-roukihou-jinkenhi/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/shift-sakusei-roukihou-jinkenhi/) |
 | 〃 | [cuadrante turnos](cuadrante-turnos-descanso-12-horas-coste/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cuadrante-turnos-descanso-12-horas-coste/) |
 | 〃 | [shift planner](shift-planner-uk-rota-wage-cost/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/shift-planner-uk-rota-wage-cost/) |
+| ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben | [ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben](aso-tool/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/aso-tool/) |
 
 <a id="ja"></a>
 
@@ -243,6 +247,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [planilha escala de trabalho: 6x1, 5x2, 12x36 · regra de 42h](planilha-escala-de-trabalho/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/planilha-escala-de-trabalho/) |
 | 〃 | [cuadrante turnos](cuadrante-turnos-descanso-12-horas-coste/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cuadrante-turnos-descanso-12-horas-coste/) |
 | 〃 | [shift planner](shift-planner-uk-rota-wage-cost/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/shift-planner-uk-rota-wage-cost/) |
+| ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben | [ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben](aso-tool/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/aso-tool/) |
 
 ---
 Rulestamp · https://getreadystack.com

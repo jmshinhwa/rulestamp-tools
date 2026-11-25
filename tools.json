@@ -300,6 +300,15 @@
     "cuadrante-turnos-descanso-12-horas-coste",
     "shift-planner-uk-rota-wage-cost"
    ]
+  },
+  {
+   "id": "afd001102f",
+   "name": {
+    "de": "ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben"
+   },
+   "tools": [
+    "aso-tool"
+   ]
   }
  ],
  "tools": {
@@ -507,6 +516,11 @@
    "lang": "en",
    "name": "shift planner",
    "hub": "https://getreadystack.com/apps/shift-planner-uk-rota-wage-cost/"
+  },
+  "aso-tool": {
+   "lang": "de",
+   "name": "ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben",
+   "hub": "https://getreadystack.com/de/apps/aso-tool/"
   }
  }
 }
