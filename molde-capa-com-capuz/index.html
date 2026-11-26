@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Molde capa com capuz PDF – A4 e A0 · projetor · PP ao G2</title>
+<meta content="Molde capa com capuz desenhado por código a partir da circunferência do seu pescoço: círculo completo ou meio círculo, capuz de 2 ou 3 peças, e a gola do capuz medida contra o decote da capa em cada tamanho. A4 com quadrado de teste, A0 para gráfica, projetor, PP ao G2 ou as suas medidas." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/pt/apps/molde-capa-com-capuz/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main>
+<header>
+<p class="kicker">Molde de costura de capa · traçado por código, não pintado por um gerador de imagens</p>
+<h1>Molde capa com capuz PDF – A4 e A0 · projetor · PP ao G2</h1>
+<p class="lede">Exemplo (inventado): tamanho M, círculo completo, até o chão, 135 cm. O código mede a gola do capuz em 50,0 cm e o decote da capa em 50,0 cm, 0,0 mm de diferença, antes de você cortar 6,3 m de tecido. Uma avaliação de outro molde de capa diz: «The neck part is way too big» (a parte do pescoço ficou grande demais). Isso só aparece quando o tecido já foi cortado.</p>
+</header>
+<section aria-live="polite" class="result" data-yj="result" id="out">
+<div class="big">
+<div><span class="num" id="r_hood">50,0 cm</span><span class="lab">Gola do capuz</span></div>
+<div><span class="num" id="r_cloak">50,0 cm</span><span class="lab">Decote da capa</span></div>
+<div><span class="num" id="r_diff">0,0 mm</span><span class="lab">Diferença · <b class="ok" id="r_ok">as peças encaixam</b></span></div>
+</div>
+<div class="small">
+<div><span class="num2" id="r_fabric">6,3 m</span><span class="lab" id="r_fabric_note">de tecido com 1,50 m de largura</span></div>
+<div><span class="num2" id="r_pages">7 páginas A4</span><span class="lab">para imprimir, com mapa de páginas, sem folhas em branco</span></div>
+<div><span class="num2" id="r_hem">135 cm</span><span class="lab">a medir a partir da costura do decote para marcar a barra</span></div>
+<div><span class="num2" id="r_panels">4 peças, círculo completo + capuz de 2 peças</span></div>
+</div>
+<div class="pieces" id="pieces"></div>
+<p class="cap">Peças para estas medidas, desenhadas por código. Preto = linha de corte, azul tracejado = linha de costura (margem de 1,5 cm incluída), laranja = piques.</p>
+</section>
+<p class="paidline" id="paidline">O molde para imprimir: PDF A4 com quadrado de teste e mapa de páginas, A0 para gráfica (plotter), arquivo para projetor, os 7 tamanhos ou as suas próprias medidas e instruções de costura em 8 passos: <b>US$ 7,99, pagamento único</b>. <a class="buy" data-fe-hidden="" hidden=""></a></p>
+<section aria-label="Suas medidas" class="form">
+<h2>Suas medidas</h2>
+<div class="grid">
+<label>Tamanho
+      <select data-k="size" data-yj-mine="" id="size">
+<option value="PP">PP (pescoço 34 cm)</option><option value="P">P (pescoço 36 cm)</option>
+<option selected="" value="M">M (pescoço 38 cm)</option><option value="G">G (pescoço 40 cm)</option>
+<option value="GG">GG (pescoço 42 cm)</option><option value="G1">G1 (pescoço 44 cm)</option>
+<option value="G2">G2 (pescoço 46 cm)</option><option value="custom">Minha própria medida de pescoço</option>
+</select></label>
+<label>Circunferência na base do pescoço (cm)<input data-k="neck" data-yj-mine="" id="neck" step="0.5" type="number" value="38"/></label>
+<label>Comprimento (cm)<input data-k="length" data-yj-mine="" id="length" step="1" type="number" value="135"/></label>
+<label>Capa
+      <select data-k="circle" id="circle"><option selected="" value="full">Círculo completo (4 peças)</option><option value="half">Meio círculo (2 peças)</option></select></label>
+<label>Capuz
+      <select data-k="hood" id="hoodtype"><option selected="" value="2">2 peças (costura central curva)</option><option value="3">3 peças (com faixa central)</option></select></label>
+<label>Largura do tecido (cm)<input data-k="fabric" id="fabric" step="5" type="number" value="150"/></label>
+</div>
+<div hidden="" id="customrow"><label>Altura do capuz, do pescoço ao topo da cabeça (cm)<input id="hoodh" step="0.5" type="number" value="38"/></label></div>
+<p class="err" id="err"></p>
+<details><summary>Sem fita métrica? Calcule o comprimento pela sua altura</summary>
+<p><label>Altura (cm) <input id="height" type="number" value="165"/></label>
+<select id="lenpick"><option value="hip">até o quadril</option><option value="knee">até o joelho</option><option value="calf">até a meia canela</option><option selected="" value="floor">até o chão</option></select>
+<button id="est" type="button">Calcular</button></p>
+<p class="small-note" id="estout">Estimativa por proporções do corpo. O certo é medir nas costas, a partir da base do pescoço.</p>
+</details>
+<h3>Conferência do código</h3>
+<table id="checks"></table>
+<h3>Corte</h3>
+<ul id="cutlist"></ul>
+</section>
+<section class="files" id="paid">
+<h2>Imprimir</h2>
+<p>Cada arquivo A4 começa com um mapa de páginas e um quadrado de teste de 10 cm que você mede primeiro.</p>
+<div class="dl">
+<button data-get="A4" type="button">Molde A4 (PDF)</button>
+<button data-get="A0" type="button">A0 para gráfica / plotter (PDF)</button>
+<button data-get="projector" type="button">Projetor (PDF)</button>
+<button data-get="guide" type="button">Instruções de costura (PDF)</button>
+</div>
+<p class="small-note" id="paywhy"></p>
+<div class="lock">
+<p>Os downloads abrem com a chave que você recebe depois da compra (US$ 7,99, pagamento único, <a data-fe-hidden="" hidden=""></a>). Já comprou?</p>
+<p><input autocomplete="off" data-fe-hidden="" hidden="" id="key"/> <button data-fe-hidden="" hidden="" id="keybtn" type="button"></button> <span id="keystate"></span></p>
+</div>
+</section>
+<section class="why">
+<h2>O que vem no molde</h2>
+<ul>
+<li>7 tamanhos, do PP ao G2, ou a sua própria medida de pescoço e o seu comprimento: as peças são redesenhadas para você.</li>
+<li>Capa de círculo completo ou meio círculo, capuz de 2 ou de 3 peças. 4 variações em cada tamanho.</li>
+<li>Arquivo A4 para impressora comum, com mapa de páginas: nome do quadro (A1, A2, B1...) em cada folha e nenhuma folha em branco.</li>
+<li>Arquivo A0 para levar à gráfica (plotter) e um arquivo para projetor, uma página por tamanho em escala 1:1.</li>
+<li>Instruções de costura em português, 8 passos, com desenhos de linhas feitos a partir das peças reais. Não há fotos de uma capa costurada: são desenhos.</li>
+<li>Tabela de tecido para 4 comprimentos. A barra você marca com a fita métrica a partir da costura do decote: assim imprime só a parte do decote, e não um quarto de círculo de 1,4 m.</li>
+</ul>
+<h2>Por que não um molde grátis?</h2>
+<p>Os moldes e vídeos grátis de capa costumam trazer um tamanho só e deixam você traçar o círculo e o capuz à mão, com régua e barbante. Aqui o capuz e o decote são medidos um contra o outro em cada tamanho e variação, e o quadrado de teste da página 1 mostra se a impressora está imprimindo na escala certa.</p>
+<h2>Perguntas</h2>
+<dl>
+<dt>Qual a diferença para um molde feito com IA?</dt><dd>Cada linha é calculada a partir das suas medidas: o decote é um arco de círculo com comprimento exato, a gola do capuz é resolvida para o mesmo comprimento e depois as duas são medidas e mostradas acima.</dd>
+<dt>A margem de costura está incluída?</dt><dd>Sim, 1,5 cm em cada costura e 2,5 cm na barra. A linha azul tracejada de cada peça é a linha de costura.</dd>
+<dt>Alguém já costurou uma capa com este molde?</dt><dd>Não há peça-piloto costurada. As peças são traçadas e conferidas por código; as instruções usam desenhos de linhas e dizem isso.</dd>
+</dl>
+</section>
+<footer><p>Molde capa com capuz · arquivos PDF digitais, nada é enviado pelo correio.</p></footer>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Salvar e continuar: <a href="https://getreadystack.com/pt/apps/molde-capa-com-capuz/">https://getreadystack.com/pt/apps/molde-capa-com-capuz/</a></p><script src="./cloak.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
