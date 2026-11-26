@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Umhang Kapuze Schnittmuster – PDF, A4 + A0 Copyshop, XS–3XL</title>
+<meta content="Umhang Kapuze Schnittmuster, vom Code aus deinem Halsumfang gezeichnet: Vollkreis oder Halbkreis, Kapuze 2- oder 3-teilig, Halsnaht der Kapuze und Halsausschnitt des Umhangs gegeneinander gemessen. A4 mit Testquadrat, A0 Copyshop, Beamer, XS bis 3XL oder eigene Maße." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/de/apps/umhang-kapuze-schnittmuster/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main>
+<header>
+<p class="kicker">Schnittmuster Umhang mit Kapuze · vom Code konstruiert, nicht von einem Bildgenerator gemalt</p>
+<h1>Umhang Kapuze Schnittmuster – PDF, A4 + A0 Copyshop, XS–3XL</h1>
+<p class="lede">Beispiel (ausgedacht): Größe M, Vollkreis, bodenlang 135 cm. Der Code misst die Halsnaht der Kapuze mit 50,0 cm und den Halsausschnitt des Umhangs mit 50,0 cm, 0,0 mm Unterschied, bevor du 6,3 m Stoff zuschneidest. In einer Bewertung zu einem anderen Schnitt steht: „The neck part is way too big“ (der Halsteil ist viel zu groß). Das merkt man erst, wenn der Stoff schon geschnitten ist.</p>
+</header>
+<section aria-live="polite" class="result" data-yj="result" id="out">
+<div class="big">
+<div><span class="num" id="r_hood">50,0 cm</span><span class="lab">Halsnaht Kapuze</span></div>
+<div><span class="num" id="r_cloak">50,0 cm</span><span class="lab">Halsausschnitt Umhang</span></div>
+<div><span class="num" id="r_diff">0,0 mm</span><span class="lab">Unterschied · <b class="ok" id="r_ok">Teile passen</b></span></div>
+</div>
+<div class="small">
+<div><span class="num2" id="r_fabric">6,3 m</span><span class="lab" id="r_fabric_note">Stoff, 150 cm breit</span></div>
+<div><span class="num2" id="r_pages">7 Seiten A4</span><span class="lab">zum Drucken, mit Seitenplan, leere Seiten weggelassen</span></div>
+<div><span class="num2" id="r_hem">135 cm</span><span class="lab">ab der Halsnaht abmessen, um den Saum anzuzeichnen</span></div>
+<div><span class="num2" id="r_panels">4 Teile, Vollkreis + Kapuze 2-teilig</span></div>
+</div>
+<div class="pieces" id="pieces"></div>
+<p class="cap">Schnittteile für diese Maße, vom Code gezeichnet. Schwarz = Schnittlinie, blau gestrichelt = Nahtlinie (1,5 cm Nahtzugabe enthalten), orange = Passzeichen.</p>
+</section>
+<p class="paidline" id="paidline">Das druckbare Schnittmuster: A4-PDF mit 10-cm-Testquadrat und Seitenplan, A0 für den Copyshop, Beamer-Datei, alle 7 Größen oder deine eigenen Maße und eine Nähanleitung in 8 Schritten: <b>7,99 US$ einmalig</b>. <a class="buy" data-fe-hidden="" hidden=""></a></p>
+<section aria-label="Deine Maße" class="form">
+<h2>Deine Maße</h2>
+<div class="grid">
+<label>Größe
+      <select data-k="size" data-yj-mine="" id="size">
+<option value="XS">XS (Hals 34 cm)</option><option value="S">S (Hals 36 cm)</option>
+<option selected="" value="M">M (Hals 38 cm)</option><option value="L">L (Hals 40 cm)</option>
+<option value="XL">XL (Hals 42 cm)</option><option value="2XL">2XL (Hals 44 cm)</option>
+<option value="3XL">3XL (Hals 46 cm)</option><option value="custom">Mein eigener Halsumfang</option>
+</select></label>
+<label>Halsumfang am Ansatz (cm)<input data-k="neck" data-yj-mine="" id="neck" step="0.5" type="number" value="38"/></label>
+<label>Länge (cm)<input data-k="length" data-yj-mine="" id="length" step="1" type="number" value="135"/></label>
+<label>Umhang
+      <select data-k="circle" id="circle"><option selected="" value="full">Vollkreis (4 Teile)</option><option value="half">Halbkreis (2 Teile)</option></select></label>
+<label>Kapuze
+      <select data-k="hood" id="hoodtype"><option selected="" value="2">2-teilig (runde Mittelnaht)</option><option value="3">3-teilig (mit Mittelstreifen)</option></select></label>
+<label>Stoffbreite (cm)<input data-k="fabric" id="fabric" step="5" type="number" value="150"/></label>
+</div>
+<div hidden="" id="customrow"><label>Kapuzenhöhe, Halsnaht bis Scheitel (cm)<input id="hoodh" step="0.5" type="number" value="38"/></label></div>
+<p class="err" id="err"></p>
+<details><summary>Kein Maßband da? Länge aus der Körpergröße schätzen</summary>
+<p><label>Körpergröße (cm) <input id="height" type="number" value="165"/></label>
+<select id="lenpick"><option value="hip">bis zur Hüfte</option><option value="knee">bis zum Knie</option><option value="calf">bis zur Wadenmitte</option><option selected="" value="floor">bis zum Boden</option></select>
+<button id="est" type="button">Schätzen</button></p>
+<p class="small-note" id="estout">Schätzung aus Körperproportionen. Sicher ist: hinten vom Halsansatz aus messen.</p>
+</details>
+<h3>Prüfung durch den Code</h3>
+<table id="checks"></table>
+<h3>Zuschnitt</h3>
+<ul id="cutlist"></ul>
+</section>
+<section class="files" id="paid">
+<h2>Drucken</h2>
+<p>Jede A4-Datei beginnt mit einem Seitenplan und einem Testquadrat, das du zuerst nachmisst.</p>
+<div class="dl">
+<button data-get="A4" type="button">Schnittmuster A4 (PDF)</button>
+<button data-get="A0" type="button">A0 Copyshop (PDF)</button>
+<button data-get="projector" type="button">Beamer (PDF)</button>
+<button data-get="guide" type="button">Nähanleitung (PDF)</button>
+</div>
+<p class="small-note" id="paywhy"></p>
+<div class="lock">
+<p data-fe-hidden="" hidden=""><a data-fe-hidden="" hidden=""></a></p>
+<p><input autocomplete="off" data-fe-hidden="" hidden="" id="key"/> <button data-fe-hidden="" hidden="" id="keybtn" type="button"></button> <span id="keystate"></span></p>
+</div>
+</section>
+<section class="why">
+<h2>Was drin ist</h2>
+<ul>
+<li>7 Größen von XS bis 3XL oder dein eigener Halsumfang und deine Länge: die Teile werden für deine Maße neu gezeichnet.</li>
+<li>Umhang als Vollkreis oder Halbkreis, Kapuze 2-teilig oder 3-teilig. 4 Varianten in jeder Größe.</li>
+<li>A4-Dateien mit Seitenplan: Feldname (A1, A2, B1 ...) auf jeder Seite, keine leeren Seiten.</li>
+<li>A0-Datei für den Copyshop und eine Beamer-Datei, eine Seite pro Größe im Maßstab 1:1.</li>
+<li>Nähanleitung auf Deutsch, 8 Schritte, mit Strichzeichnungen aus den echten Schnittteilen. Keine Fotos eines genähten Musters: es sind Zeichnungen.</li>
+<li>Stofftabelle für 4 Längen. Den Saum misst du mit dem Maßband ab der Halsnaht ab, so druckst du den Halsteil und nicht 1,4 m Viertelkreis.</li>
+</ul>
+<h2>Warum nicht eine kostenlose Anleitung?</h2>
+<p>Kostenlose Anleitungen geben meist eine Einheitsgröße und lassen dich Kreis und Kapuze selbst konstruieren. Hier werden Kapuze und Halsausschnitt in jeder Größe und Variante gegeneinander gemessen, und das Testquadrat auf Seite 1 zeigt, ob der Drucker im richtigen Maßstab druckt.</p>
+<h2>Fragen</h2>
+<dl>
+<dt>Was ist anders als bei KI-Schnittmustern?</dt><dd>Jede Linie wird aus deinen Maßen berechnet: der Halsausschnitt ist ein Kreisbogen mit genauer Länge, die Halsnaht der Kapuze wird auf dieselbe Länge gelöst, dann werden beide gemessen und oben angezeigt.</dd>
+<dt>Ist die Nahtzugabe enthalten?</dt><dd>Ja, 1,5 cm an jeder Naht und 2,5 cm am Saum. Die blau gestrichelte Linie auf jedem Teil ist die Nahtlinie.</dd>
+<dt>Wurde ein Umhang danach genäht?</dt><dd>Es gibt kein genähtes Muster. Die Teile sind vom Code konstruiert und geprüft; die Anleitung nutzt Strichzeichnungen und sagt das auch.</dd>
+</dl>
+</section>
+<footer><p>Umhang Kapuze Schnittmuster · digitale PDF-Dateien, es wird nichts verschickt.</p></footer>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Speichern und weitermachen: <a href="https://getreadystack.com/de/apps/umhang-kapuze-schnittmuster/">https://getreadystack.com/de/apps/umhang-kapuze-schnittmuster/</a></p><script src="./cloak.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
