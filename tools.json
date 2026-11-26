@@ -355,10 +355,12 @@
   {
    "id": "596196f96c",
    "name": {
-    "en": "Zipper Pouch pattern — boxed or flat, 4 sizes + your own"
+    "en": "Zipper Pouch pattern — boxed or flat, 4 sizes + your own",
+    "es": "Patrón neceser con cremallera – 4 tallas y tabla de corte"
    },
    "tools": [
-    "zipper-pouch-pattern"
+    "zipper-pouch-pattern",
+    "patron-neceser-con-cremallera"
    ]
   },
   {
@@ -626,6 +628,11 @@
    "lang": "es",
    "name": "Precio cartas Pokémon: Cardmarket en €, colección y avisos al abrir la página",
    "hub": "https://getreadystack.com/es/apps/precio-cartas-pokemon/"
+  },
+  "patron-neceser-con-cremallera": {
+   "lang": "es",
+   "name": "Patrón neceser con cremallera – 4 tallas y tabla de corte",
+   "hub": "https://getreadystack.com/es/apps/patron-neceser-con-cremallera/"
   }
  }
 }

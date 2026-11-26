@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Patrón neceser con cremallera – con fondo o plano, 4 tallas + tus medidas, tabla de corte y tela para tu tanda</title>
+<meta content="Patrón de neceser con cremallera trazado por código: con fondo o plano, tallas S a XL o tus propias medidas. Tabla de corte en cm, bloque para acolchar, largo de cremallera y la tela que comprar para todos los neceseres que vayas a coser. PDF en A4, Carta, A0 y proyector." name="description"/>
+<link href="/es/apps/patron-neceser-con-cremallera/" hreflang="es" rel="alternate"/>
+<link href="/apps/zipper-pouch-pattern/" hreflang="en" rel="alternate"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/es/apps/patron-neceser-con-cremallera/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main>
+<header>
+<p class="kicker">Patrón de costura de neceser · trazado por código, medido antes de cortar · <a href="/apps/zipper-pouch-pattern/" hreflang="en" lang="en">English</a></p>
+<h1>Patrón neceser con cremallera – con fondo o plano, 4 tallas + tus medidas</h1>
+<p class="lede">Ejemplo (inventado): 6 neceseres M acolchados de 20 × 12 × 6 cm para regalar piden 1,0 m de tela exterior de 110 cm, no 0,7 m. Si cortas las piezas a medida antes de acolchar, se quedan cortas y esa tela queda perdida; si compras para piezas lisas, te faltan 0,3 m (4,20 € a un precio inventado de 14,00 € el metro). El motivo: cada pieza se corta 2,5 cm más grande por cada lado y se recorta después de acolchar.</p>
+</header>
+<section aria-live="polite" class="result" data-yj="result" id="out">
+<div class="big">
+<div><span class="num" id="r_cut">28,0 × 17,0 cm</span><span class="lab" id="r_cut_in">medida de corte de la pieza, cortar 2 (11 × 6 3/4 pulg.)</span></div>
+<div><span class="num" id="r_corner">3,0 cm</span><span class="lab" id="r_corner_lab">cuadrado que se recorta en las dos esquinas de abajo</span></div>
+<div><span class="num" id="r_zip">30 cm</span><span class="lab" id="r_zip_lab">cremallera cerrada (12 pulg.), o 34,0 cm de cremallera por metros</span></div>
+</div>
+<div class="small">
+<div><span class="num2" id="r_ext">1,0 m</span><span class="lab" id="r_ext_lab">de tela exterior para 6 neceseres, de 110 cm de ancho</span></div>
+<div><span class="num2" id="r_lin">0,7 m</span><span class="lab" id="r_lin_lab">de forro para 6 neceseres</span></div>
+<div><span class="num2" id="r_fq">2 piezas</span><span class="lab" id="r_fq_lab">por fat quarter de 45 × 55 cm (1 neceser)</span></div>
+<div><span class="num2" id="r_fin">20 × 12 × 6 cm</span><span class="lab" id="r_fin_lab">acabado, medido otra vez sobre la pieza dibujada</span></div>
+</div>
+<div class="pieces" id="pieces"></div>
+<p class="cap">La pieza de estas medidas, dibujada por código. Negro = línea de corte, azul discontinuo = línea de costura (margen de 1 cm incluido), naranja = marcas de centro y el hueco para dar la vuelta al forro.</p>
+</section>
+<p class="paidline" id="paidline">El patrón para imprimir añade los PDF en A4 y Carta con cuadrado de prueba de 10 cm / 4 pulg. y mapa de páginas, el A0 para copistería, el archivo para proyector, la tabla de corte de todas las tallas e instrucciones de costura en 8 pasos, de la S a la XL o con tus medidas: <b>6,00 US$, pago único</b>. <a class="buy" data-fe-hidden="" hidden=""></a></p>
+<section aria-label="Tu neceser" class="form">
+<h2>Tu neceser</h2>
+<fieldset class="grid">
+<label>Talla
+      <select data-k="size" data-yj-mine="" id="size">
+<option value="S">S · 12 × 8 × 4 cm · monedas, auriculares</option>
+<option selected="" value="M">M · 20 × 12 × 6 cm · lápices, maquillaje</option>
+<option value="L">L · 25 × 15 × 8 cm · aseo, cosméticos</option>
+<option value="XL">XL · 30 × 18 × 10 cm · viaje</option>
+<option value="custom">Mis propias medidas</option>
+</select></label>
+<label>Forma
+      <select data-k="style" id="style"><option selected="" value="boxed">Con fondo (esquinas recortadas)</option><option value="flat">Plano</option></select></label>
+<label>Relleno
+      <select data-k="layer" id="layer"><option selected="" value="quilted">Acolchado (guata)</option><option value="fleece">Guata termoadhesiva</option><option value="none">Nada, neceser blandito</option></select></label>
+<label>Cuántos neceseres<input data-k="count" data-yj-mine="" id="count" max="200" min="1" step="1" type="number" value="6"/></label>
+<label>Ancho de la tela
+      <select data-k="width" id="width"><option selected="" value="1100">110 cm, algodón de patchwork</option><option value="1400">140 cm</option><option value="1500">150 cm</option></select></label>
+<label>Forro
+      <select data-k="lining" id="lining"><option selected="" value="yes">Con forro</option><option value="no">Sin forro</option></select></label>
+</fieldset>
+<fieldset class="grid" hidden="" id="customrow">
+<label>Ancho acabado (cm)<input data-k="cw" id="cw" step="0.5" type="number" value="20"/></label>
+<label>Alto acabado (cm)<input data-k="ch" id="ch" step="0.5" type="number" value="12"/></label>
+<label>Fondo, con fondo (cm)<input data-k="cd" id="cd" step="0.5" type="number" value="6"/></label>
+</fieldset>
+<p class="err" id="err"></p>
+<h3>Tabla de corte de tu neceser</h3>
+<table class="chart" id="chart"></table>
+<h3>Tela que comprar</h3>
+<table id="fabric"></table>
+<h3>Comprueba que el código ha medido bien</h3>
+<table id="checks"></table>
+<h3>Lo que te cuesta la tela</h3>
+<p class="small-note">Los precios de ejemplo son inventados. Escribe lo que cobra tu mercería por metro y por cremallera.</p>
+<fieldset class="grid cost">
+<label>Tela exterior, por metro<input data-k="p_ext" id="p_ext" step="0.01" type="number" value="14.00"/></label>
+<label>Forro, por metro<input data-k="p_lin" id="p_lin" step="0.01" type="number" value="10.00"/></label>
+<label>Guata, por metro<input data-k="p_pad" id="p_pad" step="0.01" type="number" value="8.00"/></label>
+<label>Cremallera, cada una<input data-k="p_zip" id="p_zip" step="0.01" type="number" value="1.50"/></label>
+</fieldset>
+<p id="costout"></p>
+</section>
+<section class="files" id="paid">
+<h2>Imprímelo</h2>
+<p>Cada archivo para imprimir en casa empieza con un cuadrado de prueba que mides antes, un mapa de páginas y la tabla de corte de esa talla. Las tallas S y M caben en una sola hoja A4.</p>
+<div class="dl">
+<button data-get="A4" type="button">Patrón en PDF A4</button>
+<button data-get="Letter" type="button">Patrón en PDF Carta</button>
+<button data-get="A0" type="button">PDF A0 para copistería</button>
+<button data-get="projector" type="button">PDF para proyector</button>
+<button data-get="chart" type="button">PDF tabla de corte, todas las tallas</button>
+<button data-get="guide" type="button">PDF instrucciones de costura</button>
+</div>
+<p class="small-note" id="paywhy"></p>
+<div class="lock">
+<p>Las descargas se abren con la clave que recibes al pagar (6,00 US$, pago único, en <a data-fe-hidden="" hidden=""></a>). ¿Ya la tienes?</p>
+<p><input autocomplete="off" data-fe-hidden="" hidden="" id="key"/> <button data-fe-hidden="" hidden="" id="keybtn" type="button"></button> <span id="keystate"></span></p>
+</div>
+</section>
+<section class="why">
+<h2>Qué incluye</h2>
+<ul>
+<li>4 tallas, de la S a la XL, con fondo o planas, o tu propio ancho, alto y fondo: la pieza se vuelve a dibujar con tus medidas.</li>
+<li>Una tabla de corte en cm (y pulgadas) para cada capa: tela exterior, forro, bloque para acolchar, guata, guata termoadhesiva, presilla y cremallera.</li>
+<li>La tela que comprar para todos los neceseres que vayas a coser, y cuántas piezas salen de un fat quarter.</li>
+<li>PDF en A4 y Carta con cuadrado de prueba, mapa de páginas y la tabla en la página 1; un A0 para copistería con todas las tallas; un archivo para proyector.</li>
+<li>Instrucciones escritas en 8 pasos, con dibujos hechos a partir de las piezas reales. No hay fotos de un neceser cosido: son dibujos.</li>
+</ul>
+<h2>¿Por qué no un tutorial gratis?</h2>
+<p>Un tutorial gratis te da una talla y una lista de tela. Aquí cada talla, y la tuya, trae la medida de corte de cada capa, el bloque para acolchar, la cremallera que comprar y la tela para toda la tanda, medido por código antes de que cortes.</p>
+<h2>Preguntas</h2>
+<dl>
+<dt>¿Tengo que imprimir algo?</dt><dd>No. Todas las piezas son rectángulos con recortes cuadrados, así que con la tabla puedes cortar con regla. La pieza impresa ayuda si te gusta tener plantilla de papel, y lleva marcado el hueco para dar la vuelta.</dd>
+<dt>¿Lleva el margen de costura incluido?</dt><dd>Sí, 1 cm en todos los bordes de la pieza. La línea azul discontinua es la línea de costura, y la tabla dice qué capas se cortan sin margen.</dd>
+<dt>¿Se ha cosido un neceser con este patrón?</dt><dd>No se muestra ninguno cosido. Las piezas están trazadas y comprobadas por código; las instrucciones llevan dibujos, marcados como dibujos.</dd>
+</dl>
+</section>
+<footer><p>Patrón de costura de neceser con cremallera · archivos PDF digitales, no se envía nada por correo.</p></footer>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Guardar y continuar: <a href="https://getreadystack.com/es/apps/patron-neceser-con-cremallera/">https://getreadystack.com/es/apps/patron-neceser-con-cremallera/</a></p><script src="./pouch.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
