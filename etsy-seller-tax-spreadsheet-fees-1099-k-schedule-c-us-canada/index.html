@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Etsy seller tax spreadsheet — fees, 1099-K &amp; Schedule C (US · Canada T2125 · UK)</title>
+<meta content="Etsy seller tax spreadsheet: drop your Etsy monthly statement CSVs and see every fee by type, why your deposits are smaller than your sales, and your Schedule C lines (US), T2125 lines (Canada) or SA103S boxes (UK). Free on screen, read in your browser." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/apps/etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<header class="top">
+<h1>Etsy seller tax spreadsheet — fees, 1099-K &amp; Schedule C (US · Canada T2125 · UK)</h1>
+<p class="lede"><b>Made-up example</b> (the shop below): 12 Etsy statements for 2026 show <b>$20,160.00</b> in sales, but only <b>$12,804.90</b> reached the bank. Etsy kept <b>$6,269.70</b> in fees, ads, shipping labels and money sent back to buyers. Each dollar has its Schedule C line; leave them off and you overpay tax on $6,269.70 you never kept.</p>
+<p class="sub">Templates make you paste reports into tabs and sort them by hand. Here you drop the statement files Etsy gives you and the lines fill in at once: Schedule C for the US, T2125 for Canada, SA103S for the UK, with the IRS, CRA and GOV.UK pages read on 26 Nov 2026. UK returns for 2025 to 2026 are due online by 31 January 2027.</p>
+</header>
+<main class="wrap">
+<section aria-live="polite" class="card res" data-yj="result" id="out"></section>
+<p class="upsell" data-fe-hidden="" hidden="" id="upsell"><b></b><a class="btn small"></a></p>
+<section class="card" id="inputs">
+<h2>Your Etsy statements</h2>
+<div class="grid">
+<label>Where your Etsy payment account is
+      <select data-k="" id="country">
+<option selected="" value="us">United States: Schedule C</option>
+<option value="ca">Canada: T2125</option>
+<option value="uk">United Kingdom: SA103S</option>
+</select></label>
+<label>Tax year
+      <select data-k="" id="year"><option selected="" value="2026">Year 2026</option></select></label>
+</div>
+<div class="drop" id="drop">
+<b>Drop your monthly statement CSVs here</b>
+<span>All the months of the year at once is fine. A file added twice is counted once.</span>
+<label class="filebtn">Choose files<input accept=".csv,text/csv" data-yj-mine="" id="files" multiple="" type="file"/></label>
+</div>
+<p class="hint" id="filelist"></p>
+<label class="wide">Or paste one statement (open the CSV, select all, copy, paste)
+    <textarea data-k="" data-yj-mine="" id="paste" placeholder="Date,Type,Title,Info,Currency,Amount,Fees &amp; Taxes,Net" rows="3"></textarea></label>
+<div class="grid">
+<label>Your own costs outside Etsy <small>optional</small>
+<input data-k="" data-yj-mine="" id="own" inputmode="decimal" min="0" placeholder="0.00" step="0.01" type="number"/></label>
+<label id="k1099row">Box 1a of your 1099-K <small>optional</small>
+<input data-k="" data-yj-mine="" id="box1a" inputmode="decimal" min="0" placeholder="0.00" step="0.01" type="number"/></label>
+</div>
+<p class="btns"><button class="btn" id="mine">Use my own statements</button> <button class="btn ghost" id="example">Show the example</button></p>
+<p class="hint">Read in your browser: nothing you add is uploaded. <button class="linkbtn" id="dlsample">Download one made-up statement</button> to see the layout.</p>
+</section>
+</main>
+<div class="wrap1">
+<section class="card paid" data-fe-hidden="" hidden="" id="pro"><h2></h2><p></p><ul><li><b></b></li><li><b></b></li><li><b></b></li></ul><p class="price"></p><p class="btns"><a class="btn" data-fe-hidden="" hidden=""></a></p><div class="row"><label data-fe-hidden="" hidden=""><input id="key"/></label><button class="btn ghost" data-fe-hidden="" hidden="" id="unlock"></button></div><p class="hint" data-fe-hidden="" hidden="" id="keymsg" role="status"></p><p class="btns"><button class="btn" id="getbook"></button><button class="btn ghost" id="getprint"></button><button class="btn ghost" id="getsave"></button></p><p class="hint" id="bookwhat"></p><div data-fe-hidden="" hidden="" id="proarea"><h3></h3><div id="years"></div></div></section>
+<section class="card" id="how">
+<h2>Where the statement files are</h2>
+<ol>
+<li>On Etsy.com open <b>Shop Manager</b>, then <b>Finances</b>, then <b>Monthly statements</b>.</li>
+<li>Pick a month and press <b>Download CSV</b>. Do it for each month of the year.</li>
+<li>Drop all the files on the box above. UK sellers: add both April statements; lines before 6 April and after 5 April are left out by date.</li>
+</ol>
+<p class="hint">The 1099-K shows the gross: the IRS says box 1a reports the total, or gross, dollar amount of payments. Your deposits are what is left after Etsy takes its fees, ads, labels and the money it sends back to buyers. That difference is what the lines on the left put back in your books. In the made-up example: $857.00 sent back to buyers (line 2), $897.60 of Etsy Ads and Offsite Ads (line 8), $2,214.30 of Etsy fees (line 10) and $2,300.80 of shipping labels (line 18), together $6,269.70, with $1,085.40 still in the Etsy balance on 31 December.</p>
+</section>
+<section class="card" id="rules">
+<h2>The official pages behind each line (read 26 Nov 2026)</h2>
+<h3>United States</h3>
+<ul class="src">
+<li><a href="https://www.irs.gov/pub/irs-pdf/f1040sc.pdf" rel="nofollow noopener">IRS, Schedule C (Form 1040)</a>: line 1 gross receipts or sales, line 2 returns and allowances, line 8 advertising, line 10 commissions and fees, line 18 office expense. These are the line numbers of the 2025 form, the newest one published; check them on the 2026 form when it comes out.</li>
+<li><a href="https://www.irs.gov/instructions/i1040sc" rel="nofollow noopener">IRS, Instructions for Schedule C</a>, line 18: "Include on this line your expenses for office supplies and postage."</li>
+<li><a href="https://www.irs.gov/businesses/understanding-your-form-1099-k" rel="nofollow noopener">IRS, Understanding your Form 1099-K</a>: an online marketplace sends one when your payments total over $20,000 in more than 200 transactions, and "you must report all income on your tax return" either way.</li>
+</ul>
+<h3>Canada</h3>
+<ul class="src">
+<li><a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4002/t4002-4.html" rel="nofollow noopener">CRA, guide T4002, chapter 4</a>: amount 3A, gross sales, commissions or fees (including GST/HST collected or collectible), and line 8000.</li>
+<li><a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4002/t4002-5.html" rel="nofollow noopener">CRA, guide T4002, chapter 5</a>: line 8521 advertising, line 8871 management and administration fees including bank charges, line 9270 other expenses, line 9275 delivery, freight and express.</li>
+<li><a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html" rel="nofollow noopener">CRA, when to register for the GST/HST</a>: a small supplier stays at or under $30,000 over four consecutive calendar quarters.</li>
+</ul>
+<h3>United Kingdom</h3>
+<ul class="src">
+<li><a href="https://assets.publishing.service.gov.uk/media/69c12ae013101e9908704a53/SA103S-2026.pdf" rel="nofollow noopener">HMRC, SA103S Self-employment (short), 6 April 2025 to 5 April 2026</a>: box 9 turnover, box 10.1 trading income allowance, box 17 interest and bank and credit card financial charges, box 18 phone, fax, stationery and other office costs, box 19 other allowable business expenses, box 20 total allowable expenses.</li>
+<li><a href="https://assets.publishing.service.gov.uk/media/69ce15395cf899414a0bc69f/SA103S_Notes_2026.pdf" rel="nofollow noopener">HMRC, SA103S notes</a>: postage is an allowable expense, and with turnover below £90,000 you may put just the total in box 20.</li>
+<li><a href="https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income" rel="nofollow noopener">GOV.UK, the trading allowance</a>: up to £1,000 a year, and you cannot deduct other expenses if you claim it.</li>
+<li><a href="https://www.gov.uk/self-assessment-tax-returns/deadlines" rel="nofollow noopener">GOV.UK, Self Assessment deadlines</a>: the online return and the payment for 2025 to 2026 by 11:59pm on 31 January 2027.</li>
+<li><a href="https://www.gov.uk/guidance/selling-goods-or-services-on-a-digital-platform" rel="nofollow noopener">GOV.UK, selling on a digital platform</a>: platforms report your details and your sales income to HMRC.</li>
+</ul>
+</section>
+<section class="card" id="not">
+<h2>What it does, and what it does not</h2>
+<ul>
+<li>It sorts the lines of your own Etsy statements and adds them up by the line of your form. It does not file anything and it is not tax advice: check each line with your tax preparer.</li>
+<li>It reads Etsy's monthly statement CSV. Sales on other sites, stock you bought, mileage and a home office go on the Other costs tab of the workbook, on the line you choose.</li>
+<li>It does not prepare GST/HST or VAT returns, and it does not work out the tax you owe.</li>
+<li>Not made by Etsy, Inc. Etsy is a trademark of Etsy, Inc.</li>
+</ul>
+</section>
+</div>
+<footer>Etsy seller tax spreadsheet · official pages read 26 Nov 2026 · runs in your browser · no account</footer>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Save and continue: <a href="https://getreadystack.com/apps/etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/">https://getreadystack.com/apps/etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/</a></p><script src="./engine.js"></script>
+<script src="./xlsx.js"></script>
+<script src="./book.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

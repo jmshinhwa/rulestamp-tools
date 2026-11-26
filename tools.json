@@ -333,6 +333,15 @@
    "tools": [
     "pricing-calculator-for-laser-engraving"
    ]
+  },
+  {
+   "id": "3e11b1e58d",
+   "name": {
+    "en": "Etsy seller tax spreadsheet — fees, 1099-K & Schedule C (US · Canada T2125 · UK)"
+   },
+   "tools": [
+    "etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada"
+   ]
   }
  ],
  "tools": {
@@ -570,6 +579,11 @@
    "lang": "en",
    "name": "pricing calculator for laser engraving — job cost & profit tracker",
    "hub": "https://getreadystack.com/apps/pricing-calculator-for-laser-engraving/"
+  },
+  "etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada": {
+   "lang": "en",
+   "name": "Etsy seller tax spreadsheet — fees, 1099-K & Schedule C (US · Canada T2125 · UK)",
+   "hub": "https://getreadystack.com/apps/etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/"
   }
  }
 }

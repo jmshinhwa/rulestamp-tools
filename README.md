@@ -57,6 +57,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [Patrón capa con capucha – PDF A4, Carta y A0, tallas XS–3XL](patron-capa-con-capucha/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/patron-capa-con-capucha/) |
 | 〃 | [Molde capa com capuz – molde PDF traçado por código (A4, A0, projetor)](molde-capa-com-capuz/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/molde-capa-com-capuz/) |
 | pricing calculator for laser engraving — job cost & profit tracker | [pricing calculator for laser engraving — job cost & profit tracker](pricing-calculator-for-laser-engraving/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/pricing-calculator-for-laser-engraving/) |
+| Etsy seller tax spreadsheet — fees, 1099-K & Schedule C (US · Canada T2125 · UK) | [Etsy seller tax spreadsheet — fees, 1099-K & Schedule C (US · Canada T2125 · UK)](etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/) |
 
 <a id="de"></a>
 
@@ -111,6 +112,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [Patrón capa con capucha – PDF A4, Carta y A0, tallas XS–3XL](patron-capa-con-capucha/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/patron-capa-con-capucha/) |
 | 〃 | [Molde capa com capuz – molde PDF traçado por código (A4, A0, projetor)](molde-capa-com-capuz/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/molde-capa-com-capuz/) |
 | pricing calculator for laser engraving — job cost & profit tracker | [pricing calculator for laser engraving — job cost & profit tracker](pricing-calculator-for-laser-engraving/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/pricing-calculator-for-laser-engraving/) |
+| Etsy seller tax spreadsheet — fees, 1099-K & Schedule C (US · Canada T2125 · UK) | [Etsy seller tax spreadsheet — fees, 1099-K & Schedule C (US · Canada T2125 · UK)](etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/) |
 
 <a id="es"></a>
 
@@ -165,6 +167,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [Umhang Kapuze Schnittmuster – PDF, A4 + A0 Copyshop, XS–3XL](umhang-kapuze-schnittmuster/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/umhang-kapuze-schnittmuster/) |
 | 〃 | [Molde capa com capuz – molde PDF traçado por código (A4, A0, projetor)](molde-capa-com-capuz/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/molde-capa-com-capuz/) |
 | pricing calculator for laser engraving — job cost & profit tracker | [pricing calculator for laser engraving — job cost & profit tracker](pricing-calculator-for-laser-engraving/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/pricing-calculator-for-laser-engraving/) |
+| Etsy seller tax spreadsheet — fees, 1099-K & Schedule C (US · Canada T2125 · UK) | [Etsy seller tax spreadsheet — fees, 1099-K & Schedule C (US · Canada T2125 · UK)](etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/) |
 
 <a id="pt"></a>
 
@@ -219,6 +222,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [Umhang Kapuze Schnittmuster – PDF, A4 + A0 Copyshop, XS–3XL](umhang-kapuze-schnittmuster/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/umhang-kapuze-schnittmuster/) |
 | 〃 | [Patrón capa con capucha – PDF A4, Carta y A0, tallas XS–3XL](patron-capa-con-capucha/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/patron-capa-con-capucha/) |
 | pricing calculator for laser engraving — job cost & profit tracker | [pricing calculator for laser engraving — job cost & profit tracker](pricing-calculator-for-laser-engraving/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/pricing-calculator-for-laser-engraving/) |
+| Etsy seller tax spreadsheet — fees, 1099-K & Schedule C (US · Canada T2125 · UK) | [Etsy seller tax spreadsheet — fees, 1099-K & Schedule C (US · Canada T2125 · UK)](etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/) |
 
 <a id="ja"></a>
 
@@ -273,6 +277,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [Patrón capa con capucha – PDF A4, Carta y A0, tallas XS–3XL](patron-capa-con-capucha/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/patron-capa-con-capucha/) |
 | 〃 | [Molde capa com capuz – molde PDF traçado por código (A4, A0, projetor)](molde-capa-com-capuz/) (Português) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/molde-capa-com-capuz/) |
 | pricing calculator for laser engraving — job cost & profit tracker | [pricing calculator for laser engraving — job cost & profit tracker](pricing-calculator-for-laser-engraving/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/pricing-calculator-for-laser-engraving/) |
+| Etsy seller tax spreadsheet — fees, 1099-K & Schedule C (US · Canada T2125 · UK) | [Etsy seller tax spreadsheet — fees, 1099-K & Schedule C (US · Canada T2125 · UK)](etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/) |
 
 ---
 Rulestamp · https://getreadystack.com
