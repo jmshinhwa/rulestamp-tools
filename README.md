@@ -54,6 +54,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben | [ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben](aso-tool/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/aso-tool/) |
 | Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL) | [Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL)](sewing-pattern-hooded-cloak/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/sewing-pattern-hooded-cloak/) |
 | 〃 | [Umhang Kapuze Schnittmuster – PDF, A4 + A0 Copyshop, XS–3XL](umhang-kapuze-schnittmuster/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/umhang-kapuze-schnittmuster/) |
+| 〃 | [Patrón capa con capucha – PDF A4, Carta y A0, tallas XS–3XL](patron-capa-con-capucha/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/patron-capa-con-capucha/) |
 
 <a id="de"></a>
 
@@ -105,6 +106,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben | [ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben](aso-tool/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/aso-tool/) |
 | Umhang Kapuze Schnittmuster – PDF, A4 + A0 Copyshop, XS–3XL | [Umhang Kapuze Schnittmuster – PDF, A4 + A0 Copyshop, XS–3XL](umhang-kapuze-schnittmuster/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/umhang-kapuze-schnittmuster/) |
 | 〃 | [Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL)](sewing-pattern-hooded-cloak/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/sewing-pattern-hooded-cloak/) |
+| 〃 | [Patrón capa con capucha – PDF A4, Carta y A0, tallas XS–3XL](patron-capa-con-capucha/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/patron-capa-con-capucha/) |
 
 <a id="es"></a>
 
@@ -154,7 +156,8 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [シフト作成](shift-sakusei-roukihou-jinkenhi/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/shift-sakusei-roukihou-jinkenhi/) |
 | 〃 | [shift planner](shift-planner-uk-rota-wage-cost/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/shift-planner-uk-rota-wage-cost/) |
 | ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben | [ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben](aso-tool/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/aso-tool/) |
-| Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL) | [Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL)](sewing-pattern-hooded-cloak/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/sewing-pattern-hooded-cloak/) |
+| Patrón capa con capucha – PDF A4, Carta y A0, tallas XS–3XL | [Patrón capa con capucha – PDF A4, Carta y A0, tallas XS–3XL](patron-capa-con-capucha/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/patron-capa-con-capucha/) |
+| 〃 | [Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL)](sewing-pattern-hooded-cloak/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/sewing-pattern-hooded-cloak/) |
 | 〃 | [Umhang Kapuze Schnittmuster – PDF, A4 + A0 Copyshop, XS–3XL](umhang-kapuze-schnittmuster/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/umhang-kapuze-schnittmuster/) |
 
 <a id="pt"></a>
@@ -207,6 +210,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben | [ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben](aso-tool/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/aso-tool/) |
 | Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL) | [Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL)](sewing-pattern-hooded-cloak/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/sewing-pattern-hooded-cloak/) |
 | 〃 | [Umhang Kapuze Schnittmuster – PDF, A4 + A0 Copyshop, XS–3XL](umhang-kapuze-schnittmuster/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/umhang-kapuze-schnittmuster/) |
+| 〃 | [Patrón capa con capucha – PDF A4, Carta y A0, tallas XS–3XL](patron-capa-con-capucha/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/patron-capa-con-capucha/) |
 
 <a id="ja"></a>
 
@@ -258,6 +262,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben | [ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben](aso-tool/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/aso-tool/) |
 | Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL) | [Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL)](sewing-pattern-hooded-cloak/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/sewing-pattern-hooded-cloak/) |
 | 〃 | [Umhang Kapuze Schnittmuster – PDF, A4 + A0 Copyshop, XS–3XL](umhang-kapuze-schnittmuster/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/umhang-kapuze-schnittmuster/) |
+| 〃 | [Patrón capa con capucha – PDF A4, Carta y A0, tallas XS–3XL](patron-capa-con-capucha/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/patron-capa-con-capucha/) |
 
 ---
 Rulestamp · https://getreadystack.com

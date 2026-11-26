@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Patrón capa con capucha – PDF A4, Carta y A0, tallas XS–3XL</title>
+<meta content="Patrón capa con capucha dibujado por código desde tu contorno de cuello: círculo completo o medio círculo, capucha de 2 o 3 piezas, y el cuello de la capucha medido contra el escote de la capa en cada talla. A4 y Carta con cuadrado de prueba, A0 para copistería, proyector, XS a 3XL o tus medidas." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/es/apps/patron-capa-con-capucha/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main>
+<header>
+<p class="kicker">Patrón de costura de capa · trazado por código, no pintado por un generador de imágenes</p>
+<h1>Patrón capa con capucha – PDF A4, Carta y A0, tallas XS–3XL</h1>
+<p class="lede">Ejemplo (inventado): talla M, círculo completo, hasta el suelo, 135 cm. El código mide el cuello de la capucha en 50,0 cm y el escote de la capa en 50,0 cm, 0,0 mm de diferencia, antes de que cortes 6,3 m de tela. Una reseña de otro patrón de capa dice: «The neck part is way too big» (la parte del cuello es demasiado grande). Eso se nota cuando la tela ya está cortada.</p>
+</header>
+<section aria-live="polite" class="result" data-yj="result" id="out">
+<div class="big">
+<div><span class="num" id="r_hood">50,0 cm</span><span class="lab">Cuello de la capucha</span></div>
+<div><span class="num" id="r_cloak">50,0 cm</span><span class="lab">Escote de la capa</span></div>
+<div><span class="num" id="r_diff">0,0 mm</span><span class="lab">Diferencia · <b class="ok" id="r_ok">las piezas encajan</b></span></div>
+</div>
+<div class="small">
+<div><span class="num2" id="r_fabric">6,3 m</span><span class="lab" id="r_fabric_note">de tela, 150 cm de ancho</span></div>
+<div><span class="num2" id="r_pages">7 páginas A4</span><span class="lab">para imprimir, con mapa de páginas, sin hojas en blanco</span></div>
+<div><span class="num2" id="r_hem">135 cm</span><span class="lab">a medir desde la costura del cuello para marcar el bajo</span></div>
+<div><span class="num2" id="r_panels">4 piezas, círculo completo + capucha de 2 piezas</span></div>
+</div>
+<div class="pieces" id="pieces"></div>
+<p class="cap">Piezas para estas medidas, dibujadas por código. Negro = línea de corte, azul discontinuo = línea de costura (margen de 1,5 cm incluido), naranja = piquetes.</p>
+</section>
+<p class="paidline" id="paidline">El patrón para imprimir: PDF A4 y Carta con cuadrado de prueba y mapa de páginas, A0 para copistería, archivo para proyector, las 7 tallas o tus propias medidas e instrucciones de costura en 8 pasos: <b>7,99 US$, pago único</b>. <a class="buy" data-fe-hidden="" hidden=""></a></p>
+<section aria-label="Tus medidas" class="form">
+<h2>Tus medidas</h2>
+<div class="grid">
+<label>Talla
+      <select data-k="size" data-yj-mine="" id="size">
+<option value="XS">XS (cuello 34 cm)</option><option value="S">S (cuello 36 cm)</option>
+<option selected="" value="M">M (cuello 38 cm)</option><option value="L">L (cuello 40 cm)</option>
+<option value="XL">XL (cuello 42 cm)</option><option value="2XL">2XL (cuello 44 cm)</option>
+<option value="3XL">3XL (cuello 46 cm)</option><option value="custom">Mi propio contorno de cuello</option>
+</select></label>
+<label>Contorno en la base del cuello (cm)<input data-k="neck" data-yj-mine="" id="neck" step="0.5" type="number" value="38"/></label>
+<label>Largo (cm)<input data-k="length" data-yj-mine="" id="length" step="1" type="number" value="135"/></label>
+<label>Capa
+      <select data-k="circle" id="circle"><option selected="" value="full">Círculo completo (4 piezas)</option><option value="half">Medio círculo (2 piezas)</option></select></label>
+<label>Capucha
+      <select data-k="hood" id="hoodtype"><option selected="" value="2">2 piezas (costura central curva)</option><option value="3">3 piezas (con tira central)</option></select></label>
+<label>Ancho de la tela (cm)<input data-k="fabric" id="fabric" step="5" type="number" value="150"/></label>
+</div>
+<div hidden="" id="customrow"><label>Alto de la capucha, del cuello a la coronilla (cm)<input id="hoodh" step="0.5" type="number" value="38"/></label></div>
+<p class="err" id="err"></p>
+<details><summary>¿Sin cinta métrica? Calcula el largo desde tu estatura</summary>
+<p><label>Estatura (cm) <input id="height" type="number" value="165"/></label>
+<select id="lenpick"><option value="hip">hasta la cadera</option><option value="knee">hasta la rodilla</option><option value="calf">hasta media pierna</option><option selected="" value="floor">hasta el suelo</option></select>
+<button id="est" type="button">Calcular</button></p>
+<p class="small-note" id="estout">Estimación por proporciones del cuerpo. Lo seguro: medir por detrás desde la base del cuello.</p>
+</details>
+<h3>Comprobación del código</h3>
+<table id="checks"></table>
+<h3>Corte</h3>
+<ul id="cutlist"></ul>
+</section>
+<section class="files" id="paid">
+<h2>Imprimir</h2>
+<p>Cada archivo A4 o Carta empieza con un mapa de páginas y un cuadrado de prueba que mides primero.</p>
+<div class="dl">
+<button data-get="A4" type="button">Patrón A4 (PDF)</button>
+<button data-get="Letter" type="button">Patrón Carta / US Letter (PDF)</button>
+<button data-get="A0" type="button">A0 copistería (PDF)</button>
+<button data-get="projector" type="button">Proyector (PDF)</button>
+<button data-get="guide" type="button">Instrucciones de costura (PDF)</button>
+</div>
+<p class="small-note" id="paywhy"></p>
+<div class="lock">
+<p>Las descargas se abren con la clave que recibes tras la compra (7,99 US$, pago único, en <a data-fe-hidden="" hidden=""></a>). ¿Ya lo compraste?</p>
+<p><input autocomplete="off" data-fe-hidden="" hidden="" id="key"/> <button data-fe-hidden="" hidden="" id="keybtn" type="button"></button> <span id="keystate"></span></p>
+</div>
+</section>
+<section class="why">
+<h2>Qué incluye</h2>
+<ul>
+<li>7 tallas de XS a 3XL o tu propio contorno de cuello y tu largo: las piezas se vuelven a dibujar para tus medidas.</li>
+<li>Capa de círculo completo o medio círculo, capucha de 2 o de 3 piezas. 4 variantes en cada talla.</li>
+<li>Archivos A4 (España) y Carta (México, EE. UU.) con mapa de páginas: nombre de casilla (A1, A2, B1...) en cada hoja, sin hojas en blanco.</li>
+<li>Archivo A0 para la copistería o imprenta y un archivo para proyector, una página por talla a escala 1:1.</li>
+<li>Instrucciones de costura en español, 8 pasos, con dibujos de líneas hechos con las piezas reales. No hay fotos de una muestra cosida: son dibujos.</li>
+<li>Tabla de tela para 4 largos. El bajo lo mides con la cinta métrica desde la costura del cuello: así imprimes la parte del cuello y no un cuarto de círculo de 1,4 m.</li>
+</ul>
+<h2>¿Por qué no un tutorial gratis?</h2>
+<p>Los tutoriales gratis suelen dar una talla única y te dejan trazar el círculo y la capucha a mano. Aquí la capucha y el escote se miden uno contra otro en cada talla y variante, y el cuadrado de prueba de la página 1 te dice si la impresora imprime a la escala correcta.</p>
+<h2>Preguntas</h2>
+<dl>
+<dt>¿En qué se diferencia de un patrón hecho con IA?</dt><dd>Cada línea se calcula desde tus medidas: el escote es un arco de círculo de longitud exacta, el cuello de la capucha se resuelve a la misma longitud y luego se miden los dos y se muestran arriba.</dd>
+<dt>¿Incluye margen de costura?</dt><dd>Sí, 1,5 cm en cada costura y 2,5 cm en el bajo. La línea azul discontinua de cada pieza es la línea de costura.</dd>
+<dt>¿Se ha cosido una capa con este patrón?</dt><dd>No hay muestra cosida. Las piezas están trazadas y comprobadas por código; las instrucciones usan dibujos de líneas y lo dicen.</dd>
+</dl>
+</section>
+<footer><p>Patrón capa con capucha · archivos PDF digitales, no se envía nada físico.</p></footer>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Guardar y continuar: <a href="https://getreadystack.com/es/apps/patron-capa-con-capucha/">https://getreadystack.com/es/apps/patron-capa-con-capucha/</a></p><script src="./cloak.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

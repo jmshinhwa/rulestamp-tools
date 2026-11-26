@@ -1,0 +1,37 @@
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1e2538;background:#f4f1ec}
+main{max-width:980px;margin:0 auto;padding:16px}
+.kicker{color:#7a4b1d;font-weight:600;margin:0 0 4px;font-size:14px}
+h1{font-size:28px;line-height:1.2;margin:0 0 8px}
+.lede{margin:0 0 14px}
+.result{background:#fff;border:2px solid #1e2538;border-radius:10px;padding:14px}
+.big{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.big>div,.small>div{display:flex;flex-direction:column}
+.num{font-size:34px;font-weight:800;line-height:1.1}
+.num2{font-size:22px;font-weight:700}
+.lab{font-size:13px;color:#58627a}
+.small{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:10px;padding-top:10px;border-top:1px solid #e2ded6}
+.ok{color:#1d7a3a}.bad{color:#b42318}
+.pieces{margin-top:10px}
+.pieces svg{width:100%;height:auto;max-height:320px;background:#fbfaf7;border-radius:6px}
+.cap{font-size:12px;color:#58627a;margin:6px 0 0}
+.paidline{background:#1e2538;color:#fff;border-radius:8px;padding:10px 14px;margin:10px 0 18px}
+.paidline a.buy{display:inline-block;margin-left:6px;background:#e8a33d;color:#1e2538;font-weight:700;padding:4px 12px;border-radius:6px;text-decoration:none}
+.form,.files,.why{background:#fff;border-radius:10px;padding:14px;margin:0 0 16px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+label{display:flex;flex-direction:column;font-size:14px;font-weight:600;gap:4px}
+input,select,button{font:inherit;padding:6px 8px;border:1px solid #b9b3a8;border-radius:6px;background:#fff}
+button{cursor:pointer;background:#285c96;color:#fff;border-color:#285c96}
+.dl{display:flex;flex-wrap:wrap;gap:8px}
+.dl button{opacity:.75}
+body.pro .dl button{opacity:1}
+body.pro .lock{display:none}
+table{border-collapse:collapse;width:100%;font-size:14px}
+td,th{border-bottom:1px solid #e2ded6;padding:4px 6px;text-align:left}
+.err{color:#b42318;min-height:1em;margin:6px 0}
+.small-note{font-size:13px;color:#58627a}
+details{margin:8px 0}
+details p label{display:inline-flex;flex-direction:row;align-items:center}
+dt{font-weight:700;margin-top:8px}dd{margin:0}
+footer{font-size:13px;color:#58627a}
+@media (max-width:640px){.big{grid-template-columns:1fr 1fr 1fr}.num{font-size:24px}.grid{grid-template-columns:1fr 1fr}.small{grid-template-columns:1fr}}

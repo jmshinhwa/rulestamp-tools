@@ -314,11 +314,13 @@
    "id": "b66cec58c4",
    "name": {
     "en": "Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL)",
-    "de": "Umhang Kapuze Schnittmuster – PDF, A4 + A0 Copyshop, XS–3XL"
+    "de": "Umhang Kapuze Schnittmuster – PDF, A4 + A0 Copyshop, XS–3XL",
+    "es": "Patrón capa con capucha – PDF A4, Carta y A0, tallas XS–3XL"
    },
    "tools": [
     "sewing-pattern-hooded-cloak",
-    "umhang-kapuze-schnittmuster"
+    "umhang-kapuze-schnittmuster",
+    "patron-capa-con-capucha"
    ]
   }
  ],
@@ -542,6 +544,11 @@
    "lang": "de",
    "name": "Umhang Kapuze Schnittmuster – PDF, A4 + A0 Copyshop, XS–3XL",
    "hub": "https://getreadystack.com/de/apps/umhang-kapuze-schnittmuster/"
+  },
+  "patron-capa-con-capucha": {
+   "lang": "es",
+   "name": "Patrón capa con capucha – PDF A4, Carta y A0, tallas XS–3XL",
+   "hub": "https://getreadystack.com/es/apps/patron-capa-con-capucha/"
   }
  }
 }
