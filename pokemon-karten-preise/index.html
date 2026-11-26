@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Pokémon Karten Preise: Cardmarket-Preis in € nach Name oder Nummer</title>
+<meta content="Gib Name und Nummer deiner Pokémon-Karte ein und sieh den Cardmarket-Preis in Euro: Preistrend, Ø Verkaufspreis, ab-Preis und Ø 7 und 30 Tage, mit Datum. Deutsche Kartennamen, vom Grundset 1999 bis heute." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/de/apps/pokemon-karten-preise/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main>
+<h1>Pokémon Karten Preise in Euro – mit deutschen Kartennamen</h1>
+<p class="lede">Beispiel (erfunden): Jemand bietet dir 250 € für dein Glurak-ex 199/165 aus 151. Am 26.11.2026 lag der Ø Verkaufspreis dieser Karte auf Cardmarket bei 337,11 €: <b>Nimmst du an, fehlen dir 87,11 €.</b></p>
+<p class="sub">Gib Name und Nummer ein, so wie sie auf deiner Karte stehen: Glurak, Nachtara, Delta-Herrschaft. Du siehst den Cardmarket-Preis in Euro mit Datum, keinen US-Preis in Dollar.</p>
+<form autocomplete="off" id="f">
+<fieldset>
+<label for="q">Name oder Nummer deiner Karte</label>
+<input data-k="q" data-yj-mine="" id="q" placeholder="z. B. Glurak ex 199/165 · Pikachu 25 · Nachtara VMAX" type="search"/>
+</fieldset>
+<fieldset>
+<label for="set">Erweiterung (optional)</label>
+<select data-k="set" id="set"><option value="">Alle Erweiterungen</option></select>
+</fieldset>
+<fieldset>
+<label for="offer">Angebot oder Anzeigenpreis (€, optional)</label>
+<input data-k="offer" data-yj-mine="" id="offer" inputmode="decimal" placeholder="z. B. 250" type="text"/>
+</fieldset>
+</form>
+<section aria-live="polite" class="res" data-yj="result" id="out">
+<div class="rh"><b class="rname">Glurak-ex</b><span class="rset">151 · Nr. 199/165 · Selten, besondere Illustration</span></div>
+<div class="big"><span>Preistrend auf Cardmarket</span> <b>287,85 €</b></div>
+<div class="grid sum">
+<div class="tile"><span>Ø Verkaufspreis</span> <b>337,11 €</b></div>
+<div class="tile"><span>ab (niedrigster Marktpreis)</span> <b>199,99 €</b></div>
+<div class="tile"><span>Ø der letzten 7 Tage</span> <b>293,99 €</b></div>
+<div class="tile"><span>Ø der letzten 30 Tage</span> <b>330,39 €</b></div>
+<div class="tile"><span>TCGplayer (USA)</span> <b>278,46 US$</b></div>
+<div class="tile"><span>Angebot von 250,00 €</span> <b>87,11 € unter dem Ø Verkaufspreis</b></div>
+</div>
+<p class="mv">Ø 7 Tage gegenüber Ø 30 Tage: −11 %</p>
+<p class="date">Cardmarket-Preise vom 26.11.2026 · einzelne Karte, ungegradet · alle Sprachen zusammen</p>
+</section>
+<div class="acts" id="acts">
+<button id="add-free" type="button">Auf meine Liste</button>
+<button id="add-col" type="button">In meine Sammlung</button>
+<label class="chk"><input id="rev" type="checkbox"/> ist Reverse Holo</label>
+<span class="alrow">
+<select aria-label="Art des Preisalarms" id="at"><option value="below">Alarm unter</option><option value="above">Alarm über</option><option value="up">Alarm bei Anstieg um</option><option value="down">Alarm bei Rückgang um</option></select>
+<input aria-label="Deine Grenze" id="av" inputmode="decimal" placeholder="80 € oder 20 %" type="text"/>
+<button id="add-al" type="button">Preisalarm setzen</button>
+</span>
+<span class="muted" id="almsg"></span>
+</div>
+<p class="upsell">Vollversion: Speichere deine Sammlung, sieh ihren Wert bei jeder neuen Preistabelle und setz Preisalarme mit deiner eigenen Grenze („unter 250 €“, „steigt um 20 %“). <a class="buy" data-fe-hidden="" hidden=""></a> <a class="buy alt" data-fe-hidden="" hidden=""></a></p>
+<ul id="matches"></ul>
+<h2>Deine Liste für heute</h2>
+<div class="box" id="free"><p class="muted">Leg Karten mit „Auf meine Liste“ ab, dann rechnet die Seite aus, was dein Stapel wert ist.</p></div>
+<section data-fe-hidden="" hidden="" id="pro"><h2></h2><div class="box lock" data-fe-hidden="" hidden="" id="pro-lock"><p data-fe-hidden="" hidden="" id="pro-why"><b></b></p><ul><li></li><li></li><li></li><li></li></ul><p class="muted"></p><p><a class="buy" data-fe-hidden="" hidden=""></a><a class="buy alt" data-fe-hidden="" hidden=""></a></p><form data-fe-hidden="" hidden="" id="keyform"><label for="key"></label><input data-fe-hidden="" hidden="" id="key" type="text"/><button class="btn" type="submit"></button><span class="muted" data-fe-hidden="" hidden="" id="keymsg"></span></form></div><div data-fe-hidden="" hidden="" id="pro-app"><div class="box" id="col"></div><h2></h2><div id="hist"></div><h2></h2><div class="box" id="alerts"></div><p><button class="btn" id="notif" type="button"></button></p><div id="log"></div><h2></h2><p><button class="btn" id="csv-out" type="button"></button><label class="btn" for="csv-in"></label><input accept=".csv,text/csv" hidden="" id="csv-in" type="file"/><span class="muted" id="csvmsg"></span></p><p class="muted"></p></div></section>
+<h2>So liest du die Preise</h2>
+<details open=""><summary>Preistrend, Ø Verkaufspreis und „ab“</summary>
+<p>Der <b>Ø Verkaufspreis</b> ist der durchschnittliche Preis, zu dem die Karte auf Cardmarket verkauft wird. <b>ab</b> ist der niedrigste Marktpreis, oft ein einzelnes günstiges Angebot, darum liegt er meist darunter. Der <b>Preistrend</b> ist die Trendzahl aus den Cardmarket-Kurven. Wenn dir jemand etwas bietet, vergleich mit dem Ø Verkaufspreis und dem Preistrend, nicht mit „ab“.</p></details>
+<details><summary>Gilt der Preis für meine deutsche Karte?</summary>
+<p>Cardmarket führt die deutsche und die englische Ausgabe einer Karte als ein Produkt. Wir haben 40 zufällige Karten geprüft: Bei allen 40 war es dasselbe Cardmarket-Produkt. Der Preis gilt also für die Karte in allen Sprachen zusammen. Wenn du eine teure Karte verkaufst, schau auf Cardmarket mit dem Sprachfilter nach, was deutsche Exemplare gerade kosten.</p></details>
+<details><summary>1. Auflage, Stempel und alte Karten</summary>
+<p>Manche Karten gibt es in mehreren Drucken mit eigenem Cardmarket-Preis, etwa Grundset-Karten in 1. Auflage und unbegrenzter Auflage oder Turnierkarten mit Stempel. Dann steht unter dem Preis, für welchen Druck er gilt, zum Beispiel „Holo · unbegrenzt“. Eine 1. Auflage kann ein Vielfaches davon wert sein.</p></details>
+<details><summary>Und gegradete Karten (PSA 9, PSA 10)?</summary>
+<p>Preise für gegradete Karten gibt es hier nicht. Alle Preise gelten für einzelne, ungegradete Karten. Eine PSA 10 kann ein Vielfaches wert sein.</p></details>
+<details><summary>Von wann sind die Preise?</summary>
+<p>Aus der Preistabelle vom <span id="dd">26.11.2026</span>. Jedes Ergebnis zeigt sein Datum. Drin sind 18.807 Karten mit Preis aus 138 Erweiterungen, vom Grundset (1999) bis Delta-Herrschaft (2026). Die Preise kommen aus der Cardmarket-Preisübersicht (Euro) und von TCGplayer (Dollar), über TCGdex.</p></details>
+<details><summary>Warum haben zwei Karten denselben Preis?</summary>
+<p>Manchmal ordnet die Datenquelle zwei Versionen einer Karte demselben Cardmarket-Produkt zu, zum Beispiel die normale Karte und eine Holo-Variante mit eigener Nummer. Wenn wir das erkennen, steht ein Hinweis unter dem Preis. Prüf die Karte dann auf Cardmarket, bevor du verkaufst.</p></details>
+<p class="src" data-fe-hidden="" hidden=""><a rel="nofollow noopener"></a><a></a></p>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Speichern und weitermachen: <a href="https://getreadystack.com/de/apps/pokemon-karten-preise/">https://getreadystack.com/de/apps/pokemon-karten-preise/</a></p><script src="./app.js"></script>
+</body>
+</html>

@@ -367,11 +367,13 @@
    "id": "9ed9e6ec64",
    "name": {
     "es": "Precio cartas Pokémon: Cardmarket en €, colección y avisos al abrir la página",
-    "pt": "preço cartas Pokémon: consulta em reais + lista com aviso por e-mail"
+    "pt": "preço cartas Pokémon: consulta em reais + lista com aviso por e-mail",
+    "de": "Pokémon Karten Preise"
    },
    "tools": [
     "precio-cartas-pokemon",
-    "preco-cartas-pokemon"
+    "preco-cartas-pokemon",
+    "pokemon-karten-preise"
    ]
   },
   {
@@ -654,6 +656,11 @@
    "lang": "en",
    "name": "Bank statement converter",
    "hub": "https://getreadystack.com/apps/bank-statement-converter/"
+  },
+  "pokemon-karten-preise": {
+   "lang": "de",
+   "name": "Pokémon Karten Preise",
+   "hub": "https://getreadystack.com/de/apps/pokemon-karten-preise/"
   }
  }
 }
