@@ -342,6 +342,15 @@
    "tools": [
     "etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada"
    ]
+  },
+  {
+   "id": "16e427687e",
+   "name": {
+    "de": "Stundenzettel Vorlage 2027 — Excel mit Mindestlohn 14,60 € und Minijob-Prüfung"
+   },
+   "tools": [
+    "stundenzettel-vorlage-2027-excel"
+   ]
   }
  ],
  "tools": {
@@ -584,6 +593,11 @@
    "lang": "en",
    "name": "Etsy seller tax spreadsheet — fees, 1099-K & Schedule C (US · Canada T2125 · UK)",
    "hub": "https://getreadystack.com/apps/etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/"
+  },
+  "stundenzettel-vorlage-2027-excel": {
+   "lang": "de",
+   "name": "Stundenzettel Vorlage 2027 — Excel mit Mindestlohn 14,60 € und Minijob-Prüfung",
+   "hub": "https://getreadystack.com/de/apps/stundenzettel-vorlage-2027-excel/"
   }
  }
 }

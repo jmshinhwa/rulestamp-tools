@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Stundenzettel Vorlage 2027 — Excel mit Mindestlohn 14,60 € und Minijob-Prüfung</title>
+<meta content="Stundenzettel Vorlage 2027: Beginn, Ende und Pause eintragen und sofort sehen, wie viele Stunden unbezahlt sind, ob der Lohn unter dem Mindestlohn von 14,60 € liegt und ob der Minijob über 633 € geht, mit den Feiertagen Ihres Bundeslands." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/de/apps/stundenzettel-vorlage-2027-excel/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main class="wrap">
+<header>
+<h1>Stundenzettel Vorlage 2027 — Excel mit Mindestlohn 14,60 € und Minijob-Prüfung</h1>
+<p class="lede" id="lede">Beispiel (erfunden): Lena hat einen Minijob in Bayern, 14,60 € pro Stunde, 40 Stunden im Monat vereinbart. Im Januar 2027 arbeitet sie 46,5 Stunden, ausgezahlt werden 584,00 €. 6,5 Stunden bleiben unbezahlt: 94,90 € fehlen. Und ihr Lohnanspruch von 678,90 € liegt 45,90 € über der Minijob-Grenze von 633 €.</p>
+<p class="sub">Kostenlose Stundenzettel zählen Stunden und Überstunden. Hier sehen Sie gleich dazu, was davon nicht bezahlt ist, ob der Lohn unter 14,60 € fällt und ob der Monat über 633 € geht, mit den Feiertagen Ihres Bundeslands. Ohne Formular und ohne Anmeldung, die Daten bleiben in Ihrem Browser.</p>
+</header>
+<section aria-live="polite" class="result" data-yj="result" id="out">
+<p class="r-label" id="r-label">Stundenzettel</p>
+<p class="r-big" id="r-big">0 Std. unbezahlt</p>
+<p class="r-loss" id="r-loss"></p>
+<div class="tiles">
+<div class="tile" id="tl-ist"><span class="t-l">Gearbeitet / vereinbart</span><b id="t-ist">0</b><small id="t-ist-n"></small></div>
+<div class="tile" id="tl-ans"><span class="t-l">Lohnanspruch / ausgezahlt</span><b id="t-ans">0,00 €</b><small id="t-ans-n"></small></div>
+<div class="tile" id="tl-eff"><span class="t-l">Ausgezahlt je Stunde</span><b id="t-eff">–</b><small id="t-eff-n"></small></div>
+<div class="tile" id="tl-mini"><span class="t-l">Minijob-Grenze</span><b id="t-mini">–</b><small id="t-mini-n"></small></div>
+<div class="tile" id="tl-pause"><span class="t-l">Pause zu kurz (§ 4 ArbZG)</span><b id="t-pause">0</b><small id="t-pause-n">30 Min. ab 6 Std., 45 Min. ab 9 Std.</small></div>
+<div class="tile" id="tl-hol"><span class="t-l">Arbeit an Feiertagen</span><b id="t-hol">0</b><small id="t-hol-n"></small></div>
+</div>
+<ul class="fixes" id="fixes"></ul>
+<div class="tablewrap" id="table"></div>
+</section>
+<p class="proline" data-fe-hidden="" hidden="" id="proline"></p>
+<section class="card" id="eingabe">
+<h2>1. Monat, Bundesland und Vertrag</h2>
+<div class="grid">
+<label>Monat<select data-k="" data-yj-mine="" id="monat"></select></label>
+<label>Bundesland<select data-k="" data-yj-mine="" id="bl"></select></label>
+<label>Beschäftigung<select data-k="" data-yj-mine="" id="art">
+<option selected="" value="minijob">Minijob</option>
+<option value="teilzeit">Teilzeit</option>
+<option value="vollzeit">Vollzeit</option>
+</select></label>
+<label>Stundenlohn laut Vertrag (€)<input data-k="" data-yj-mine="" id="lohn" inputmode="decimal" value="14,60"/></label>
+<label>Vereinbarte Stunden im Monat<input data-k="" data-yj-mine="" id="soll" inputmode="decimal" value="40"/></label>
+<label>Ausgezahlt für den Monat (€, brutto)<input data-k="" data-yj-mine="" id="paid" inputmode="decimal" value="584,00"/></label>
+<label>Name (nur für den Ausdruck)<input autocomplete="off" id="name" value="Lena (Beispiel)"/></label>
+</div>
+<h2>2. Arbeitstage: Datum; Beginn-Ende; Pause in Minuten</h2>
+<textarea data-k="" data-yj-mine="" id="rows" rows="10" spellcheck="false">Sa 02.01.; 10:00-15:00; 0
+Mi 06.01.; 16:00-21:00; 0
+Sa 09.01.; 10:00-16:30; 0
+Mi 13.01.; 16:00-20:30; 0
+Sa 16.01.; 10:00-15:00; 0
+Mi 20.01.; 16:00-20:30; 0
+Sa 23.01.; 10:00-15:30; 0
+Mi 27.01.; 16:00-20:30; 0
+Sa 30.01.; 10:00-16:30; 30</textarea>
+<p class="hint">Eine Zeile pro Arbeitstag. Datum als 02.01. oder nur 2. Nachtschicht über Mitternacht einfach so: 22:00-06:00. Eine Bemerkung darf als vierter Teil folgen: „Sa 02.01.; 10:00-15:00; 0; Inventur“.</p>
+<ul class="errs" id="errs"></ul>
+<p><button class="ghost" id="reset" type="button">Beispiel wieder laden</button> <button class="ghost" id="clear" type="button">Leeren Monat beginnen</button></p>
+</section>
+<section class="card" id="regeln">
+<h2>Das prüft der Stundenzettel</h2>
+<ul>
+<li><b>Unbezahlte Stunden:</b> Lohnanspruch = gearbeitete Stunden × Stundenlohn, mindestens × Mindestlohn. Was davon nicht ausgezahlt ist, steht in Euro und in Stunden da.</li>
+<li><b>Mindestlohn:</b> 13,90 € je Stunde ab 01.01.2026, 14,60 € ab 01.01.2027. Geprüft werden der Vertragslohn und das, was je Stunde wirklich ausgezahlt wurde.</li>
+<li><b>Minijob-Grenze:</b> Mindestlohn × 130 ÷ 3, aufgerundet: 603 € im Monat 2026, 633 € im Monat und 7.596 € im Jahr 2027. Gelegentlich und unvorhersehbar, etwa bei einer Krankheitsvertretung, darf sie in bis zu 2 Kalendermonaten innerhalb von 12 Monaten überschritten werden, höchstens bis 1.266 € im Monat. Für die Grenze zählt der Lohn, auf den ein Anspruch besteht, auch wenn weniger ausgezahlt wurde.</li>
+<li><b>Pausen:</b> mehr als 6 bis 9 Stunden Arbeit: mindestens 30 Minuten, mehr als 9 Stunden: 45 Minuten (§ 4 ArbZG). Höchstens 10 Stunden am Tag (§ 3 ArbZG).</li>
+<li><b>Aufzeichnung:</b> bei Minijobs Beginn, Ende und Dauer der täglichen Arbeitszeit spätestens bis zum Ablauf des siebten Kalendertages nach dem Arbeitstag aufschreiben und mindestens 2 Jahre aufbewahren (§ 17 MiLoG, nicht für Minijobs im Privathaushalt). Bußgeld bei fehlender oder verspäteter Aufzeichnung bis 50.000 €, bei nicht gezahltem Mindestlohn bis 500.000 € (§ 21 Abs. 3 MiLoG). Die Spalte „aufschreiben bis“ zeigt die Frist für jeden Tag.</li>
+<li><b>Feiertage:</b> alle landesweiten gesetzlichen Feiertage der 16 Bundesländer. Nicht markiert: Mariä Himmelfahrt in Teilen Bayerns, Fronleichnam in Teilen von Sachsen und Thüringen, Augsburger Friedensfest.</li>
+</ul>
+<p class="hint">Quellen: minijob-zentrale.de (Mindestlohn, Minijob-Grenze 2027, gelesen am 26.11.2026), Mindestlohngesetz §§ 17 und 21 und Arbeitszeitgesetz §§ 3 und 4 auf gesetze-im-internet.de, gelesen am 26.11.2026. Der Stundenzettel rechnet und markiert. Er ersetzt keine Lohnabrechnung und keine Rechtsberatung.</p>
+<p class="hint">Sie planen die Schichten für ein ganzes Team? <a href="/de/apps/dienstplan-erstellen/">Dienstplan erstellen</a> prüft Ruhezeit, Pausen und Mindestlohn je Schicht. Für Bau-Kolonnen mit Wochenzettel: <a href="/de/apps/stundenzettel-vorlage-2027-bau/">Stundenzettel Vorlage 2027 Bau</a>.</p>
+</section>
+<section class="card pro" data-fe-hidden="" hidden="" id="pro"><h2></h2><p class="btns"><a class="btn" data-fe-hidden="" hidden=""></a></p><div class="keybox" data-fe-hidden="" hidden=""><label data-fe-hidden="" hidden=""><input autocomplete="off" id="key"/></label><button data-fe-hidden="" hidden="" id="unlock" type="button"></button><span class="hint" data-fe-hidden="" hidden="" id="keymsg"></span></div><h3></h3><p class="btns"><button id="xlsx" type="button"></button><button id="print" type="button"></button><button class="ghost" id="csv" type="button"></button></p><p class="hint"></p><h3></h3><p class="btns"><button id="save" type="button"></button><button class="ghost" id="backup" type="button"></button><label class="filebtn"><input accept=".json,application/json" id="restore" type="file"/></label></p><div id="saved"></div><div id="year"></div></section>
+<section aria-hidden="true" id="printview"></section>
+<footer class="hint">
+<p>Die Daten bleiben nur in diesem Browser (localStorage). Nichts wird hochgeladen. Keine Stempeluhr, keine Lohnabrechnung, keine Rechtsberatung.</p>
+</footer>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Speichern und weitermachen: <a href="https://getreadystack.com/de/apps/stundenzettel-vorlage-2027-excel/">https://getreadystack.com/de/apps/stundenzettel-vorlage-2027-excel/</a></p><script src="./sz.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
