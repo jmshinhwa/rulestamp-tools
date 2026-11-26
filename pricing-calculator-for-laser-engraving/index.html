@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>pricing calculator for laser engraving — job cost &amp; profit tracker</title>
+<meta content="Pricing calculator for laser engraving orders: material with waste, laser minutes, setup and design time, packing and Etsy fees, solved into the price to charge. Pro keeps a job log, monthly profit, blank stock and a price list, and exports an Excel / Google Sheets workbook." name="description"/>
+
+<link href="style.css" rel="stylesheet"/><link href="https://getreadystack.com/apps/pricing-calculator-for-laser-engraving/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<nav class="langs"><b>English</b> · Etsy US fees read 26 Nov 2026 · Also for laser makers: <a data-fe-hidden="" hidden="" rel="noopener"></a></nav>
+<main>
+<header><h1>pricing calculator for laser engraving — job cost &amp; profit tracker</h1>
+<p class="lede">Example (made-up, already filled in below): 10 engraved wooden ornaments sold as one Etsy item. Count the 10% waste and the 50 minutes of setup and design, and the price to charge is $80.37. Skip them and you would charge $43.64, and after Etsy's fees the order loses $11.56.</p>
+<p class="lede2">Type your own order in the 12 inputs below. The page adds material with waste, laser minutes at your machine rate, your hands-on, setup and design time, and packing. Then it works out the list price so that Etsy's 6.5% transaction fee, the 3% + $0.25 payment processing fee and the $0.20 listing fee come out of the buyer's price, not your margin.</p></header>
+<section aria-label="Your order" class="form">
+<div class="grid">
+<label>Pieces in the order<input data-k="qty" data-yj-mine="" min="1" step="1" type="number" value="10"/></label>
+<label>Material per piece ($, the blank)<input data-k="mat" data-yj-mine="" min="0" step="0.01" type="number" value="1.20"/></label>
+<label>Waste % (ruined pieces)<input data-k="waste" data-yj-mine="" max="90" min="0" step="1" type="number" value="10"/></label>
+<label>Laser minutes per piece<input data-k="laser" data-yj-mine="" min="0" step="0.1" type="number" value="4"/></label>
+<label>Hands-on minutes per piece<small>load, mask, wipe, weed</small><input data-k="hands" data-yj-mine="" min="0" step="0.1" type="number" value="2"/></label>
+<label>Setup minutes per order<small>focus, jig, test burn</small><input data-k="setup" data-yj-mine="" min="0" step="1" type="number" value="20"/></label>
+<label>Design and proof minutes<input data-k="design" data-yj-mine="" min="0" step="1" type="number" value="30"/></label>
+<label>Packing and extras ($ per order)<input data-k="pack" data-yj-mine="" min="0" step="0.01" type="number" value="3.00"/></label>
+<label>Machine cost ($ per laser hour)<small>wear, tube, power</small><input data-k="mrate" data-yj-mine="" min="0" step="0.01" type="number" value="6.00"/></label>
+<label>Your pay ($ per hour)<input data-k="lrate" data-yj-mine="" min="0" step="0.01" type="number" value="25.00"/></label>
+<label>Profit margin %<input data-k="margin" data-yj-mine="" max="90" min="0" step="1" type="number" value="30"/></label>
+<label>Sold on<select data-k="channel" data-yj-mine=""><option selected="" value="etsy">Etsy (US fees)</option><option value="direct">Direct: craft fair, own site, cash</option></select></label>
+</div>
+</section>
+<section aria-live="polite" data-yj="result" id="out"></section>
+<p class="paid">It saves every job to a log, adds up profit by month, keeps count of the blanks you have left and gives you a price list for 1, 5, 10 and 25 pieces. You can download it all as an Excel workbook with live formulas that also opens in Google Sheets. <a class="buy" data-fe-hidden="" hidden=""></a> <span class="tier" id="tier"></span></p>
+<section class="pro" data-fe-hidden="" hidden="" id="pro"><h2></h2><div class="tool"><h3></h3><div class="grid"><label><input id="jDate" type="date"/></label><label><input id="jName"/></label><label><input id="jProd"/></label><label><input id="jMat"/></label><label><small></small><input id="jCharged" min="0" step="0.01" type="number"/></label></div><button class="needpro" id="saveBtn" type="button"></button><p class="msg" id="saveMsg"></p></div><div class="tool"><h3></h3><div class="scroll" id="logOut"></div></div><div class="tool"><h3></h3><div class="scroll" id="monOut"></div></div><div class="tool"><h3></h3><p></p><div class="grid"><label><input id="mName"/></label><label><input id="mUnit" min="0" step="0.01" type="number"/></label><label><input id="mBought" min="0" step="1" type="number"/></label><label><input id="mReorder" min="0" step="1" type="number"/></label></div><button class="needpro" id="matBtn" type="button"></button><div class="scroll" id="stockOut"></div></div><div class="tool"><h3></h3><p></p><div class="scroll" id="listOut"></div></div><div class="tool"><h3></h3><button class="needpro" id="xlsxBtn" type="button"></button><button class="needpro" id="csvBtn" type="button"></button><button class="needpro" id="bakBtn" type="button"></button><label class="file needpro-label"><input accept=".json,application/json" id="restore" type="file"/></label></div><p class="msg" data-fe-hidden="" hidden="" id="proMsg" role="status"></p></section>
+<section class="key" data-fe-hidden="" hidden=""><p></p><div class="row"><input data-fe-hidden="" hidden="" id="key"/><button data-fe-hidden="" hidden="" id="keyBtn" type="button"></button></div><p class="msg" data-fe-hidden="" hidden="" id="keyMsg"></p></section>
+<section class="how"><h2>How the price is worked out</h2><ul>
+<li>Material = pieces × blank cost × (1 + waste %). Laser time = pieces × laser minutes × (1 + waste %) ÷ 60 × machine $/hour. A ruined piece costs its blank and its burn again.</li>
+<li>Your time = (pieces × hands-on minutes × (1 + waste %) + setup + design minutes) ÷ 60 × your $/hour. Full cost = material + laser + your time + packing.</li>
+<li>The price before fees is full cost ÷ (1 − margin). On Etsy, list price = (that + $0.25 + $0.20) ÷ (1 − 6.5% − 3%), so after the fees you keep the price before fees.</li>
+<li>Etsy US fees, from Etsy's help pages, read 26 November 2026: "Etsy charges 6.5% of the total order amount", "The listing fee is a flat rate charge of $0.20 USD per listing" (<a href="https://help.etsy.com/hc/en-us/articles/360035902374" rel="noopener">Etsy Fee Basics</a>), and payment processing for the United States "3% + 0.25 USD" (<a href="https://help.etsy.com/hc/articles/115015628847" rel="noopener">Payment Processing Fees</a>). The listing fee is counted once per order. Offsite Ads and sales tax are not counted.</li>
+<li>The "skip" line prices the same order with 0% waste and no setup or design time, then shows the profit at that price against the full cost.</li>
+<li>Everything you type stays in this browser. Nothing is sent to a server. Not affiliated with Etsy.</li></ul></section>
+<section class="faq"><h2>Questions</h2>
+<details><summary>What does the free calculator do?</summary><p>You type one order: pieces, blank cost, waste, laser and hands-on minutes, setup, design, packing, machine rate, your pay and margin. You get the price to charge, the price per piece, the Etsy fees, the profit you keep and the loss if you skip waste and setup. Use it for as many orders as you like.</p></details>
+<details><summary>Why price backwards from Etsy's fees?</summary><p>Etsy takes 6.5% of the order and 3% + $0.25 for payment processing, plus $0.20 for the listing. If you add those to your cost after picking a price, the fees come out of your margin. The calculator solves the list price so that after the fees you still keep the price you wanted.</p></details>
+<details data-fe-hidden="" hidden=""><summary></summary><p></p></details>
+<details><summary>What is a fair machine rate?</summary><p>Work it out from your own laser: purchase price divided by the hours you expect it to run, plus tube or module wear and power. Published guides put a 60 W CO2 laser at about $5.44 per running hour (TrueTradeCost) and sample CO2 and diode lasers under $1 an hour (Ardent Workshop), so the rate depends on your own machine.</p></details>
+<details><summary>I sell outside the US. Does it still work?</summary><p>Choose "Direct" for craft fairs, your own site or cash sales, and no Etsy fees are counted. The Etsy fees on this page are the US rates.</p></details>
+</section>
+</main>
+<footer><p>getRulestamp.com · pricing calculator for laser engraving · numbers in US dollars</p></footer>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Save and continue: <a href="https://getreadystack.com/apps/pricing-calculator-for-laser-engraving/">https://getreadystack.com/apps/pricing-calculator-for-laser-engraving/</a></p><script src="engine.js"></script>
+<script src="app.js"></script>
+</body></html>

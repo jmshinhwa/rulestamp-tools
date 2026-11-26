@@ -324,6 +324,15 @@
     "patron-capa-con-capucha",
     "molde-capa-com-capuz"
    ]
+  },
+  {
+   "id": "1bbfbc02d9",
+   "name": {
+    "en": "pricing calculator for laser engraving — job cost & profit tracker"
+   },
+   "tools": [
+    "pricing-calculator-for-laser-engraving"
+   ]
   }
  ],
  "tools": {
@@ -556,6 +565,11 @@
    "lang": "pt",
    "name": "Molde capa com capuz – molde PDF traçado por código (A4, A0, projetor)",
    "hub": "https://getreadystack.com/pt/apps/molde-capa-com-capuz/"
+  },
+  "pricing-calculator-for-laser-engraving": {
+   "lang": "en",
+   "name": "pricing calculator for laser engraving — job cost & profit tracker",
+   "hub": "https://getreadystack.com/apps/pricing-calculator-for-laser-engraving/"
   }
  }
 }
