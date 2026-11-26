@@ -309,6 +309,15 @@
    "tools": [
     "aso-tool"
    ]
+  },
+  {
+   "id": "b66cec58c4",
+   "name": {
+    "en": "Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL)"
+   },
+   "tools": [
+    "sewing-pattern-hooded-cloak"
+   ]
   }
  ],
  "tools": {
@@ -521,6 +530,11 @@
    "lang": "de",
    "name": "ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben",
    "hub": "https://getreadystack.com/de/apps/aso-tool/"
+  },
+  "sewing-pattern-hooded-cloak": {
+   "lang": "en",
+   "name": "Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL)",
+   "hub": "https://getreadystack.com/apps/sewing-pattern-hooded-cloak/"
   }
  }
 }

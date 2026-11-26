@@ -52,6 +52,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [シフト作成](shift-sakusei-roukihou-jinkenhi/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/shift-sakusei-roukihou-jinkenhi/) |
 | 〃 | [cuadrante turnos](cuadrante-turnos-descanso-12-horas-coste/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cuadrante-turnos-descanso-12-horas-coste/) |
 | ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben | [ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben](aso-tool/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/aso-tool/) |
+| Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL) | [Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL)](sewing-pattern-hooded-cloak/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/sewing-pattern-hooded-cloak/) |
 
 <a id="de"></a>
 
@@ -101,6 +102,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [cuadrante turnos](cuadrante-turnos-descanso-12-horas-coste/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cuadrante-turnos-descanso-12-horas-coste/) |
 | 〃 | [shift planner](shift-planner-uk-rota-wage-cost/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/shift-planner-uk-rota-wage-cost/) |
 | ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben | [ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben](aso-tool/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/aso-tool/) |
+| Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL) | [Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL)](sewing-pattern-hooded-cloak/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/sewing-pattern-hooded-cloak/) |
 
 <a id="es"></a>
 
@@ -150,6 +152,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [シフト作成](shift-sakusei-roukihou-jinkenhi/) (日本語) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/shift-sakusei-roukihou-jinkenhi/) |
 | 〃 | [shift planner](shift-planner-uk-rota-wage-cost/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/shift-planner-uk-rota-wage-cost/) |
 | ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben | [ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben](aso-tool/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/aso-tool/) |
+| Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL) | [Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL)](sewing-pattern-hooded-cloak/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/sewing-pattern-hooded-cloak/) |
 
 <a id="pt"></a>
 
@@ -199,6 +202,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [cuadrante turnos](cuadrante-turnos-descanso-12-horas-coste/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cuadrante-turnos-descanso-12-horas-coste/) |
 | 〃 | [shift planner](shift-planner-uk-rota-wage-cost/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/shift-planner-uk-rota-wage-cost/) |
 | ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben | [ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben](aso-tool/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/aso-tool/) |
+| Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL) | [Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL)](sewing-pattern-hooded-cloak/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/sewing-pattern-hooded-cloak/) |
 
 <a id="ja"></a>
 
@@ -248,6 +252,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | 〃 | [cuadrante turnos](cuadrante-turnos-descanso-12-horas-coste/) (Español) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/cuadrante-turnos-descanso-12-horas-coste/) |
 | 〃 | [shift planner](shift-planner-uk-rota-wage-cost/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/shift-planner-uk-rota-wage-cost/) |
 | ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben | [ASO Tool — App-Store-Texte für de/ja/es/pt automatisch prüfen und schreiben](aso-tool/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/aso-tool/) |
+| Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL) | [Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL)](sewing-pattern-hooded-cloak/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/sewing-pattern-hooded-cloak/) |
 
 ---
 Rulestamp · https://getreadystack.com

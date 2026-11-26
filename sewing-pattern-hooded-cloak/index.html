@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL)</title>
+<meta content="Hooded cloak sewing pattern drafted by code from your neck size: full or half circle, 2- or 3-piece hood, hood and cloak necklines measured to match. A4, US Letter, A0 and projector PDFs, XS to 3XL or your own numbers." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/apps/sewing-pattern-hooded-cloak/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main>
+<header>
+<p class="kicker">Hooded cloak sewing pattern · drafted by code, not drawn by an image model</p>
+<h1>Sewing pattern — hooded cloak PDF (A4/Letter + A0, XS–3XL)</h1>
+<p class="lede">Example (made-up): size M, full circle, floor length 135 cm. The code measures the hood neckline at 50.0 cm and the cloak neckline at 50.0 cm, 0.0 mm apart, before you cut 6.3 m of fabric. A buyer of another shop's pattern wrote “the neck part is way too big”, and that is something you only find out after the fabric is cut.</p>
+</header>
+<section aria-live="polite" class="result" data-yj="result" id="out">
+<div class="big">
+<div><span class="num" id="r_hood">50.0 cm</span><span class="lab">hood neckline</span></div>
+<div><span class="num" id="r_cloak">50.0 cm</span><span class="lab">cloak neckline</span></div>
+<div><span class="num" id="r_diff">0.0 mm</span><span class="lab">apart · <b class="ok" id="r_ok">pieces match</b></span></div>
+</div>
+<div class="small">
+<div><span class="num2" id="r_fabric">6.3 m</span><span class="lab" id="r_fabric_note">of 150 cm wide fabric</span></div>
+<div><span class="num2" id="r_pages">7 A4 / 8 Letter</span><span class="lab">pages to print, page map included, blank pages left out</span></div>
+<div><span class="num2" id="r_hem">135 cm</span><span class="lab">measured out from the neck seam to mark the hem</span></div>
+<div><span class="num2" id="r_panels">4 panels, full circle + 2-piece hood</span></div>
+</div>
+<div class="pieces" id="pieces"></div>
+<p class="cap">Pattern pieces for these numbers, drawn by code. Black = cutting line, blue dashes = seam line (1.5 cm allowance included), orange = notches.</p>
+</section>
+<p class="paidline" id="paidline">The printable pattern adds the A4 and US Letter PDFs with a 10 cm / 4 in test square and page map, the A0 copy-shop and projector files, all 7 sizes or your own numbers, and an 8-step sewing guide: <b>$7.99 once</b>. <a class="buy" data-fe-hidden="" hidden=""></a></p>
+<section aria-label="Your measurements" class="form">
+<h2>Your numbers</h2>
+<div class="grid">
+<label>Size
+      <select data-k="size" data-yj-mine="" id="size">
+<option value="XS">XS (neck 34 cm)</option><option value="S">S (neck 36 cm)</option>
+<option selected="" value="M">M (neck 38 cm)</option><option value="L">L (neck 40 cm)</option>
+<option value="XL">XL (neck 42 cm)</option><option value="2XL">2XL (neck 44 cm)</option>
+<option value="3XL">3XL (neck 46 cm)</option><option value="custom">My own neck size</option>
+</select></label>
+<label>Neck, base (cm)<input data-k="neck" data-yj-mine="" id="neck" step="0.5" type="number" value="38"/></label>
+<label>Length (cm)<input data-k="length" data-yj-mine="" id="length" step="1" type="number" value="135"/></label>
+<label>Cloak
+      <select data-k="circle" id="circle"><option selected="" value="full">Full circle (4 panels)</option><option value="half">Half circle (2 panels)</option></select></label>
+<label>Hood
+      <select data-k="hood" id="hoodtype"><option selected="" value="2">2-piece (curved back seam)</option><option value="3">3-piece (centre strip)</option></select></label>
+<label>Fabric width (cm)<input data-k="fabric" id="fabric" step="5" type="number" value="150"/></label>
+</div>
+<div hidden="" id="customrow"><label>Hood height, neck seam to top (cm)<input id="hoodh" step="0.5" type="number" value="38"/></label></div>
+<p class="err" id="err"></p>
+<details><summary>No tape measure? Estimate the length from your height</summary>
+<p><label>Height (cm) <input id="height" type="number" value="165"/></label>
+<select id="lenpick"><option value="hip">to the hip</option><option value="knee">to the knee</option><option value="calf">to mid-calf</option><option selected="" value="floor">to the floor</option></select>
+<button id="est" type="button">Estimate</button></p>
+<p class="small-note" id="estout">Body-proportion estimate. Measure from the base of your neck at the back to be sure.</p>
+</details>
+<h3>Check the code ran</h3>
+<table id="checks"></table>
+<h3>Cutting list</h3>
+<ul id="cutlist"></ul>
+</section>
+<section class="files" id="paid">
+<h2>Print it</h2>
+<p>Pick your paper, then download. Every home-print file starts with a page map and a test square you measure first.</p>
+<p><label>Guide paper <select id="paper"><option value="a4">A4</option><option value="letter">US Letter</option></select></label></p>
+<div class="dl">
+<button data-get="A4" type="button">A4 pattern PDF</button>
+<button data-get="Letter" type="button">US Letter pattern PDF</button>
+<button data-get="A0" type="button">A0 copy shop PDF</button>
+<button data-get="projector" type="button">Projector PDF</button>
+<button data-get="guide" type="button">Sewing guide PDF</button>
+</div>
+<p class="small-note" id="paywhy"></p>
+<div class="lock">
+<p>The downloads open with the key you get after you pay ($7.99 once, from <a data-fe-hidden="" hidden=""></a>). Already have it?</p>
+<p><input autocomplete="off" data-fe-hidden="" hidden="" id="key"/> <button data-fe-hidden="" hidden="" id="keybtn" type="button"></button> <span id="keystate"></span></p>
+</div>
+</section>
+<section class="why">
+<h2>What you get</h2>
+<ul>
+<li>7 sizes, XS to 3XL, or your own neck size and length: the pieces are redrawn for your numbers.</li>
+<li>Full or half circle cloak, 2-piece or 3-piece hood. 4 combinations in every size.</li>
+<li>A4 and US Letter files with a page map: tile names (A1, A2, B1...) on every page and no blank pages to print.</li>
+<li>A0 copy-shop file and a projector file, one page per size at 1:1.</li>
+<li>Sewing guide, 8 steps, with line drawings made from the real pieces. No photos of a sewn sample: these are drawings.</li>
+<li>Fabric table for 4 lengths, and the hem marked with a tape measure from the neck seam, so you print the neck part, not 1.4 m of quarter circle.</li>
+</ul>
+<h2>Why not a free cloak tutorial?</h2>
+<p>A free tutorial gives one size and asks you to draw the circle and hood yourself. Here the hood and cloak necklines are measured against each other in every size and style, and the printed scale is proved by a test square on page 1.</p>
+<h2>Questions</h2>
+<dl>
+<dt>How is this different from AI patterns?</dt><dd>Every line is computed from your measurements: the cloak neckline is a circle arc of exact length and the hood neck edge is solved to the same length, then both are measured and shown above.</dd>
+<dt>Is seam allowance included?</dt><dd>Yes, 1.5 cm on every seam and 2.5 cm at the hem. The blue dashed line on each piece is the seam line.</dd>
+<dt>Has a cloak been sewn from it?</dt><dd>No sewn sample is shown. The pieces are drafted and checked by code; the guide uses line drawings, labelled as drawings.</dd>
+</dl>
+</section>
+<footer><p>Hooded cloak sewing pattern · digital PDF files, nothing is shipped.</p></footer>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Save and continue: <a href="https://getreadystack.com/apps/sewing-pattern-hooded-cloak/">https://getreadystack.com/apps/sewing-pattern-hooded-cloak/</a></p><script src="./cloak.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
