@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Bank statement converter | PDF to Excel | CSV | balance check</title>
+<meta content="Bank statement converter that reads your PDF in the browser (no upload), turns it into a table and re-adds the balance on every row, so a misread digit shows up in red. Excel, CSV and OFX in Pro." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/apps/bank-statement-converter/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<header class="top">
+<a class="home" href="/">Rulestamp</a>
+<nav aria-label="Language" class="langs"><a aria-current="page" href="/" lang="en">EN</a><a href="/de/" lang="de">DE</a><a href="/es/" lang="es">ES</a><a href="/pt/" lang="pt">PT</a><a href="/ja/" lang="ja">JA</a></nav>
+</header>
+<main>
+<h1>Bank statement converter | PDF to Excel | CSV | balance check</h1>
+<p class="lede">Example (made-up): a bakery's October statement, 16 rows. One withdrawal was read as <b>$1,428.50</b>, but the balance column says it was <b>$1,248.50</b>. That leaves a <b>$180.00</b> variance in the books, and the converter marks the row red before it reaches your spreadsheet.</p>
+<p class="sub">Your PDF is read right here in this browser tab. It is never uploaded. Every printed balance is checked against the one before it plus or minus the row, to the cent.</p>
+<section class="input">
+<label class="drop" for="file" id="drop">
+<input accept="application/pdf,.pdf" id="file" multiple="" type="file"/>
+<b>Drop a PDF bank statement here</b> or click to choose one
+    <small>Text PDFs from online banking. All pages, all rows, free on screen.</small>
+</label>
+<p class="msg" id="msg" role="status"></p>
+</section>
+<section class="resultwrap">
+<p class="filebar"><span id="fname">example-statement.pdf</span> <button class="link" id="reset" type="button">show the example again</button></p>
+<div aria-live="polite" data-yj="result" id="out"></div>
+<p class="paidline" data-fe-hidden="" hidden=""><b></b><a data-buy="" data-fe-hidden="" hidden=""></a></p>
+</section>
+<section class="actions">
+<button class="btn" id="x-xlsx" type="button">Download Excel (.xlsx)</button>
+<button class="btn ghost" id="x-csv" type="button">CSV</button>
+<button class="btn ghost" id="x-ofx" type="button">OFX</button>
+<button class="btn ghost" id="x-batch" type="button">Convert many PDFs</button>
+<button class="btn ghost" id="x-save" type="button">Save this statement</button>
+<input accept="application/pdf,.pdf" hidden="" id="file-many" multiple="" type="file"/>
+</section>
+<div aria-labelledby="paid-h" class="paid" id="paid" role="dialog">
+<h2 data-fe-hidden="" hidden="" id="paid-h"></h2>
+<p id="paid-why"></p>
+<ul>
+<li><b>Excel (.xlsx)</b>: real dates, debit and credit columns, the statement balance next to a computed balance formula, and an OK / CHECK cell on every row</li>
+<li><b>CSV and OFX</b> files for your accounting software's bank import</li>
+<li><b>Many statements at once</b>: a summary sheet that checks each opening balance against the previous statement's ending balance, so a missing month shows up</li>
+<li><b>Saved statements</b> in this browser, and one Excel file of all of them</li>
+</ul>
+<p class="price"><b>$13 per month.</b> No page credits: every page of every statement.</p>
+<p><a class="btn" data-buy="" data-fe-hidden="" hidden=""></a></p>
+<p class="lic">Already paid? Paste your key: <input autocomplete="off" data-fe-hidden="" hidden="" id="lic-key" type="text"/> <button class="btn ghost" data-fe-hidden="" hidden="" id="lic-go" type="button"></button> <span data-fe-hidden="" hidden="" id="lic-state"></span></p>
+</div>
+<section class="batch" id="batch-box">
+<h2>Statements in this batch</h2>
+<div id="batch-out"></div>
+<button class="btn" id="batch-xlsx" type="button">Download all as one Excel file</button>
+</section>
+<section class="textbox">
+<h2>What was read from the PDF</h2>
+<p class="muted">Each line is one line of the statement. Amounts under a Withdrawals column get a "-" and under Deposits a "+". If a line was read wrong, fix it here and the table checks again.</p>
+<p><label>Dates are written <select data-k="order" id="order"><option value="auto">detect</option><option value="mdy">month first (10/02)</option><option value="dmy">day first (02/10)</option></select></label></p>
+<textarea data-k="text" data-yj-mine="" id="text" rows="14" spellcheck="false">Northgate Community Bank - EXAMPLE (made-up statement)
+Maple Row Bakery LLC - Business Checking - account ending 4471
+Statement period: 10/01/2026 through 10/31/2026
+Beginning balance on 10/01/2026 $6,240.18
+Date Description Withdrawals Deposits Balance
+10/01 Square deposit 1001 1,182.40 7,422.58
+10/02 Flour Co-op invoice 2231 1,428.50 6,174.08
+ACH debit ref 88213
+10/03 Stripe payout 964.15 7,138.23
+10/06 Rent - 14 Mill Street 2,100.00 5,038.23
+10/07 Square deposit 1002 1,320.75
+10/07 City Gas &amp; Power 187.33 6,171.65
+10/09 Payroll - Gusto 2,866.40 3,305.25
+10/10 Square deposit 1003 1,412.90 4,718.15
+10/14 Dairy Lane Farms 642.20 4,075.95
+10/15 Stripe payout 887.10 4,963.05
+10/17 Card purchase - Restaurant Depot 393.18 4,569.87
+10/20 Square deposit 1004 1,270.55 5,840.42
+10/23 Payroll - Gusto 2,866.40 2,974.02
+10/24 Interest earned 4.12 2,978.14
+10/28 Insurance - Hartwell Mutual 315.00 2,663.14
+10/30 Monthly service fee 15.00 2,648.14
+Ending balance on 10/31/2026 $2,648.14</textarea>
+</section>
+<section class="saved">
+<h2>Saved statements</h2>
+<div id="saved-list"></div>
+<button class="btn ghost" id="x-saved-xlsx" type="button">Excel of all saved statements</button>
+</section>
+<section class="how">
+<h2>How the balance check works</h2>
+<p>A bank prints a running balance after each transaction. Previous balance + deposit, or previous balance - withdrawal, must give the next printed balance, to the cent. The converter does that sum on every row. When a row does not add up, it shows what the balance column implies and how far off the amount is. That is the classic transposed digit that otherwise turns up at month-end reconciliation. In the example: $7,422.58 - $1,428.50 = $5,994.08, but the bank printed $6,174.08; $7,422.58 - $1,248.50 = $6,174.08, so the amount is $1,248.50, and the copied table adds up to $2,468.14 instead of the printed ending balance of $2,648.14. When a bank prints the balance only once a day, the rows of that day are checked together. On statements with no balance column, the total is checked against the ending balance.</p>
+<h2>What this version reads</h2>
+<p>PDFs that contain text, the kind you download from online banking. Amounts written like 1,234.56, with dates such as 10/02, 02/10/2026, 2026-10-02 or Oct 2. Scanned paper statements (images) are not read in this version: the page tells you when a PDF has no text. Password-protected PDFs ask for their password, which stays in this tab.</p>
+<h2>Questions</h2>
+<details><summary>Is my bank statement uploaded anywhere?</summary><p>No. The PDF is opened by code running in your browser tab, and the text never leaves your computer. Saved statements are kept in your browser's own storage on this device.</p></details>
+<details data-fe-hidden="" hidden=""><summary></summary><p></p></details>
+<details><summary>What does a red row mean?</summary><p>The amount on that row plus the previous balance does not give the balance printed on the statement. Usually a digit was misread or the line was split. Open the text box, fix the line, and the row turns green when the sum is right.</p></details>
+<details data-fe-hidden="" hidden=""><summary></summary><p></p></details>
+<details><summary>Are there page limits or credits?</summary><p>No. There are no page credits to run out.</p></details>
+</section>
+<p class="fine">A conversion and checking tool for your own records. It does not give accounting, tax or financial advice.</p>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Save and continue: <a href="https://getreadystack.com/apps/bank-statement-converter/">https://getreadystack.com/apps/bank-statement-converter/</a></p><script src="./bsc.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

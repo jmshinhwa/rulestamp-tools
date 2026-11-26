@@ -373,6 +373,15 @@
     "precio-cartas-pokemon",
     "preco-cartas-pokemon"
    ]
+  },
+  {
+   "id": "f34efabe65",
+   "name": {
+    "en": "Bank statement converter"
+   },
+   "tools": [
+    "bank-statement-converter"
+   ]
   }
  ],
  "tools": {
@@ -640,6 +649,11 @@
    "lang": "pt",
    "name": "preço cartas Pokémon: consulta em reais + lista com aviso por e-mail",
    "hub": "https://getreadystack.com/pt/apps/preco-cartas-pokemon/"
+  },
+  "bank-statement-converter": {
+   "lang": "en",
+   "name": "Bank statement converter",
+   "hub": "https://getreadystack.com/apps/bank-statement-converter/"
   }
  }
 }
