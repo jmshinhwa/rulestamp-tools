@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>preço cartas Pokémon: quanto vale sua carta hoje em reais</title>
+<meta content="preço cartas Pokémon em reais, euro e dólar: digite o nome e o número da carta e veja a tendência do Cardmarket, a média de 30 dias e o mercado do TCGplayer, convertidos pela PTAX do Banco Central. Avisa quando duas versões dividem o mesmo anúncio." name="description"/>
+
+<link href="style.css" rel="stylesheet"/><link href="https://getreadystack.com/pt/apps/preco-cartas-pokemon/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<nav class="langs"><b>Português (Brasil)</b> · nomes de cartas e coleções em português · preços em R$, € e US$</nav>
+<main>
+<header><h1>preço cartas Pokémon: quanto vale a sua carta hoje, em reais</h1>
+<p class="lede">Exemplo (lido em 26/11/2026, já carregado abaixo): Mega Rayquaza ex 138, de Reinado Delta. A base pública de preços liga as três versões dessa carta (084, 138 e 141) ao mesmo anúncio do Cardmarket: € 2,48 para as três, ou R$ 15,97. No TCGplayer a 138 marca US$ 271,24, ou R$ 1.595,57. Quem confia só no primeiro número vende por R$ 15,97 uma carta que no TCGplayer vale R$ 1.595,57 e deixa R$ 1.579,60 na mesa.</p>
+<p class="lede2">Aqui cada carta mostra o Cardmarket (euro, tendência e média de 30 dias) e o TCGplayer (dólar) lado a lado, em reais pela PTAX venda do Banco Central. Quando duas versões dividem o mesmo anúncio, a carta ganha um aviso ⚠ e o valor de referência passa a ser o do TCGplayer. Outro exemplo, com preços de 25/11/2026: Umbreon ex 161/131, de Evoluções Prismáticas, tem tendência de € 1.430,00 (R$ 9.211,06) e média de 30 dias de € 1.166,42 (R$ 7.513,26). Quem anuncia pela média de 30 dias cobra R$ 1.697,80 a menos que a tendência.</p>
+</header>
+<section aria-label="Sua carta" class="form">
+<div class="row">
+<label class="grow">Nome e número da carta (como está impresso)<input autocomplete="off" data-k="q" data-yj-mine="" placeholder="p. ex. Umbreon ex 161/131 ou Pikachu" value="Mega Rayquaza ex"/></label>
+<button id="go" type="button">Ver preço</button>
+</div>
+<p class="hint" id="exampleNote">O que você vê abaixo é o exemplo lido em 26/11/2026. Digite a sua carta e clique em «Ver preço»: lemos o preço de hoje. Quantas cartas quiser.</p>
+<p class="msg" id="msg" role="status"></p>
+</section>
+<section aria-live="polite" data-yj="result" id="out"></section>
+<p class="paid" id="paidLine">Você recebe um e-mail quando o valor em reais de uma carta passa da linha que você marcou, acima ou abaixo. Também mostra o valor da coleção dia a dia, importa a lista colada e exporta CSV. <a class="buy" data-fe-hidden="" hidden=""></a></p>
+<section class="list" id="sessionBox">
+<h2>Minha lista desta visita</h2>
+<p class="hint">Clique em «+ lista» numa carta para somar.</p>
+<div id="sessionOut"></div>
+</section>
+<section class="pro" data-fe-hidden="" hidden="" id="pro"><h2></h2><div class="tool"><h3></h3><p></p><label><input autocomplete="email" id="email" type="email"/></label><button class="needpro" data-what="salvar a lista e receber o aviso por e-mail" id="saveBtn" type="button"></button><button class="needpro" data-what="conferir a lista salva agora" id="checkBtn" type="button"></button><div id="watchOut"></div></div><div class="tool"><h3></h3><p></p><button class="needpro" data-what="o gráfico do valor da coleção" id="histBtn" type="button"></button><div id="histOut"></div></div><div class="tool"><h3></h3><p><code></code></p><textarea id="imp" rows="4"></textarea><button class="needpro" data-what="importar a sua lista" id="impBtn" type="button"></button><div id="impOut"></div></div><div class="tool"><h3></h3><p></p><button class="needpro" data-what="o arquivo CSV da sua lista" id="csvBtn" type="button"></button></div><p class="msg" data-fe-hidden="" hidden="" id="proMsg" role="status"></p></section>
+<section class="key" data-fe-hidden="" hidden=""><p></p><div class="row"><input data-fe-hidden="" hidden="" id="key"/><button data-fe-hidden="" hidden="" id="keyBtn" type="button"></button></div><p class="msg" data-fe-hidden="" hidden="" id="keyMsg"></p></section>
+<section class="how"><h2>De onde vêm os números</h2><ul>
+<li><b>Preços:</b>Ela traz o Cardmarket (Europa, em euro, atualizado uma vez por dia) e o TCGplayer (Estados Unidos, em dólar). Cada carta mostra a data em que o preço foi lido.</li>
+<li><b>Tendência</b> é o número que o Cardmarket chama de «trend». <b>Média de 30 dias</b> é a média das vendas dos últimos 30 dias. <b>Mercado</b> é o «market price» do TCGplayer.</li>
+<li><b>Em reais:</b> preço × PTAX venda do Banco Central do Brasil (euro: série 21619; dólar: série 1), da data escrita no resultado. Não incluímos frete, impostos de importação ou taxas.</li>
+<li><b>⚠ anúncio compartilhado:</b> o próprio TCGdex avisa que duas versões da mesma carta podem apontar para o mesmo anúncio e mostrar o mesmo preço. Quando duas cartas da mesma coleção têm o mesmo anúncio, mostramos o aviso e usamos o TCGplayer como referência.</li>
+<li><b>Valor de referência</b> é a tendência do Cardmarket. Quando o anúncio é compartilhado, passa a ser o mercado do TCGplayer. São preços de lojas da Europa e dos EUA, não da Liga ou de lojas brasileiras.</li>
+<li>Só números lidos e convertidos. Não dizemos o que comprar ou vender, nem para onde o preço vai.</li>
+<li class="ascii" data-fe-hidden="" hidden="" lang="en"></li>
+<li>Sem imagens de cartas e sem relação com Nintendo, The Pokémon Company, Cardmarket, TCGplayer ou TCGdex. Pokémon é marca de seus donos.</li>
+</ul></section>
+<section class="faq"><h2>Perguntas frequentes</h2>
+<details><summary>Quanto vale a minha carta Pokémon?</summary><p>Digite o nome e o número impressos na carta, por exemplo «Umbreon ex 161/131», e clique em «Ver preço». Você vê a tendência e a média de 30 dias do Cardmarket em euro, o mercado do TCGplayer em dólar e os dois em reais pela PTAX do Banco Central. Pode consultar quantas cartas quiser, sem cadastro.</p></details>
+<details><summary>Por que aparece «⚠ anúncio compartilhado»?</summary><p>Na base pública de preços, algumas versões da mesma carta estão ligadas ao mesmo anúncio do Cardmarket e recebem o mesmo preço. Em Reinado Delta, a Mega Rayquaza ex 084 (Rara Dupla), a 138 (Ilustração Rara Especial) e a 141 (Mega Hiper Raro) recebem € 2,48, e a 138 marca US$ 271,24 no TCGplayer. Quando vemos isso, avisamos e usamos o TCGplayer como referência.</p></details>
+<details><summary>O valor em reais é o preço no Brasil?</summary><p>Não. É o preço da Europa (Cardmarket) ou dos EUA (TCGplayer) convertido pela PTAX venda do Banco Central, sem frete nem imposto de importação. Serve como referência internacional para comparar com o anúncio que você viu ou vai fazer. Lojas brasileiras podem cobrar outro valor.</p></details>
+<details data-fe-hidden="" hidden=""><summary></summary><p></p></details>
+<details><summary>De onde vêm os preços e quando mudam?</summary><p>Da TCGdex, uma base aberta que traz os números do Cardmarket uma vez por dia e do TCGplayer. Cada carta mostra a data do preço. A conversão usa a PTAX venda do último dia útil publicado pelo Banco Central. Só mostramos números lidos; não dizemos o que comprar ou vender.</p></details>
+</section>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Salvar e continuar: <a href="https://getreadystack.com/pt/apps/preco-cartas-pokemon/">https://getreadystack.com/pt/apps/preco-cartas-pokemon/</a></p><script src="engine.js"></script><script src="app.js"></script>
+</body></html>

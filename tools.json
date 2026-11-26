@@ -366,10 +366,12 @@
   {
    "id": "9ed9e6ec64",
    "name": {
-    "es": "Precio cartas Pokémon: Cardmarket en €, colección y avisos al abrir la página"
+    "es": "Precio cartas Pokémon: Cardmarket en €, colección y avisos al abrir la página",
+    "pt": "preço cartas Pokémon: consulta em reais + lista com aviso por e-mail"
    },
    "tools": [
-    "precio-cartas-pokemon"
+    "precio-cartas-pokemon",
+    "preco-cartas-pokemon"
    ]
   }
  ],
@@ -633,6 +635,11 @@
    "lang": "es",
    "name": "Patrón neceser con cremallera – 4 tallas y tabla de corte",
    "hub": "https://getreadystack.com/es/apps/patron-neceser-con-cremallera/"
+  },
+  "preco-cartas-pokemon": {
+   "lang": "pt",
+   "name": "preço cartas Pokémon: consulta em reais + lista com aviso por e-mail",
+   "hub": "https://getreadystack.com/pt/apps/preco-cartas-pokemon/"
   }
  }
 }
