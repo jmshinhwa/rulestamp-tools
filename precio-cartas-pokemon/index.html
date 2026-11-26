@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Precio cartas Pokémon: Cardmarket en €, por nombre o número</title>
+<meta content="Escribe el nombre y el número de tu carta Pokémon y mira su precio de Cardmarket en euros: tendencia, precio medio de venta, desde y medias de 7 y 30 días, con la fecha. En español y sin registrarte." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/es/apps/precio-cartas-pokemon/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main>
+<h1>Precio cartas Pokémon en Cardmarket, en € y en español</h1>
+<p class="lede">Ejemplo inventado: te ofrecen 60 € por tu Mew ex 152/128 (Celebración 30.º Aniversario). El 26/11/2026 esa carta se vendía en Cardmarket a una media de 82,43 €: <b>aceptar era cobrar 22,43 € menos</b>.</p>
+<p class="sub">Escribe el nombre y el número que trae tu carta abajo, también en español (Investigación de Profesores, Cielos Evolutivos…). Ves la guía de Cardmarket en euros con su fecha, no un precio de TCGplayer en dólares.</p>
+<form autocomplete="off" id="f">
+<fieldset>
+<label for="q">Nombre o número de tu carta</label>
+<input data-k="q" data-yj-mine="" id="q" placeholder="Ej.: Mew ex 152/128 · Pikachu 25 · Umbreon VMAX" type="search"/>
+</fieldset>
+<fieldset>
+<label for="set">Expansión (opcional)</label>
+<select data-k="set" id="set"><option value="">Todas las expansiones</option></select>
+</fieldset>
+<fieldset>
+<label for="offer">Te ofrecen (€, opcional)</label>
+<input data-k="offer" data-yj-mine="" id="offer" inputmode="decimal" placeholder="Ej.: 60" type="text"/>
+</fieldset>
+</form>
+<section aria-live="polite" class="res" data-yj="result" id="out">
+<div class="rh"><b class="rname">Mew ex</b><span class="rset">Celebración 30.º Aniversario · n.º 152/128 · Rara Ilustración Especial</span></div>
+<div class="big"><span>Tendencia en Cardmarket</span> <b>72,37 €</b></div>
+<div class="grid sum">
+<div class="tile"><span>Precio medio de venta</span> <b>82,43 €</b></div>
+<div class="tile"><span>Desde (oferta más barata)</span> <b>58,00 €</b></div>
+<div class="tile"><span>Media de 7 días</span> <b>74,19 €</b></div>
+<div class="tile"><span>Media de 30 días</span> <b>81,47 €</b></div>
+<div class="tile"><span>Tu oferta de 60,00 €</span> <b>22,43 € menos que la media de venta</b></div>
+</div>
+<p class="date">Guía de precios de Cardmarket del 26/11/2026 · carta suelta sin graduar</p>
+</section>
+<div class="acts" id="acts">
+<button id="add-free" type="button">Añadir a mi lista de hoy</button>
+<button id="add-col" type="button">Guardar en mi colección</button>
+<label class="chk"><input id="rev" type="checkbox"/> es reverse holo</label>
+<span class="alrow">
+<select aria-label="Tipo de aviso" id="at"><option value="below">Avísame si baja de</option><option value="above">Avísame si sube de</option><option value="up">Avísame si sube un</option><option value="down">Avísame si baja un</option></select>
+<input aria-label="Tu línea" id="av" inputmode="decimal" placeholder="80 € o 20 %" type="text"/>
+<button id="add-al" type="button">Avisarme</button>
+</span>
+<span class="muted" id="almsg"></span>
+</div>
+<p class="upsell">Versión completa: guarda tu colección, mira su valor con cada nueva tabla de precios y pon avisos con tu línea («baja de 80 €», «sube un 20 %»). <a class="buy" data-fe-hidden="" hidden=""></a> <a class="buy alt" data-fe-hidden="" hidden=""></a></p>
+<ul id="matches"></ul>
+<h2>Tu lista de hoy</h2>
+<div class="box" id="free"><p class="muted">Añade cartas con «Añadir a mi lista de hoy» para sumar lo que vale tu montón.</p></div>
+<section data-fe-hidden="" hidden="" id="pro"><h2></h2><div class="box lock" data-fe-hidden="" hidden="" id="pro-lock"><p data-fe-hidden="" hidden="" id="pro-why"><b></b></p><ul><li></li><li></li><li></li><li></li></ul><p class="muted"></p><p><a class="buy" data-fe-hidden="" hidden=""></a><a class="buy alt" data-fe-hidden="" hidden=""></a></p><form data-fe-hidden="" hidden="" id="keyform"><label for="key"></label><input data-fe-hidden="" hidden="" id="key" type="text"/><button class="btn" type="submit"></button><span class="muted" data-fe-hidden="" hidden="" id="keymsg"></span></form></div><div data-fe-hidden="" hidden="" id="pro-app"><div class="box" id="col"></div><h2></h2><div id="hist"></div><h2></h2><div class="box" id="alerts"></div><p><button class="btn" id="notif" type="button"></button></p><div id="log"></div><h2></h2><p><button class="btn" id="csv-out" type="button"></button><label class="btn" for="csv-in"></label><input accept=".csv,text/csv" hidden="" id="csv-in" type="file"/><span class="muted" id="csvmsg"></span></p><p class="muted"></p></div></section>
+<h2>Cómo leer cada precio</h2>
+<details open=""><summary>Tendencia, precio medio de venta y «desde»</summary>
+<p><b>Precio medio de venta</b> es la media de lo que se ha vendido de verdad en Cardmarket. <b>Desde</b> es la oferta más barata publicada ahora mismo, de cualquier estado, así que suele salir más baja. <b>Tendencia</b> es la cifra que Cardmarket calcula con las ventas recientes. Si te hacen una oferta, compárala con la media de venta y con la tendencia, no con el «desde».</p></details>
+<details><summary>¿Y las cartas graduadas (PSA 9, PSA 10)?</summary>
+<p>Aquí no hay precios de cartas graduadas: todos los precios son de cartas sueltas sin graduar. Una PSA 10 puede valer muchas veces más.</p></details>
+<details><summary>¿De cuándo son los precios?</summary>
+<p>De la tabla del <span id="dd">26/11/2026</span>. Cada resultado lleva su fecha. Hay 14.392 cartas con precio de 106 expansiones en español, de Negro y Blanco (2011) a Dominio Delta (2026); las cartas anteriores a 2011 todavía no están. Los precios vienen de la guía de Cardmarket (euros) y de TCGplayer (dólares) a través de TCGdex.</p></details>
+<details><summary>¿Por qué dos cartas iguales tienen el mismo precio?</summary>
+<p>A veces la fuente asigna el mismo anuncio de Cardmarket a dos versiones de una carta (por ejemplo la normal y la ilustración especial). Cuando lo detectamos te lo decimos debajo del precio; compruébalo en Cardmarket antes de vender.</p></details>
+<p class="src" data-fe-hidden="" hidden=""><a rel="nofollow noopener"></a><a></a></p>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Guardar y continuar: <a href="https://getreadystack.com/es/apps/precio-cartas-pokemon/">https://getreadystack.com/es/apps/precio-cartas-pokemon/</a></p><script src="./app.js"></script>
+</body>
+</html>

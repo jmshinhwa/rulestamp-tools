@@ -360,6 +360,15 @@
    "tools": [
     "zipper-pouch-pattern"
    ]
+  },
+  {
+   "id": "9ed9e6ec64",
+   "name": {
+    "es": "Precio cartas Pokémon: Cardmarket en €, colección y avisos al abrir la página"
+   },
+   "tools": [
+    "precio-cartas-pokemon"
+   ]
   }
  ],
  "tools": {
@@ -612,6 +621,11 @@
    "lang": "en",
    "name": "Zipper Pouch pattern — boxed or flat, 4 sizes + your own",
    "hub": "https://getreadystack.com/apps/zipper-pouch-pattern/"
+  },
+  "precio-cartas-pokemon": {
+   "lang": "es",
+   "name": "Precio cartas Pokémon: Cardmarket en €, colección y avisos al abrir la página",
+   "hub": "https://getreadystack.com/es/apps/precio-cartas-pokemon/"
   }
  }
 }
