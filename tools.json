@@ -351,6 +351,15 @@
    "tools": [
     "stundenzettel-vorlage-2027-excel"
    ]
+  },
+  {
+   "id": "596196f96c",
+   "name": {
+    "en": "Zipper Pouch pattern — boxed or flat, 4 sizes + your own"
+   },
+   "tools": [
+    "zipper-pouch-pattern"
+   ]
   }
  ],
  "tools": {
@@ -598,6 +607,11 @@
    "lang": "de",
    "name": "Stundenzettel Vorlage 2027 — Excel mit Mindestlohn 14,60 € und Minijob-Prüfung",
    "hub": "https://getreadystack.com/de/apps/stundenzettel-vorlage-2027-excel/"
+  },
+  "zipper-pouch-pattern": {
+   "lang": "en",
+   "name": "Zipper Pouch pattern — boxed or flat, 4 sizes + your own",
+   "hub": "https://getreadystack.com/apps/zipper-pouch-pattern/"
   }
  }
 }

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Zipper Pouch pattern — boxed or flat, 4 sizes + your own, cutting chart &amp; fabric for any number</title>
+<meta content="Zipper pouch pattern drafted by code: boxed or flat, sizes S to XL or your own finished size. Cutting chart in cm and inches, quilting block, zipper length and the fabric to buy for any number of pouches. A4, US Letter, A0 and projector PDFs." name="description"/>
+<link href="./style.css" rel="stylesheet"/>
+<link href="https://getreadystack.com/apps/zipper-pouch-pattern/" rel="canonical"/><style>[data-fe-hidden]{display:none!important}</style></head>
+<body>
+<main>
+<header>
+<p class="kicker">Zipper pouch sewing pattern · drafted by code, measured before you cut</p>
+<h1>Zipper Pouch pattern — boxed or flat, 4 sizes + your own</h1>
+<p class="lede">Example (made-up): 6 quilted Medium pouches, 20 × 12 × 6 cm, as gifts. The chart says buy 1.0 m of 110 cm exterior fabric, not the 0.7 m the plain panels need, because each panel is cut 2.5 cm bigger on every side and trimmed after quilting. Buy for the plain panels and that is a 0.3 m shortfall: $4.20 at a made-up $14.00 a metre, and a second trip to the shop.</p>
+</header>
+<section aria-live="polite" class="result" data-yj="result" id="out">
+<div class="big">
+<div><span class="num" id="r_cut">28.0 × 17.0 cm</span><span class="lab" id="r_cut_in">panel cut size, cut 2 (11 × 6 3/4 in)</span></div>
+<div><span class="num" id="r_corner">3.0 cm</span><span class="lab" id="r_corner_lab">corner square out of both bottom corners</span></div>
+<div><span class="num" id="r_zip">12 in</span><span class="lab" id="r_zip_lab">zipper (30 cm), or 34.0 cm from a reel</span></div>
+</div>
+<div class="small">
+<div><span class="num2" id="r_ext">1.0 m</span><span class="lab" id="r_ext_lab">exterior fabric for 6 pouches, 110 cm wide</span></div>
+<div><span class="num2" id="r_lin">0.7 m</span><span class="lab" id="r_lin_lab">lining for 6 pouches</span></div>
+<div><span class="num2" id="r_fq">2 panels</span><span class="lab" id="r_fq_lab">per fat quarter (1 pouch)</span></div>
+<div><span class="num2" id="r_fin">20 × 12 × 6 cm</span><span class="lab" id="r_fin_lab">finished, measured back from the drawn piece</span></div>
+</div>
+<div class="pieces" id="pieces"></div>
+<p class="cap">The panel for these numbers, drawn by code. Black = cutting line, blue dashes = seam line (1 cm allowance included), orange = centre ticks and the lining turning gap.</p>
+</section>
+<p class="paidline" id="paidline">The printable pattern adds A4 and US Letter PDFs with a 10 cm / 4 in test square and page map, the A0 copy-shop and projector files, the all-sizes cutting chart and an 8-step sewing guide, for S to XL or your own size: <b>$6.00 once</b>. <a class="buy" data-fe-hidden="" hidden=""></a></p>
+<section aria-label="Your pouch" class="form">
+<h2>Your pouch</h2>
+<fieldset class="grid">
+<label>Size
+      <select data-k="size" data-yj-mine="" id="size">
+<option value="S">S · 12 × 8 × 4 cm · coins, earbuds</option>
+<option selected="" value="M">M · 20 × 12 × 6 cm · pencils, makeup</option>
+<option value="L">L · 25 × 15 × 8 cm · toiletries</option>
+<option value="XL">XL · 30 × 18 × 10 cm · wash bag</option>
+<option value="custom">My own finished size</option>
+</select></label>
+<label>Shape
+      <select data-k="style" id="style"><option selected="" value="boxed">Boxed corners</option><option value="flat">Flat</option></select></label>
+<label>Padding
+      <select data-k="layer" id="layer"><option selected="" value="quilted">Quilted (batting)</option><option value="fleece">Fusible fleece</option><option value="none">None, soft pouch</option></select></label>
+<label>How many pouches<input data-k="count" data-yj-mine="" id="count" max="200" min="1" step="1" type="number" value="6"/></label>
+<label>Fabric width (cm)
+      <select data-k="width" id="width"><option selected="" value="1100">110 cm / 44 in quilting cotton</option><option value="1400">140 cm / 54 in</option><option value="1500">150 cm / 60 in</option></select></label>
+<label>Lining
+      <select data-k="lining" id="lining"><option selected="" value="yes">Lined</option><option value="no">Unlined</option></select></label>
+</fieldset>
+<fieldset class="grid" hidden="" id="customrow">
+<label>Finished width (cm)<input data-k="cw" id="cw" step="0.5" type="number" value="20"/></label>
+<label>Finished height (cm)<input data-k="ch" id="ch" step="0.5" type="number" value="12"/></label>
+<label>Depth, boxed (cm)<input data-k="cd" id="cd" step="0.5" type="number" value="6"/></label>
+</fieldset>
+<p class="err" id="err"></p>
+<h3>Cutting chart for your pouch</h3>
+<table class="chart" id="chart"></table>
+<h3>Fabric to buy</h3>
+<table id="fabric"></table>
+<h3>Check the code ran</h3>
+<table id="checks"></table>
+<h3>What the fabric costs you</h3>
+<p class="small-note">Example prices are made up. Type what your shop charges per metre and per zipper.</p>
+<fieldset class="grid cost">
+<label>Exterior, per metre<input data-k="p_ext" id="p_ext" step="0.01" type="number" value="14.00"/></label>
+<label>Lining, per metre<input data-k="p_lin" id="p_lin" step="0.01" type="number" value="10.00"/></label>
+<label>Batting or fleece, per metre<input data-k="p_pad" id="p_pad" step="0.01" type="number" value="8.00"/></label>
+<label>Zipper, each<input data-k="p_zip" id="p_zip" step="0.01" type="number" value="1.50"/></label>
+</fieldset>
+<p id="costout"></p>
+</section>
+<section class="files" id="paid">
+<h2>Print it</h2>
+<p>Every home-print file starts with a test square you measure first, a page map and the cutting chart for that size. Small and Medium print on one page of A4.</p>
+<div class="dl">
+<button data-get="A4" type="button">A4 pattern PDF</button>
+<button data-get="Letter" type="button">US Letter pattern PDF</button>
+<button data-get="A0" type="button">A0 copy shop PDF</button>
+<button data-get="projector" type="button">Projector PDF</button>
+<button data-get="chart" type="button">Cutting chart, all sizes PDF</button>
+<button data-get="guide" type="button">Sewing guide PDF</button>
+</div>
+<p class="small-note" id="paywhy"></p>
+<div class="lock">
+<p>The downloads open with the key you get after you pay ($6.00 once, from <a data-fe-hidden="" hidden=""></a>). Already have it?</p>
+<p><input autocomplete="off" data-fe-hidden="" hidden="" id="key"/> <button data-fe-hidden="" hidden="" id="keybtn" type="button"></button> <span id="keystate"></span></p>
+</div>
+</section>
+<section class="why">
+<h2>What you get</h2>
+<ul>
+<li>4 sizes, S to XL, boxed or flat, or your own finished width, height and depth: the panel is redrawn for your numbers.</li>
+<li>A cutting chart in cm and inches for every layer: exterior, lining, quilting block, batting, fusible fleece, loop tab and zipper.</li>
+<li>The fabric to buy for any number of pouches, and how many panels a fat quarter gives.</li>
+<li>A4 and US Letter PDFs with a test square, a page map and the chart on page 1; an A0 copy-shop sheet with every size; a projector file.</li>
+<li>An 8-step sewing guide with line drawings made from the real pieces. No photos of a sewn sample: these are drawings.</li>
+</ul>
+<h2>Why not a free pouch tutorial?</h2>
+<p>A free tutorial gives one size and one fabric list. Here every size, and your own, gets its cut sizes for each layer, the quilting block, the zipper to buy and the fabric for the whole batch, measured by code before you cut.</p>
+<h2>Questions</h2>
+<dl>
+<dt>Do I have to print anything?</dt><dd>No. Every piece is a rectangle with square cut-outs, so the chart lets you cut with a ruler. The printed piece helps if you like a paper template, and it carries the turning-gap marks.</dd>
+<dt>Is seam allowance included?</dt><dd>Yes, 1 cm on every panel edge. The blue dashed line on the piece is the seam line, and the chart says which layers are cut without it.</dd>
+<dt>Has a pouch been sewn from it?</dt><dd>No sewn sample is shown. The pieces are drafted and checked by code; the guide uses line drawings, labelled as drawings.</dd>
+</dl>
+</section>
+<footer><p>Zipper pouch sewing pattern · digital PDF files, nothing is shipped.</p></footer>
+</main>
+<p class="fe-save" style="margin:24px auto 32px;max-width:960px;padding:0 16px;font-size:14px">Save and continue: <a href="https://getreadystack.com/apps/zipper-pouch-pattern/">https://getreadystack.com/apps/zipper-pouch-pattern/</a></p><script src="./pouch.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

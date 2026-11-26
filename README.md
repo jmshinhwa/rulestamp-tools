@@ -59,6 +59,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | pricing calculator for laser engraving — job cost & profit tracker | [pricing calculator for laser engraving — job cost & profit tracker](pricing-calculator-for-laser-engraving/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/pricing-calculator-for-laser-engraving/) |
 | Etsy seller tax spreadsheet — fees, 1099-K & Schedule C (US · Canada T2125 · UK) | [Etsy seller tax spreadsheet — fees, 1099-K & Schedule C (US · Canada T2125 · UK)](etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/) |
 | Stundenzettel Vorlage 2027 — Excel mit Mindestlohn 14,60 € und Minijob-Prüfung | [Stundenzettel Vorlage 2027 — Excel mit Mindestlohn 14,60 € und Minijob-Prüfung](stundenzettel-vorlage-2027-excel/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/stundenzettel-vorlage-2027-excel/) |
+| Zipper Pouch pattern — boxed or flat, 4 sizes + your own | [Zipper Pouch pattern — boxed or flat, 4 sizes + your own](zipper-pouch-pattern/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/zipper-pouch-pattern/) |
 
 <a id="de"></a>
 
@@ -115,6 +116,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | pricing calculator for laser engraving — job cost & profit tracker | [pricing calculator for laser engraving — job cost & profit tracker](pricing-calculator-for-laser-engraving/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/pricing-calculator-for-laser-engraving/) |
 | Etsy seller tax spreadsheet — fees, 1099-K & Schedule C (US · Canada T2125 · UK) | [Etsy seller tax spreadsheet — fees, 1099-K & Schedule C (US · Canada T2125 · UK)](etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/) |
 | Stundenzettel Vorlage 2027 — Excel mit Mindestlohn 14,60 € und Minijob-Prüfung | [Stundenzettel Vorlage 2027 — Excel mit Mindestlohn 14,60 € und Minijob-Prüfung](stundenzettel-vorlage-2027-excel/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/stundenzettel-vorlage-2027-excel/) |
+| Zipper Pouch pattern — boxed or flat, 4 sizes + your own | [Zipper Pouch pattern — boxed or flat, 4 sizes + your own](zipper-pouch-pattern/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/zipper-pouch-pattern/) |
 
 <a id="es"></a>
 
@@ -171,6 +173,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | pricing calculator for laser engraving — job cost & profit tracker | [pricing calculator for laser engraving — job cost & profit tracker](pricing-calculator-for-laser-engraving/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/pricing-calculator-for-laser-engraving/) |
 | Etsy seller tax spreadsheet — fees, 1099-K & Schedule C (US · Canada T2125 · UK) | [Etsy seller tax spreadsheet — fees, 1099-K & Schedule C (US · Canada T2125 · UK)](etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/) |
 | Stundenzettel Vorlage 2027 — Excel mit Mindestlohn 14,60 € und Minijob-Prüfung | [Stundenzettel Vorlage 2027 — Excel mit Mindestlohn 14,60 € und Minijob-Prüfung](stundenzettel-vorlage-2027-excel/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/stundenzettel-vorlage-2027-excel/) |
+| Zipper Pouch pattern — boxed or flat, 4 sizes + your own | [Zipper Pouch pattern — boxed or flat, 4 sizes + your own](zipper-pouch-pattern/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/zipper-pouch-pattern/) |
 
 <a id="pt"></a>
 
@@ -227,6 +230,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | pricing calculator for laser engraving — job cost & profit tracker | [pricing calculator for laser engraving — job cost & profit tracker](pricing-calculator-for-laser-engraving/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/pricing-calculator-for-laser-engraving/) |
 | Etsy seller tax spreadsheet — fees, 1099-K & Schedule C (US · Canada T2125 · UK) | [Etsy seller tax spreadsheet — fees, 1099-K & Schedule C (US · Canada T2125 · UK)](etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/) |
 | Stundenzettel Vorlage 2027 — Excel mit Mindestlohn 14,60 € und Minijob-Prüfung | [Stundenzettel Vorlage 2027 — Excel mit Mindestlohn 14,60 € und Minijob-Prüfung](stundenzettel-vorlage-2027-excel/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/stundenzettel-vorlage-2027-excel/) |
+| Zipper Pouch pattern — boxed or flat, 4 sizes + your own | [Zipper Pouch pattern — boxed or flat, 4 sizes + your own](zipper-pouch-pattern/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/zipper-pouch-pattern/) |
 
 <a id="ja"></a>
 
@@ -283,6 +287,7 @@ Free browser tools — each one finishes one real case on screen. Nothing to ins
 | pricing calculator for laser engraving — job cost & profit tracker | [pricing calculator for laser engraving — job cost & profit tracker](pricing-calculator-for-laser-engraving/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/pricing-calculator-for-laser-engraving/) |
 | Etsy seller tax spreadsheet — fees, 1099-K & Schedule C (US · Canada T2125 · UK) | [Etsy seller tax spreadsheet — fees, 1099-K & Schedule C (US · Canada T2125 · UK)](etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/etsy-seller-tax-spreadsheet-fees-1099-k-schedule-c-us-canada/) |
 | Stundenzettel Vorlage 2027 — Excel mit Mindestlohn 14,60 € und Minijob-Prüfung | [Stundenzettel Vorlage 2027 — Excel mit Mindestlohn 14,60 € und Minijob-Prüfung](stundenzettel-vorlage-2027-excel/) (Deutsch) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/stundenzettel-vorlage-2027-excel/) |
+| Zipper Pouch pattern — boxed or flat, 4 sizes + your own | [Zipper Pouch pattern — boxed or flat, 4 sizes + your own](zipper-pouch-pattern/) (English) | [Pages](https://jmshinhwa.github.io/rulestamp-tools/zipper-pouch-pattern/) |
 
 ---
 Rulestamp · https://getreadystack.com
